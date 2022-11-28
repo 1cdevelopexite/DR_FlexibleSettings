@@ -45,7 +45,6 @@
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
 				<presentation>Входящий DP_PRANNUL (аннулирование)</presentation>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
 			<item>

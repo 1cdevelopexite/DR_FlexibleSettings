@@ -656,7 +656,7 @@
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">ЭТРН</value>
+				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
 		</Value>

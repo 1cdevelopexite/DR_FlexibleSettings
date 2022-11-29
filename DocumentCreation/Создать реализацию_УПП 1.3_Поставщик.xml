@@ -682,6 +682,9 @@
 	// служебные операции --
 
 КонецЦикла;</Value>
-		<Value xsi:nil="true"/>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
 	</row>
 </ValueTree>

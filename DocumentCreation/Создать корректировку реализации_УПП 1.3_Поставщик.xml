@@ -45,7 +45,7 @@
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">Создать корректировку реализации товаров</Value>
+		<Value xsi:type="xs:string">Создать корректировку реализации</Value>
 		<Value xsi:type="xs:string">Накладная_Исходящая</Value>
 		<Value xsi:type="xs:string">RECADV_Входящий</Value>
 		<Value xsi:type="xs:string">КорректировочнаяНакладная_Исходящая</Value>
@@ -230,7 +230,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Создать корректировку реализации товаров</presentation>
+				<presentation>Создать корректировку реализации</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>

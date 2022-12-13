@@ -463,6 +463,32 @@
 	// служебные операции --
 	
 КонецЦикла;</Value>
-		<Value xsi:nil="true"/>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">7</lastId>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>Создать заказ</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Покупатель</value>
+				<id xsi:type="xs:decimal">5</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Поставщик</value>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">6</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ЭТРН</value>
+				<id xsi:type="xs:decimal">7</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Прайс-лист</value>
+				<id xsi:type="xs:decimal">8</id>
+			</item>
+		</Value>
 	</row>
 </ValueTree>

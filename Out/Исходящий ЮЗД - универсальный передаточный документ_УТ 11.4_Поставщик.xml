@@ -59,6 +59,10 @@
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<row>
 			<row>
@@ -104,6 +108,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<Value xsi:type="xs:boolean">true</Value>
 			<Value xsi:type="xs:string"/>
@@ -142,6 +147,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<row>
@@ -183,6 +189,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -232,6 +239,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -278,6 +286,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -306,6 +315,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -381,6 +391,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -409,6 +420,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -437,6 +449,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -483,6 +496,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -511,6 +525,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -586,6 +601,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -614,6 +630,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -642,6 +659,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -680,6 +698,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -708,6 +727,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<Value xsi:type="xs:boolean">true</Value>
 				<Value xsi:type="xs:string"/>
@@ -751,6 +771,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<row>
@@ -801,6 +822,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -847,6 +869,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<row>
@@ -892,6 +915,7 @@
 									<valueType/>
 									<lastId xsi:type="xs:decimal">-1</lastId>
 								</Value>
+								<Value xsi:type="xs:string"/>
 							</row>
 							<Value xsi:type="xs:boolean">true</Value>
 							<Value xsi:type="xs:string"/>
@@ -930,6 +954,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -958,6 +983,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -1013,6 +1039,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -1041,6 +1068,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -1069,6 +1097,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -1099,6 +1128,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -1127,6 +1157,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -1173,6 +1204,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -1201,6 +1233,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -1256,6 +1289,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -1284,6 +1318,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -1312,6 +1347,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -1358,6 +1394,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -1386,6 +1423,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -1441,6 +1479,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -1469,6 +1508,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -1497,6 +1537,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -1535,6 +1576,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -1563,6 +1605,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<Value xsi:type="xs:boolean">true</Value>
 				<Value xsi:type="xs:string"/>
@@ -1606,6 +1649,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<row>
@@ -1638,6 +1682,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:boolean">true</Value>
@@ -1667,6 +1712,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -1695,6 +1741,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -1725,6 +1772,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:boolean">true</Value>
@@ -1754,6 +1802,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -1782,6 +1831,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:boolean">true</Value>
@@ -1821,6 +1871,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -1860,6 +1911,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -1903,6 +1955,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:boolean">true</Value>
@@ -1940,6 +1993,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -2606,6 +2660,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -2637,6 +2692,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -2665,6 +2721,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -2703,6 +2760,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<Value xsi:type="xs:boolean">true</Value>
 				<Value xsi:type="xs:string"/>
@@ -2731,6 +2789,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<row>
@@ -2782,6 +2841,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -2812,6 +2872,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:boolean">false</Value>
@@ -2841,6 +2902,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -2869,6 +2931,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -2899,6 +2962,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:boolean">false</Value>
@@ -2928,6 +2992,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -2956,6 +3021,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -2986,6 +3052,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:boolean">true</Value>
@@ -3015,6 +3082,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -3043,6 +3111,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -3073,6 +3142,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:boolean">true</Value>
@@ -3102,6 +3172,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -3130,6 +3201,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -3160,6 +3232,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:boolean">true</Value>
@@ -3189,6 +3262,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -3217,6 +3291,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -3247,6 +3322,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<row>
 							<Value xsi:type="xs:boolean">true</Value>
@@ -3276,6 +3352,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -3304,6 +3381,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:boolean">true</Value>
@@ -3353,6 +3431,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:boolean">true</Value>
@@ -3395,6 +3474,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -3425,6 +3505,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -3457,6 +3538,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -3487,6 +3569,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -3519,6 +3602,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -4237,6 +4321,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -4268,6 +4353,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -4296,6 +4382,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -4334,6 +4421,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -4365,6 +4453,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -4393,6 +4482,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -4431,6 +4521,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<Value xsi:type="xs:boolean">true</Value>
 				<Value xsi:type="xs:string"/>
@@ -4459,6 +4550,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<row>
@@ -4504,6 +4596,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -4548,6 +4641,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<Value xsi:type="xs:boolean">true</Value>
 				<Value xsi:type="xs:string"/>
@@ -4582,6 +4676,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<row>
@@ -4628,6 +4723,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<row>
@@ -4668,6 +4764,7 @@
 								<valueType/>
 								<lastId xsi:type="xs:decimal">-1</lastId>
 							</Value>
+							<Value xsi:type="xs:string"/>
 						</row>
 						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
@@ -4696,6 +4793,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -4734,6 +4832,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<Value xsi:type="xs:boolean">true</Value>
 				<Value xsi:type="xs:string"/>
@@ -4762,6 +4861,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<row>
@@ -4808,6 +4908,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -4846,6 +4947,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -4891,6 +4993,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -4929,6 +5032,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<Value xsi:type="xs:boolean">true</Value>
 				<Value xsi:type="xs:string"/>
@@ -4972,6 +5076,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<Value xsi:type="xs:boolean">true</Value>
 			<Value xsi:type="xs:string"/>
@@ -5035,6 +5140,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий ЮЗД - универсальный передаточный документ</Value>
@@ -5105,533 +5211,552 @@
 //ОсновнойЗапрос ++                                                                            
 Запрос = Новый Запрос;  
 Запрос.Текст = "ВЫБРАТЬ
-|	МИНИМУМ(СчетФактураВыданныйТовары.ПредыдущийСчетФактура) КАК ИсходныйСчетФактура,
-|	СчетФактураВыданныйТовары.Ссылка КАК Ссылка
-|ПОМЕСТИТЬ ИсходныеСЧФ
-|ИЗ
-|	Документ.СчетФактураВыданный.Товары КАК СчетФактураВыданныйТовары
-|ГДЕ
-|	СчетФактураВыданныйТовары.Ссылка В(&amp;Источник)
-|
-|СГРУППИРОВАТЬ ПО
-|	СчетФактураВыданныйТовары.Ссылка
-|;
-|
-|////////////////////////////////////////////////////////////////////////////////
-|ВЫБРАТЬ
-|	СчетФактураВыданный.Ссылка КАК Ссылка,
-|	СчетФактураВыданный.Представление КАК ПредставлениеСЧФ,
-|	СчетФактураВыданный.Номер КАК НомерСЧФ,
-|	СчетФактураВыданный.Дата КАК ДатаСЧФ,
-|	СчетФактураВыданный.ДокументОснование КАК ДокументОснование,
-|	СчетФактураВыданный.ДокументОснование.Дата КАК ДокументОснованиеДата,
-|	СчетФактураВыданный.ДокументОснование.Номер КАК ДокументОснованиеНомер,
-|	СчетФактураВыданный.НомерИсправления КАК НомерИсправления,
-|	СчетФактураВыданный.Корректировочный КАК ЭтоКорректировка,
-|	СчетФактураВыданный.Исправление КАК ЭтоИсправление,
-|	"""" КАК ВидСчетаФактуры,
-|	СчетФактураВыданный.Организация КАК Организация,
-|	СчетФактураВыданный.Организация.Представление КАК ПредставлениеОрганизации,
-|	ВЫБОР
-|		КОГДА СчетФактураВыданный.Организация.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ЮридическоеЛицо)
-|			ТОГДА ""ЮЛ""
-|		КОГДА СчетФактураВыданный.Организация.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ФизическоеЛицо)
-|			ТОГДА ""ФЛ""
-|		ИНАЧЕ ""ЮЛ""
-|	КОНЕЦ КАК ОрганизацияЮрФизЛицо,
-|	СчетФактураВыданный.Организация.ИНН КАК ОрганизацияИНН,
-|	СчетФактураВыданный.Организация.КПП КАК ОрганизацияКПП,
-|	СчетФактураВыданный.Организация.НаименованиеПолное КАК ОрганизацияНаименованиеПолное,
-|	""ФамилияИП"" КАК ОрганизацияФамилияИП,
-|	""ИмяИП"" КАК ОрганизацияИмяИП,
-|	""ОтчествоИП"" КАК ОрганизацияОтчествоИП,
-|	СчетФактураВыданный.Контрагент КАК Контрагент,
-|	ВЫБОР
-|		КОГДА ТИПЗНАЧЕНИЯ(СчетФактураВыданный.ДокументОснование) = ТИП(Документ.РеализацияТоваровУслуг)
-|			ТОГДА СчетФактураВыданный.ДокументОснование
-|		ИНАЧЕ СчетФактураВыданный.ДокументОснование.ДокументОснование
-|	КОНЕЦ КАК Накладная,
-|	ЕСТЬNULL(Источник_События.ИдентификаторЦепочки, """") КАК ИдентификаторЦепочки,
-|	ЕСТЬNULL(ИсходныеСЧФ.ИсходныйСчетФактура, СчетФактураВыданный.СчетФактураОснование) КАК ИсправляемыйСчетФактура,
-|	ЕСТЬNULL(ИсходныеСЧФ.ИсходныйСчетФактура.Дата, СчетФактураВыданный.СчетФактураОснование.Дата) КАК ИсправляемыйСчетФактураДата,
-|	МИНИМУМ(ЕСТЬNULL(СчфОтправленный_События.Идентификатор, """")) КАК ИдентификаторТекущегоСЧФ,
-|	МИНИМУМ(ЕСТЬNULL(ОснованиеСчфОтправленный_События.Идентификатор, """")) КАК ИдентификаторПредыдещейСЧФ,
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.Организация, ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)) КАК ОрганизацияЦепочка,
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.Контрагент, ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка)) КАК КонтрагентЦепочка,
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки, ЗНАЧЕНИЕ(Справочник.Партнеры.ПустаяСсылка)) КАК ТочкаДоставкиЦепочка,
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.НомерЗаказа, """") КАК НомерЗаказа,
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.ДатаПоставки, ДАТАВРЕМЯ(1, 1, 1)) КАК ДатаПоставки,
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.ДатаЗаказа, ДАТАВРЕМЯ(1, 1, 1)) КАК ДатаЗаказа,
-|	DR_ЦепочкиДокументов.Контрагент.ИНН КАК КонтрагентИНН,
-|	DR_ЦепочкиДокументов.Контрагент.КПП КАК КонтрагентКПП,
-|	ВЫБОР
-|		КОГДА DR_ЦепочкиДокументов.Контрагент.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ЮридическоеЛицо)
-|			ТОГДА ""ЮЛ""
-|		КОГДА DR_ЦепочкиДокументов.Контрагент.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ФизическоеЛицо)
-|			ТОГДА ""ФЛ""
-|		ИНАЧЕ ""ЮЛ""
-|	КОНЕЦ КАК КонтрагентЮрФизЛицо,
-|	ВЫБОР
-|		КОГДА DR_ЦепочкиДокументов.ТочкаДоставки.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ЮридическоеЛицо)
-|			ТОГДА ""ЮЛ""
-|		КОГДА DR_ЦепочкиДокументов.ТочкаДоставки.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ФизическоеЛицо)
-|			ТОГДА ""ФЛ""
-|		ИНАЧЕ ""ЮЛ""
-|	КОНЕЦ КАК ТочкаДоставкиЮрФизЛицо,
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.Контрагент.НаименованиеПолное, """") КАК КонтрагентНаименованиеПолное,
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки.НаименованиеПолное, """") КАК ТочкаДоставкиНаименованиеПолное,
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки.ИНН, """") КАК ТочкаДоставкиИНН,
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки.КПП, """") КАК ТочкаДоставкиКПП
-|ПОМЕСТИТЬ Источник
-|ИЗ
-|	Документ.СчетФактураВыданный КАК СчетФактураВыданный
-|		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК Источник_События
-|		ПО СчетФактураВыданный.Ссылка = Источник_События.Документ
-|			И (Источник_События.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.СчетФактура_Исходящий))
-|		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_ЦепочкиДокументов КАК DR_ЦепочкиДокументов
-|		ПО Источник_События.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки
-|		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК СчфОтправленный_События
-|		ПО СчетФактураВыданный.Ссылка = СчфОтправленный_События.Документ
-|			И (СчфОтправленный_События.ВидДокумента В (ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPR_01_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_KORSCHFDOPPR_01), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRMARK_01_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRPROS_01_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_KORSCHFDOPPR_01_Испр), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPR_01_Испр_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRMARK_01_Испр_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRPROS_01_Испр_Исходящий)))
-|		ЛЕВОЕ СОЕДИНЕНИЕ ИсходныеСЧФ КАК ИсходныеСЧФ
-|			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК ОснованиеСчфОтправленный_События
-|			ПО ИсходныеСЧФ.ИсходныйСчетФактура = ОснованиеСчфОтправленный_События.Документ
-|				И (ОснованиеСчфОтправленный_События.ВидДокумента В (ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPR_01_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_KORSCHFDOPPR_01), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRMARK_01_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRPROS_01_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_KORSCHFDOPPR_01_Испр), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPR_01_Испр_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRMARK_01_Испр_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRPROS_01_Испр_Исходящий)))
-|		ПО СчетФактураВыданный.Ссылка = ИсходныеСЧФ.Ссылка
-|ГДЕ
-|	СчетФактураВыданный.Ссылка В(&amp;Источник)
-|
-|СГРУППИРОВАТЬ ПО
-|	СчетФактураВыданный.Ссылка,
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.Контрагент, ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка)),
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки, ЗНАЧЕНИЕ(Справочник.Партнеры.ПустаяСсылка)),
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.Организация, ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)),
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.НомерЗаказа, """"),
-|	DR_ЦепочкиДокументов.Контрагент.КПП,
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки.НаименованиеПолное, """"),
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.ДатаПоставки, ДАТАВРЕМЯ(1, 1, 1)),
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.ДатаЗаказа, ДАТАВРЕМЯ(1, 1, 1)),
-|	DR_ЦепочкиДокументов.Контрагент.ИНН,
-|	ВЫБОР
-|		КОГДА DR_ЦепочкиДокументов.ТочкаДоставки.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ЮридическоеЛицо)
-|			ТОГДА ""ЮЛ""
-|		КОГДА DR_ЦепочкиДокументов.ТочкаДоставки.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ФизическоеЛицо)
-|			ТОГДА ""ФЛ""
-|		ИНАЧЕ ""ЮЛ""
-|	КОНЕЦ,
-|	ВЫБОР
-|		КОГДА DR_ЦепочкиДокументов.Контрагент.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ЮридическоеЛицо)
-|			ТОГДА ""ЮЛ""
-|		КОГДА DR_ЦепочкиДокументов.Контрагент.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ФизическоеЛицо)
-|			ТОГДА ""ФЛ""
-|		ИНАЧЕ ""ЮЛ""
-|	КОНЕЦ,
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.Контрагент.НаименованиеПолное, """"),
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки.ИНН, """"),
-|	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки.КПП, """"),
-|	СчетФактураВыданный.Номер,
-|	СчетФактураВыданный.Дата,
-|	СчетФактураВыданный.ДокументОснование,
-|	СчетФактураВыданный.ДокументОснование.Дата,
-|	СчетФактураВыданный.ДокументОснование.Номер,
-|	СчетФактураВыданный.НомерИсправления,
-|	СчетФактураВыданный.Корректировочный,
-|	СчетФактураВыданный.Исправление,
-|	СчетФактураВыданный.Организация,
-|	СчетФактураВыданный.Организация.Представление,
-|	ВЫБОР
-|		КОГДА СчетФактураВыданный.Организация.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ЮридическоеЛицо)
-|			ТОГДА ""ЮЛ""
-|		КОГДА СчетФактураВыданный.Организация.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ФизическоеЛицо)
-|			ТОГДА ""ФЛ""
-|		ИНАЧЕ ""ЮЛ""
-|	КОНЕЦ,
-|	СчетФактураВыданный.Организация.ИНН,
-|	СчетФактураВыданный.Организация.КПП,
-|	СчетФактураВыданный.Организация.НаименованиеПолное,
-|	СчетФактураВыданный.Контрагент,
-|	ВЫБОР
-|		КОГДА ТИПЗНАЧЕНИЯ(СчетФактураВыданный.ДокументОснование) = ТИП(Документ.РеализацияТоваровУслуг)
-|			ТОГДА СчетФактураВыданный.ДокументОснование
-|		ИНАЧЕ СчетФактураВыданный.ДокументОснование.ДокументОснование
-|	КОНЕЦ,
-|	СчетФактураВыданный.Представление,
-|	ЕСТЬNULL(Источник_События.ИдентификаторЦепочки, """"),
-|	ЕСТЬNULL(ИсходныеСЧФ.ИсходныйСчетФактура, СчетФактураВыданный.СчетФактураОснование),
-|	ЕСТЬNULL(ИсходныеСЧФ.ИсходныйСчетФактура.Дата, СчетФактураВыданный.СчетФактураОснование.Дата)
-|;
-|
-|////////////////////////////////////////////////////////////////////////////////
-|ВЫБРАТЬ
-|	Источник.Ссылка КАК Ссылка,
-|	Источник.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
-|	Источник.ПредставлениеСЧФ КАК ПредставлениеСЧФ,
-|	Источник.НомерСЧФ КАК НомерСЧФ,
-|	Источник.ДатаСЧФ КАК ДатаСЧФ,
-|	Источник.ДокументОснование КАК ДокументОснование,
-|	Источник.ДокументОснованиеДата КАК ДокументОснованиеДата,
-|	Источник.ДокументОснованиеНомер КАК ДокументОснованиеНомер,
-|	Источник.НомерИсправления КАК НомерИсправления,
-|	Источник.ЭтоКорректировка КАК ЭтоКорректировка,
-|	Источник.ЭтоИсправление КАК ЭтоИсправление,
-|	Источник.Организация КАК Организация,
-|	Источник.ПредставлениеОрганизации КАК ПредставлениеОрганизации,
-|	Источник.ОрганизацияЮрФизЛицо КАК ОрганизацияЮрФизЛицо,
-|	Источник.ОрганизацияИНН КАК ОрганизацияИНН,
-|	Источник.ОрганизацияКПП КАК ОрганизацияКПП,
-|	Источник.ОрганизацияНаименованиеПолное КАК ОрганизацияНаименованиеПолное,
-|	Источник.ОрганизацияФамилияИП КАК ОрганизацияФамилияИП,
-|	Источник.ОрганизацияИмяИП КАК ОрганизацияИмяИП,
-|	Источник.ОрганизацияОтчествоИП КАК ОрганизацияОтчествоИП,
-|	Источник.Контрагент КАК Контрагент,
-|	Источник.ИсправляемыйСчетФактура КАК ИсправляемыйСчетФактура,
-|	Источник.ИсправляемыйСчетФактураДата КАК ИсправляемыйСчетФактураДата,
-|	Источник.ИдентификаторПредыдещейСЧФ КАК ИдентификаторПредыдещейСЧФ,
-|	Источник.ИдентификаторТекущегоСЧФ КАК ИдентификаторТекущегоСЧФ,
-|	Источник.Накладная.ЗаказКлиента КАК Заказ,
-|	Источник.Накладная.ЗаказКлиента КАК ДокументЗаказа,
-|	Источник.ДатаЗаказа КАК ЗаказДата,
-|	Источник.НомерЗаказа КАК ЗаказНомер,
-|	RECADV_События.Документ КАК ЭКОМ_RECADV,
-|	Источник.ВидСчетаФактуры КАК ВидСчетаФактуры,
-|	ДанныеОрганизации.GLN КАК ОрганизацияGLN,
-|	ДанныеОрганизации.eXiteАдр_Город КАК ОрганизацияГород,
-|	ДанныеОрганизации.eXiteАдр_Индекс КАК ОрганизацияИндекс,
-|	ДанныеОрганизации.eXiteАдр_Дом КАК ОрганизацияДом,
-|	ДанныеОрганизации.eXiteАдр_КодРегиона КАК ОрганизацияКодРегиона,
-|	ДанныеОрганизации.eXiteАдр_Улица КАК ОрганизацияУлица,
-|	ДанныеОрганизации.eXiteАдр_Район КАК ОрганизацияРайон,
-|	ДанныеОрганизации.eXiteАдр_НаселПункт КАК ОрганизацияНаселенныйПункт,
-|	ДанныеОрганизации.eXiteАдр_Корпус КАК ОрганизацияКорпус,
-|	ДанныеОрганизации.eXiteАдр_Кварт КАК ОрганизацияКвартира,
-|	ДанныеОрганизации.Ид_ОЭД КАК ОрганизацияИдОЭД,
-|	ДанныеОрганизации.Партнер.Идентификатор КАК ОрганизацияОператорИд,
-|	ДанныеОрганизации.Партнер.ИНН КАК ОрганизацияОператорИНН,
-|	ДанныеОрганизации.Партнер.КПП КАК ОрганизацияОператорКПП,
-|	ДанныеОрганизации.Партнер.Наименование КАК ОрганизацияОператорНаименование,
-|	ДанныеОрганизации.Объект.СвидетельствоСерияНомер КАК ОрганизацияСвидетельствоСерияНомер,
-|	ДанныеОрганизации.Объект.СвидетельствоДатаВыдачи КАК ОрганизацияСвидетельствоДатаВыдачи,
-|	ДанныеОрганизации.Объект.ОГРН КАК ОрганизацияОГРН,
-|	ДанныеОрганизации.Сертификат.ДолжностьПодписанта КАК ДолжностьПодписанта,
-|	ДанныеОрганизации.Сертификат.ФамилияПодписанта КАК ФамилияПодписанта,
-|	ДанныеОрганизации.Сертификат.ИмяПодписанта КАК ИмяПодписанта,
-|	ДанныеОрганизации.Сертификат.ОтчествоПодписанта КАК ОтчествоПодписанта,
-|	ДанныеОрганизации.Сертификат.ОбластьПолномочий КАК СертификатОбластьПолномочий,
-|	ДанныеОрганизации.Сертификат.ОснованиеПолномочий КАК СертификатОснованиеПолномочий,
-|	ДанныеОрганизации.Сертификат.СтатусПодписанта КАК СертификатСтатусПодписанта,
-|	Источник.КонтрагентЦепочка КАК КонтрагентИзЗаказа,
-|	ДанныеКонтрагента.Объект.Представление КАК ПредставлениеКонтрагента,
-|	Источник.КонтрагентНаименованиеПолное КАК КонтрагентНаименованиеПолное,
-|	Источник.КонтрагентЮрФизЛицо КАК КонтрагентЮрФизЛицо,
-|	Источник.КонтрагентИНН КАК КонтрагентИНН,
-|	Источник.КонтрагентКПП КАК КонтрагентКПП,
-|	ДанныеКонтрагента.GLN КАК КонтрагентGLN,
-|	ДанныеКонтрагента.Контрагент_ФорматЭСФ КАК ФорматУПД,
-|	ДанныеКонтрагента.Ид_ОЭД КАК КонтрагентИдОЭД,
-|	ДанныеКонтрагента.Партнер.Идентификатор КАК КонтрагентОператорИд,
-|	ДанныеКонтрагента.Партнер.ИНН КАК КонтрагентОператорИНН,
-|	ДанныеКонтрагента.Партнер.КПП КАК КонтрагентОператорКПП,
-|	ДанныеКонтрагента.Партнер.Наименование КАК КонтрагентОператорНаименование,
-|	ДанныеКонтрагента.eXiteАдр_Город КАК КонтрагентГород,
-|	ДанныеКонтрагента.eXiteАдр_Дом КАК КонтрагентДом,
-|	ДанныеКонтрагента.eXiteАдр_Индекс КАК КонтрагентИндекс,
-|	ДанныеКонтрагента.eXiteАдр_КодРегиона КАК КонтрагентКодРегиона,
-|	ДанныеКонтрагента.eXiteАдр_Улица КАК КонтрагентУлица,
-|	ДанныеКонтрагента.eXiteАдр_Район КАК КонтрагентРайон,
-|	ДанныеКонтрагента.eXiteАдр_НаселПункт КАК КонтрагентНаселенныйПункт,
-|	ДанныеКонтрагента.eXiteАдр_Корпус КАК КонтрагентКорпус,
-|	ДанныеКонтрагента.eXiteАдр_Кварт КАК КонтрагентКвартира,
-|	ДанныеКонтрагента.Контрагент_ЭСФБезИнфПоля КАК Контрагент_ЭСФБезИнфПоля,
-|	Источник.ТочкаДоставкиЦепочка КАК ТочкаДоставки,
-|	ДанныеТочкиДоставки.Объект.Представление КАК ПредставлениеТочкиДоставки,
-|	ДанныеТочкиДоставки.Наименование КАК ТочкаДоставкиНаименованиеИзРегистра,
-|	Источник.ТочкаДоставкиНаименованиеПолное КАК ТочкаДоставкиНаименованиеПолное,
-|	Источник.ТочкаДоставкиЮрФизЛицо КАК ТочкаДоставкиЮрФизЛицо,
-|	Источник.ТочкаДоставкиИНН КАК ТочкаДоставкиИНН,
-|	Источник.ТочкаДоставкиКПП КАК ТочкаДоставкиКПП,
-|	ДанныеТочкиДоставки.ИНН КАК ТочкаДоставкиИННИзРегистра,
-|	ДанныеТочкиДоставки.КПП КАК ТочкаДоставкиКППИзРегистра,
-|	ДанныеТочкиДоставки.Адр_Город КАК ТочкаДоставкиГород,
-|	ДанныеТочкиДоставки.Адр_Дом КАК ТочкаДоставкиДом,
-|	ДанныеТочкиДоставки.Адр_Индекс КАК ТочкаДоставкиИндекс,
-|	ДанныеТочкиДоставки.Адр_КодРегиона КАК ТочкаДоставкиКодРегиона,
-|	ДанныеТочкиДоставки.Адр_Улица КАК ТочкаДоставкиУлица,
-|	ДанныеТочкиДоставки.Адр_Район КАК ТочкаДоставкиРайон,
-|	ДанныеТочкиДоставки.Адр_НаселПункт КАК ТочкаДоставкиНаселенныйПункт,
-|	ДанныеТочкиДоставки.Адр_Корпус КАК ТочкаДоставкиКорпус,
-|	ДанныеТочкиДоставки.Адр_Кварт КАК ТочкаДоставкиКвартира,
-|	ДанныеТочкиДоставки.GLN КАК ТочкаДоставкиGLN,
-|	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).НомерТранзакции КАК RECADV_EDIINTERCHANGEID,
-|	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).НомерДоговораНаПоставку КАК RECADV_CAMPAIGNNUMBER,
-|	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).ФайлНомер КАК RECADV_Номер,
-|	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).ФайлДата КАК RECADV_Дата,
-|	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).ORDERVID КАК RECADV_ORDERVID,
-|	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).RECADVVID КАК RECADV_RECADVVID,
-|	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).ДатаПриемаТовара КАК ДатаПриемаТовара,
-|	ЛОЖЬ КАК ЭтоМаркируемыйЮЗД,
-|	ЛОЖЬ КАК ЭтоПрослеживаемыйЮЗД,
-|	РеализацияТЧ.СуммаСНДС КАК СуммаСНДС,
-|	РеализацияТЧ.СуммаНДС КАК СуммаНДС,
-|	РеализацияТЧ.Сумма КАК СуммаДокументаРеализации,
-|	ОрганизацииКонтактнаяИнформация.Значение КАК ИзБазыОрганизацияЗначениеАдреса,
-|	ОрганизацииКонтактнаяИнформация.Тип КАК ИзБазыОрганизацияТипАдреса,
-|	ПартнерыКонтактнаяИнформация.Значение КАК ИзБазыТочкаДоставкиЗначениеАдреса,
-|	ПартнерыКонтактнаяИнформация.Тип КАК ИзБазыТочкаДоставкиТипАдреса,
-|	КонтрагентыКонтактнаяИнформация.Значение КАК ИзБазыКонтрагентЗначениеАдреса,
-|	КонтрагентыКонтактнаяИнформация.Тип КАК ИзБазыКонтрагентТипАдреса
-|ПОМЕСТИТЬ ВТОсновная
-|ИЗ
-|	Источник КАК Источник
-|		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК Накладная_События
-|		ПО Источник.Накладная = Накладная_События.Документ
-|			И (Накладная_События.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.Накладная_Исходящая))
-|		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК RECADV_События
-|		ПО Накладная_События.Идентификатор = RECADV_События.ИдентификаторОснования
-|			И (RECADV_События.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.RECADV_Входящий))
-|		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_GLN КАК ДанныеКонтрагента
-|		ПО Источник.КонтрагентЦепочка = ДанныеКонтрагента.Объект
-|		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_GLN КАК ДанныеОрганизации
-|		ПО Источник.ОрганизацияЦепочка = ДанныеОрганизации.Объект
-|		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_ТочкиДоставки КАК ДанныеТочкиДоставки
-|		ПО Источник.ТочкаДоставкиЦепочка = ДанныеТочкиДоставки.Объект
-|		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Организации.КонтактнаяИнформация КАК ОрганизацииКонтактнаяИнформация
-|		ПО Источник.ОрганизацияЦепочка = ОрганизацииКонтактнаяИнформация.Ссылка
-|			И (ОрганизацииКонтактнаяИнформация.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ЮрАдресОрганизации))
-|			И (ОрганизацииКонтактнаяИнформация.ВидДляСписка = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ЮрАдресОрганизации))
-|		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Контрагенты.КонтактнаяИнформация КАК КонтрагентыКонтактнаяИнформация
-|		ПО Источник.КонтрагентЦепочка = КонтрагентыКонтактнаяИнформация.Ссылка
-|			И (КонтрагентыКонтактнаяИнформация.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ЮрАдресКонтрагента))
-|			И (КонтрагентыКонтактнаяИнформация.ВидДляСписка = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ЮрАдресКонтрагента))
-|		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Партнеры.КонтактнаяИнформация КАК ПартнерыКонтактнаяИнформация
-|		ПО Источник.ТочкаДоставкиЦепочка = ПартнерыКонтактнаяИнформация.Ссылка
-|			И (ПартнерыКонтактнаяИнформация.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.АдресПартнера))
-|			И (ПартнерыКонтактнаяИнформация.ВидДляСписка = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.АдресПартнера))
-|		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-|			СчетФактураВыданный.Ссылка КАК Ссылка,
-|			ВЫБОР
-|				КОГДА РеализацияТоваровУслугТовары.Ссылка.ЦенаВключаетНДС
-|					ТОГДА СУММА(РеализацияТоваровУслугТовары.Сумма) - СУММА(РеализацияТоваровУслугТовары.СуммаНДС)
-|				ИНАЧЕ СУММА(РеализацияТоваровУслугТовары.Сумма)
-|			КОНЕЦ КАК Сумма,
-|			СУММА(РеализацияТоваровУслугТовары.СуммаНДС) КАК СуммаНДС,
-|			СУММА(РеализацияТоваровУслугТовары.СуммаСНДС) КАК СуммаСНДС
-|		ИЗ
-|			Документ.СчетФактураВыданный КАК СчетФактураВыданный
-|				ЛЕВОЕ СОЕДИНЕНИЕ Документ.РеализацияТоваровУслуг.Товары КАК РеализацияТоваровУслугТовары
-|				ПО ((ВЫРАЗИТЬ(СчетФактураВыданный.ДокументОснование КАК Документ.РеализацияТоваровУслуг)) = РеализацияТоваровУслугТовары.Ссылка)
-|		ГДЕ
-|			СчетФактураВыданный.Ссылка В(&amp;Источник)
-|		
-|		СГРУППИРОВАТЬ ПО
-|			СчетФактураВыданный.Ссылка,
-|			РеализацияТоваровУслугТовары.Ссылка.ЦенаВключаетНДС) КАК РеализацияТЧ
-|		ПО Источник.Ссылка = РеализацияТЧ.Ссылка
-|;
-|
-|////////////////////////////////////////////////////////////////////////////////
-|ВЫБРАТЬ
-|	КорректировкаРеализации.Ссылка КАК КорректировкаРеализации,
-|	СУММА(ВЫБОР
-|			КОГДА КорректировкаРеализацииРасхождения.СуммаСНДС &gt; 0
-|				ТОГДА КорректировкаРеализацииРасхождения.СуммаСНДС - КорректировкаРеализацииРасхождения.СуммаНДС
-|			ИНАЧЕ 0
-|		КОНЕЦ) КАК ВсегоУвелСтТовБезНДСВсего,
-|	СУММА(ВЫБОР
-|			КОГДА КорректировкаРеализацииРасхождения.СуммаСНДС &gt; 0
-|				ТОГДА ВЫБОР
-|						КОГДА КорректировкаРеализации.ЦенаВключаетНДС
-|							ТОГДА КорректировкаРеализацииРасхождения.СуммаСНДС
-|						ИНАЧЕ КорректировкаРеализацииРасхождения.Сумма + КорректировкаРеализацииРасхождения.СуммаНДС
-|					КОНЕЦ
-|			ИНАЧЕ 0
-|		КОНЕЦ) КАК ВсегоУвелСтТовУчНалВсего,
-|	СУММА(ВЫБОР
-|			КОГДА КорректировкаРеализацииРасхождения.СуммаСНДС &gt; 0
-|				ТОГДА КорректировкаРеализацииРасхождения.СуммаНДС
-|			ИНАЧЕ 0
-|		КОНЕЦ) КАК ВсегоУвелСумНДС,
-|	СУММА(ВЫБОР
-|			КОГДА КорректировкаРеализацииРасхождения.СуммаСНДС &lt; 0
-|				ТОГДА КорректировкаРеализацииРасхождения.СуммаСНДС - КорректировкаРеализацииРасхождения.СуммаНДС
-|			ИНАЧЕ 0
-|		КОНЕЦ) КАК ВсегоУмСтТовБезНДСВсего,
-|	СУММА(ВЫБОР
-|			КОГДА КорректировкаРеализацииРасхождения.СуммаСНДС &lt; 0
-|				ТОГДА ВЫБОР
-|						КОГДА КорректировкаРеализации.ЦенаВключаетНДС
-|							ТОГДА КорректировкаРеализацииРасхождения.СуммаСНДС
-|						ИНАЧЕ КорректировкаРеализацииРасхождения.Сумма + КорректировкаРеализацииРасхождения.СуммаНДС
-|					КОНЕЦ
-|			ИНАЧЕ 0
-|		КОНЕЦ) КАК ВсегоУмСтТовУчНалВсего,
-|	СУММА(ВЫБОР
-|			КОГДА КорректировкаРеализацииРасхождения.СуммаСНДС &lt; 0
-|				ТОГДА КорректировкаРеализацииРасхождения.СуммаНДС
-|			ИНАЧЕ 0
-|		КОНЕЦ) КАК ВсегоУмСумНДС
-|ПОМЕСТИТЬ ВТКорректировка
-|ИЗ
-|	ВТОсновная КАК ВТОсновная
-|		ЛЕВОЕ СОЕДИНЕНИЕ Документ.КорректировкаРеализации КАК КорректировкаРеализации
-|			ЛЕВОЕ СОЕДИНЕНИЕ Документ.КорректировкаРеализации.Расхождения КАК КорректировкаРеализацииРасхождения
-|			ПО КорректировкаРеализации.Ссылка = КорректировкаРеализацииРасхождения.Ссылка
-|		ПО ((ВЫРАЗИТЬ(ВТОсновная.ДокументОснование КАК Документ.КорректировкаРеализации)) = КорректировкаРеализации.Ссылка)
-|ГДЕ
-|	ТИПЗНАЧЕНИЯ(ВТОсновная.ДокументОснование) = ТИП(Документ.КорректировкаРеализации)
-|
-|СГРУППИРОВАТЬ ПО
-|	КорректировкаРеализации.Ссылка
-|;
-|
-|////////////////////////////////////////////////////////////////////////////////
-|ВЫБРАТЬ
-|	ВТОсновная.Ссылка КАК Ссылка,
-|	ВТОсновная.ПредставлениеСЧФ КАК ПредставлениеСЧФ,
-|	ВТОсновная.НомерСЧФ КАК НомерСЧФ,
-|	ВТОсновная.ДатаСЧФ КАК ДатаСЧФ,
-|	ВТОсновная.СуммаДокументаРеализации КАК СуммаДокументаРеализации,
-|	ЕСТЬNULL(ВТОсновная.СуммаНДС, 0) КАК СуммаНДС,
-|	ВТОсновная.ДокументОснование КАК ДокументОснование,
-|	ВТОсновная.ДокументОснованиеДата КАК ДокументОснованиеДата,
-|	ВТОсновная.ДокументОснованиеНомер КАК ДокументОснованиеНомер,
-|	ВТОсновная.НомерИсправления КАК НомерИсправления,
-|	ВТОсновная.Заказ КАК Заказ,
-|	ВТОсновная.ДокументЗаказа КАК ДокументЗаказа,
-|	ВТОсновная.ЗаказДата КАК ЗаказДата,
-|	ВТОсновная.ЗаказНомер КАК ЗаказНомер,
-|	ВТОсновная.ЭтоКорректировка КАК ЭтоКорректировка,
-|	ВТОсновная.ЭтоИсправление КАК ЭтоИсправление,
-|	ВТОсновная.ИсправляемыйСчетФактура КАК ИсправляемыйСчетФактура,
-|	ВТОсновная.ИдентификаторПредыдещейСЧФ КАК ИдентификаторПредыдещейСЧФ,
-|	ВТОсновная.ИдентификаторТекущегоСЧФ КАК ИдентификаторТекущегоСЧФ,
-|	ВТОсновная.ЭКОМ_RECADV КАК ЭКОМ_RECADV,
-|	ВТОсновная.ВидСчетаФактуры КАК ВидСчетаФактуры,
-|	ВТОсновная.Организация КАК Организация,
-|	ВТОсновная.ПредставлениеОрганизации КАК ПредставлениеОрганизации,
-|	ВТОсновная.ОрганизацияЮрФизЛицо КАК ОрганизацияЮрФизЛицо,
-|	ВТОсновная.ОрганизацияИНН КАК ОрганизацияИНН,
-|	ВТОсновная.ОрганизацияКПП КАК ОрганизацияКПП,
-|	ВТОсновная.ОрганизацияНаименованиеПолное КАК ОрганизацияНаименованиеПолное,
-|	ВТОсновная.ОрганизацияФамилияИП КАК ОрганизацияФамилияИП,
-|	ВТОсновная.ОрганизацияИмяИП КАК ОрганизацияИмяИП,
-|	ВТОсновная.ОрганизацияОтчествоИП КАК ОрганизацияОтчествоИП,
-|	ВТОсновная.ОрганизацияGLN КАК ОрганизацияGLN,
-|	ВТОсновная.ОрганизацияГород КАК ОрганизацияГород,
-|	ВТОсновная.ОрганизацияИндекс КАК ОрганизацияИндекс,
-|	ВТОсновная.ОрганизацияДом КАК ОрганизацияДом,
-|	ВТОсновная.ОрганизацияКодРегиона КАК ОрганизацияКодРегиона,
-|	ВТОсновная.ОрганизацияУлица КАК ОрганизацияУлица,
-|	ВТОсновная.ОрганизацияРайон КАК ОрганизацияРайон,
-|	ВТОсновная.ОрганизацияНаселенныйПункт КАК ОрганизацияНаселенныйПункт,
-|	ВТОсновная.ОрганизацияКорпус КАК ОрганизацияКорпус,
-|	ВТОсновная.ОрганизацияКвартира КАК ОрганизацияКвартира,
-|	ВТОсновная.ОрганизацияИдОЭД КАК ОрганизацияИдОЭД,
-|	ВТОсновная.ОрганизацияОператорИд КАК ОрганизацияОператорИд,
-|	ВТОсновная.ОрганизацияОператорИНН КАК ОрганизацияОператорИНН,
-|	ВТОсновная.ОрганизацияОператорКПП КАК ОрганизацияОператорКПП,
-|	ВТОсновная.ОрганизацияОператорНаименование КАК ОрганизацияОператорНаименование,
-|	ВТОсновная.ОрганизацияОГРН КАК ОрганизацияОГРН,
-|	ВТОсновная.ОрганизацияСвидетельствоСерияНомер КАК ОрганизацияСвидетельствоСерияНомер,
-|	ВТОсновная.ОрганизацияСвидетельствоДатаВыдачи КАК ОрганизацияСвидетельствоДатаВыдачи,
-|	ВТОсновная.ДолжностьПодписанта КАК ДолжностьПодписанта,
-|	ВТОсновная.ФамилияПодписанта КАК ФамилияПодписанта,
-|	ВТОсновная.ИмяПодписанта КАК ИмяПодписанта,
-|	ВТОсновная.ОтчествоПодписанта КАК ОтчествоПодписанта,
-|	ВТОсновная.СертификатОбластьПолномочий КАК СертификатОбластьПолномочий,
-|	ВТОсновная.СертификатОснованиеПолномочий КАК СертификатОснованиеПолномочий,
-|	ВТОсновная.СертификатСтатусПодписанта КАК СертификатСтатусПодписанта,
-|	ВТОсновная.Контрагент КАК Контрагент,
-|	ВТОсновная.КонтрагентИзЗаказа КАК КонтрагентИзЗаказа,
-|	ВТОсновная.ПредставлениеКонтрагента КАК ПредставлениеКонтрагента,
-|	ВТОсновная.КонтрагентНаименованиеПолное КАК КонтрагентНаименованиеПолное,
-|	ВТОсновная.КонтрагентЮрФизЛицо КАК КонтрагентЮрФизЛицо,
-|	ВТОсновная.КонтрагентИНН КАК КонтрагентИНН,
-|	ВТОсновная.КонтрагентКПП КАК КонтрагентКПП,
-|	ВТОсновная.КонтрагентGLN КАК КонтрагентGLN,
-|	ВТОсновная.ФорматУПД КАК ФорматУПД,
-|	ВТОсновная.КонтрагентИдОЭД КАК КонтрагентИдОЭД,
-|	ВТОсновная.КонтрагентОператорИд КАК КонтрагентОператорИд,
-|	ВТОсновная.КонтрагентОператорИНН КАК КонтрагентОператорИНН,
-|	ВТОсновная.КонтрагентОператорКПП КАК КонтрагентОператорКПП,
-|	ВТОсновная.КонтрагентОператорНаименование КАК КонтрагентОператорНаименование,
-|	ВТОсновная.КонтрагентГород КАК КонтрагентГород,
-|	ВТОсновная.КонтрагентДом КАК КонтрагентДом,
-|	ВТОсновная.КонтрагентИндекс КАК КонтрагентИндекс,
-|	ВТОсновная.КонтрагентКодРегиона КАК КонтрагентКодРегиона,
-|	ВТОсновная.КонтрагентУлица КАК КонтрагентУлица,
-|	ВТОсновная.КонтрагентРайон КАК КонтрагентРайон,
-|	ВТОсновная.КонтрагентНаселенныйПункт КАК КонтрагентНаселенныйПункт,
-|	ВТОсновная.КонтрагентКорпус КАК КонтрагентКорпус,
-|	ВТОсновная.КонтрагентКвартира КАК КонтрагентКвартира,
-|	ВТОсновная.ТочкаДоставки КАК ТочкаДоставки,
-|	ВТОсновная.ПредставлениеТочкиДоставки КАК ПредставлениеТочкиДоставки,
-|	ВТОсновная.ТочкаДоставкиНаименованиеИзРегистра КАК ТочкаДоставкиНаименованиеИзРегистра,
-|	ВТОсновная.ТочкаДоставкиНаименованиеПолное КАК ТочкаДоставкиНаименованиеПолное,
-|	ВТОсновная.ТочкаДоставкиЮрФизЛицо КАК ТочкаДоставкиЮрФизЛицо,
-|	ВТОсновная.ТочкаДоставкиИНН КАК ТочкаДоставкиИНН,
-|	ВТОсновная.ТочкаДоставкиКПП КАК ТочкаДоставкиКПП,
-|	ВТОсновная.ТочкаДоставкиИННИзРегистра КАК ТочкаДоставкиИННИзРегистра,
-|	ВТОсновная.ТочкаДоставкиКППИзРегистра КАК ТочкаДоставкиКППИзРегистра,
-|	ВТОсновная.ТочкаДоставкиГород КАК ТочкаДоставкиГород,
-|	ВТОсновная.ТочкаДоставкиДом КАК ТочкаДоставкиДом,
-|	ВТОсновная.ТочкаДоставкиИндекс КАК ТочкаДоставкиИндекс,
-|	ВТОсновная.ТочкаДоставкиКодРегиона КАК ТочкаДоставкиКодРегиона,
-|	ВТОсновная.ТочкаДоставкиУлица КАК ТочкаДоставкиУлица,
-|	ВТОсновная.ТочкаДоставкиРайон КАК ТочкаДоставкиРайон,
-|	ВТОсновная.ТочкаДоставкиНаселенныйПункт КАК ТочкаДоставкиНаселенныйПункт,
-|	ВТОсновная.ТочкаДоставкиКорпус КАК ТочкаДоставкиКорпус,
-|	ВТОсновная.ТочкаДоставкиКвартира КАК ТочкаДоставкиКвартира,
-|	ВТОсновная.ТочкаДоставкиGLN КАК ТочкаДоставкиGLN,
-|	ВТОсновная.RECADV_EDIINTERCHANGEID КАК RECADV_EDIINTERCHANGEID,
-|	ВТОсновная.RECADV_CAMPAIGNNUMBER КАК RECADV_CAMPAIGNNUMBER,
-|	ВТОсновная.RECADV_Номер КАК RECADV_Номер,
-|	ВТОсновная.RECADV_Дата КАК RECADV_Дата,
-|	ВТОсновная.RECADV_ORDERVID КАК RECADV_ORDERVID,
-|	ВТОсновная.RECADV_RECADVVID КАК RECADV_RECADVVID,
-|	ВТОсновная.ДатаПриемаТовара КАК ДатаПриемаТовара,
-|	ВТКорректировка.КорректировкаРеализации КАК КорректировкаРеализации,
-|	ЕСТЬNULL(ВТКорректировка.ВсегоУвелСтТовБезНДСВсего, 0) КАК ВсегоУвелСтТовБезНДСВсего,
-|	ЕСТЬNULL(ВТКорректировка.ВсегоУвелСтТовУчНалВсего, 0) КАК ВсегоУвелСтТовУчНалВсего,
-|	ЕСТЬNULL(ВТКорректировка.ВсегоУвелСумНДС, 0) КАК ВсегоУвелСумНДС,
-|	ЕСТЬNULL(ВТКорректировка.ВсегоУмСтТовБезНДСВсего, 0) КАК ВсегоУмСтТовБезНДСВсего,
-|	ЕСТЬNULL(ВТКорректировка.ВсегоУмСтТовУчНалВсего, 0) КАК ВсегоУмСтТовУчНалВсего,
-|	ЕСТЬNULL(ВТКорректировка.ВсегоУмСумНДС, 0) КАК ВсегоУмСумНДС,
-|	ВТОсновная.ЭтоМаркируемыйЮЗД КАК ЭтоМаркируемыйЮЗД,
-|	ВТОсновная.ЭтоПрослеживаемыйЮЗД КАК ЭтоПрослеживаемыйЮЗД,
-|	ВТОсновная.Контрагент_ЭСФБезИнфПоля КАК Контрагент_ЭСФБезИнфПоля,
-|	ЕСТЬNULL(ЭКОМ_ИнфоПоля.Ссылка, НЕОПРЕДЕЛЕНО) КАК ЭКОМ_ИнфоПоля,
-|	ЭКОМ_ИнфоПоля.НеИспользоватьГрузОт_ОнЖе КАК НеИспользоватьГрузОт_ОнЖе,
-|	ЭКОМ_ИнфоПоля.ОбязательноПолеОснПер КАК ОбязательноПолеОснПер,
-|	ЭКОМ_ИнфоПоля.ОбязательноТНтипКомпетенции КАК ОбязательноТНтипКомпетенции,
-|	ЭКОМ_ИнфоПоля.ИспользоватьПокупателяКПП_из_ГрузПолуч КАК ИспользоватьПокупателяКПП_из_ГрузПолуч,
-|	ЭКОМ_ИнфоПоля.ИспользоватьПокупателяИНН_из_ГрузПолуч КАК ИспользоватьПокупателяИНН_из_ГрузПолуч,
-|	ЕСТЬNULL(ВТОсновная.СуммаСНДС, 0) КАК СуммаСНДС,
-|	ЕСТЬNULL(ЭКОМ_ИспользоватьАдресGLN.ЗначениеДополнительнойКонстанты, ЛОЖЬ) КАК ЭКОМ_ИспользоватьАдресGLN,
-|	ЕСТЬNULL(ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN.ЗначениеДополнительнойКонстанты, ЛОЖЬ) КАК ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN,
-|	ВТОсновная.ИзБазыОрганизацияЗначениеАдреса КАК ИзБазыОрганизацияЗначениеАдреса,
-|	ВТОсновная.ИзБазыОрганизацияТипАдреса КАК ИзБазыОрганизацияТипАдреса,
-|	ВТОсновная.ИзБазыТочкаДоставкиЗначениеАдреса КАК ИзБазыТочкаДоставкиЗначениеАдреса,
-|	ВТОсновная.ИзБазыТочкаДоставкиТипАдреса КАК ИзБазыТочкаДоставкиТипАдреса,
-|	ВТОсновная.ИзБазыКонтрагентЗначениеАдреса КАК ИзБазыКонтрагентЗначениеАдреса,
-|	ВТОсновная.ИзБазыКонтрагентТипАдреса КАК ИзБазыКонтрагентТипАдреса,
-|	ВТОсновная.ИсправляемыйСчетФактураДата КАК ИсправляемыйСчетФактураДата,
-|	ВТОсновная.ДатаСЧФ КАК ДатаСЧФ1,
-|	ВТОсновная.ИдентификаторЦепочки КАК ИдентификаторЦепочки
-|ИЗ
-|	ВТОсновная КАК ВТОсновная
-|		ЛЕВОЕ СОЕДИНЕНИЕ ВТКорректировка КАК ВТКорректировка
-|		ПО ВТОсновная.ДокументОснование = ВТКорректировка.КорректировкаРеализации
-|		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ЭКОМ_ИнфоПоля КАК ЭКОМ_ИнфоПоля
-|		ПО ВТОсновная.ФорматУПД = ЭКОМ_ИнфоПоля.ФорматУПД
-|			И (НЕ ЭКОМ_ИнфоПоля.ПометкаУдаления)
-|		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_ЗначениеДополнительныхКонстант КАК ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN
-|		ПО (ИСТИНА)
-|			И (ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN.ДополнительнаяКонстанта = ""ЭКОМ_ИспользоватьАдресаИзРегистраТочкиДоставкиGLN"")
-|			И (ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN.Измерение = НЕОПРЕДЕЛЕНО)
-|		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_ЗначениеДополнительныхКонстант КАК ЭКОМ_ИспользоватьАдресGLN
-|		ПО (ИСТИНА)
-|			И (ЭКОМ_ИспользоватьАдресGLN.ДополнительнаяКонстанта = ""ЭКОМ_ИспользоватьАдресаИзРегистраGLN"")
-|			И (ЭКОМ_ИспользоватьАдресGLN.Измерение = НЕОПРЕДЕЛЕНО)";        
+               |	МИНИМУМ(СчетФактураВыданныйТовары.ПредыдущийСчетФактура) КАК ИсходныйСчетФактура,
+               |	СчетФактураВыданныйТовары.Ссылка КАК Ссылка
+               |ПОМЕСТИТЬ ИсходныеСЧФ
+               |ИЗ
+               |	Документ.СчетФактураВыданный.Товары КАК СчетФактураВыданныйТовары
+               |ГДЕ
+               |	СчетФактураВыданныйТовары.Ссылка В(&amp;Источник)
+               |
+               |СГРУППИРОВАТЬ ПО
+               |	СчетФактураВыданныйТовары.Ссылка
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ
+               |	СчетФактураВыданный.Ссылка КАК Ссылка,
+               |	СчетФактураВыданный.Представление КАК ПредставлениеСЧФ,
+               |	СчетФактураВыданный.Номер КАК НомерСЧФ,
+               |	СчетФактураВыданный.Дата КАК ДатаСЧФ,
+               |	СчетФактураВыданный.ДокументОснование КАК ДокументОснование,
+               |	СчетФактураВыданный.ДокументОснование.Дата КАК ДокументОснованиеДата,
+               |	СчетФактураВыданный.ДокументОснование.Номер КАК ДокументОснованиеНомер,
+               |	СчетФактураВыданный.НомерИсправления КАК НомерИсправления,
+               |	СчетФактураВыданный.Корректировочный КАК ЭтоКорректировка,
+               |	СчетФактураВыданный.Исправление КАК ЭтоИсправление,
+               |	"""" КАК ВидСчетаФактуры,
+               |	СчетФактураВыданный.Организация КАК Организация,
+               |	СчетФактураВыданный.Организация.Представление КАК ПредставлениеОрганизации,
+               |	ВЫБОР
+               |		КОГДА СчетФактураВыданный.Организация.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ЮридическоеЛицо)
+               |			ТОГДА ""ЮЛ""
+               |		КОГДА СчетФактураВыданный.Организация.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ФизическоеЛицо)
+               |			ТОГДА ""ФЛ""
+               |		ИНАЧЕ ""ЮЛ""
+               |	КОНЕЦ КАК ОрганизацияЮрФизЛицо,
+               |	СчетФактураВыданный.Организация.ИНН КАК ОрганизацияИНН,
+               |	СчетФактураВыданный.Организация.КПП КАК ОрганизацияКПП,
+               |	СчетФактураВыданный.Организация.НаименованиеПолное КАК ОрганизацияНаименованиеПолное,
+               |	""ФамилияИП"" КАК ОрганизацияФамилияИП,
+               |	""ИмяИП"" КАК ОрганизацияИмяИП,
+               |	""ОтчествоИП"" КАК ОрганизацияОтчествоИП,
+               |	СчетФактураВыданный.Контрагент КАК Контрагент,
+               |	ВЫБОР
+               |		КОГДА ТИПЗНАЧЕНИЯ(СчетФактураВыданный.ДокументОснование) = ТИП(Документ.РеализацияТоваровУслуг)
+               |			ТОГДА СчетФактураВыданный.ДокументОснование
+               |		ИНАЧЕ СчетФактураВыданный.ДокументОснование.ДокументОснование
+               |	КОНЕЦ КАК Накладная,
+               |	ЕСТЬNULL(Источник_События.ИдентификаторЦепочки, """") КАК ИдентификаторЦепочки,
+               |	ЕСТЬNULL(ИсходныеСЧФ.ИсходныйСчетФактура, СчетФактураВыданный.СчетФактураОснование) КАК ИсправляемыйСчетФактура,
+               |	ЕСТЬNULL(ИсходныеСЧФ.ИсходныйСчетФактура.Дата, СчетФактураВыданный.СчетФактураОснование.Дата) КАК ИсправляемыйСчетФактураДата,
+               |	МИНИМУМ(ЕСТЬNULL(СчфОтправленный_События.Идентификатор, """")) КАК ИдентификаторТекущегоСЧФ,
+               |	МИНИМУМ(ЕСТЬNULL(ОснованиеСчфОтправленный_События.Идентификатор, """")) КАК ИдентификаторПредыдещейСЧФ,
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.Организация, ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)) КАК ОрганизацияЦепочка,
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.Контрагент, ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка)) КАК КонтрагентЦепочка,
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки, ЗНАЧЕНИЕ(Справочник.Партнеры.ПустаяСсылка)) КАК ТочкаДоставкиЦепочка,
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.НомерЗаказа, """") КАК НомерЗаказа,
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.ДатаПоставки, ДАТАВРЕМЯ(1, 1, 1)) КАК ДатаПоставки,
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.ДатаЗаказа, ДАТАВРЕМЯ(1, 1, 1)) КАК ДатаЗаказа,
+               |	DR_ЦепочкиДокументов.Контрагент.ИНН КАК КонтрагентИНН,
+               |	DR_ЦепочкиДокументов.Контрагент.КПП КАК КонтрагентКПП,
+               |	ВЫБОР
+               |		КОГДА DR_ЦепочкиДокументов.Контрагент.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ЮридическоеЛицо)
+               |			ТОГДА ""ЮЛ""
+               |		КОГДА DR_ЦепочкиДокументов.Контрагент.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ФизическоеЛицо)
+               |			ТОГДА ""ФЛ""
+               |		ИНАЧЕ ""ЮЛ""
+               |	КОНЕЦ КАК КонтрагентЮрФизЛицо,
+               |	ВЫБОР
+               |		КОГДА DR_ЦепочкиДокументов.ТочкаДоставки.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ЮридическоеЛицо)
+               |			ТОГДА ""ЮЛ""
+               |		КОГДА DR_ЦепочкиДокументов.ТочкаДоставки.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ФизическоеЛицо)
+               |			ТОГДА ""ФЛ""
+               |		ИНАЧЕ ""ЮЛ""
+               |	КОНЕЦ КАК ТочкаДоставкиЮрФизЛицо,
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.Контрагент.НаименованиеПолное, """") КАК КонтрагентНаименованиеПолное,
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки.НаименованиеПолное, """") КАК ТочкаДоставкиНаименованиеПолное,
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки.ИНН, """") КАК ТочкаДоставкиИНН,
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки.КПП, """") КАК ТочкаДоставкиКПП
+               |ПОМЕСТИТЬ Источник
+               |ИЗ
+               |	Документ.СчетФактураВыданный КАК СчетФактураВыданный
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК Источник_События
+               |		ПО СчетФактураВыданный.Ссылка = Источник_События.Документ
+               |			И (Источник_События.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.СчетФактура_Исходящий))
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_ЦепочкиДокументов КАК DR_ЦепочкиДокументов
+               |		ПО (Источник_События.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки)
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК СчфОтправленный_События
+               |		ПО СчетФактураВыданный.Ссылка = СчфОтправленный_События.Документ
+               |			И (СчфОтправленный_События.ВидДокумента В (ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPR_01_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_KORSCHFDOPPR_01), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRMARK_01_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRPROS_01_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_KORSCHFDOPPR_01_Испр), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPR_01_Испр_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRMARK_01_Испр_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRPROS_01_Испр_Исходящий)))
+               |		ЛЕВОЕ СОЕДИНЕНИЕ ИсходныеСЧФ КАК ИсходныеСЧФ
+               |			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК ОснованиеСчфОтправленный_События
+               |			ПО ИсходныеСЧФ.ИсходныйСчетФактура = ОснованиеСчфОтправленный_События.Документ
+               |				И (ОснованиеСчфОтправленный_События.ВидДокумента В (ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPR_01_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_KORSCHFDOPPR_01), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRMARK_01_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRPROS_01_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_KORSCHFDOPPR_01_Испр), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPR_01_Испр_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRMARK_01_Испр_Исходящий), ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ON_NSCHFDOPPRPROS_01_Испр_Исходящий)))
+               |		ПО СчетФактураВыданный.Ссылка = ИсходныеСЧФ.Ссылка
+               |ГДЕ
+               |	СчетФактураВыданный.Ссылка В(&amp;Источник)
+               |
+               |СГРУППИРОВАТЬ ПО
+               |	СчетФактураВыданный.Ссылка,
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.Контрагент, ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка)),
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки, ЗНАЧЕНИЕ(Справочник.Партнеры.ПустаяСсылка)),
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.Организация, ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)),
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.НомерЗаказа, """"),
+               |	DR_ЦепочкиДокументов.Контрагент.КПП,
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки.НаименованиеПолное, """"),
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.ДатаПоставки, ДАТАВРЕМЯ(1, 1, 1)),
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.ДатаЗаказа, ДАТАВРЕМЯ(1, 1, 1)),
+               |	DR_ЦепочкиДокументов.Контрагент.ИНН,
+               |	ВЫБОР
+               |		КОГДА DR_ЦепочкиДокументов.ТочкаДоставки.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ЮридическоеЛицо)
+               |			ТОГДА ""ЮЛ""
+               |		КОГДА DR_ЦепочкиДокументов.ТочкаДоставки.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ФизическоеЛицо)
+               |			ТОГДА ""ФЛ""
+               |		ИНАЧЕ ""ЮЛ""
+               |	КОНЕЦ,
+               |	ВЫБОР
+               |		КОГДА DR_ЦепочкиДокументов.Контрагент.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ЮридическоеЛицо)
+               |			ТОГДА ""ЮЛ""
+               |		КОГДА DR_ЦепочкиДокументов.Контрагент.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ФизическоеЛицо)
+               |			ТОГДА ""ФЛ""
+               |		ИНАЧЕ ""ЮЛ""
+               |	КОНЕЦ,
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.Контрагент.НаименованиеПолное, """"),
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки.ИНН, """"),
+               |	ЕСТЬNULL(DR_ЦепочкиДокументов.ТочкаДоставки.КПП, """"),
+               |	СчетФактураВыданный.Номер,
+               |	СчетФактураВыданный.Дата,
+               |	СчетФактураВыданный.ДокументОснование,
+               |	СчетФактураВыданный.ДокументОснование.Дата,
+               |	СчетФактураВыданный.ДокументОснование.Номер,
+               |	СчетФактураВыданный.НомерИсправления,
+               |	СчетФактураВыданный.Корректировочный,
+               |	СчетФактураВыданный.Исправление,
+               |	СчетФактураВыданный.Организация,
+               |	СчетФактураВыданный.Организация.Представление,
+               |	ВЫБОР
+               |		КОГДА СчетФактураВыданный.Организация.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ЮридическоеЛицо)
+               |			ТОГДА ""ЮЛ""
+               |		КОГДА СчетФактураВыданный.Организация.ЮридическоеФизическоеЛицо = ЗНАЧЕНИЕ(Перечисление.ЮридическоеФизическоеЛицо.ФизическоеЛицо)
+               |			ТОГДА ""ФЛ""
+               |		ИНАЧЕ ""ЮЛ""
+               |	КОНЕЦ,
+               |	СчетФактураВыданный.Организация.ИНН,
+               |	СчетФактураВыданный.Организация.КПП,
+               |	СчетФактураВыданный.Организация.НаименованиеПолное,
+               |	СчетФактураВыданный.Контрагент,
+               |	ВЫБОР
+               |		КОГДА ТИПЗНАЧЕНИЯ(СчетФактураВыданный.ДокументОснование) = ТИП(Документ.РеализацияТоваровУслуг)
+               |			ТОГДА СчетФактураВыданный.ДокументОснование
+               |		ИНАЧЕ СчетФактураВыданный.ДокументОснование.ДокументОснование
+               |	КОНЕЦ,
+               |	СчетФактураВыданный.Представление,
+               |	ЕСТЬNULL(Источник_События.ИдентификаторЦепочки, """"),
+               |	ЕСТЬNULL(ИсходныеСЧФ.ИсходныйСчетФактура, СчетФактураВыданный.СчетФактураОснование),
+               |	ЕСТЬNULL(ИсходныеСЧФ.ИсходныйСчетФактура.Дата, СчетФактураВыданный.СчетФактураОснование.Дата)
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ
+               |	Источник.Ссылка КАК Ссылка,
+               |	Источник.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
+               |	Источник.ПредставлениеСЧФ КАК ПредставлениеСЧФ,
+               |	Источник.НомерСЧФ КАК НомерСЧФ,
+               |	Источник.ДатаСЧФ КАК ДатаСЧФ,
+               |	Источник.ДокументОснование КАК ДокументОснование,
+               |	Источник.ДокументОснованиеДата КАК ДокументОснованиеДата,
+               |	Источник.ДокументОснованиеНомер КАК ДокументОснованиеНомер,
+               |	Источник.НомерИсправления КАК НомерИсправления,
+               |	Источник.ЭтоКорректировка КАК ЭтоКорректировка,
+               |	Источник.ЭтоИсправление КАК ЭтоИсправление,
+               |	Источник.Организация КАК Организация,
+               |	Источник.ПредставлениеОрганизации КАК ПредставлениеОрганизации,
+               |	Источник.ОрганизацияЮрФизЛицо КАК ОрганизацияЮрФизЛицо,
+               |	Источник.ОрганизацияИНН КАК ОрганизацияИНН,
+               |	Источник.ОрганизацияКПП КАК ОрганизацияКПП,
+               |	Источник.ОрганизацияНаименованиеПолное КАК ОрганизацияНаименованиеПолное,
+               |	Источник.ОрганизацияФамилияИП КАК ОрганизацияФамилияИП,
+               |	Источник.ОрганизацияИмяИП КАК ОрганизацияИмяИП,
+               |	Источник.ОрганизацияОтчествоИП КАК ОрганизацияОтчествоИП,
+               |	Источник.Контрагент КАК Контрагент,
+               |	Источник.ИсправляемыйСчетФактура КАК ИсправляемыйСчетФактура,
+               |	Источник.ИсправляемыйСчетФактураДата КАК ИсправляемыйСчетФактураДата,
+               |	Источник.ИдентификаторПредыдещейСЧФ КАК ИдентификаторПредыдещейСЧФ,
+               |	Источник.ИдентификаторТекущегоСЧФ КАК ИдентификаторТекущегоСЧФ,
+               |	Источник.Накладная.ЗаказКлиента КАК Заказ,
+               |	Источник.Накладная.ЗаказКлиента КАК ДокументЗаказа,
+               |	Источник.ДатаЗаказа КАК ЗаказДата,
+               |	Источник.НомерЗаказа КАК ЗаказНомер,
+               |	RECADV_События.Документ КАК ЭКОМ_RECADV,
+               |	Источник.ВидСчетаФактуры КАК ВидСчетаФактуры,
+               |	ДанныеОрганизации.GLN КАК ОрганизацияGLN,
+               |	ДанныеОрганизации.eXiteАдр_Город КАК ОрганизацияГород,
+               |	ДанныеОрганизации.eXiteАдр_Индекс КАК ОрганизацияИндекс,
+               |	ДанныеОрганизации.eXiteАдр_Дом КАК ОрганизацияДом,
+               |	ДанныеОрганизации.eXiteАдр_КодРегиона КАК ОрганизацияКодРегиона,
+               |	ДанныеОрганизации.eXiteАдр_Улица КАК ОрганизацияУлица,
+               |	ДанныеОрганизации.eXiteАдр_Район КАК ОрганизацияРайон,
+               |	ДанныеОрганизации.eXiteАдр_НаселПункт КАК ОрганизацияНаселенныйПункт,
+               |	ДанныеОрганизации.eXiteАдр_Корпус КАК ОрганизацияКорпус,
+               |	ДанныеОрганизации.eXiteАдр_Кварт КАК ОрганизацияКвартира,
+               |	ДанныеОрганизации.Ид_ОЭД КАК ОрганизацияИдОЭД,
+               |	ДанныеОрганизации.Партнер.Идентификатор КАК ОрганизацияОператорИд,
+               |	ДанныеОрганизации.Партнер.ИНН КАК ОрганизацияОператорИНН,
+               |	ДанныеОрганизации.Партнер.КПП КАК ОрганизацияОператорКПП,
+               |	ДанныеОрганизации.Партнер.Наименование КАК ОрганизацияОператорНаименование,
+               |	ДанныеОрганизации.Объект.СвидетельствоСерияНомер КАК ОрганизацияСвидетельствоСерияНомер,
+               |	ДанныеОрганизации.Объект.СвидетельствоДатаВыдачи КАК ОрганизацияСвидетельствоДатаВыдачи,
+               |	ДанныеОрганизации.Объект.ОГРН КАК ОрганизацияОГРН,
+               |	ДанныеОрганизации.Сертификат.ДолжностьПодписанта КАК ДолжностьПодписанта,
+               |	ДанныеОрганизации.Сертификат.ФамилияПодписанта КАК ФамилияПодписанта,
+               |	ДанныеОрганизации.Сертификат.ИмяПодписанта КАК ИмяПодписанта,
+               |	ДанныеОрганизации.Сертификат.ОтчествоПодписанта КАК ОтчествоПодписанта,
+               |	ДанныеОрганизации.Сертификат.ОбластьПолномочий КАК СертификатОбластьПолномочий,
+               |	ДанныеОрганизации.Сертификат.ОснованиеПолномочий КАК СертификатОснованиеПолномочий,
+               |	ДанныеОрганизации.Сертификат.СтатусПодписанта КАК СертификатСтатусПодписанта,
+               |	Источник.КонтрагентЦепочка КАК КонтрагентИзЗаказа,
+               |	ДанныеКонтрагента.Объект.Представление КАК ПредставлениеКонтрагента,
+               |	Источник.КонтрагентНаименованиеПолное КАК КонтрагентНаименованиеПолное,
+               |	Источник.КонтрагентЮрФизЛицо КАК КонтрагентЮрФизЛицо,
+               |	Источник.КонтрагентИНН КАК КонтрагентИНН,
+               |	Источник.КонтрагентКПП КАК КонтрагентКПП,
+               |	ДанныеКонтрагента.GLN КАК КонтрагентGLN,
+               |	ДанныеКонтрагента.Контрагент_ФорматЭСФ КАК ФорматУПД,
+               |	ДанныеКонтрагента.Ид_ОЭД КАК КонтрагентИдОЭД,
+               |	ДанныеКонтрагента.Партнер.Идентификатор КАК КонтрагентОператорИд,
+               |	ДанныеКонтрагента.Партнер.ИНН КАК КонтрагентОператорИНН,
+               |	ДанныеКонтрагента.Партнер.КПП КАК КонтрагентОператорКПП,
+               |	ДанныеКонтрагента.Партнер.Наименование КАК КонтрагентОператорНаименование,
+               |	ДанныеКонтрагента.eXiteАдр_Город КАК КонтрагентГород,
+               |	ДанныеКонтрагента.eXiteАдр_Дом КАК КонтрагентДом,
+               |	ДанныеКонтрагента.eXiteАдр_Индекс КАК КонтрагентИндекс,
+               |	ДанныеКонтрагента.eXiteАдр_КодРегиона КАК КонтрагентКодРегиона,
+               |	ДанныеКонтрагента.eXiteАдр_Улица КАК КонтрагентУлица,
+               |	ДанныеКонтрагента.eXiteАдр_Район КАК КонтрагентРайон,
+               |	ДанныеКонтрагента.eXiteАдр_НаселПункт КАК КонтрагентНаселенныйПункт,
+               |	ДанныеКонтрагента.eXiteАдр_Корпус КАК КонтрагентКорпус,
+               |	ДанныеКонтрагента.eXiteАдр_Кварт КАК КонтрагентКвартира,
+               |	ДанныеКонтрагента.Контрагент_ЭСФБезИнфПоля КАК Контрагент_ЭСФБезИнфПоля,
+               |	Источник.ТочкаДоставкиЦепочка КАК ТочкаДоставки,
+               |	ДанныеТочкиДоставки.Объект.Представление КАК ПредставлениеТочкиДоставки,
+               |	ДанныеТочкиДоставки.Наименование КАК ТочкаДоставкиНаименованиеИзРегистра,
+               |	Источник.ТочкаДоставкиНаименованиеПолное КАК ТочкаДоставкиНаименованиеПолное,
+               |	Источник.ТочкаДоставкиЮрФизЛицо КАК ТочкаДоставкиЮрФизЛицо,
+               |	Источник.ТочкаДоставкиИНН КАК ТочкаДоставкиИНН,
+               |	Источник.ТочкаДоставкиКПП КАК ТочкаДоставкиКПП,
+               |	ДанныеТочкиДоставки.ИНН КАК ТочкаДоставкиИННИзРегистра,
+               |	ДанныеТочкиДоставки.КПП КАК ТочкаДоставкиКППИзРегистра,
+               |	ДанныеТочкиДоставки.Адр_Город КАК ТочкаДоставкиГород,
+               |	ДанныеТочкиДоставки.Адр_Дом КАК ТочкаДоставкиДом,
+               |	ДанныеТочкиДоставки.Адр_Индекс КАК ТочкаДоставкиИндекс,
+               |	ДанныеТочкиДоставки.Адр_КодРегиона КАК ТочкаДоставкиКодРегиона,
+               |	ДанныеТочкиДоставки.Адр_Улица КАК ТочкаДоставкиУлица,
+               |	ДанныеТочкиДоставки.Адр_Район КАК ТочкаДоставкиРайон,
+               |	ДанныеТочкиДоставки.Адр_НаселПункт КАК ТочкаДоставкиНаселенныйПункт,
+               |	ДанныеТочкиДоставки.Адр_Корпус КАК ТочкаДоставкиКорпус,
+               |	ДанныеТочкиДоставки.Адр_Кварт КАК ТочкаДоставкиКвартира,
+               |	ДанныеТочкиДоставки.GLN КАК ТочкаДоставкиGLN,
+               |	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).НомерТранзакции КАК RECADV_EDIINTERCHANGEID,
+               |	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).НомерДоговораНаПоставку КАК RECADV_CAMPAIGNNUMBER,
+               |	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).ФайлНомер КАК RECADV_Номер,
+               |	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).ФайлДата КАК RECADV_Дата,
+               |	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).ORDERVID КАК RECADV_ORDERVID,
+               |	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).RECADVVID КАК RECADV_RECADVVID,
+               |	ВЫРАЗИТЬ(RECADV_События.Документ КАК Документ.ЭКОМ_Документы).ДатаПриемаТовара КАК ДатаПриемаТовара,
+               |	ЛОЖЬ КАК ЭтоМаркируемыйЮЗД,
+               |	ЛОЖЬ КАК ЭтоПрослеживаемыйЮЗД,
+               |	РеализацияТЧ.СуммаСНДС КАК СуммаСНДС,
+               |	РеализацияТЧ.СуммаНДС КАК СуммаНДС,
+               |	РеализацияТЧ.Сумма КАК СуммаДокументаРеализации,
+               |	ОрганизацииКонтактнаяИнформация.Значение КАК ИзБазыОрганизацияЗначениеАдреса,
+               |	ОрганизацииКонтактнаяИнформация.Тип КАК ИзБазыОрганизацияТипАдреса,
+               |	ПартнерыКонтактнаяИнформация.Значение КАК ИзБазыТочкаДоставкиЗначениеАдреса,
+               |	ПартнерыКонтактнаяИнформация.Тип КАК ИзБазыТочкаДоставкиТипАдреса,
+               |	КонтрагентыКонтактнаяИнформация.Значение КАК ИзБазыКонтрагентЗначениеАдреса,
+               |	КонтрагентыКонтактнаяИнформация.Тип КАК ИзБазыКонтрагентТипАдреса
+               |ПОМЕСТИТЬ ВТОсновная
+               |ИЗ
+               |	Источник КАК Источник
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК Накладная_События
+               |		ПО Источник.Накладная = Накладная_События.Документ
+               |			И (Накладная_События.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.Накладная_Исходящая))
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК RECADV_События
+               |		ПО (Накладная_События.Идентификатор = RECADV_События.ИдентификаторОснования)
+               |			И (RECADV_События.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.RECADV_Входящий))
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_GLN КАК ДанныеКонтрагента
+               |		ПО Источник.КонтрагентЦепочка = ДанныеКонтрагента.Объект
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_GLN КАК ДанныеОрганизации
+               |		ПО Источник.ОрганизацияЦепочка = ДанныеОрганизации.Объект
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_ТочкиДоставки КАК ДанныеТочкиДоставки
+               |		ПО Источник.ТочкаДоставкиЦепочка = ДанныеТочкиДоставки.Объект
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Организации.КонтактнаяИнформация КАК ОрганизацииКонтактнаяИнформация
+               |		ПО Источник.ОрганизацияЦепочка = ОрганизацииКонтактнаяИнформация.Ссылка
+               |			И (ОрганизацииКонтактнаяИнформация.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ЮрАдресОрганизации))
+               |			И (ОрганизацииКонтактнаяИнформация.ВидДляСписка = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ЮрАдресОрганизации))
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Контрагенты.КонтактнаяИнформация КАК КонтрагентыКонтактнаяИнформация
+               |		ПО Источник.КонтрагентЦепочка = КонтрагентыКонтактнаяИнформация.Ссылка
+               |			И (КонтрагентыКонтактнаяИнформация.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ЮрАдресКонтрагента))
+               |			И (КонтрагентыКонтактнаяИнформация.ВидДляСписка = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ЮрАдресКонтрагента))
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Партнеры.КонтактнаяИнформация КАК ПартнерыКонтактнаяИнформация
+               |		ПО Источник.ТочкаДоставкиЦепочка = ПартнерыКонтактнаяИнформация.Ссылка
+               |			И (ПартнерыКонтактнаяИнформация.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.АдресПартнера))
+               |			И (ПартнерыКонтактнаяИнформация.ВидДляСписка = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.АдресПартнера))
+               |		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+               |			СчетФактураВыданный.Ссылка КАК Ссылка,
+               |			ВЫБОР
+               |				КОГДА РеализацияТоваровУслугТовары.Ссылка.ЦенаВключаетНДС
+               |					ТОГДА СУММА(РеализацияТоваровУслугТовары.Сумма) - СУММА(РеализацияТоваровУслугТовары.СуммаНДС)
+               |				ИНАЧЕ СУММА(РеализацияТоваровУслугТовары.Сумма)
+               |			КОНЕЦ КАК Сумма,
+               |			СУММА(РеализацияТоваровУслугТовары.СуммаНДС) КАК СуммаНДС,
+               |			СУММА(РеализацияТоваровУслугТовары.СуммаСНДС) КАК СуммаСНДС
+               |		ИЗ
+               |			Документ.СчетФактураВыданный КАК СчетФактураВыданный
+               |				ЛЕВОЕ СОЕДИНЕНИЕ Документ.РеализацияТоваровУслуг.Товары КАК РеализацияТоваровУслугТовары
+               |				ПО ((ВЫРАЗИТЬ(СчетФактураВыданный.ДокументОснование КАК Документ.РеализацияТоваровУслуг)) = РеализацияТоваровУслугТовары.Ссылка)
+               |		ГДЕ
+               |			СчетФактураВыданный.Ссылка В(&amp;Источник)
+               |		
+               |		СГРУППИРОВАТЬ ПО
+               |			СчетФактураВыданный.Ссылка,
+               |			РеализацияТоваровУслугТовары.Ссылка.ЦенаВключаетНДС) КАК РеализацияТЧ
+               |		ПО Источник.Ссылка = РеализацияТЧ.Ссылка
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ
+               |	КорректировкаРеализации.Ссылка КАК КорректировкаРеализации,
+               |	СУММА(ВЫБОР
+               |			КОГДА КорректировкаРеализацииРасхождения.СуммаСНДС &gt; 0
+               |				ТОГДА КорректировкаРеализацииРасхождения.СуммаСНДС - КорректировкаРеализацииРасхождения.СуммаНДС
+               |			ИНАЧЕ 0
+               |		КОНЕЦ) КАК ВсегоУвелСтТовБезНДСВсего,
+               |	СУММА(ВЫБОР
+               |			КОГДА КорректировкаРеализацииРасхождения.СуммаСНДС &gt; 0
+               |				ТОГДА ВЫБОР
+               |						КОГДА КорректировкаРеализации.ЦенаВключаетНДС
+               |							ТОГДА КорректировкаРеализацииРасхождения.СуммаСНДС
+               |						ИНАЧЕ КорректировкаРеализацииРасхождения.Сумма + КорректировкаРеализацииРасхождения.СуммаНДС
+               |					КОНЕЦ
+               |			ИНАЧЕ 0
+               |		КОНЕЦ) КАК ВсегоУвелСтТовУчНалВсего,
+               |	СУММА(ВЫБОР
+               |			КОГДА КорректировкаРеализацииРасхождения.СуммаСНДС &gt; 0
+               |				ТОГДА КорректировкаРеализацииРасхождения.СуммаНДС
+               |			ИНАЧЕ 0
+               |		КОНЕЦ) КАК ВсегоУвелСумНДС,
+               |	СУММА(ВЫБОР
+               |			КОГДА КорректировкаРеализацииРасхождения.СуммаСНДС &lt; 0
+               |				ТОГДА КорректировкаРеализацииРасхождения.СуммаСНДС - КорректировкаРеализацииРасхождения.СуммаНДС
+               |			ИНАЧЕ 0
+               |		КОНЕЦ) КАК ВсегоУмСтТовБезНДСВсего,
+               |	СУММА(ВЫБОР
+               |			КОГДА КорректировкаРеализацииРасхождения.СуммаСНДС &lt; 0
+               |				ТОГДА ВЫБОР
+               |						КОГДА КорректировкаРеализации.ЦенаВключаетНДС
+               |							ТОГДА КорректировкаРеализацииРасхождения.СуммаСНДС
+               |						ИНАЧЕ КорректировкаРеализацииРасхождения.Сумма + КорректировкаРеализацииРасхождения.СуммаНДС
+               |					КОНЕЦ
+               |			ИНАЧЕ 0
+               |		КОНЕЦ) КАК ВсегоУмСтТовУчНалВсего,
+               |	СУММА(ВЫБОР
+               |			КОГДА КорректировкаРеализацииРасхождения.СуммаСНДС &lt; 0
+               |				ТОГДА КорректировкаРеализацииРасхождения.СуммаНДС
+               |			ИНАЧЕ 0
+               |		КОНЕЦ) КАК ВсегоУмСумНДС,
+               |	СУММА(ЕСТЬNULL(КорректировкаРеализацииРасхождения.Количество, 0)) КАК ВсегоКолКор
+               |ПОМЕСТИТЬ ВТКорректировка
+               |ИЗ
+               |	ВТОсновная КАК ВТОсновная
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.КорректировкаРеализации КАК КорректировкаРеализации
+               |			ЛЕВОЕ СОЕДИНЕНИЕ Документ.КорректировкаРеализации.Расхождения КАК КорректировкаРеализацииРасхождения
+               |			ПО КорректировкаРеализации.Ссылка = КорректировкаРеализацииРасхождения.Ссылка
+               |		ПО ((ВЫРАЗИТЬ(ВТОсновная.ДокументОснование КАК Документ.КорректировкаРеализации)) = КорректировкаРеализации.Ссылка)
+               |ГДЕ
+               |	ТИПЗНАЧЕНИЯ(ВТОсновная.ДокументОснование) = ТИП(Документ.КорректировкаРеализации)
+               |
+               |СГРУППИРОВАТЬ ПО
+               |	КорректировкаРеализации.Ссылка
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ
+               |	ИсходныеСЧФ.Ссылка КАК Ссылка,
+               |	СУММА(РеализацияТоваровУслугТовары.Количество) КАК КоличествоПоРТУ
+               |ПОМЕСТИТЬ ВТ_ИсходныеРТУ
+               |ИЗ
+               |	ИсходныеСЧФ КАК ИсходныеСЧФ
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.РеализацияТоваровУслуг.Товары КАК РеализацияТоваровУслугТовары
+               |		ПО ИсходныеСЧФ.ИсходныйСчетФактура.ДокументОснование = РеализацияТоваровУслугТовары.Ссылка
+               |
+               |СГРУППИРОВАТЬ ПО
+               |	ИсходныеСЧФ.Ссылка
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ
+               |	ВТОсновная.Ссылка КАК Ссылка,
+               |	ВТОсновная.ПредставлениеСЧФ КАК ПредставлениеСЧФ,
+               |	ВТОсновная.НомерСЧФ КАК НомерСЧФ,
+               |	ВТОсновная.ДатаСЧФ КАК ДатаСЧФ,
+               |	ВТОсновная.СуммаДокументаРеализации КАК СуммаДокументаРеализации,
+               |	ЕСТЬNULL(ВТОсновная.СуммаНДС, 0) КАК СуммаНДС,
+               |	ВТОсновная.ДокументОснование КАК ДокументОснование,
+               |	ВТОсновная.ДокументОснованиеДата КАК ДокументОснованиеДата,
+               |	ВТОсновная.ДокументОснованиеНомер КАК ДокументОснованиеНомер,
+               |	ВТОсновная.НомерИсправления КАК НомерИсправления,
+               |	ВТОсновная.Заказ КАК Заказ,
+               |	ВТОсновная.ДокументЗаказа КАК ДокументЗаказа,
+               |	ВТОсновная.ЗаказДата КАК ЗаказДата,
+               |	ВТОсновная.ЗаказНомер КАК ЗаказНомер,
+               |	ВТОсновная.ЭтоКорректировка КАК ЭтоКорректировка,
+               |	ВТОсновная.ЭтоИсправление КАК ЭтоИсправление,
+               |	ВТОсновная.ИсправляемыйСчетФактура КАК ИсправляемыйСчетФактура,
+               |	ВТОсновная.ИдентификаторПредыдещейСЧФ КАК ИдентификаторПредыдещейСЧФ,
+               |	ВТОсновная.ИдентификаторТекущегоСЧФ КАК ИдентификаторТекущегоСЧФ,
+               |	ВТОсновная.ЭКОМ_RECADV КАК ЭКОМ_RECADV,
+               |	ВТОсновная.ВидСчетаФактуры КАК ВидСчетаФактуры,
+               |	ВТОсновная.Организация КАК Организация,
+               |	ВТОсновная.ПредставлениеОрганизации КАК ПредставлениеОрганизации,
+               |	ВТОсновная.ОрганизацияЮрФизЛицо КАК ОрганизацияЮрФизЛицо,
+               |	ВТОсновная.ОрганизацияИНН КАК ОрганизацияИНН,
+               |	ВТОсновная.ОрганизацияКПП КАК ОрганизацияКПП,
+               |	ВТОсновная.ОрганизацияНаименованиеПолное КАК ОрганизацияНаименованиеПолное,
+               |	ВТОсновная.ОрганизацияФамилияИП КАК ОрганизацияФамилияИП,
+               |	ВТОсновная.ОрганизацияИмяИП КАК ОрганизацияИмяИП,
+               |	ВТОсновная.ОрганизацияОтчествоИП КАК ОрганизацияОтчествоИП,
+               |	ВТОсновная.ОрганизацияGLN КАК ОрганизацияGLN,
+               |	ВТОсновная.ОрганизацияГород КАК ОрганизацияГород,
+               |	ВТОсновная.ОрганизацияИндекс КАК ОрганизацияИндекс,
+               |	ВТОсновная.ОрганизацияДом КАК ОрганизацияДом,
+               |	ВТОсновная.ОрганизацияКодРегиона КАК ОрганизацияКодРегиона,
+               |	ВТОсновная.ОрганизацияУлица КАК ОрганизацияУлица,
+               |	ВТОсновная.ОрганизацияРайон КАК ОрганизацияРайон,
+               |	ВТОсновная.ОрганизацияНаселенныйПункт КАК ОрганизацияНаселенныйПункт,
+               |	ВТОсновная.ОрганизацияКорпус КАК ОрганизацияКорпус,
+               |	ВТОсновная.ОрганизацияКвартира КАК ОрганизацияКвартира,
+               |	ВТОсновная.ОрганизацияИдОЭД КАК ОрганизацияИдОЭД,
+               |	ВТОсновная.ОрганизацияОператорИд КАК ОрганизацияОператорИд,
+               |	ВТОсновная.ОрганизацияОператорИНН КАК ОрганизацияОператорИНН,
+               |	ВТОсновная.ОрганизацияОператорКПП КАК ОрганизацияОператорКПП,
+               |	ВТОсновная.ОрганизацияОператорНаименование КАК ОрганизацияОператорНаименование,
+               |	ВТОсновная.ОрганизацияОГРН КАК ОрганизацияОГРН,
+               |	ВТОсновная.ОрганизацияСвидетельствоСерияНомер КАК ОрганизацияСвидетельствоСерияНомер,
+               |	ВТОсновная.ОрганизацияСвидетельствоДатаВыдачи КАК ОрганизацияСвидетельствоДатаВыдачи,
+               |	ВТОсновная.ДолжностьПодписанта КАК ДолжностьПодписанта,
+               |	ВТОсновная.ФамилияПодписанта КАК ФамилияПодписанта,
+               |	ВТОсновная.ИмяПодписанта КАК ИмяПодписанта,
+               |	ВТОсновная.ОтчествоПодписанта КАК ОтчествоПодписанта,
+               |	ВТОсновная.СертификатОбластьПолномочий КАК СертификатОбластьПолномочий,
+               |	ВТОсновная.СертификатОснованиеПолномочий КАК СертификатОснованиеПолномочий,
+               |	ВТОсновная.СертификатСтатусПодписанта КАК СертификатСтатусПодписанта,
+               |	ВТОсновная.Контрагент КАК Контрагент,
+               |	ВТОсновная.КонтрагентИзЗаказа КАК КонтрагентИзЗаказа,
+               |	ВТОсновная.ПредставлениеКонтрагента КАК ПредставлениеКонтрагента,
+               |	ВТОсновная.КонтрагентНаименованиеПолное КАК КонтрагентНаименованиеПолное,
+               |	ВТОсновная.КонтрагентЮрФизЛицо КАК КонтрагентЮрФизЛицо,
+               |	ВТОсновная.КонтрагентИНН КАК КонтрагентИНН,
+               |	ВТОсновная.КонтрагентКПП КАК КонтрагентКПП,
+               |	ВТОсновная.КонтрагентGLN КАК КонтрагентGLN,
+               |	ВТОсновная.ФорматУПД КАК ФорматУПД,
+               |	ВТОсновная.КонтрагентИдОЭД КАК КонтрагентИдОЭД,
+               |	ВТОсновная.КонтрагентОператорИд КАК КонтрагентОператорИд,
+               |	ВТОсновная.КонтрагентОператорИНН КАК КонтрагентОператорИНН,
+               |	ВТОсновная.КонтрагентОператорКПП КАК КонтрагентОператорКПП,
+               |	ВТОсновная.КонтрагентОператорНаименование КАК КонтрагентОператорНаименование,
+               |	ВТОсновная.КонтрагентГород КАК КонтрагентГород,
+               |	ВТОсновная.КонтрагентДом КАК КонтрагентДом,
+               |	ВТОсновная.КонтрагентИндекс КАК КонтрагентИндекс,
+               |	ВТОсновная.КонтрагентКодРегиона КАК КонтрагентКодРегиона,
+               |	ВТОсновная.КонтрагентУлица КАК КонтрагентУлица,
+               |	ВТОсновная.КонтрагентРайон КАК КонтрагентРайон,
+               |	ВТОсновная.КонтрагентНаселенныйПункт КАК КонтрагентНаселенныйПункт,
+               |	ВТОсновная.КонтрагентКорпус КАК КонтрагентКорпус,
+               |	ВТОсновная.КонтрагентКвартира КАК КонтрагентКвартира,
+               |	ВТОсновная.ТочкаДоставки КАК ТочкаДоставки,
+               |	ВТОсновная.ПредставлениеТочкиДоставки КАК ПредставлениеТочкиДоставки,
+               |	ВТОсновная.ТочкаДоставкиНаименованиеИзРегистра КАК ТочкаДоставкиНаименованиеИзРегистра,
+               |	ВТОсновная.ТочкаДоставкиНаименованиеПолное КАК ТочкаДоставкиНаименованиеПолное,
+               |	ВТОсновная.ТочкаДоставкиЮрФизЛицо КАК ТочкаДоставкиЮрФизЛицо,
+               |	ВТОсновная.ТочкаДоставкиИНН КАК ТочкаДоставкиИНН,
+               |	ВТОсновная.ТочкаДоставкиКПП КАК ТочкаДоставкиКПП,
+               |	ВТОсновная.ТочкаДоставкиИННИзРегистра КАК ТочкаДоставкиИННИзРегистра,
+               |	ВТОсновная.ТочкаДоставкиКППИзРегистра КАК ТочкаДоставкиКППИзРегистра,
+               |	ВТОсновная.ТочкаДоставкиГород КАК ТочкаДоставкиГород,
+               |	ВТОсновная.ТочкаДоставкиДом КАК ТочкаДоставкиДом,
+               |	ВТОсновная.ТочкаДоставкиИндекс КАК ТочкаДоставкиИндекс,
+               |	ВТОсновная.ТочкаДоставкиКодРегиона КАК ТочкаДоставкиКодРегиона,
+               |	ВТОсновная.ТочкаДоставкиУлица КАК ТочкаДоставкиУлица,
+               |	ВТОсновная.ТочкаДоставкиРайон КАК ТочкаДоставкиРайон,
+               |	ВТОсновная.ТочкаДоставкиНаселенныйПункт КАК ТочкаДоставкиНаселенныйПункт,
+               |	ВТОсновная.ТочкаДоставкиКорпус КАК ТочкаДоставкиКорпус,
+               |	ВТОсновная.ТочкаДоставкиКвартира КАК ТочкаДоставкиКвартира,
+               |	ВТОсновная.ТочкаДоставкиGLN КАК ТочкаДоставкиGLN,
+               |	ВТОсновная.RECADV_EDIINTERCHANGEID КАК RECADV_EDIINTERCHANGEID,
+               |	ВТОсновная.RECADV_CAMPAIGNNUMBER КАК RECADV_CAMPAIGNNUMBER,
+               |	ВТОсновная.RECADV_Номер КАК RECADV_Номер,
+               |	ВТОсновная.RECADV_Дата КАК RECADV_Дата,
+               |	ВТОсновная.RECADV_ORDERVID КАК RECADV_ORDERVID,
+               |	ВТОсновная.RECADV_RECADVVID КАК RECADV_RECADVVID,
+               |	ВТОсновная.ДатаПриемаТовара КАК ДатаПриемаТовара,
+               |	ВТКорректировка.КорректировкаРеализации КАК КорректировкаРеализации,
+               |	ЕСТЬNULL(ВТКорректировка.ВсегоУвелСтТовБезНДСВсего, 0) КАК ВсегоУвелСтТовБезНДСВсего,
+               |	ЕСТЬNULL(ВТКорректировка.ВсегоУвелСтТовУчНалВсего, 0) КАК ВсегоУвелСтТовУчНалВсего,
+               |	ЕСТЬNULL(ВТКорректировка.ВсегоУвелСумНДС, 0) КАК ВсегоУвелСумНДС,
+               |	ЕСТЬNULL(ВТКорректировка.ВсегоУмСтТовБезНДСВсего, 0) КАК ВсегоУмСтТовБезНДСВсего,
+               |	ЕСТЬNULL(ВТКорректировка.ВсегоУмСтТовУчНалВсего, 0) КАК ВсегоУмСтТовУчНалВсего,
+               |	ЕСТЬNULL(ВТКорректировка.ВсегоУмСумНДС, 0) КАК ВсегоУмСумНДС,
+               |	ВТОсновная.ЭтоМаркируемыйЮЗД КАК ЭтоМаркируемыйЮЗД,
+               |	ВТОсновная.ЭтоПрослеживаемыйЮЗД КАК ЭтоПрослеживаемыйЮЗД,
+               |	ВТОсновная.Контрагент_ЭСФБезИнфПоля КАК Контрагент_ЭСФБезИнфПоля,
+               |	ЕСТЬNULL(ЭКОМ_ИнфоПоля.Ссылка, НЕОПРЕДЕЛЕНО) КАК ЭКОМ_ИнфоПоля,
+               |	ЭКОМ_ИнфоПоля.НеИспользоватьГрузОт_ОнЖе КАК НеИспользоватьГрузОт_ОнЖе,
+               |	ЭКОМ_ИнфоПоля.ОбязательноПолеОснПер КАК ОбязательноПолеОснПер,
+               |	ЭКОМ_ИнфоПоля.ОбязательноТНтипКомпетенции КАК ОбязательноТНтипКомпетенции,
+               |	ЭКОМ_ИнфоПоля.ИспользоватьПокупателяКПП_из_ГрузПолуч КАК ИспользоватьПокупателяКПП_из_ГрузПолуч,
+               |	ЭКОМ_ИнфоПоля.ИспользоватьПокупателяИНН_из_ГрузПолуч КАК ИспользоватьПокупателяИНН_из_ГрузПолуч,
+               |	ЕСТЬNULL(ВТОсновная.СуммаСНДС, 0) КАК СуммаСНДС,
+               |	ЕСТЬNULL(ЭКОМ_ИспользоватьАдресGLN.ЗначениеДополнительнойКонстанты, ЛОЖЬ) КАК ЭКОМ_ИспользоватьАдресGLN,
+               |	ЕСТЬNULL(ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN.ЗначениеДополнительнойКонстанты, ЛОЖЬ) КАК ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN,
+               |	ВТОсновная.ИзБазыОрганизацияЗначениеАдреса КАК ИзБазыОрганизацияЗначениеАдреса,
+               |	ВТОсновная.ИзБазыОрганизацияТипАдреса КАК ИзБазыОрганизацияТипАдреса,
+               |	ВТОсновная.ИзБазыТочкаДоставкиЗначениеАдреса КАК ИзБазыТочкаДоставкиЗначениеАдреса,
+               |	ВТОсновная.ИзБазыТочкаДоставкиТипАдреса КАК ИзБазыТочкаДоставкиТипАдреса,
+               |	ВТОсновная.ИзБазыКонтрагентЗначениеАдреса КАК ИзБазыКонтрагентЗначениеАдреса,
+               |	ВТОсновная.ИзБазыКонтрагентТипАдреса КАК ИзБазыКонтрагентТипАдреса,
+               |	ВТОсновная.ИсправляемыйСчетФактураДата КАК ИсправляемыйСчетФактураДата,
+               |	ВТОсновная.ДатаСЧФ КАК ДатаСЧФ1,
+               |	ВТОсновная.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
+               |	ВТКорректировка.ВсегоКолКор КАК ВсегоКолКор,
+               |	ВТ_ИсходныеРТУ.КоличествоПоРТУ КАК КоличествоПоРТУ
+               |ИЗ
+               |	ВТОсновная КАК ВТОсновная
+               |		ЛЕВОЕ СОЕДИНЕНИЕ ВТКорректировка КАК ВТКорректировка
+               |		ПО (ВТОсновная.ДокументОснование = ВТКорректировка.КорректировкаРеализации)
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ЭКОМ_ИнфоПоля КАК ЭКОМ_ИнфоПоля
+               |		ПО (ВТОсновная.ФорматУПД = ЭКОМ_ИнфоПоля.ФорматУПД)
+               |			И (НЕ ЭКОМ_ИнфоПоля.ПометкаУдаления)
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_ЗначениеДополнительныхКонстант КАК ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN
+               |		ПО (ИСТИНА)
+               |			И (ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN.ДополнительнаяКонстанта = ""ЭКОМ_ИспользоватьАдресаИзРегистраТочкиДоставкиGLN"")
+               |			И (ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN.Измерение = НЕОПРЕДЕЛЕНО)
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_ЗначениеДополнительныхКонстант КАК ЭКОМ_ИспользоватьАдресGLN
+               |		ПО (ИСТИНА)
+               |			И (ЭКОМ_ИспользоватьАдресGLN.ДополнительнаяКонстанта = ""ЭКОМ_ИспользоватьАдресаИзРегистраGLN"")
+               |			И (ЭКОМ_ИспользоватьАдресGLN.Измерение = НЕОПРЕДЕЛЕНО)
+               |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ИсходныеРТУ КАК ВТ_ИсходныеРТУ
+               |		ПО (ВТОсновная.Ссылка = ВТ_ИсходныеРТУ.Ссылка)";        
 //ОсновнойЗапрос --                                                                            
                                                                            
 
@@ -5853,7 +5978,13 @@
 ЕстьМаркированныеТовары = Не ЗапросМаркировка.Выполнить().Пустой();
 
 Пока ВыборкаДокумента.Следующий() Цикл
-
+	
+	Если ВыборкаДокумента.ЭтоКорректировка = Истина И (ВыборкаДокумента.КоличествоПоРТУ+ВыборкаДокумента.ВсегоКолКор) = 0 Тогда
+		ТекстЛогаСобытий = "По документу Счет-фактура № " + ВыборкаДокумента.НомерСЧФ + " от " + ВыборкаДокумента.ДатаСЧФ + " отсутствуют товары. Используйте аннулирование УПД.";
+        ДобавитьЗаписьВМассивЛога(МассивЛогаСобытий, ТекстЛогаСобытий, Перечисления.ЭКОМ_УровниЛогирования.Предупреждение, ИмяСобытия);
+		Продолжить;
+	КонецЕсли;
+	
     СтруктураДокумента = Результат.Добавить();
     СтруктураДокумента.ИдентификаторЦепочки = ВыборкаДокумента.ИдентификаторЦепочки;
 
@@ -7063,5 +7194,6 @@
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 		</Value>
+		<Value xsi:type="xs:string"/>
 	</row>
 </ValueTree>

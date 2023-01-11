@@ -59,6 +59,10 @@
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -88,6 +92,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -117,6 +122,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -146,6 +152,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -175,6 +182,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -204,6 +212,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -233,6 +242,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -262,6 +272,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -291,6 +302,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -320,6 +332,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -349,6 +362,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -378,6 +392,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -407,6 +422,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -436,6 +452,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<row>
@@ -466,6 +483,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<Value xsi:type="xs:boolean">true</Value>
@@ -495,6 +513,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<Value xsi:type="xs:boolean">true</Value>
@@ -524,6 +543,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<Value xsi:type="xs:boolean">true</Value>
@@ -553,6 +573,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<Value xsi:type="xs:boolean">true</Value>
@@ -582,6 +603,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<Value xsi:type="xs:boolean">true</Value>
@@ -611,6 +633,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<row>
@@ -641,6 +664,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -670,6 +694,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -699,6 +724,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -728,6 +754,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -757,6 +784,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -786,6 +814,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -815,6 +844,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -844,6 +874,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -873,6 +904,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -902,6 +934,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -931,6 +964,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -960,6 +994,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -989,6 +1024,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -1018,6 +1054,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<row>
@@ -1048,6 +1085,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:boolean">true</Value>
@@ -1077,6 +1115,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<row>
 						<Value xsi:type="xs:boolean">true</Value>
@@ -1106,6 +1145,7 @@
 							<valueType/>
 							<lastId xsi:type="xs:decimal">-1</lastId>
 						</Value>
+						<Value xsi:type="xs:string"/>
 					</row>
 					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
@@ -1134,6 +1174,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<Value xsi:type="xs:boolean">true</Value>
 				<Value xsi:type="xs:string"/>
@@ -1494,6 +1535,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<Value xsi:type="xs:boolean">true</Value>
 			<Value xsi:type="xs:string"/>
@@ -1522,6 +1564,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий ORDRSP (подтверждение заказа)</Value>
@@ -1586,7 +1629,6 @@
                |		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК DR_События_ORDER
                |		ПО (DR_События_Накладная.ИдентификаторЦепочки = DR_События_ORDER.ИдентификаторЦепочки)
                |			И (DR_События_ORDER.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.ORDER_Входящий))
-               |			И (DR_События_Накладная.ИдентификаторОснования = DR_События_ORDER.Идентификатор)
                |			И (ВЫРАЗИТЬ(DR_События_ORDER.Документ КАК Документ.ЭКОМ_Документы).АктуальныйДокумент)
                |ГДЕ
                |	DR_События_Накладная.Документ В(&amp;Документ)
@@ -1997,5 +2039,6 @@ EDIINTERCHANGEID = 0;
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 		</Value>
+		<Value xsi:type="xs:string"/>
 	</row>
 </ValueTree>

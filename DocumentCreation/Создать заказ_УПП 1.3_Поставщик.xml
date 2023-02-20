@@ -12,10 +12,6 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Источник</Name>
-		<ValueType/>
-	</column>
-	<column>
 		<Name xsi:type="xs:string">Приемник</Name>
 		<ValueType/>
 	</column>
@@ -43,10 +39,13 @@
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Создать заказ</Value>
-		<Value xsi:type="xs:string">ORDER_Входящий</Value>
 		<Value xsi:type="xs:string">ORDER_Входящий</Value>
 		<Value xsi:type="xs:string">Заказ_Входящий</Value>
 		<Value xsi:nil="true"/>
@@ -199,7 +198,7 @@
 		"ВЫБРАТЬ
 		|	ЭКОМ_ДокументыТЧ_Товары.Ссылка КАК Ссылка,
 		|	ЭКОМ_ДокументыТЧ_Товары.Номенклатура КАК Номенклатура,
-		|	ЭКОМ_ДокументыТЧ_Товары.КоличествоПоставляемое КАК Количество,
+		|	СУММА(ЭКОМ_ДокументыТЧ_Товары.КоличествоПоставляемое) КАК Количество,
 		|	ЭКОМ_ДокументыТЧ_Товары.Цена КАК Цена,
 		|	ЭКОМ_ДокументыТЧ_Товары.ЦенаСНДС КАК ЦенаСНДС,
 		|	ЭКОМ_ДокументыТЧ_Товары.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
@@ -210,7 +209,17 @@
 		|	Документ.ЭКОМ_Документы.ТЧ_Товары КАК ЭКОМ_ДокументыТЧ_Товары
 		|ГДЕ
 		|	ЭКОМ_ДокументыТЧ_Товары.Ссылка В(&amp;Источник)
-		|	И ЭКОМ_ДокументыТЧ_Товары.КоличествоПоставляемое &gt; 0";
+		|	И ЭКОМ_ДокументыТЧ_Товары.КоличествоПоставляемое &gt; 0
+		|
+		|СГРУППИРОВАТЬ ПО
+		|	ЭКОМ_ДокументыТЧ_Товары.Ссылка,
+		|	ЭКОМ_ДокументыТЧ_Товары.Номенклатура,
+		|	ЭКОМ_ДокументыТЧ_Товары.Цена,
+		|	ЭКОМ_ДокументыТЧ_Товары.ЦенаСНДС,
+		|	ЭКОМ_ДокументыТЧ_Товары.ЕдиницаИзмерения,
+		|	ЭКОМ_ДокументыТЧ_Товары.ЕдиницаИзмерения.Коэффициент,
+		|	ЭКОМ_ДокументыТЧ_Товары.Номенклатура.ВидНоменклатуры.ТипНоменклатуры,
+		|	ЭКОМ_ДокументыТЧ_Товары.Номенклатура.Наименование";
 		Запрос.УстановитьПараметр("Источник", Выборка.Источник);
 		РезультатЗапросаТЧТовары = Запрос.Выполнить().Выгрузить();
 		
@@ -466,30 +475,31 @@
 КонецЦикла;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">7</lastId>
+			<lastId xsi:type="xs:decimal">4</lastId>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
 				<presentation>Создать заказ</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">4</id>
+				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
-				<id xsi:type="xs:decimal">5</id>
+				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">6</id>
+				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ЭТРН</value>
-				<id xsi:type="xs:decimal">7</id>
+				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Прайс-лист</value>
-				<id xsi:type="xs:decimal">8</id>
+				<id xsi:type="xs:decimal">4</id>
 			</item>
 		</Value>
+		<Value xsi:nil="true"/>
 	</row>
 </ValueTree>

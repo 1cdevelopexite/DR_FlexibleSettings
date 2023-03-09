@@ -5228,7 +5228,7 @@
                |	DR_Настройки.Ссылка КАК Ссылка,
                |	DR_НастройкиДополнительныеРеквизиты.Реквизит КАК Реквизит,
                |	DR_НастройкиДополнительныеРеквизиты.Значение КАК Значение
-               |ПОМЕСТИТЬ ВТ_СертификатТЧ
+               |ПОМЕСТИТЬ ВТ_СертификатыТЧ
                |ИЗ
                |	Справочник.DR_Настройки КАК DR_Настройки
                |		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.DR_Настройки.ДополнительныеРеквизиты КАК DR_НастройкиДополнительныеРеквизиты
@@ -5253,6 +5253,20 @@
                |
                |////////////////////////////////////////////////////////////////////////////////
                |ВЫБРАТЬ РАЗЛИЧНЫЕ
+               |	DR_Настройки.Ссылка КАК Ссылка,
+               |	DR_НастройкиДополнительныеРеквизиты.Реквизит КАК Реквизит,
+               |	DR_НастройкиДополнительныеРеквизиты.Значение КАК Значение
+               |ПОМЕСТИТЬ ВТ_ИнфоПоляТЧ
+               |ИЗ
+               |	Справочник.DR_Настройки КАК DR_Настройки
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.DR_Настройки.ДополнительныеРеквизиты КАК DR_НастройкиДополнительныеРеквизиты
+               |		ПО DR_Настройки.Ссылка = DR_НастройкиДополнительныеРеквизиты.Ссылка
+               |ГДЕ
+               |	DR_Настройки.ВидНастройки = ""ИнфоПоля""
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ РАЗЛИЧНЫЕ
                |	ЭКОМ_GLN.Объект КАК Организация,
                |	ЭКОМ_GLN.Сертификат КАК Сертификат,
                |	ВТ_ДолжностьПодписанта.Значение КАК ДолжностьПодписанта,
@@ -5262,29 +5276,29 @@
                |	ВТ_ОбластьПолномочий.Значение КАК ОбластьПолномочий,
                |	ВТ_ОснованиеПолномочий.Значение КАК ОснованиеПолномочий,
                |	ВТ_СтатусПодписанта.Значение КАК СтатусПодписанта
-               |ПОМЕСТИТЬ ВТ_Сертификат
+               |ПОМЕСТИТЬ ВТ_Сертификаты
                |ИЗ
                |	РегистрСведений.ЭКОМ_GLN КАК ЭКОМ_GLN
                |		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.DR_Настройки КАК DR_Настройки
-               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатТЧ КАК ВТ_ДолжностьПодписанта
+               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатыТЧ КАК ВТ_ДолжностьПодписанта
                |			ПО DR_Настройки.Ссылка = ВТ_ДолжностьПодписанта.Ссылка
                |				И (ВТ_ДолжностьПодписанта.Реквизит = ""ДолжностьПодписанта"")
-               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатТЧ КАК ВТ_ФамилияПодписанта
+               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатыТЧ КАК ВТ_ФамилияПодписанта
                |			ПО DR_Настройки.Ссылка = ВТ_ФамилияПодписанта.Ссылка
                |				И (ВТ_ФамилияПодписанта.Реквизит = ""ФамилияПодписанта"")
-               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатТЧ КАК ВТ_ИмяПодписанта
+               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатыТЧ КАК ВТ_ИмяПодписанта
                |			ПО DR_Настройки.Ссылка = ВТ_ИмяПодписанта.Ссылка
                |				И (ВТ_ИмяПодписанта.Реквизит = ""ИмяПодписанта"")
-               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатТЧ КАК ВТ_ОтчествоПодписанта
+               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатыТЧ КАК ВТ_ОтчествоПодписанта
                |			ПО DR_Настройки.Ссылка = ВТ_ОтчествоПодписанта.Ссылка
                |				И (ВТ_ОтчествоПодписанта.Реквизит = ""ОтчествоПодписанта"")
-               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатТЧ КАК ВТ_ОбластьПолномочий
+               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатыТЧ КАК ВТ_ОбластьПолномочий
                |			ПО DR_Настройки.Ссылка = ВТ_ОбластьПолномочий.Ссылка
                |				И (ВТ_ОбластьПолномочий.Реквизит = ""ОбластьПолномочий"")
-               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатТЧ КАК ВТ_ОснованиеПолномочий
+               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатыТЧ КАК ВТ_ОснованиеПолномочий
                |			ПО DR_Настройки.Ссылка = ВТ_ОснованиеПолномочий.Ссылка
                |				И (ВТ_ОснованиеПолномочий.Реквизит = ""ОснованиеПолномочий"")
-               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатТЧ КАК ВТ_СтатусПодписанта
+               |			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_СертификатыТЧ КАК ВТ_СтатусПодписанта
                |			ПО DR_Настройки.Ссылка = ВТ_СтатусПодписанта.Ссылка
                |				И (ВТ_СтатусПодписанта.Реквизит = ""СтатусПодписанта"")
                |		ПО ЭКОМ_GLN.Сертификат = DR_Настройки.Ссылка
@@ -5294,7 +5308,7 @@
                |ВЫБРАТЬ РАЗЛИЧНЫЕ
                |	ЭКОМ_GLN.Объект КАК Организация,
                |	ЭКОМ_GLN.Партнер КАК Партнер,
-               |	ВТ_Идентификатор.Ссылка.Наименование КАК НаименованиеОП,
+               |	DR_Настройки.Ссылка.Наименование КАК НаименованиеОП,
                |	ВТ_Идентификатор.Значение КАК Идентификатор,
                |	ВТ_ИНН.Значение КАК ИНН,
                |	ВТ_КПП.Значение КАК КПП
@@ -5312,6 +5326,40 @@
                |			ПО DR_Настройки.Ссылка = ВТ_КПП.Ссылка
                |				И (ВТ_КПП.Реквизит = ""КПП"")
                |		ПО ЭКОМ_GLN.Партнер = DR_Настройки.Ссылка
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ РАЗЛИЧНЫЕ
+               |	DR_Настройки.Ссылка КАК Ссылка,
+               |	ВТ_ФорматУПД.Значение КАК ФорматУПД,
+               |	ВТ_НеИспользоватьГрузОт_ОнЖе.Значение КАК НеИспользоватьГрузОт_ОнЖе,
+               |	ВТ_ОбязательноПолеОснПер.Значение КАК ОбязательноПолеОснПер,
+               |	ВТ_ОбязательноТНтипКомпетенции.Значение КАК ОбязательноТНтипКомпетенции,
+               |	ВТ_ИспользоватьПокупателяКПП_из_ГрузПолуч.Значение КАК ИспользоватьПокупателяКПП_из_ГрузПолуч,
+               |	ВТ_ИспользоватьПокупателяИНН_из_ГрузПолуч.Значение КАК ИспользоватьПокупателяИНН_из_ГрузПолуч
+               |ПОМЕСТИТЬ ВТ_ИнфоПоля
+               |ИЗ
+               |	Справочник.DR_Настройки КАК DR_Настройки
+               |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ИнфоПоляТЧ КАК ВТ_ФорматУПД
+               |		ПО DR_Настройки.Ссылка = ВТ_ФорматУПД.Ссылка
+               |			И (ВТ_ФорматУПД.Реквизит = ""ФорматУПД"")
+               |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ИнфоПоляТЧ КАК ВТ_НеИспользоватьГрузОт_ОнЖе
+               |		ПО DR_Настройки.Ссылка = ВТ_НеИспользоватьГрузОт_ОнЖе.Ссылка
+               |			И (ВТ_НеИспользоватьГрузОт_ОнЖе.Реквизит = ""НеИспользоватьГрузОт_ОнЖе"")
+               |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ИнфоПоляТЧ КАК ВТ_ОбязательноПолеОснПер
+               |		ПО DR_Настройки.Ссылка = ВТ_ОбязательноПолеОснПер.Ссылка
+               |			И (ВТ_ОбязательноПолеОснПер.Реквизит = ""ОбязательноПолеОснПер"")
+               |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ИнфоПоляТЧ КАК ВТ_ОбязательноТНтипКомпетенции
+               |		ПО DR_Настройки.Ссылка = ВТ_ОбязательноТНтипКомпетенции.Ссылка
+               |			И (ВТ_ОбязательноТНтипКомпетенции.Реквизит = ""ОбязательноТНтипКомпетенции"")
+               |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ИнфоПоляТЧ КАК ВТ_ИспользоватьПокупателяКПП_из_ГрузПолуч
+               |		ПО DR_Настройки.Ссылка = ВТ_ИспользоватьПокупателяКПП_из_ГрузПолуч.Ссылка
+               |			И (ВТ_ИспользоватьПокупателяКПП_из_ГрузПолуч.Реквизит = ""ИспользоватьПокупателяКПП_из_ГрузПолуч"")
+               |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ИнфоПоляТЧ КАК ВТ_ИспользоватьПокупателяИНН_из_ГрузПолуч
+               |		ПО DR_Настройки.Ссылка = ВТ_ИспользоватьПокупателяИНН_из_ГрузПолуч.Ссылка
+               |			И (ВТ_ИспользоватьПокупателяИНН_из_ГрузПолуч.Реквизит = ""ИспользоватьПокупателяИНН_из_ГрузПолуч"")
+               |ГДЕ
+               |	DR_Настройки.ВидНастройки = ""ИнфоПоля""
                |;
                |
                |////////////////////////////////////////////////////////////////////////////////
@@ -5509,13 +5557,13 @@
                |	ДанныеОрганизации.Объект.СвидетельствоСерияНомер КАК ОрганизацияСвидетельствоСерияНомер,
                |	ДанныеОрганизации.Объект.СвидетельствоДатаВыдачи КАК ОрганизацияСвидетельствоДатаВыдачи,
                |	ДанныеОрганизации.Объект.ОГРН КАК ОрганизацияОГРН,
-               |	ЕСТЬNULL(ВТ_Сертификат.ДолжностьПодписанта, ДанныеОрганизации.Сертификат.ДолжностьПодписанта) КАК ДолжностьПодписанта,
-               |	ЕСТЬNULL(ВТ_Сертификат.ФамилияПодписанта, ДанныеОрганизации.Сертификат.ФамилияПодписанта) КАК ФамилияПодписанта,
-               |	ЕСТЬNULL(ВТ_Сертификат.ИмяПодписанта, ДанныеОрганизации.Сертификат.ИмяПодписанта) КАК ИмяПодписанта,
-               |	ЕСТЬNULL(ВТ_Сертификат.ОтчествоПодписанта, ДанныеОрганизации.Сертификат.ОтчествоПодписанта) КАК ОтчествоПодписанта,
-               |	ЕСТЬNULL(ВТ_Сертификат.ОбластьПолномочий, ДанныеОрганизации.Сертификат.ОбластьПолномочий) КАК СертификатОбластьПолномочий,
-               |	ЕСТЬNULL(ВТ_Сертификат.ОснованиеПолномочий, ДанныеОрганизации.Сертификат.ОснованиеПолномочий) КАК СертификатОснованиеПолномочий,
-               |	ЕСТЬNULL(ВТ_Сертификат.СтатусПодписанта, ДанныеОрганизации.Сертификат.СтатусПодписанта) КАК СертификатСтатусПодписанта,
+               |	ЕСТЬNULL(ВТ_Сертификаты.ДолжностьПодписанта, ДанныеОрганизации.Сертификат.ДолжностьПодписанта) КАК ДолжностьПодписанта,
+               |	ЕСТЬNULL(ВТ_Сертификаты.ФамилияПодписанта, ДанныеОрганизации.Сертификат.ФамилияПодписанта) КАК ФамилияПодписанта,
+               |	ЕСТЬNULL(ВТ_Сертификаты.ИмяПодписанта, ДанныеОрганизации.Сертификат.ИмяПодписанта) КАК ИмяПодписанта,
+               |	ЕСТЬNULL(ВТ_Сертификаты.ОтчествоПодписанта, ДанныеОрганизации.Сертификат.ОтчествоПодписанта) КАК ОтчествоПодписанта,
+               |	ЕСТЬNULL(ВТ_Сертификаты.ОбластьПолномочий, ДанныеОрганизации.Сертификат.ОбластьПолномочий) КАК СертификатОбластьПолномочий,
+               |	ЕСТЬNULL(ВТ_Сертификаты.ОснованиеПолномочий, ДанныеОрганизации.Сертификат.ОснованиеПолномочий) КАК СертификатОснованиеПолномочий,
+               |	ЕСТЬNULL(ВТ_Сертификаты.СтатусПодписанта, ДанныеОрганизации.Сертификат.СтатусПодписанта) КАК СертификатСтатусПодписанта,
                |	Источник.КонтрагентЦепочка КАК КонтрагентИзЗаказа,
                |	ДанныеКонтрагента.Объект.Представление КАК ПредставлениеКонтрагента,
                |	Источник.КонтрагентНаименованиеПолное КАК КонтрагентНаименованиеПолное,
@@ -5589,8 +5637,8 @@
                |		ПО Источник.КонтрагентЦепочка = ДанныеКонтрагента.Объект
                |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_GLN КАК ДанныеОрганизации
                |		ПО Источник.ОрганизацияЦепочка = ДанныеОрганизации.Объект
-               |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Сертификат КАК ВТ_Сертификат
-               |		ПО Источник.ОрганизацияЦепочка = ВТ_Сертификат.Организация
+               |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Сертификаты КАК ВТ_Сертификаты
+               |		ПО Источник.ОрганизацияЦепочка = ВТ_Сертификаты.Организация
                |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ОператорыЭДО КАК ВТ_ОператорыЭДО_Орг
                |		ПО Источник.ОрганизацияЦепочка = ВТ_ОператорыЭДО_Орг.Организация
                |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ОператорыЭДО КАК ВТ_ОператорыЭДО_Контр
@@ -5817,12 +5865,12 @@
                |	ВТОсновная.ЭтоМаркируемыйЮЗД КАК ЭтоМаркируемыйЮЗД,
                |	ВТОсновная.ЭтоПрослеживаемыйЮЗД КАК ЭтоПрослеживаемыйЮЗД,
                |	ВТОсновная.Контрагент_ЭСФБезИнфПоля КАК Контрагент_ЭСФБезИнфПоля,
-               |	ЕСТЬNULL(ЭКОМ_ИнфоПоля.Ссылка, НЕОПРЕДЕЛЕНО) КАК ЭКОМ_ИнфоПоля,
-               |	ЭКОМ_ИнфоПоля.НеИспользоватьГрузОт_ОнЖе КАК НеИспользоватьГрузОт_ОнЖе,
-               |	ЭКОМ_ИнфоПоля.ОбязательноПолеОснПер КАК ОбязательноПолеОснПер,
-               |	ЭКОМ_ИнфоПоля.ОбязательноТНтипКомпетенции КАК ОбязательноТНтипКомпетенции,
-               |	ЭКОМ_ИнфоПоля.ИспользоватьПокупателяКПП_из_ГрузПолуч КАК ИспользоватьПокупателяКПП_из_ГрузПолуч,
-               |	ЭКОМ_ИнфоПоля.ИспользоватьПокупателяИНН_из_ГрузПолуч КАК ИспользоватьПокупателяИНН_из_ГрузПолуч,
+               |	ЕСТЬNULL(ВТ_ИнфоПоля.Ссылка, ЭКОМ_ИнфоПоля.Ссылка) КАК ЭКОМ_ИнфоПоля,
+               |	ЕСТЬNULL(ВТ_ИнфоПоля.НеИспользоватьГрузОт_ОнЖе, ЭКОМ_ИнфоПоля.НеИспользоватьГрузОт_ОнЖе) КАК НеИспользоватьГрузОт_ОнЖе,
+               |	ЕСТЬNULL(ВТ_ИнфоПоля.ОбязательноПолеОснПер, ЭКОМ_ИнфоПоля.ОбязательноПолеОснПер) КАК ОбязательноПолеОснПер,
+               |	ЕСТЬNULL(ВТ_ИнфоПоля.ОбязательноТНтипКомпетенции, ЭКОМ_ИнфоПоля.ОбязательноТНтипКомпетенции) КАК ОбязательноТНтипКомпетенции,
+               |	ЕСТЬNULL(ВТ_ИнфоПоля.ИспользоватьПокупателяКПП_из_ГрузПолуч, ЭКОМ_ИнфоПоля.ИспользоватьПокупателяКПП_из_ГрузПолуч) КАК ИспользоватьПокупателяКПП_из_ГрузПолуч,
+               |	ЕСТЬNULL(ВТ_ИнфоПоля.ИспользоватьПокупателяИНН_из_ГрузПолуч, ЭКОМ_ИнфоПоля.ИспользоватьПокупателяИНН_из_ГрузПолуч) КАК ИспользоватьПокупателяИНН_из_ГрузПолуч,
                |	ЕСТЬNULL(ВТОсновная.СуммаСНДС, 0) КАК СуммаСНДС,
                |	ЕСТЬNULL(ЭКОМ_ИспользоватьАдресGLN.ЗначениеДополнительнойКонстанты, ЛОЖЬ) КАК ЭКОМ_ИспользоватьАдресGLN,
                |	ЕСТЬNULL(ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN.ЗначениеДополнительнойКонстанты, ЛОЖЬ) КАК ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN,
@@ -5844,6 +5892,9 @@
                |		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ЭКОМ_ИнфоПоля КАК ЭКОМ_ИнфоПоля
                |		ПО ВТОсновная.ФорматУПД = ЭКОМ_ИнфоПоля.ФорматУПД
                |			И (НЕ ЭКОМ_ИнфоПоля.ПометкаУдаления)
+               |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ИнфоПоля КАК ВТ_ИнфоПоля
+               |		ПО ВТОсновная.ФорматУПД = ВТ_ИнфоПоля.ФорматУПД
+               |			И (НЕ ВТ_ИнфоПоля.Ссылка.ПометкаУдаления)
                |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_ЗначениеДополнительныхКонстант КАК ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN
                |		ПО (ИСТИНА)
                |			И (ЭКОМ_ИспользоватьАдресТочкиДоставкиGLN.ДополнительнаяКонстанта = ""ЭКОМ_ИспользоватьАдресаИзРегистраТочкиДоставкиGLN"")
@@ -6722,542 +6773,10 @@
 		<Value xsi:type="ValueTable"/>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">133</lastId>
-			<item>
-				<value xsi:type="xs:string">_Buyer</value>
-				<id xsi:type="xs:decimal">0</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">_Consignee</value>
-				<id xsi:type="xs:decimal">1</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">_InfPol</value>
-				<id xsi:type="xs:decimal">2</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">_OrderNumber</value>
-				<id xsi:type="xs:decimal">3</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">_Supplier</value>
-				<id xsi:type="xs:decimal">4</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">_НомерАктаПриемки</value>
-				<id xsi:type="xs:decimal">5</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Date</value>
-				<id xsi:type="xs:decimal">6</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Number</value>
-				<id xsi:type="xs:decimal">7</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">POSITION</value>
-				<id xsi:type="xs:decimal">8</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ВерсПрог</value>
-				<id xsi:type="xs:decimal">9</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ВерсФорм</value>
-				<id xsi:type="xs:decimal">10</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ВремИнфПр</value>
-				<id xsi:type="xs:decimal">11</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Время</value>
-				<id xsi:type="xs:decimal">12</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузоотправительТип</value>
-				<id xsi:type="xs:decimal">13</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузополучательИНН</value>
-				<id xsi:type="xs:decimal">14</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузополучательКПП</value>
-				<id xsi:type="xs:decimal">15</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузополучательНаимОрг</value>
-				<id xsi:type="xs:decimal">16</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузополучательТип</value>
-				<id xsi:type="xs:decimal">17</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузПолГород</value>
-				<id xsi:type="xs:decimal">18</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузПолДом</value>
-				<id xsi:type="xs:decimal">19</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузПолИндекс</value>
-				<id xsi:type="xs:decimal">20</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузПолКварт</value>
-				<id xsi:type="xs:decimal">21</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузПолКодРегион</value>
-				<id xsi:type="xs:decimal">22</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузПолКорпус</value>
-				<id xsi:type="xs:decimal">23</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузПолНаселПункт</value>
-				<id xsi:type="xs:decimal">24</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузПолРайон</value>
-				<id xsi:type="xs:decimal">25</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузПолТипАдреса</value>
-				<id xsi:type="xs:decimal">26</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГрузПолУлица</value>
-				<id xsi:type="xs:decimal">27</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГУИДДокОснованиеДляКУПД</value>
-				<id xsi:type="xs:decimal">28</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ГУИДФайлаЭСФ</value>
-				<id xsi:type="xs:decimal">29</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Дата</value>
-				<id xsi:type="xs:decimal">30</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ДатаАктаПриемки</value>
-				<id xsi:type="xs:decimal">31</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ДатаЗаказа</value>
-				<id xsi:type="xs:decimal">32</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ДатаИнфПр</value>
-				<id xsi:type="xs:decimal">33</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ДатаКорИсправления</value>
-				<id xsi:type="xs:decimal">34</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ДатаКорСчФ</value>
-				<id xsi:type="xs:decimal">35</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ДатаОснования</value>
-				<id xsi:type="xs:decimal">36</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ДатаРасходной</value>
-				<id xsi:type="xs:decimal">37</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ДатаСчФ</value>
-				<id xsi:type="xs:decimal">38</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ДокФункция</value>
-				<id xsi:type="xs:decimal">39</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ИдОтпр</value>
-				<id xsi:type="xs:decimal">40</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ИдПок</value>
-				<id xsi:type="xs:decimal">41</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ИдФайл</value>
-				<id xsi:type="xs:decimal">42</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ИдЭДООператор</value>
-				<id xsi:type="xs:decimal">43</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ИННОператор</value>
-				<id xsi:type="xs:decimal">44</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ИнфТекст</value>
-				<id xsi:type="xs:decimal">45</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">КНД</value>
-				<id xsi:type="xs:decimal">46</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">КодВалютыСчФ</value>
-				<id xsi:type="xs:decimal">47</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Контрагент</value>
-				<id xsi:type="xs:decimal">48</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">КППОператор</value>
-				<id xsi:type="xs:decimal">49</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ОргПодписантДолжность</value>
-				<id xsi:type="xs:decimal">50</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ОргПодписантИНН</value>
-				<id xsi:type="xs:decimal">51</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ОргПодписантФамилия</value>
-				<id xsi:type="xs:decimal">52</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ОргПодписантИмя</value>
-				<id xsi:type="xs:decimal">53</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ОргПодписантОтчество</value>
-				<id xsi:type="xs:decimal">54</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ОргПодписантСвГосРегИП</value>
-				<id xsi:type="xs:decimal">55</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПодписантОблПолн</value>
-				<id xsi:type="xs:decimal">56</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПодписантОснПолн</value>
-				<id xsi:type="xs:decimal">57</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПодписантСтатус</value>
-				<id xsi:type="xs:decimal">58</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">НаимДокОпр</value>
-				<id xsi:type="xs:decimal">59</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">НаимЭконСубСост</value>
-				<id xsi:type="xs:decimal">60</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">НаименованиеОснования</value>
-				<id xsi:type="xs:decimal">61</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">НаимОргОператор</value>
-				<id xsi:type="xs:decimal">62</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">НомерКорИсправления</value>
-				<id xsi:type="xs:decimal">63</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">НомерКорСчФ</value>
-				<id xsi:type="xs:decimal">64</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">НомерОснования</value>
-				<id xsi:type="xs:decimal">65</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">НомерРасходной</value>
-				<id xsi:type="xs:decimal">66</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">НомерСчФ</value>
-				<id xsi:type="xs:decimal">67</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ОнЖе</value>
-				<id xsi:type="xs:decimal">68</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Организация</value>
-				<id xsi:type="xs:decimal">69</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ДатаИспрСчФ</value>
-				<id xsi:type="xs:decimal">70</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">НомИспрСчФ</value>
-				<id xsi:type="xs:decimal">71</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ДефДатаИспрСчФ</value>
-				<id xsi:type="xs:decimal">72</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ДефНомИспрСчФ</value>
-				<id xsi:type="xs:decimal">73</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПередатДокум</value>
-				<id xsi:type="xs:decimal">74</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПодписантТип</value>
-				<id xsi:type="xs:decimal">75</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокГород</value>
-				<id xsi:type="xs:decimal">76</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокДом</value>
-				<id xsi:type="xs:decimal">77</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокИмя</value>
-				<id xsi:type="xs:decimal">78</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокИндекс</value>
-				<id xsi:type="xs:decimal">79</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокИНН</value>
-				<id xsi:type="xs:decimal">80</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокИННЮЛ</value>
-				<id xsi:type="xs:decimal">81</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокКварт</value>
-				<id xsi:type="xs:decimal">82</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокКодРегион</value>
-				<id xsi:type="xs:decimal">83</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокКорпус</value>
-				<id xsi:type="xs:decimal">84</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокКПП</value>
-				<id xsi:type="xs:decimal">85</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокНаимОрг</value>
-				<id xsi:type="xs:decimal">86</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокНаселПункт</value>
-				<id xsi:type="xs:decimal">87</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокОтчество</value>
-				<id xsi:type="xs:decimal">88</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокРайон</value>
-				<id xsi:type="xs:decimal">89</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокТипАдреса</value>
-				<id xsi:type="xs:decimal">90</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокТипОрганизации</value>
-				<id xsi:type="xs:decimal">91</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокУлица</value>
-				<id xsi:type="xs:decimal">92</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПокФамилия</value>
-				<id xsi:type="xs:decimal">93</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПолноеИмяФайла</value>
-				<id xsi:type="xs:decimal">94</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПоФактХЖ</value>
-				<id xsi:type="xs:decimal">95</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродГород</value>
-				<id xsi:type="xs:decimal">96</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродДом</value>
-				<id xsi:type="xs:decimal">97</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродИндекс</value>
-				<id xsi:type="xs:decimal">98</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродИНН</value>
-				<id xsi:type="xs:decimal">99</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродКварт</value>
-				<id xsi:type="xs:decimal">100</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродКодРегион</value>
-				<id xsi:type="xs:decimal">101</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродКорпус</value>
-				<id xsi:type="xs:decimal">102</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродКПП</value>
-				<id xsi:type="xs:decimal">103</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродНаимОрг</value>
-				<id xsi:type="xs:decimal">104</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродНаселПункт</value>
-				<id xsi:type="xs:decimal">105</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродРайон</value>
-				<id xsi:type="xs:decimal">106</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродТипАдреса</value>
-				<id xsi:type="xs:decimal">107</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродТипОрганизации</value>
-				<id xsi:type="xs:decimal">108</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродУлица</value>
-				<id xsi:type="xs:decimal">109</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродФамилияИП</value>
-				<id xsi:type="xs:decimal">110</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродИмяИП</value>
-				<id xsi:type="xs:decimal">111</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПродОтчествоИП</value>
-				<id xsi:type="xs:decimal">112</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">РеализацияСсылка</value>
-				<id xsi:type="xs:decimal">113</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Ссылка</value>
-				<id xsi:type="xs:decimal">114</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Статус</value>
-				<id xsi:type="xs:decimal">115</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">СвПерДатаПер</value>
-				<id xsi:type="xs:decimal">116</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">СтТовБезНДСВсего</value>
-				<id xsi:type="xs:decimal">117</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">СтТовУчНалВсего</value>
-				<id xsi:type="xs:decimal">118</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">СуммаНДССчФ</value>
-				<id xsi:type="xs:decimal">119</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ВсегоУвелСтТовБезНДСВсего</value>
-				<id xsi:type="xs:decimal">120</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ВсегоУвелСтТовУчНалВсего</value>
-				<id xsi:type="xs:decimal">121</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ВсегоУвелСумНДС</value>
-				<id xsi:type="xs:decimal">122</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ВсегоУмСтТовБезНДСВсего</value>
-				<id xsi:type="xs:decimal">123</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ВсегоУмСтТовУчНалВсего</value>
-				<id xsi:type="xs:decimal">124</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ВсегоУмСумНДС</value>
-				<id xsi:type="xs:decimal">125</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ТипФайла</value>
-				<id xsi:type="xs:decimal">126</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ФайлИмя</value>
-				<id xsi:type="xs:decimal">127</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ФорматУПД</value>
-				<id xsi:type="xs:decimal">128</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">СодОпер</value>
-				<id xsi:type="xs:decimal">129</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ТипДок</value>
-				<id xsi:type="xs:decimal">130</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ВидДокумента</value>
-				<id xsi:type="xs:decimal">131</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ИдентификаторЦепочки</value>
-				<id xsi:type="xs:decimal">132</id>
-			</item>
+			<lastId xsi:type="xs:decimal">0</lastId>
 			<item>
 				<value xsi:type="xs:string">НомерПоПорядку</value>
-				<id xsi:type="xs:decimal">133</id>
+				<id xsi:type="xs:decimal">0</id>
 			</item>
 		</Value>
 		<Value xsi:type="ValueListType">

@@ -5068,7 +5068,7 @@
 				</row>
 				<row>
 					<row>
-						<Value xsi:type="xs:boolean">false</Value>
+						<Value xsi:type="xs:boolean">true</Value>
 						<Value xsi:type="xs:string"/>
 						<Value xsi:type="xs:string"/>
 						<Value xsi:type="xs:string">ФИО</Value>
@@ -5112,7 +5112,7 @@
 						</Value>
 						<Value xsi:type="xs:string"/>
 					</row>
-					<Value xsi:type="xs:boolean">false</Value>
+					<Value xsi:type="xs:boolean">true</Value>
 					<Value xsi:type="xs:string"/>
 					<Value xsi:type="xs:string"/>
 					<Value xsi:type="xs:string">ФЛ</Value>

@@ -59,6 +59,10 @@
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -88,6 +92,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -117,6 +122,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<Value xsi:type="xs:boolean">true</Value>
@@ -146,6 +152,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<row>
 			<row>
@@ -176,6 +183,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<Value xsi:type="xs:boolean">true</Value>
@@ -205,6 +213,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<Value xsi:type="xs:boolean">true</Value>
@@ -234,6 +243,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<Value xsi:type="xs:boolean">true</Value>
@@ -263,6 +273,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<Value xsi:type="xs:boolean">true</Value>
@@ -292,6 +303,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<Value xsi:type="xs:boolean">true</Value>
@@ -321,6 +333,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<Value xsi:type="xs:boolean">true</Value>
@@ -350,6 +363,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<row>
 				<row>
@@ -380,6 +394,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<row>
 					<Value xsi:type="xs:boolean">true</Value>
@@ -409,6 +424,7 @@
 						<valueType/>
 						<lastId xsi:type="xs:decimal">-1</lastId>
 					</Value>
+					<Value xsi:type="xs:string"/>
 				</row>
 				<Value xsi:type="xs:boolean">true</Value>
 				<Value xsi:type="xs:string"/>
@@ -437,6 +453,7 @@
 					<valueType/>
 					<lastId xsi:type="xs:decimal">-1</lastId>
 				</Value>
+				<Value xsi:type="xs:string"/>
 			</row>
 			<Value xsi:type="xs:boolean">true</Value>
 			<Value xsi:type="xs:string"/>
@@ -465,6 +482,7 @@
 				<valueType/>
 				<lastId xsi:type="xs:decimal">-1</lastId>
 			</Value>
+			<Value xsi:type="xs:string"/>
 		</row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий CONDRA (Принятие)</Value>
@@ -516,7 +534,47 @@
 
 Запрос = Новый Запрос;
 Запрос.Текст = 
-"ВЫБРАТЬ
+"ВЫБРАТЬ РАЗЛИЧНЫЕ
+|	DR_МЧД.Ссылка КАК Ссылка,
+|	DR_Организация.Значение КАК Организация,
+|	DR_Сертификат.Значение КАК Сертификат,
+|	DR_СтрокаМЧД.Значение КАК СтрокаМЧД
+|ПОМЕСТИТЬ ВТ_DR_МЧД
+|ИЗ
+|	Справочник.DR_Настройки КАК DR_МЧД
+|		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.DR_Настройки.ДополнительныеРеквизиты КАК DR_Организация
+|		ПО (DR_МЧД.Ссылка = DR_Организация.Ссылка)
+|			И (DR_Организация.Реквизит = ""Организация"")
+|		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.DR_Настройки.ДополнительныеРеквизиты КАК DR_ДляРегламентныхЗаданий
+|		ПО (DR_МЧД.Ссылка = DR_ДляРегламентныхЗаданий.Ссылка)
+|			И (DR_ДляРегламентныхЗаданий.Реквизит = ""ДляРегламентныхЗаданий"")
+|		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.DR_Настройки.ДополнительныеРеквизиты КАК DR_МЧДДействительнаПо
+|		ПО (DR_МЧД.Ссылка = DR_МЧДДействительнаПо.Ссылка)
+|			И (DR_МЧДДействительнаПо.Реквизит = ""МЧДДействительнаПо"")
+|		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.DR_Настройки.ДополнительныеРеквизиты КАК DR_МЧДДействительнаС
+|		ПО (DR_МЧД.Ссылка = DR_МЧДДействительнаС.Ссылка)
+|			И (DR_МЧДДействительнаС.Реквизит = ""МЧДДействительнаС"")
+|		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.DR_Настройки.ДополнительныеРеквизиты КАК DR_Сертификат
+|			ЛЕВОЕ СОЕДИНЕНИЕ Справочник.DR_Настройки КАК DR_СпрСертификат
+|			ПО (DR_Сертификат.Значение = DR_СпрСертификат.Ссылка)
+|		ПО (DR_МЧД.Ссылка = DR_Сертификат.Ссылка)
+|			И (DR_Сертификат.Реквизит = ""Сертификат"")
+|		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.DR_Настройки.ДополнительныеРеквизиты КАК DR_СтрокаМЧД
+|		ПО (DR_МЧД.Ссылка = DR_СтрокаМЧД.Ссылка)
+|			И (DR_СтрокаМЧД.Реквизит = ""СтрокаМЧД"")
+|ГДЕ
+|	DR_МЧД.ВидНастройки = ""МЧД""
+|	И ВЫБОР
+|			КОГДА &amp;ЭтоРегламентноеЗадание = ИСТИНА
+|				ТОГДА DR_ДляРегламентныхЗаданий.Значение = ИСТИНА
+|			ИНАЧЕ DR_МЧД.Пользователь = &amp;Пользователь
+|		КОНЕЦ
+|	И DR_МЧДДействительнаПо.Значение &gt; &amp;ТекущаяДата
+|	И DR_МЧДДействительнаС.Значение &lt; &amp;ТекущаяДата
+|;
+|
+|////////////////////////////////////////////////////////////////////////////////
+|ВЫБРАТЬ
 |	ЭКОМ_Документы.Ссылка КАК Ссылка,
 |	ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.CONDRA_Исходящий) КАК ВидДокумента,
 |	ЭКОМ_Документы.ФайлНомер КАК NUMBER,
@@ -528,20 +586,30 @@
 |	ЭКОМ_Документы.xmlКонтрагент КАК RECIPIENT,
 |	ЭКОМ_GLN_Контрагент.Ид_ОЭД КАК RECIPIENTGUID,
 |	ВЫРАЗИТЬ("""" КАК СТРОКА(36)) КАК DOCGUID,
-|	ЭКОМ_Документы.TRANSGUID,
+|	ЭКОМ_Документы.TRANSGUID КАК TRANSGUID,
 |	ЭКОМ_Документы.ИмяФайла КАК FILENAME,
 |	ВЫРАЗИТЬ("""" КАК СТРОКА(100)) КАК SIGNNAME,
 |	ЭКОМ_Документы.ФайлДата КАК Дата,
 |	ЭКОМ_Документы.Организация КАК Организация,
 |	ЭКОМ_Документы.Контрагент КАК Контрагент,
 |	ЗНАЧЕНИЕ(Перечисление.ЭКОМ_СтатусыCONDRA.Принят) КАК Статус,
-|	ВЫРАЗИТЬ("""" КАК СТРОКА(300)) КАК ФайлИмя
+|	ВЫРАЗИТЬ("""" КАК СТРОКА(300)) КАК ФайлИмя,
+|	ВЫРАЗИТЬ("""" КАК СТРОКА(300)) КАК GUIDФайла,
+|	ВЫБОР
+|		КОГДА ЭКОМ_GLN_Контрагент.Контрагент_ОтправитьМЧД = ИСТИНА
+|			ТОГДА DR_МЧД.Сертификат
+|		ИНАЧЕ ЭКОМ_GLN_Организация.Сертификат
+|	КОНЕЦ КАК Сертификат,
+|	ЭКОМ_GLN_Контрагент.Контрагент_ОтправитьМЧД КАК ОтправитьМЧД,
+|	DR_МЧД.СтрокаМЧД КАК СтрокаМЧД
 |ИЗ
 |	Документ.ЭКОМ_Документы КАК ЭКОМ_Документы
 |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_GLN КАК ЭКОМ_GLN_Организация
 |		ПО ЭКОМ_Документы.Организация = ЭКОМ_GLN_Организация.Объект
 |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_GLN КАК ЭКОМ_GLN_Контрагент
 |		ПО ЭКОМ_Документы.Контрагент = ЭКОМ_GLN_Контрагент.Объект
+|		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_DR_МЧД КАК DR_МЧД
+|		ПО ЭКОМ_Документы.Организация = DR_МЧД.Организация
 |ГДЕ
 |	ЭКОМ_Документы.Ссылка В(&amp;Источник)
 |	И ЭКОМ_Документы.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.CONDRA_Входящий)
@@ -549,6 +617,10 @@
 |	И НЕ ЭКОМ_Документы.ПометкаУдаления";
 
 Запрос.УстановитьПараметр("Источник", Источник);
+Запрос.УстановитьПараметр("Пользователь", НайтиТекущегоПользователя());
+Запрос.УстановитьПараметр("ЭтоРегламентноеЗадание", ЭтоРегламентноеЗадание);
+Запрос.УстановитьПараметр("ТекущаяДата", ТекущаяДата());
+
 РезультатЗапроса = Запрос.Выполнить(); 
 Результат = РезультатЗапроса.Выгрузить();
 
@@ -560,9 +632,9 @@ EDIINTERCHANGEID = 0;
 	Строка.DOCGUID		= Строка(Новый УникальныйИдентификатор);
 	EDIINTERCHANGEID 	= НовыйНомерТранзакции(EDIINTERCHANGEID);
     EDIMESSAGE = Формат(ТекущаяДата(), "ДФ=""ггггММддЧЧммсс""") + "-OUT-" +  Формат(EDIINTERCHANGEID, "ЧГ=0");
-	Строка.ФайлИмя		= "condra" + "_" + EDIMESSAGE + ".xml";
-	Строка.SIGNNAME 	= "condra" + "_" + EDIMESSAGE + ".bin";
-	
+	Строка.ФайлИмя		= "CONDRA" + "_" + EDIMESSAGE + ".xml";
+	Строка.SIGNNAME 	= "CONDRA" + "_" + EDIMESSAGE + ".bin";
+	Строка.GUIDФайла	= Формат(EDIINTERCHANGEID, "ЧГ=0");
 	   
 КонецЦикла;
 
@@ -570,7 +642,7 @@ EDIINTERCHANGEID = 0;
 		<Value xsi:type="ValueTable"/>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">19</lastId>
+			<lastId xsi:type="xs:decimal">23</lastId>
 			<item>
 				<value xsi:type="xs:string">Ссылка</value>
 				<id xsi:type="xs:decimal">0</id>
@@ -648,8 +720,24 @@ EDIINTERCHANGEID = 0;
 				<id xsi:type="xs:decimal">18</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">НомерПоПорядку</value>
+				<value xsi:type="xs:string">GUIDФайла</value>
 				<id xsi:type="xs:decimal">19</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Сертификат</value>
+				<id xsi:type="xs:decimal">20</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ОтправитьМЧД</value>
+				<id xsi:type="xs:decimal">21</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">СтрокаМЧД</value>
+				<id xsi:type="xs:decimal">22</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">НомерПоПорядку</value>
+				<id xsi:type="xs:decimal">23</id>
 			</item>
 		</Value>
 		<Value xsi:type="ValueListType">
@@ -686,5 +774,6 @@ EDIINTERCHANGEID = 0;
 				<id xsi:type="xs:decimal">4</id>
 			</item>
 		</Value>
+		<Value xsi:type="xs:string"/>
 	</row>
 </ValueTree>

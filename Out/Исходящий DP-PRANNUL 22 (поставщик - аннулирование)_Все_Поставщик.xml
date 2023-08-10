@@ -65,7 +65,7 @@
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">Исходящий DP_PRANNUL</Value>
+		<Value xsi:type="xs:string">Исходящий DP_PRANNUL_22 (Поставщик)</Value>
 		<Value xsi:type="xs:string">МассивСтруктурИсходящих = Новый Массив;
 
 ///ТекстАн 
@@ -664,7 +664,7 @@
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string">Исходящий DP_PRANNUL</Value>
+		<Value xsi:type="xs:string">Исходящий DP_PRANNUL_22 (Поставщик)</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">7</lastId>
@@ -684,7 +684,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Исходящий DP_PRANNUL</presentation>
+				<presentation>Исходящий DP_PRANNUL_22 (Поставщик)</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>

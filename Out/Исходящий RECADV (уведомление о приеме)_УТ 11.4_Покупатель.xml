@@ -8,6 +8,30 @@
 		<ValueType/>
 	</column>
 	<column>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Данные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Сохранение</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Загрузка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<column>
 		<Name xsi:type="xs:string">Источник</Name>
 		<ValueType/>
 	</column>
@@ -16,15 +40,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
-		<ValueType/>
-	</column>
-	<column>
 		<Name xsi:type="xs:string">Атрибуты</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Данные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -40,1274 +56,94 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Сохранение</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Загрузка</Name>
-		<ValueType/>
-	</column>
-	<column>
 		<Name xsi:type="xs:string">Обязательный</Name>
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<row>
-		<row>
-			<Value xsi:type="xs:boolean">true</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string">NUMBER</Value>
-			<Value xsi:nil="true"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:string">Документ.NUMBER</Value>
-			<Value xsi:type="ValueTable"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:boolean">false</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-		</row>
-		<row>
-			<Value xsi:type="xs:boolean">true</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string">DATE</Value>
-			<Value xsi:nil="true"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:string">Документ.DATE</Value>
-			<Value xsi:type="ValueTable"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:boolean">false</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-		</row>
-		<row>
-			<Value xsi:type="xs:boolean">true</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string">RECEPTIONDATE</Value>
-			<Value xsi:nil="true"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:string">Документ.RECEPTIONDATE</Value>
-			<Value xsi:type="ValueTable"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:boolean">false</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-		</row>
-		<row>
-			<Value xsi:type="xs:boolean">true</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string">ORDERNUMBER</Value>
-			<Value xsi:nil="true"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:string">Документ.ORDERNUMBER</Value>
-			<Value xsi:type="ValueTable"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:boolean">false</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-		</row>
-		<row>
-			<Value xsi:type="xs:boolean">true</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string">ORDERDATE</Value>
-			<Value xsi:nil="true"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:string">Документ.ORDERDATE</Value>
-			<Value xsi:type="ValueTable"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:boolean">false</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-		</row>
-		<row>
-			<Value xsi:type="xs:boolean">true</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string">DESADVNUMBER</Value>
-			<Value xsi:nil="true"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:string">Документ.DESADVNUMBER</Value>
-			<Value xsi:type="ValueTable"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:boolean">false</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-		</row>
-		<row>
-			<Value xsi:type="xs:boolean">true</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string">DESADVDATE</Value>
-			<Value xsi:nil="true"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:string">Документ.DESADVDATE</Value>
-			<Value xsi:type="ValueTable"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:boolean">false</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-		</row>
-		<row>
-			<Value xsi:type="xs:boolean">true</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string">CAMPAIGNNUMBER</Value>
-			<Value xsi:nil="true"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:string">Документ.CAMPAIGNNUMBER</Value>
-			<Value xsi:type="ValueTable"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:boolean">false</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-		</row>
-		<row>
-			<Value xsi:type="xs:boolean">true</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string">DOCTYPE</Value>
-			<Value xsi:nil="true"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:string">Документ.DOCTYPE</Value>
-			<Value xsi:type="ValueTable"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:boolean">false</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-		</row>
-		<row>
-			<row>
-				<Value xsi:type="xs:boolean">true</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">SUPPLIER</Value>
-				<Value xsi:nil="true"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:string">Документ.SUPPLIER</Value>
-				<Value xsi:type="ValueTable"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="xs:boolean">true</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">BUYER</Value>
-				<Value xsi:nil="true"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:string">Документ.BUYER</Value>
-				<Value xsi:type="ValueTable"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="xs:boolean">true</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">DELIVERYPLACE</Value>
-				<Value xsi:nil="true"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:string">Документ.DELIVERYPLACE</Value>
-				<Value xsi:type="ValueTable"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="xs:boolean">true</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">SENDER</Value>
-				<Value xsi:nil="true"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:string">Документ.SENDER</Value>
-				<Value xsi:type="ValueTable"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="xs:boolean">true</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">RECIPIENT</Value>
-				<Value xsi:nil="true"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:string">Документ.RECIPIENT</Value>
-				<Value xsi:type="ValueTable"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="xs:boolean">true</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">INVOICEPARTNER</Value>
-				<Value xsi:nil="true"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:string">Документ.BUYER</Value>
-				<Value xsi:type="ValueTable"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<Value xsi:type="xs:boolean">true</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">EDIINTERCHANGEID</Value>
-				<Value xsi:nil="true"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:string">Документ.EDIINTERCHANGEID</Value>
-				<Value xsi:type="ValueTable"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-			</row>
-			<row>
-				<row>
-					<Value xsi:type="xs:boolean">true</Value>
-					<Value xsi:type="xs:string"/>
-					<Value xsi:type="xs:string"/>
-					<Value xsi:type="xs:string">HIERARCHICALID</Value>
-					<Value xsi:nil="true"/>
-					<Value xsi:type="ValueListType">
-						<valueType/>
-						<lastId xsi:type="xs:decimal">-1</lastId>
-					</Value>
-					<Value xsi:type="xs:string">Документ.HIERARCHICALID</Value>
-					<Value xsi:type="ValueTable"/>
-					<Value xsi:type="ValueListType">
-						<valueType/>
-						<lastId xsi:type="xs:decimal">-1</lastId>
-					</Value>
-					<Value xsi:type="ValueListType">
-						<valueType/>
-						<lastId xsi:type="xs:decimal">-1</lastId>
-					</Value>
-					<Value xsi:type="xs:decimal">0</Value>
-					<Value xsi:type="xs:decimal">0</Value>
-					<Value xsi:type="xs:boolean">false</Value>
-					<Value xsi:type="xs:string"/>
-					<Value xsi:type="ValueListType">
-						<valueType/>
-						<lastId xsi:type="xs:decimal">-1</lastId>
-					</Value>
-				</row>
-				<row>
-					<row>
-						<Value xsi:type="xs:boolean">true</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string">POSITIONNUMBER</Value>
-						<Value xsi:nil="true"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:string">POSITION.POSITIONNUMBER</Value>
-						<Value xsi:type="ValueTable"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-					</row>
-					<row>
-						<Value xsi:type="xs:boolean">true</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string">PRODUCT</Value>
-						<Value xsi:nil="true"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:string">POSITION.PRODUCT</Value>
-						<Value xsi:type="ValueTable"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-					</row>
-					<row>
-						<Value xsi:type="xs:boolean">true</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string">PRODUCTIDSUPPLIER</Value>
-						<Value xsi:nil="true"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:string">POSITION.PRODUCTIDSUPPLIER</Value>
-						<Value xsi:type="ValueTable"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-					</row>
-					<row>
-						<Value xsi:type="xs:boolean">true</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string">PRODUCTIDBUYER</Value>
-						<Value xsi:nil="true"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:string">POSITION.PRODUCTIDBUYER</Value>
-						<Value xsi:type="ValueTable"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-					</row>
-					<row>
-						<Value xsi:type="xs:boolean">true</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string">ACCEPTEDQUANTITY</Value>
-						<Value xsi:nil="true"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:string">POSITION.ACCEPTEDQUANTITY</Value>
-						<Value xsi:type="ValueTable"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-					</row>
-					<row>
-						<Value xsi:type="xs:boolean">true</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string">ACCEPTEDUNIT</Value>
-						<Value xsi:nil="true"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:string">POSITION.ACCEPTEDUNIT</Value>
-						<Value xsi:type="ValueTable"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-					</row>
-					<row>
-						<Value xsi:type="xs:boolean">true</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string">ORDERQUANTITY</Value>
-						<Value xsi:nil="true"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:string">POSITION.ORDEREDQUANTITY</Value>
-						<Value xsi:type="ValueTable"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-					</row>
-					<row>
-						<Value xsi:type="xs:boolean">true</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string">PRICE</Value>
-						<Value xsi:nil="true"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:string">POSITION.PRICE</Value>
-						<Value xsi:type="ValueTable"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-					</row>
-					<row>
-						<Value xsi:type="xs:boolean">true</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string">PRICEWITHVAT</Value>
-						<Value xsi:nil="true"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:string">POSITION.PRICEWITHVAT</Value>
-						<Value xsi:type="ValueTable"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-					</row>
-					<row>
-						<Value xsi:type="xs:boolean">true</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string">TAXRATE</Value>
-						<Value xsi:nil="true"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:string">POSITION.TAXRATE</Value>
-						<Value xsi:type="ValueTable"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-					</row>
-					<row>
-						<Value xsi:type="xs:boolean">true</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="xs:string">DESCRIPTION</Value>
-						<Value xsi:nil="true"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:string">POSITION.DESCRIPTION</Value>
-						<Value xsi:type="ValueTable"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:decimal">0</Value>
-						<Value xsi:type="xs:boolean">false</Value>
-						<Value xsi:type="xs:string"/>
-						<Value xsi:type="ValueListType">
-							<valueType/>
-							<lastId xsi:type="xs:decimal">-1</lastId>
-						</Value>
-					</row>
-					<Value xsi:type="xs:boolean">true</Value>
-					<Value xsi:type="xs:string"/>
-					<Value xsi:type="xs:string"/>
-					<Value xsi:type="xs:string">POSITION</Value>
-					<Value xsi:nil="true"/>
-					<Value xsi:type="ValueListType">
-						<valueType/>
-						<lastId xsi:type="xs:decimal">-1</lastId>
-					</Value>
-					<Value xsi:type="xs:string">Запрос = Новый Запрос;
-Запрос.Текст = "ВЫБРАТЬ
-               |	ВложенныйЗапрос_Накладная.Накладная КАК Накладная,
-               |	ЕСТЬNULL(ВложенныйЗапрос_Заказ.Заказ, ЗНАЧЕНИЕ(Документ.Эком_Документы.ПустаяСсылка)) КАК Заказ,
-               |	ЕСТЬNULL(ВложенныйЗапрос_DESADV.DESADV, ЗНАЧЕНИЕ(Документ.Эком_Документы.ПустаяСсылка)) КАК DESADV
-               |ПОМЕСТИТЬ ВТ_ЦепочкиДокументов
-               |ИЗ
-               |	(ВЫБРАТЬ
-               |		DR_События.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
-               |		DR_События.Документ КАК Накладная,
-               |		DR_События.ИдентификаторОснования КАК ИдентификаторОснования,
-               |		ВЫРАЗИТЬ(DR_События.Документ КАК Документ.ПриобретениеТоваровУслуг).ЗаказПоставщику КАК ЗаказПоставщику
-               |	ИЗ
-               |		РегистрСведений.DR_События КАК DR_События
-               |	ГДЕ
-               |		DR_События.Документ В(&amp;Документ)
-               |		И DR_События.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.Накладная_Входящая)) КАК ВложенныйЗапрос_Накладная
-               |		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-               |			DR_События.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
-               |			DR_События.Документ КАК DESADV,
-               |			DR_События.Идентификатор КАК Идентификатор
-               |		ИЗ
-               |			РегистрСведений.DR_События КАК DR_События
-               |		ГДЕ
-               |			DR_События.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.DESADV_Входящий)) КАК ВложенныйЗапрос_DESADV
-               |		ПО (ВложенныйЗапрос_Накладная.ИдентификаторЦепочки = ВложенныйЗапрос_DESADV.ИдентификаторЦепочки
-               |				И ВложенныйЗапрос_Накладная.ИдентификаторОснования = ВложенныйЗапрос_DESADV.Идентификатор)
-               |		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-               |			DR_События.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
-               |			DR_События.Документ КАК Заказ
-               |		ИЗ
-               |			РегистрСведений.DR_События КАК DR_События
-               |		ГДЕ
-               |			DR_События.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.Заказ_Исходящий)) КАК ВложенныйЗапрос_Заказ
-               |		ПО (ВложенныйЗапрос_Накладная.ИдентификаторЦепочки = ВложенныйЗапрос_Заказ.ИдентификаторЦепочки
-               |				И ВложенныйЗапрос_Накладная.ЗаказПоставщику = ВложенныйЗапрос_Заказ.Заказ)
-               |;
-               |
-               |////////////////////////////////////////////////////////////////////////////////
-               |ВЫБРАТЬ
-               |	ПоступлениеТЧ.Ссылка КАК Ссылка,
-               |	ПоступлениеТЧ.НомерСтроки КАК POSITIONNUMBER,
-               |	ПоступлениеТЧ.Номенклатура.Код КАК PRODUCTIDBUYER,
-               |	ПоступлениеТЧ.Количество КАК Количество,
-               |	ПоступлениеТЧ.Цена КАК Цена,
-               |	ПоступлениеТЧ.СтавкаНДС КАК СтавкаНДС,
-               |	ПоступлениеТЧ.Номенклатура.Наименование КАК DESCRIPTION,
-               |	ВТ_ЦепочкиДокументов.DESADV КАК DESADV,
-               |	ВТ_ЦепочкиДокументов.Заказ КАК Заказ,
-               |	ПоступлениеТЧ.Номенклатура КАК Номенклатура,
-               |	ПоступлениеТЧ.Номенклатура.ЕдиницаИзмерения.Наименование КАК НоменклатураЕдиницаИзмеренияНаименование
-               |ПОМЕСТИТЬ ВТ
-               |ИЗ
-               |	ВТ_ЦепочкиДокументов КАК ВТ_ЦепочкиДокументов
-               |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПриобретениеТоваровУслуг КАК Поступление
-               |			ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПриобретениеТоваровУслуг.Товары КАК ПоступлениеТЧ
-               |			ПО Поступление.Ссылка = ПоступлениеТЧ.Ссылка
-               |		ПО ВТ_ЦепочкиДокументов.Накладная = Поступление.Ссылка
-               |;
-               |
-               |////////////////////////////////////////////////////////////////////////////////
-               |ВЫБРАТЬ
-               |	ВТ.Ссылка КАК Ссылка,
-               |	ВТ.POSITIONNUMBER КАК POSITIONNUMBER,
-               |	ВТ.PRODUCTIDBUYER КАК PRODUCTIDBUYER,
-               |	ВТ.Количество КАК Количество,
-               |	ВТ.Цена КАК Цена,
-               |	ВТ.СтавкаНДС КАК СтавкаНДС,
-               |	ВТ.DESCRIPTION КАК DESCRIPTION,
-               |	DESADV_ТЧ.НомерПродукта КАК Штрихкод,
-               |	DESADV_ТЧ.КоличествоПоставляемое КАК КоличествоПоставляемое,
-               |	ЗаказТЧ.Количество КАК КоличествоЗаказанное,
-               |	ВТ.НоменклатураЕдиницаИзмеренияНаименование КАК НоменклатураЕдиницаИзмеренияНаименование,
-               |	DESADV_ТЧ.НомерПродуктаПоставщика КАК PRODUCTIDSUPPLIER
-               |ИЗ
-               |	ВТ КАК ВТ
-               |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЭКОМ_Документы.ТЧ_Товары КАК DESADV_ТЧ
-               |		ПО ВТ.DESADV = DESADV_ТЧ.Ссылка
-               |			И ВТ.Номенклатура = DESADV_ТЧ.Номенклатура
-               |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЗаказПоставщику.Товары КАК ЗаказТЧ
-               |		ПО ВТ.Заказ = ЗаказТЧ.Ссылка
-               |			И ВТ.Номенклатура = ЗаказТЧ.Номенклатура
-               |
-               |УПОРЯДОЧИТЬ ПО
-               |	POSITIONNUMBER";
-Запрос.УстановитьПараметр("Документ", Источник);
-РезультатЗапроса = Запрос.Выполнить(); 
-Результат = РезультатЗапроса.Выгрузить();
-
-Результат.Колонки.Добавить("TAXRATE"         , Новый ОписаниеТипов("Строка"));
-Результат.Колонки.Добавить("PRODUCT"         , Новый ОписаниеТипов("Строка"));
-Результат.Колонки.Добавить("ORDEREDQUANTITY" , Новый ОписаниеТипов("Строка"));
-Результат.Колонки.Добавить("ACCEPTEDQUANTITY", Новый ОписаниеТипов("Строка"));
-Результат.Колонки.Добавить("DELIVERQUANITY"  , Новый ОписаниеТипов("Строка"));
-Результат.Колонки.Добавить("PRICE"           , Новый ОписаниеТипов("Строка"));
-Результат.Колонки.Добавить("PRICEWITHVAT"    , Новый ОписаниеТипов("Строка")); 
-Результат.Колонки.Добавить("AMOUNT"          , Новый ОписаниеТипов("Строка"));
-Результат.Колонки.Добавить("AMOUNTWITHVAT"   , Новый ОписаниеТипов("Строка"));
-Результат.Колонки.Добавить("ACCEPTEDUNIT"    , Новый ОписаниеТипов("Строка"));
-
-СтрокиДляУдаления = Новый Массив;
-
-Для Каждого Строка Из Результат Цикл
-
-    СтавкаНДС   = СтавкаНДСЧислом(Строка.СтавкаНДС);
-    Цена_с_НДС  = Строка.Цена * ((100 + СтавкаНДС)/100);
-
-    Строка.PRICE         = Формат(Строка.Цена, "ЧДЦ=2; ЧРД=.; ЧН=0.00; ЧГ=0");
-    Строка.PRICEWITHVAT  = Формат(Цена_с_НДС, "ЧДЦ=2; ЧРД=.; ЧН=0.00; ЧГ=0");
-    Строка.AMOUNT        = Формат(Строка.Цена * Строка.Количество, "ЧДЦ=2; ЧРД=.; ЧН=0.00; ЧГ=0");
-    Строка.AMOUNTWITHVAT = Формат(Цена_с_НДС * Строка.Количество, "ЧДЦ=2; ЧРД=.; ЧН=0.00; ЧГ=0");
-
-    Строка.PRODUCT = Строка.Штрихкод;
-
-    Строка.ACCEPTEDUNIT     = ПолучитьЕдиницуИзмерения(Строка.НоменклатураЕдиницаИзмеренияНаименование);
-    Строка.ACCEPTEDQUANTITY = Формат(Строка.Количество, "ЧДЦ=3; ЧРД=.; ЧН=; ЧГ=0");
-    Строка.ORDEREDQUANTITY  = Формат(Строка.КоличествоЗаказанное, "ЧДЦ=3; ЧРД=.; ЧН=; ЧГ=0");
-    Строка.DELIVERQUANITY   = Формат(Строка.КоличествоПоставляемое, "ЧДЦ=3; ЧРД=.; ЧН=; ЧГ=0");
-
-    Строка.TAXRATE = Формат(СтавкаНДС, "ЧДЦ=; ЧГ=0");
-
-КонецЦикла;
-
-Для Каждого Строка Из СтрокиДляУдаления Цикл
-    Результат.Удалить(Строка);
-КонецЦикла;
-
-Возврат Результат;</Value>
-					<Value xsi:type="ValueTable"/>
-					<Value xsi:type="ValueListType">
-						<valueType/>
-						<lastId xsi:type="xs:decimal">22</lastId>
-						<item>
-							<value xsi:type="xs:string">Ссылка</value>
-							<id xsi:type="xs:decimal">0</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">POSITIONNUMBER</value>
-							<id xsi:type="xs:decimal">1</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">PRODUCTIDBUYER</value>
-							<id xsi:type="xs:decimal">2</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">Количество</value>
-							<id xsi:type="xs:decimal">3</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">Цена</value>
-							<id xsi:type="xs:decimal">4</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">СтавкаНДС</value>
-							<id xsi:type="xs:decimal">5</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">DESCRIPTION</value>
-							<id xsi:type="xs:decimal">6</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">Штрихкод</value>
-							<id xsi:type="xs:decimal">7</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">КоличествоПоставляемое</value>
-							<id xsi:type="xs:decimal">8</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">КоличествоЗаказанное</value>
-							<id xsi:type="xs:decimal">9</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">НоменклатураЕдиницаИзмеренияНаименование</value>
-							<id xsi:type="xs:decimal">10</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">PRODUCTIDSUPPLIER</value>
-							<id xsi:type="xs:decimal">11</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">TAXRATE</value>
-							<id xsi:type="xs:decimal">12</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">PRODUCT</value>
-							<id xsi:type="xs:decimal">13</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">ORDEREDQUANTITY</value>
-							<id xsi:type="xs:decimal">14</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">ACCEPTEDQUANTITY</value>
-							<id xsi:type="xs:decimal">15</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">DELIVERQUANITY</value>
-							<id xsi:type="xs:decimal">16</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">PRICE</value>
-							<id xsi:type="xs:decimal">17</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">PRICEWITHVAT</value>
-							<id xsi:type="xs:decimal">18</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">AMOUNT</value>
-							<id xsi:type="xs:decimal">19</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">AMOUNTWITHVAT</value>
-							<id xsi:type="xs:decimal">20</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">ACCEPTEDUNIT</value>
-							<id xsi:type="xs:decimal">21</id>
-						</item>
-						<item>
-							<value xsi:type="xs:string">НомерПоПорядку</value>
-							<id xsi:type="xs:decimal">22</id>
-						</item>
-					</Value>
-					<Value xsi:type="ValueListType">
-						<valueType/>
-						<lastId xsi:type="xs:decimal">0</lastId>
-						<item>
-							<value xsi:type="xs:string">Документ.Ссылка</value>
-							<presentation>POSITION.Ссылка</presentation>
-							<id xsi:type="xs:decimal">0</id>
-						</item>
-					</Value>
-					<Value xsi:type="xs:decimal">0</Value>
-					<Value xsi:type="xs:decimal">0</Value>
-					<Value xsi:type="xs:boolean">false</Value>
-					<Value xsi:type="xs:string"/>
-					<Value xsi:type="ValueListType">
-						<valueType/>
-						<lastId xsi:type="xs:decimal">-1</lastId>
-					</Value>
-				</row>
-				<Value xsi:type="xs:boolean">true</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="xs:string">PACKINGSEQUENCE</Value>
-				<Value xsi:nil="true"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="ValueTable"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:decimal">0</Value>
-				<Value xsi:type="xs:boolean">false</Value>
-				<Value xsi:type="xs:string"/>
-				<Value xsi:type="ValueListType">
-					<valueType/>
-					<lastId xsi:type="xs:decimal">-1</lastId>
-				</Value>
-			</row>
-			<Value xsi:type="xs:boolean">true</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="xs:string">HEAD</Value>
-			<Value xsi:nil="true"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="ValueTable"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:decimal">0</Value>
-			<Value xsi:type="xs:boolean">false</Value>
-			<Value xsi:type="xs:string"/>
-			<Value xsi:type="ValueListType">
-				<valueType/>
-				<lastId xsi:type="xs:decimal">-1</lastId>
-			</Value>
-		</row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий RECADV (уведомление о приеме)</Value>
-		<Value xsi:type="xs:string">Накладная_Входящая</Value>
-		<Value xsi:type="xs:string">RECADV</Value>
-		<Value xsi:type="Structure">
-			<Property name="ВидДокумента">
-				<Value xsi:type="xs:string">Документ.ВидДокумента</Value>
-			</Property>
-			<Property name="ЗаказДата">
-				<Value xsi:type="xs:string">Документ.ЗаказДата</Value>
-			</Property>
-			<Property name="ЗаказНомер">
-				<Value xsi:type="xs:string">Документ.ЗаказНомер</Value>
-			</Property>
-			<Property name="Идентификатор">
-				<Value xsi:type="xs:string">Документ.Идентификатор</Value>
-			</Property>
-			<Property name="ИдентификаторИспр">
-				<Value xsi:nil="true"/>
-			</Property>
-			<Property name="Контрагент">
-				<Value xsi:type="xs:string">Документ.Контрагент</Value>
-			</Property>
-			<Property name="Номер">
-				<Value xsi:type="xs:string">Документ.Номер</Value>
-			</Property>
-			<Property name="Организация">
-				<Value xsi:type="xs:string">Документ.Организация</Value>
-			</Property>
-			<Property name="Ссылка">
-				<Value xsi:type="xs:string">Документ.Ссылка</Value>
-			</Property>
-			<Property name="Статус">
-				<Value xsi:type="xs:string">Документ.Статус</Value>
-			</Property>
-			<Property name="ФайлИмя">
-				<Value xsi:type="xs:string">Документ.ФайлИмя</Value>
-			</Property>
-			<Property name="ЭлектронныйДокумент">
-				<Value xsi:nil="true"/>
-			</Property>
-			<Property name="ИдентификаторЦепочки">
-				<Value xsi:type="xs:string">Документ.ИдентификаторЦепочки</Value>
-			</Property>
-		</Value>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="xs:string">//ВидДокументаПриемника = ПредопределенноеЗначение("Перечисление.ЭКОМ_ВидыДокументов.RECADV_Исходящий");
-
+		<Value xsi:type="xs:string">////////////////++ШАПКА++/////////////////////////////////////
 Запрос = Новый Запрос;
 Запрос.Текст = "ВЫБРАТЬ
-               |	ВложенныйЗапрос_Накладные.Документ КАК Накладная,
-               |	ВложенныйЗапрос_DESADV.xmlОрганизация КАК xmlОрганизация,
-               |	ВложенныйЗапрос_DESADV.xmlКонтрагент КАК xmlКонтрагент,
-               |	ВложенныйЗапрос_DESADV.xmlТочкаДоставки КАК xmlТочкаДоставки,
-               |	ВложенныйЗапрос_DESADV.ЗаказНомер КАК ORDERNUMBER,
-               |	ВложенныйЗапрос_DESADV.ЗаказДата КАК ORDERDATE,
-               |	ВложенныйЗапрос_DESADV.ФайлНомер КАК ФайлНомер,
-               |	ВложенныйЗапрос_Накладные.ИдентификаторЦепочки КАК ИдентификаторЦепочки
+               |	DR_События_Накладная.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
+               |	DR_События_Накладная.Документ КАК Накладная,
+               |	DR_События_Накладная.ИдентификаторОснования КАК ИдентификаторОснования,
+               |	DR_События_DESADV.Документ КАК DESADV,
+               |	DR_События_DESADV.Идентификатор КАК Идентификатор
                |ПОМЕСТИТЬ ВТ_ЦепочкиДокументов
                |ИЗ
-               |	(ВЫБРАТЬ
-               |		DR_События.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
-               |		DR_События.Документ КАК Документ,
-               |		DR_События.ИдентификаторОснования КАК ИдентификаторОснования
-               |	ИЗ
-               |		РегистрСведений.DR_События КАК DR_События
-               |	ГДЕ
-               |		DR_События.Документ В(&amp;Документ)
-               |		И DR_События.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.Накладная_Входящая)) КАК ВложенныйЗапрос_Накладные
-               |		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-               |			DR_События.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
-               |			DR_События.Документ КАК Документ,
-               |			ВЫРАЗИТЬ(DR_События.Документ КАК Документ.ЭКОМ_Документы).ФайлНомер КАК ФайлНомер,
-               |			ВЫРАЗИТЬ(DR_События.Документ КАК Документ.ЭКОМ_Документы).xmlОрганизация КАК xmlОрганизация,
-               |			ВЫРАЗИТЬ(DR_События.Документ КАК Документ.ЭКОМ_Документы).xmlКонтрагент КАК xmlКонтрагент,
-               |			ВЫРАЗИТЬ(DR_События.Документ КАК Документ.ЭКОМ_Документы).xmlТочкаДоставки КАК xmlТочкаДоставки,
-               |			ВЫРАЗИТЬ(DR_События.Документ КАК Документ.ЭКОМ_Документы).ЗаказНомер КАК ЗаказНомер,
-               |			ВЫРАЗИТЬ(DR_События.Документ КАК Документ.ЭКОМ_Документы).ЗаказДата КАК ЗаказДата,
-               |			DR_События.Идентификатор КАК Идентификатор
-               |		ИЗ
-               |			РегистрСведений.DR_События КАК DR_События
-               |		ГДЕ
-               |			DR_События.ВидДокумента = ЗНАЧЕНИЕ(Перечисление.ЭКОМ_ВидыДокументов.DESADV_Входящий)
-               |			И DR_События.Документ ССЫЛКА Документ.ЭКОМ_Документы) КАК ВложенныйЗапрос_DESADV
-               |		ПО (ВложенныйЗапрос_Накладные.ИдентификаторОснования = ВложенныйЗапрос_DESADV.Идентификатор)
-               |			И (ВложенныйЗапрос_Накладные.ИдентификаторЦепочки = ВложенныйЗапрос_DESADV.ИдентификаторЦепочки)
+               |	РегистрСведений.DR_События КАК DR_События_Накладная
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК DR_События_DESADV
+               |		ПО DR_События_Накладная.ИдентификаторЦепочки = DR_События_DESADV.ИдентификаторЦепочки
+               |			И (DR_События_DESADV.ВидДокумента = ""DESADV_Входящий"")
+               |			И DR_События_Накладная.ИдентификаторОснования = DR_События_DESADV.Идентификатор
+               |			И (ВЫРАЗИТЬ(DR_События_DESADV.Документ КАК Документ.DR_Документ).Статус = ""Обработан"")
+               |ГДЕ
+               |	DR_События_Накладная.Документ В(&amp;Документ)
+               |	И DR_События_Накладная.ВидДокумента = ""Накладная_Входящая""
                |;
                |
                |////////////////////////////////////////////////////////////////////////////////
                |ВЫБРАТЬ
+               |	ВТ_ЦепочкиДокументов.DESADV КАК DESADV,
                |	""220"" КАК DOCUMENTNAME,
                |	Поступление.Дата КАК Дата,
                |	""RUB"" КАК CURRENCY,
-               |	ВТ_ЦепочкиДокументов.xmlОрганизация КАК INVOICEPARTNER,
-               |	ВТ_ЦепочкиДокументов.xmlОрганизация КАК SENDER,
-               |	ВТ_ЦепочкиДокументов.xmlКонтрагент КАК RECIPIENT,
                |	Поступление.Ссылка КАК Ссылка,
                |	Поступление.Номер КАК Номер,
                |	Поступление.Контрагент КАК Контрагент,
                |	Поступление.Организация КАК Организация,
-               |	ЗНАЧЕНИЕ(Перечисление.ЭКОМ_Статусы.Отправлен) КАК Статус,
+               |	""Отправлен"" КАК Статус,
                |	""RECADV"" КАК ВидДокумента,
                |	Поступление.Номер КАК NUMBER,
-               |	ВТ_ЦепочкиДокументов.ФайлНомер КАК DESADVNUMBER,
-               |	ВТ_ЦепочкиДокументов.ORDERNUMBER КАК ЗаказНомер,
                |	Поступление.ДатаВходящегоДокумента КАК ДатаВходящегоДокумента,
                |	"""" КАК DELIVERYNOTENUMBER,
-               |	1 КАК HIERARCHICALID,
-               |	ВТ_ЦепочкиДокументов.xmlОрганизация КАК BUYER,
-               |	ВТ_ЦепочкиДокументов.xmlКонтрагент КАК SUPPLIER,
-               |	ВТ_ЦепочкиДокументов.xmlТочкаДоставки КАК DELIVERYPLACE,
-               |	ВТ_ЦепочкиДокументов.ORDERDATE КАК ЗаказДата,
-               |	ВТ_ЦепочкиДокументов.ORDERNUMBER КАК ORDERNUMBER,
+               |	""1"" КАК HIERARCHICALID,
                |	""O"" КАК DOCTYPE,
                |	Поступление.Договор.Номер КАК CAMPAIGNNUMBER,
+               |	DR_BUYER.Значение КАК INVOICEPARTNER,
+               |	DR_BUYER.Значение КАК SENDER,
+               |	DR_SUPPLIER.Значение КАК RECIPIENT,
+               |	DR_NUMBER.Значение КАК DESADVNUMBER,
+               |	DR_ORDERNUMBER.Значение КАК ЗаказНомер,
+               |	DR_BUYER.Значение КАК BUYER,
+               |	DR_SUPPLIER.Значение КАК SUPPLIER,
+               |	DR_DELIVERYPLACE.Значение КАК DELIVERYPLACE,
+               |	DR_ORDERDATE.Значение КАК ЗаказДата,
+               |	DR_ORDERNUMBER.Значение КАК ORDERNUMBER,
+               |	DR_POSITION.ХранилищеЗначения КАК POSITION,
                |	ВТ_ЦепочкиДокументов.ИдентификаторЦепочки КАК ИдентификаторЦепочки
                |ИЗ
                |	ВТ_ЦепочкиДокументов КАК ВТ_ЦепочкиДокументов
+               |		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.DR_Документ КАК DR_Документ
+               |		ПО ВТ_ЦепочкиДокументов.DESADV = DR_Документ.Ссылка
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.DR_Документ.ДополнительныеРеквизиты КАК DR_POSITION
+               |		ПО (DR_Документ.Ссылка = DR_POSITION.Ссылка)
+               |			И (DR_POSITION.Реквизит = ""POSITION"")
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.DR_Документ.ДополнительныеРеквизиты КАК DR_NUMBER
+               |		ПО (DR_Документ.Ссылка = DR_NUMBER.Ссылка)
+               |			И (DR_NUMBER.Реквизит = ""NUMBER"")
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.DR_Документ.ДополнительныеРеквизиты КАК DR_ORDERNUMBER
+               |		ПО (DR_Документ.Ссылка = DR_ORDERNUMBER.Ссылка)
+               |			И (DR_ORDERNUMBER.Реквизит = ""ORDERNUMBER"")
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.DR_Документ.ДополнительныеРеквизиты КАК DR_ORDERDATE
+               |		ПО (DR_Документ.Ссылка = DR_ORDERDATE.Ссылка)
+               |			И (DR_ORDERDATE.Реквизит = ""ORDERDATE"")
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.DR_Документ.ДополнительныеРеквизиты КАК DR_BUYER
+               |		ПО (DR_Документ.Ссылка = DR_BUYER.Ссылка)
+               |			И (DR_BUYER.Реквизит = ""BUYER"")
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.DR_Документ.ДополнительныеРеквизиты КАК DR_SUPPLIER
+               |		ПО (DR_Документ.Ссылка = DR_SUPPLIER.Ссылка)
+               |			И (DR_SUPPLIER.Реквизит = ""SUPPLIER"")
+               |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.DR_Документ.ДополнительныеРеквизиты КАК DR_DELIVERYPLACE
+               |		ПО (DR_Документ.Ссылка = DR_DELIVERYPLACE.Ссылка)
+               |			И (DR_DELIVERYPLACE.Реквизит = ""DELIVERYPLACE"")
                |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПриобретениеТоваровУслуг КАК Поступление
-               |		ПО ВТ_ЦепочкиДокументов.Накладная = Поступление.Ссылка
-               |ГДЕ
-               |	ВТ_ЦепочкиДокументов.Накладная В(&amp;Документ)";
+               |		ПО ВТ_ЦепочкиДокументов.Накладная = Поступление.Ссылка";
 Запрос.УстановитьПараметр("Документ", Источник);
 РезультатЗапроса = Запрос.Выполнить(); 
 Результат = РезультатЗапроса.Выгрузить();
@@ -1325,7 +161,14 @@
 Результат.Колонки.Добавить("ФайлИмя"             , Новый ОписаниеТипов("Строка"));
 Результат.Колонки.Добавить("Идентификатор"       , Новый ОписаниеТипов("Строка"));
 
-EDIINTERCHANGEID = 0;
+EDIINTERCHANGEID = 0; 
+
+ДанныеDESADV = новый ТаблицаЗначений;
+ДанныеDESADV.Колонки.Добавить("Ссылка", Новый ОписаниеТипов("ДокументСсылка.DR_Документ"));
+ДанныеDESADV.Колонки.Добавить("Номенклатура", Новый ОписаниеТипов("СправочникСсылка.Номенклатура"));
+ДанныеDESADV.Колонки.Добавить("PRODUCT", Новый ОписаниеТипов("Строка")); 
+ДанныеDESADV.Колонки.Добавить("DELIVEREDQUANTITY", Новый ОписаниеТипов("Число")); 
+ДанныеDESADV.Колонки.Добавить("PRODUCTIDSUPPLIER", Новый ОписаниеТипов("Строка")); 
 
 Для Каждого Строка Из Результат Цикл
 
@@ -1341,205 +184,427 @@ EDIINTERCHANGEID = 0;
     Строка.EDIMESSAGE       = Формат(ТекущаяДата(), "ДФ=ггггММддЧЧммсс000") + "-OUT-" + Строка.EDIINTERCHANGEID;
     Строка.ФайлИмя          = Строка.ВидДокумента + "_" + Строка.EDIMESSAGE + ".xml";
     Строка.Идентификатор    = Строка.ВидДокумента + "_" + Строка.EDIMESSAGE;
+	
+	Данные_POSITION = Строка.POSITION.Получить(); 
+	
+	Для Каждого СтрокаНоменклатуры Из Данные_POSITION Цикл
+		НоваяСтрокаDESADV					= ДанныеDESADV.Добавить();
+ 		НоваяСтрокаDESADV.Ссылка			= Строка.DESADV;
+		НоваяСтрокаDESADV.Номенклатура		= СтрокаНоменклатуры.Номенклатура;
+		НоваяСтрокаDESADV.PRODUCT			= СтрокаНоменклатуры.PRODUCT; 
+		НоваяСтрокаDESADV.DELIVEREDQUANTITY	= СтрокаНоменклатуры.DELIVEREDQUANTITY; 
+		НоваяСтрокаDESADV.PRODUCTIDSUPPLIER	= СтрокаНоменклатуры.PRODUCTIDSUPPLIER;
+	КонецЦикла;
+	
+КонецЦикла;
+
+////////////////--ШАПКА--/////////////////////////////////////
+
+////////////////++ТАБЛИЦА++///////////////////////////////////
+ЗапросНоменклатур = Новый Запрос;
+ЗапросНоменклатур.Текст = "ВЫБРАТЬ
+                          |	ДанныеТЧНоменклатурDESADV.Ссылка КАК Ссылка,
+                          |	ДанныеТЧНоменклатурDESADV.Номенклатура КАК Номенклатура,
+                          |	ДанныеТЧНоменклатурDESADV.PRODUCT КАК PRODUCT,
+                          |	ДанныеТЧНоменклатурDESADV.DELIVEREDQUANTITY КАК DELIVEREDQUANTITY,
+                          |	ДанныеТЧНоменклатурDESADV.PRODUCTIDSUPPLIER КАК PRODUCTIDSUPPLIER
+                          |ПОМЕСТИТЬ ВТ_НоменклатураDESADV
+                          |ИЗ
+                          |	&amp;ДанныеТЧНоменклатурDESADV КАК ДанныеТЧНоменклатурDESADV
+                          |;
+                          |
+                          |////////////////////////////////////////////////////////////////////////////////
+                          |ВЫБРАТЬ
+                          |	DR_События_Накладная.Документ КАК Накладная,
+                          |	ЕСТЬNULL(DR_События_Заказ.Документ, ЗНАЧЕНИЕ(Документ.DR_Документ.ПустаяСсылка)) КАК Заказ,
+                          |	ЕСТЬNULL(DR_События_DESADV.Документ, ЗНАЧЕНИЕ(Документ.DR_Документ.ПустаяСсылка)) КАК DESADV
+                          |ПОМЕСТИТЬ ВТ_ЦепочкиДокументов
+                          |ИЗ
+                          |	РегистрСведений.DR_События КАК DR_События_Накладная
+                          |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК DR_События_Заказ
+                          |		ПО DR_События_Накладная.ИдентификаторЦепочки = DR_События_Заказ.ИдентификаторЦепочки
+                          |			И DR_События_Накладная.Документ.ЗаказПоставщику = DR_События_Заказ.Документ
+                          |			И (DR_События_Заказ.ВидДокумента = ""Заказ_Исходящий"")
+                          |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК DR_События_DESADV
+                          |		ПО DR_События_Накладная.ИдентификаторЦепочки = DR_События_DESADV.ИдентификаторЦепочки
+                          |			И DR_События_Накладная.ИдентификаторОснования = DR_События_DESADV.Идентификатор
+                          |			И (DR_События_DESADV.ВидДокумента = ""DESADV_Входящий"")
+                          |ГДЕ
+                          |	DR_События_Накладная.Документ В(&amp;Документ)
+                          |	И DR_События_Накладная.ВидДокумента = ""Накладная_Входящая""
+                          |;
+                          |
+                          |////////////////////////////////////////////////////////////////////////////////
+                          |ВЫБРАТЬ
+                          |	ПоступлениеТЧ.Ссылка КАК Ссылка,
+                          |	ПоступлениеТЧ.НомерСтроки КАК НомерСтроки,
+                          |	ПоступлениеТЧ.Номенклатура.Код КАК PRODUCTIDBUYER,
+                          |	ПоступлениеТЧ.Количество КАК Количество,
+                          |	ПоступлениеТЧ.Цена КАК Цена,
+                          |	ПоступлениеТЧ.СтавкаНДС КАК СтавкаНДС,
+                          |	ПоступлениеТЧ.Номенклатура.Наименование КАК DESCRIPTION,
+                          |	ВТ_ЦепочкиДокументов.DESADV КАК DESADV,
+                          |	ВТ_ЦепочкиДокументов.Заказ КАК Заказ,
+                          |	ПоступлениеТЧ.Номенклатура КАК Номенклатура,
+                          |	ПоступлениеТЧ.Номенклатура.ЕдиницаИзмерения.Наименование КАК НоменклатураЕдиницаИзмеренияНаименование
+                          |ПОМЕСТИТЬ ВТ
+                          |ИЗ
+                          |	ВТ_ЦепочкиДокументов КАК ВТ_ЦепочкиДокументов
+                          |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПриобретениеТоваровУслуг КАК Поступление
+                          |			ЛЕВОЕ СОЕДИНЕНИЕ Документ.ПриобретениеТоваровУслуг.Товары КАК ПоступлениеТЧ
+                          |			ПО Поступление.Ссылка = ПоступлениеТЧ.Ссылка
+                          |		ПО ВТ_ЦепочкиДокументов.Накладная = Поступление.Ссылка
+                          |;
+                          |
+                          |////////////////////////////////////////////////////////////////////////////////
+                          |ВЫБРАТЬ
+                          |	ВТ.Ссылка КАК Ссылка,
+                          |	ВТ.НомерСтроки КАК НомерСтроки,
+                          |	ВТ.PRODUCTIDBUYER КАК PRODUCTIDBUYER,
+                          |	ВТ.Количество КАК Количество,
+                          |	ВТ.Цена КАК Цена,
+                          |	ВТ.СтавкаНДС КАК СтавкаНДС,
+                          |	ВТ.DESCRIPTION КАК DESCRIPTION,
+                          |	DESADV_ТЧ.PRODUCT КАК Штрихкод,
+                          |	DESADV_ТЧ.DELIVEREDQUANTITY КАК КоличествоПоставляемое,
+                          |	ЗаказТЧ.Количество КАК КоличествоЗаказанное,
+                          |	ВТ.НоменклатураЕдиницаИзмеренияНаименование КАК НоменклатураЕдиницаИзмеренияНаименование,
+                          |	DESADV_ТЧ.PRODUCTIDSUPPLIER КАК PRODUCTIDSUPPLIER
+                          |ИЗ
+                          |	ВТ КАК ВТ
+                          |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_НоменклатураDESADV КАК DESADV_ТЧ
+                          |		ПО ВТ.DESADV = DESADV_ТЧ.Ссылка
+                          |			И ВТ.Номенклатура = DESADV_ТЧ.Номенклатура
+                          |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЗаказПоставщику.Товары КАК ЗаказТЧ
+                          |		ПО ВТ.Заказ = ЗаказТЧ.Ссылка
+                          |			И ВТ.Номенклатура = ЗаказТЧ.Номенклатура
+                          |
+                          |УПОРЯДОЧИТЬ ПО
+                          |	НомерСтроки";
+ЗапросНоменклатур.УстановитьПараметр("Документ", Источник);
+ЗапросНоменклатур.УстановитьПараметр("ДанныеТЧНоменклатурDESADV", ДанныеDESADV);
+РезультатЗапросаНоменклатур = ЗапросНоменклатур.Выполнить(); 
+РезультатНоменклатур = РезультатЗапросаНоменклатур.Выгрузить();
+
+РезультатНоменклатур.Колонки.Добавить("TAXRATE"          	, Новый ОписаниеТипов("Строка"));
+РезультатНоменклатур.Колонки.Добавить("PRODUCT"          	, Новый ОписаниеТипов("Строка"));
+РезультатНоменклатур.Колонки.Добавить("ORDERQUANTITY" 		, Новый ОписаниеТипов("Строка"));
+РезультатНоменклатур.Колонки.Добавить("ACCEPTEDQUANTITY" 	, Новый ОписаниеТипов("Строка"));
+РезультатНоменклатур.Колонки.Добавить("DELIVERQUANITY"   	, Новый ОписаниеТипов("Строка"));
+РезультатНоменклатур.Колонки.Добавить("PRICE"            	, Новый ОписаниеТипов("Строка"));
+РезультатНоменклатур.Колонки.Добавить("PRICEWITHVAT"     	, Новый ОписаниеТипов("Строка")); 
+РезультатНоменклатур.Колонки.Добавить("AMOUNT"           	, Новый ОписаниеТипов("Строка"));
+РезультатНоменклатур.Колонки.Добавить("AMOUNTWITHVAT"    	, Новый ОписаниеТипов("Строка"));
+РезультатНоменклатур.Колонки.Добавить("ACCEPTEDUNIT"     	, Новый ОписаниеТипов("Строка"));
+РезультатНоменклатур.Колонки.Добавить("POSITIONNUMBER"   	, Новый ОписаниеТипов("Строка"));
+
+//СтрокиДляУдаления = Новый Массив;
+
+Для Каждого СтрокаНоменклатуры Из РезультатНоменклатур Цикл                               
+
+    СтавкаНДС   = СтавкаНДСЧислом(СтрокаНоменклатуры.СтавкаНДС);
+    Цена_с_НДС  = СтрокаНоменклатуры.Цена * ((100 + СтавкаНДС)/100);
+
+    СтрокаНоменклатуры.PRICE         	= Формат(СтрокаНоменклатуры.Цена, "ЧДЦ=2; ЧРД=.; ЧН=0.00; ЧГ=0");
+    СтрокаНоменклатуры.PRICEWITHVAT  	= Формат(Цена_с_НДС, "ЧДЦ=2; ЧРД=.; ЧН=0.00; ЧГ=0");
+    СтрокаНоменклатуры.AMOUNT        	= Формат(СтрокаНоменклатуры.Цена * СтрокаНоменклатуры.Количество, "ЧДЦ=2; ЧРД=.; ЧН=0.00; ЧГ=0");
+    СтрокаНоменклатуры.AMOUNTWITHVAT 	= Формат(Цена_с_НДС * СтрокаНоменклатуры.Количество, "ЧДЦ=2; ЧРД=.; ЧН=0.00; ЧГ=0");
+    СтрокаНоменклатуры.PRODUCT 			= СтрокаНоменклатуры.Штрихкод;    
+    СтрокаНоменклатуры.POSITIONNUMBER 	= Формат(СтрокаНоменклатуры.НомерСтроки, "ЧДЦ=; ЧГ=0");
+    СтрокаНоменклатуры.ACCEPTEDUNIT     = ПолучитьЕдиницуИзмерения(СтрокаНоменклатуры.НоменклатураЕдиницаИзмеренияНаименование);
+    СтрокаНоменклатуры.ACCEPTEDQUANTITY = Формат(СтрокаНоменклатуры.Количество, "ЧДЦ=3; ЧРД=.; ЧН=; ЧГ=0");
+    СтрокаНоменклатуры.ORDERQUANTITY  	= Формат(СтрокаНоменклатуры.КоличествоЗаказанное, "ЧДЦ=3; ЧРД=.; ЧН=; ЧГ=0");
+    СтрокаНоменклатуры.DELIVERQUANITY   = Формат(СтрокаНоменклатуры.КоличествоПоставляемое, "ЧДЦ=3; ЧРД=.; ЧН=; ЧГ=0");
+
+    СтрокаНоменклатуры.TAXRATE = Формат(СтрокаНоменклатуры, "ЧДЦ=; ЧГ=0");
 
 КонецЦикла;
 
-Возврат Результат;</Value>
-		<Value xsi:type="ValueTable"/>
+//Для Каждого Строка Из СтрокиДляУдаления Цикл
+//    РезультатНоменклатур.Удалить(Строка);
+//КонецЦикла;
+
+////////////////--ТАБЛИЦА--///////////////////////////////////
+
+
+//////////////////++СОЗДАНИЕ_XML++/////////////////////////////////// 	
+
+МассивСтруктурИсходящих = Новый Массив;	
+ТекстСообщенияПроверкиЗаполненияОбязательныхПолей = "";
+
+СписокRECADV = Новый СписокЗначений;	
+СписокRECADV.Добавить("СтрокаШапкиДокумента"	, "NUMBER"			, Истина);					
+СписокRECADV.Добавить("СтрокаШапкиДокумента"	, "DATE"			, Истина);				
+СписокRECADV.Добавить("СтрокаШапкиДокумента"	, "ORDERDATE"		, Истина);
+СписокRECADV.Добавить("СтрокаШапкиДокумента"	, "ORDERNUMBER"		, Истина);
+СписокRECADV.Добавить("СтрокаШапкиДокумента"	, "RECEPTIONDATE"	, Ложь);   							
+СписокRECADV.Добавить("СтрокаШапкиДокумента"	, "DESADVNUMBER"	, Ложь);
+СписокRECADV.Добавить("СтрокаШапкиДокумента"	, "DESADVDATE"		, Истина);
+СписокRECADV.Добавить("СтрокаШапкиДокумента"	, "CAMPAIGNNUMBER"	, Ложь);   							
+СписокRECADV.Добавить("СтрокаШапкиДокумента"	, "DOCTYPE"			, Ложь);
+	
+СписокHEAD = Новый СписокЗначений;	
+СписокHEAD.Добавить("СтрокаШапкиДокумента"		, "SUPPLIER"				, Истина);
+СписокHEAD.Добавить("СтрокаШапкиДокумента"		, "BUYER"					, Истина);					
+СписокHEAD.Добавить("СтрокаШапкиДокумента"		, "DELIVERYPLACE"			, Истина);   							
+СписокHEAD.Добавить("СтрокаШапкиДокумента"		, "SENDER"					, Истина);
+СписокHEAD.Добавить("СтрокаШапкиДокумента"		, "RECIPIENT"				, Истина);				
+СписокHEAD.Добавить("СтрокаШапкиДокумента"		, "EDIINTERCHANGEID"		, Ложь);
+СписокHEAD.Добавить("СтрокаШапкиДокумента"		, "INVOICEPARTNER"			, Ложь);
+
+СписокPACKINGSEQUENCE = Новый СписокЗначений;	
+СписокPACKINGSEQUENCE.Добавить("СтрокаШапкиДокумента"	, "HIERARCHICALID"	, Истина);
+		
+CписокPOSITION = Новый СписокЗначений;	
+CписокPOSITION.Добавить("СтрокаНоменклатурыДокумента", "POSITIONNUMBER"		, Истина);
+CписокPOSITION.Добавить("СтрокаНоменклатурыДокумента", "PRODUCT"			, Истина);					
+CписокPOSITION.Добавить("СтрокаНоменклатурыДокумента", "PRODUCTIDSUPPLIER"	, Истина);
+CписокPOSITION.Добавить("СтрокаНоменклатурыДокумента", "PRODUCTIDBUYER"		, Истина);
+CписокPOSITION.Добавить("СтрокаНоменклатурыДокумента", "ACCEPTEDQUANTITY"	, Истина);
+CписокPOSITION.Добавить("СтрокаНоменклатурыДокумента", "ACCEPTEDUNIT"		, Истина);   							
+CписокPOSITION.Добавить("СтрокаНоменклатурыДокумента", "ORDERQUANTITY"		, Ложь);
+CписокPOSITION.Добавить("СтрокаНоменклатурыДокумента", "PRICE"				, Ложь);
+CписокPOSITION.Добавить("СтрокаНоменклатурыДокумента", "PRICEWITHVAT"		, Ложь);
+CписокPOSITION.Добавить("СтрокаНоменклатурыДокумента", "TAXRATE"			, Ложь);
+CписокPOSITION.Добавить("СтрокаНоменклатурыДокумента", "DESCRIPTION"		, Ложь);			
+
+Для каждого СтрокаШапкиДокумента из Результат Цикл
+
+	ТекстСообщенияПроверкиЗаполненияОбязательныхПолей = "";  
+    				
+	XMLДокумент        	= Новый ЗаписьXML;		
+	ПараметрыЗаписиXML 	= Новый ПараметрыЗаписиXML("UTF-8", "1.0", Истина, Ложь, Символы.Таб); 
+	XMLДокумент.УстановитьСтроку("UTF-8");
+	XMLДокумент.ЗаписатьОбъявлениеXML();
+				
+	XMLДокумент.ЗаписатьНачалоЭлемента("RECADV");
+    
+	Для Каждого ЭлементRECADV из СписокRECADV Цикл
+	
+		СтрокаТЗ = Вычислить(ЭлементRECADV.Значение);
+		ИмяРеквизита = ЭлементRECADV.Представление;
+		ОбязательноеПоле = ЭлементRECADV.Пометка;
+		Вложенность = "RECADV."; 
+				
+		Если ЗначениеЗаполнено(СтрокаТЗ[ИмяРеквизита]) Тогда                                             		                                             
+			ЗаписатьXML(XMLДокумент, 	СтрокаТЗ[ИмяРеквизита]		, ИмяРеквизита);
+		Иначе
+			Если ОбязательноеПоле Тогда 
+	    		ТекстСообщенияПроверкиЗаполненияОбязательныхПолей = ?(ТекстСообщенияПроверкиЗаполненияОбязательныхПолей = "" ,
+				"При обработке документа &lt;" + СтрокаТЗ.Ссылка + "&gt; Возникли ошибки:" + Символы.ПС + Вложенность + ИмяРеквизита 
+				+ " - отсутствуют данные для заполнения тэга.", ТекстСообщенияПроверкиЗаполненияОбязательныхПолей + Символы.ПС 
+				+ "" + Вложенность + "" + ИмяРеквизита + " - отсутствуют данные для заполнения тэга."); 
+        	КонецЕсли;
+		КонецЕсли; 
+		 
+	КонецЦикла;
+	
+		XMLДокумент.ЗаписатьНачалоЭлемента("HEAD");
+		    
+			Для Каждого ЭлементHEAD из СписокHEAD Цикл
+			
+				СтрокаТЗ = Вычислить(ЭлементHEAD.Значение);
+				ИмяРеквизита = ЭлементHEAD.Представление;
+				ОбязательноеПоле = ЭлементHEAD.Пометка;
+				Вложенность = "RECADV.HEAD."; 
+			
+				Если ЗначениеЗаполнено(СтрокаТЗ[ИмяРеквизита]) Тогда                                             		                                             
+					ЗаписатьXML(XMLДокумент, 	СтрокаТЗ[ИмяРеквизита]		, ИмяРеквизита);
+				Иначе
+					Если ОбязательноеПоле Тогда 
+			    		ТекстСообщенияПроверкиЗаполненияОбязательныхПолей = ?(ТекстСообщенияПроверкиЗаполненияОбязательныхПолей = "" ,
+						"При обработке документа &lt;" + СтрокаТЗ.Ссылка + "&gt; Возникли ошибки:" + Символы.ПС + Вложенность + ИмяРеквизита 
+						+ " - отсутствуют данные для заполнения тэга.", ТекстСообщенияПроверкиЗаполненияОбязательныхПолей + Символы.ПС 
+						+ "" + Вложенность + "" + ИмяРеквизита + " - отсутствуют данные для заполнения тэга."); 
+	            	КонецЕсли;
+				КонецЕсли;
+                     
+			КонецЦикла;
+			
+			XMLДокумент.ЗаписатьНачалоЭлемента("PACKINGSEQUENCE");
+		    
+				Для Каждого ЭлементPACKINGSEQUENCE из СписокPACKINGSEQUENCE Цикл
+				
+					СтрокаТЗ = Вычислить(ЭлементPACKINGSEQUENCE.Значение);
+					ИмяРеквизита = ЭлементPACKINGSEQUENCE.Представление;
+					ОбязательноеПоле = ЭлементPACKINGSEQUENCE.Пометка;
+					Вложенность = "RECADV.HEAD.PACKINGSEQUENCE."; 
+
+					Если ЗначениеЗаполнено(СтрокаТЗ[ИмяРеквизита]) Тогда                                             		                                             
+						ЗаписатьXML(XMLДокумент, 	СтрокаТЗ[ИмяРеквизита]		, ИмяРеквизита);
+					Иначе
+						Если ОбязательноеПоле Тогда 
+				    		ТекстСообщенияПроверкиЗаполненияОбязательныхПолей = ?(ТекстСообщенияПроверкиЗаполненияОбязательныхПолей = "" ,
+							"При обработке документа &lt;" + СтрокаТЗ.Ссылка + "&gt; Возникли ошибки:" + Символы.ПС + Вложенность + ИмяРеквизита 
+							+ " - отсутствуют данные для заполнения тэга.", ТекстСообщенияПроверкиЗаполненияОбязательныхПолей + Символы.ПС 
+							+ "" + Вложенность + "" + ИмяРеквизита + " - отсутствуют данные для заполнения тэга."); 
+		            	КонецЕсли;
+					КонецЕсли;
+	                     
+				КонецЦикла;
+   		
+        		ОтборСтрокНоменклатур = Новый Структура;
+				ОтборСтрокНоменклатур.Вставить("Ссылка"		, СтрокаШапкиДокумента.Ссылка);
+				СтрокиНоменклатурДокумента = РезультатНоменклатур.НайтиСтроки(ОтборСтрокНоменклатур);	        			
+        			
+        		Для Каждого СтрокаНоменклатурыДокумента Из СтрокиНоменклатурДокумента Цикл
+        			    
+        		    XMLДокумент.ЗаписатьНачалоЭлемента("POSITION");
+        		    
+		        		Для Каждого ЭлементPOSITION из CписокPOSITION Цикл
+						
+							СтрокаТЗ = Вычислить(ЭлементPOSITION.Значение);
+							ИмяРеквизита = ЭлементPOSITION.Представление;
+							ОбязательноеПоле = ЭлементPOSITION.Пометка;
+							Вложенность = "RECADV.HEAD.PACKINGSEQUENCE.POSITION."; 
+						
+							Если ЗначениеЗаполнено(СтрокаТЗ[ИмяРеквизита]) Тогда                                             		                                             
+								ЗаписатьXML(XMLДокумент, 	СтрокаТЗ[ИмяРеквизита]		, ИмяРеквизита);
+							Иначе
+								Если ОбязательноеПоле Тогда 
+						    		ТекстСообщенияПроверкиЗаполненияОбязательныхПолей = ?(ТекстСообщенияПроверкиЗаполненияОбязательныхПолей = "" ,
+									"При обработке документа &lt;" + СтрокаТЗ.Ссылка + "&gt; Возникли ошибки:" + Символы.ПС + Вложенность + ИмяРеквизита 
+									+ " - отсутствуют данные для заполнения тэга.", ТекстСообщенияПроверкиЗаполненияОбязательныхПолей + Символы.ПС 
+									+ "" + Вложенность + "" + ИмяРеквизита + " - отсутствуют данные для заполнения тэга."); 
+				            	КонецЕсли;
+							КонецЕсли;
+
+						КонецЦикла;
+        					
+        			XMLДокумент.ЗаписатьКонецЭлемента(); 
+        				
+        		КонецЦикла;
+        		
+    		XMLДокумент.ЗаписатьКонецЭлемента();
+    			     
+		XMLДокумент.ЗаписатьКонецЭлемента();
+			
+	XMLДокумент.ЗаписатьКонецЭлемента();
+
+	СтрокаXML = XMLДокумент.Закрыть(); 
+	
+	
+	Если ЗначениеЗаполнено(ТекстСообщенияПроверкиЗаполненияОбязательныхПолей) Тогда
+		ТекстЛогаСобытий = ТекстСообщенияПроверкиЗаполненияОбязательныхПолей + Символы.ПС + "Документ пропущен и отправлен не будет.";
+		ЗаписьСтруктурыЛога = ЗаполненнаяЗаписьЛога(ТекстЛогаСобытий, "Ошибка", ИмяСобытия);
+		МассивЛогаСобытий.Добавить(ЗаписьСтруктурыЛога);
+	    Продолжить;
+	КонецЕсли;
+		
+	СтруктураДляСовместимости = Новый Структура("СтрокаXML, Отказ, ВидДокумента, ЗаказДата, ЗаказНомер, Идентификатор, Контрагент, Номер, Организация, Ссылка, Статус, ФайлИмя, ЭлектронныйДокумент, ИдентификаторЦепочки");
+	 
+	СтруктураДляСовместимости.СтрокаXML = СтрокаXML;
+	СтруктураДляСовместимости.Отказ = Ложь;
+	СтруктураДляСовместимости.ВидДокумента = "RECADV_Исходящий";
+	СтруктураДляСовместимости.ЗаказДата = СтрокаШапкиДокумента.ЗаказДата;
+	СтруктураДляСовместимости.ЗаказНомер = СтрокаШапкиДокумента.ЗаказНомер;
+	СтруктураДляСовместимости.Идентификатор = СтрокаШапкиДокумента.Идентификатор;
+	СтруктураДляСовместимости.Контрагент = СтрокаШапкиДокумента.Контрагент;
+	СтруктураДляСовместимости.Номер = СтрокаШапкиДокумента.Номер;
+	СтруктураДляСовместимости.Организация = СтрокаШапкиДокумента.Организация;
+	СтруктураДляСовместимости.Ссылка = СтрокаШапкиДокумента.Ссылка;
+	СтруктураДляСовместимости.Статус = СтрокаШапкиДокумента.Статус;
+	СтруктураДляСовместимости.ФайлИмя = СтрокаШапкиДокумента.ФайлИмя;
+	СтруктураДляСовместимости.ЭлектронныйДокумент = СтрокаШапкиДокумента.Ссылка;
+	СтруктураДляСовместимости.ИдентификаторЦепочки = СтрокаШапкиДокумента.ИдентификаторЦепочки;
+	
+	СтруктураФайлаДанных = Новый Структура;
+	СтруктураФайлаДанных.Вставить("ВидДокумента"			, "RECADV_Исходящий");
+	СтруктураФайлаДанных.Вставить("ДатаДокумента"			, СтрокаШапкиДокумента.Дата);
+	СтруктураФайлаДанных.Вставить("Документ"				, СтрокаШапкиДокумента.Ссылка);
+	СтруктураФайлаДанных.Вставить("ЗаказДата"				, СтрокаШапкиДокумента.ЗаказДата);
+	СтруктураФайлаДанных.Вставить("ЗаказНомер"				, СтрокаШапкиДокумента.ЗаказНомер);
+	СтруктураФайлаДанных.Вставить("ИдентификаторИспр"		, "");
+	СтруктураФайлаДанных.Вставить("ИдентификаторЦепочки"	, СтрокаШапкиДокумента.ИдентификаторЦепочки);
+	СтруктураФайлаДанных.Вставить("ИмяФайлаXML"				, СтрокаШапкиДокумента.ФайлИмя);
+	СтруктураФайлаДанных.Вставить("КодировкаФайла"			, "UTF-8");
+	СтруктураФайлаДанных.Вставить("Контрагент"				, СтрокаШапкиДокумента.Контрагент);
+	СтруктураФайлаДанных.Вставить("НомерДокумента"			, СтрокаШапкиДокумента.Номер);
+	СтруктураФайлаДанных.Вставить("Организация"				, СтрокаШапкиДокумента.Организация);
+	СтруктураФайлаДанных.Вставить("Отправлен"				, НЕОПРЕДЕЛЕНО);
+	СтруктураФайлаДанных.Вставить("Сообщение"				, "");
+	СтруктураФайлаДанных.Вставить("Статус"					, СтрокаШапкиДокумента.Статус);
+	СтруктураФайлаДанных.Вставить("СтрокаXML"				, СтрокаXML);
+	СтруктураФайлаДанных.Вставить("СтруктураДокумента"		, СтруктураДляСовместимости);
+	СтруктураФайлаДанных.Вставить("ТипФайла"				, СтрокаШапкиДокумента.ВидДокумента);
+
+	МассивСтруктурИсходящих.Добавить(СтруктураФайлаДанных); 
+	
+КонецЦикла;
+
+//Возврат Результат;				//раскомментировать для отображения значений таблицы "Результат" на вкладке "Тестирование"  
+//Возврат РезультатНоменклатур;		//раскомментировать для отображения значений таблицы "РезультатНоменклатур" на вкладке "Тестирование"
+
+Возврат МассивСтруктурИсходящих;</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">Уведомление о приемке (RECADV)</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">38</lastId>
+			<lastId xsi:type="xs:decimal">6</lastId>
 			<item>
-				<value xsi:type="xs:string">DOCUMENTNAME</value>
+				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Дата</value>
+				<value xsi:type="xs:string">Поставщик</value>
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">CURRENCY</value>
+				<value xsi:type="xs:string">Покупатель</value>
+				<presentation>СписокНакладныеВходящие</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">INVOICEPARTNER</value>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>Уведомление о приемке (RECADV)</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">SENDER</value>
+				<value xsi:type="xs:string">ПриемникВидДокумента</value>
+				<presentation>RECADV_Исходящий</presentation>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">RECIPIENT</value>
+				<value xsi:type="xs:string">ИсточникВидДокумента</value>
+				<presentation>Накладная_Входящая</presentation>
 				<id xsi:type="xs:decimal">5</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Ссылка</value>
+				<value xsi:type="xs:string">НужнаПодпись</value>
+				<presentation>Нет</presentation>
 				<id xsi:type="xs:decimal">6</id>
 			</item>
-			<item>
-				<value xsi:type="xs:string">Номер</value>
-				<id xsi:type="xs:decimal">7</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Контрагент</value>
-				<id xsi:type="xs:decimal">8</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Организация</value>
-				<id xsi:type="xs:decimal">9</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Статус</value>
-				<id xsi:type="xs:decimal">10</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ВидДокумента</value>
-				<id xsi:type="xs:decimal">11</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">NUMBER</value>
-				<id xsi:type="xs:decimal">12</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">DESADVNUMBER</value>
-				<id xsi:type="xs:decimal">13</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ЗаказНомер</value>
-				<id xsi:type="xs:decimal">14</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ДатаВходящегоДокумента</value>
-				<id xsi:type="xs:decimal">15</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">DELIVERYNOTENUMBER</value>
-				<id xsi:type="xs:decimal">16</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">HIERARCHICALID</value>
-				<id xsi:type="xs:decimal">17</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">BUYER</value>
-				<id xsi:type="xs:decimal">18</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">SUPPLIER</value>
-				<id xsi:type="xs:decimal">19</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">DELIVERYPLACE</value>
-				<id xsi:type="xs:decimal">20</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ЗаказДата</value>
-				<id xsi:type="xs:decimal">21</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ORDERNUMBER</value>
-				<id xsi:type="xs:decimal">22</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">DOCTYPE</value>
-				<id xsi:type="xs:decimal">23</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">CAMPAIGNNUMBER</value>
-				<id xsi:type="xs:decimal">24</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ИдентификаторЦепочки</value>
-				<id xsi:type="xs:decimal">25</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">DESADVDATE</value>
-				<id xsi:type="xs:decimal">26</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">DATE</value>
-				<id xsi:type="xs:decimal">27</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">TIME</value>
-				<id xsi:type="xs:decimal">28</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">RECEPTIONDATE</value>
-				<id xsi:type="xs:decimal">29</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ORDERDATE</value>
-				<id xsi:type="xs:decimal">30</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">DELIVERYDATE</value>
-				<id xsi:type="xs:decimal">31</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">EARLIESTDELIVERYDATE</value>
-				<id xsi:type="xs:decimal">32</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">LATESTDELIVERYDATE</value>
-				<id xsi:type="xs:decimal">33</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">EDIINTERCHANGEID</value>
-				<id xsi:type="xs:decimal">34</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">EDIMESSAGE</value>
-				<id xsi:type="xs:decimal">35</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ФайлИмя</value>
-				<id xsi:type="xs:decimal">36</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Идентификатор</value>
-				<id xsi:type="xs:decimal">37</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">НомерПоПорядку</value>
-				<id xsi:type="xs:decimal">38</id>
-			</item>
+		</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="ValueTable">
+			<column>
+				<Name xsi:type="xs:string">Реквизит1</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
 		</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:boolean">false</Value>
-		<Value xsi:type="xs:string">Уведомление о приемке (RECADV)</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">1</lastId>
-			<item>
-				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Уведомление о приемке (RECADV)</presentation>
-				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">0</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Покупатель</value>
-				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">1</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Поставщик</value>
-				<id xsi:type="xs:decimal">2</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ЭТРН</value>
-				<id xsi:type="xs:decimal">3</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Прайс-лист</value>
-				<id xsi:type="xs:decimal">4</id>
-			</item>
+			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
+		<Value xsi:type="xs:boolean">false</Value>
+		<Value xsi:type="xs:string"/>
 	</row>
 </ValueTree>

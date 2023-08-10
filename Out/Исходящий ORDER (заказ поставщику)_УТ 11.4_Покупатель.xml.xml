@@ -28,10 +28,6 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">СлужебныеТекст</Name>
-		<ValueType/>
-	</column>
-	<column>
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>

@@ -841,6 +841,7 @@ EDIINTERCHANGEID = 0;
 
 Возврат МассивСтруктурИсходящих; 
 </Value>
+		<Value xsi:type="xs:string"></Value>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">Уведомление об отгрузке (DESADV)</Value>

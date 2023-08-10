@@ -28,6 +28,10 @@
 		<ValueType/>
 	</column>
 	<column>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<ValueType/>
+	</column>
+	<column>
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
@@ -403,6 +407,7 @@ CписокPOSITION.Добавить("СтрокаНоменклатурыДок
 //Возврат РезультатНоменклатур;		//раскомментировать для отображения значений таблицы "РезультатНоменклатур" на вкладке "Тестирование"
 
 Возврат МассивСтруктурИсходящих;</Value>
+		<Value xsi:type="xs:string"></Value>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">Заказ (ORDER)</Value>

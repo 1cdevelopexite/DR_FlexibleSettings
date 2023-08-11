@@ -28,11 +28,39 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<Name xsi:type="xs:string">Источник</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Приемник</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Атрибуты</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ДанныеЗначения</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ДоступныеЗначения</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Связи</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Обязательный</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<row>
@@ -336,7 +364,13 @@ EDIINTERCHANGEID = 0;
     Строка.EDIINTERCHANGEID = Формат(EDIINTERCHANGEID, "ЧГ=0");
     Строка.EDIMESSAGE       = Формат(ТекущаяДата(), "ДФ=ггггММддЧЧммсс000") + "-OUT-" + Строка.EDIINTERCHANGEID;
     Строка.ФайлИмя          = "ORDRSP" + "_" + Строка.EDIMESSAGE + ".xml";
-    Строка.Идентификатор    = "ORDRSP" + "_" + Строка.EDIMESSAGE;
+    Строка.Идентификатор    = "ORDRSP" + "_" + Строка.EDIMESSAGE; 
+    
+    Если ТипЗнч(Строка.CURRENCY) = Тип("СправочникСсылка.Валюты") Тогда  
+		Строка.CURRENCY = Строка.CURRENCY.Наименование;
+	Иначе
+		Строка.CURRENCY = Строка(Строка.CURRENCY);
+	КонецЕсли;
 
 КонецЦикла;
 
@@ -842,7 +876,6 @@ EDIINTERCHANGEID = 0;
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">Исходящий ORDRSP (подтверждение заказа)</Value>
-		<Value xsi:type="xs:string"/>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">6</lastId>
@@ -882,5 +915,33 @@ EDIINTERCHANGEID = 0;
 				<id xsi:type="xs:decimal">6</id>
 			</item>
 		</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="ValueTable">
+			<column>
+				<Name xsi:type="xs:string">Реквизит1</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="xs:boolean">false</Value>
+		<Value xsi:type="xs:string"/>
 	</row>
 </ValueTree>

@@ -28,11 +28,39 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<Name xsi:type="xs:string">Источник</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Приемник</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Атрибуты</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ДанныеЗначения</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ДоступныеЗначения</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Связи</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Обязательный</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<row>
@@ -638,7 +666,7 @@
 			СтруктураСтроки.Вставить("НомерДокумента"       , ФайлНомер);
 			СтруктураСтроки.Вставить("ДатаДокумента"        , ФайлДата);
 			СтруктураСтроки.Вставить("ИдентификаторЦепочки" , Выборка.ИдентификаторЦепочки);
-			СтруктураСтроки.Вставить("ИдентификаторОснования", Выборка.Идентификатор);
+			СтруктураСтроки.Вставить("ИдентификаторОснования", Прав(Выборка.Идентификатор, 36));
 			СтруктураСтроки.Вставить("Идентификатор"		, Идентификатор);
 			
 			СтруктураСтроки.Вставить("ТипФайла", СтрЗаменить(ТипДокумента, "_11", ""));
@@ -662,7 +690,6 @@
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">Подпись ЮЗД</Value>
-		<Value xsi:type="xs:string"/>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">6</lastId>
@@ -703,5 +730,33 @@
 				<id xsi:type="xs:decimal">6</id>
 			</item>
 		</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="ValueTable">
+			<column>
+				<Name xsi:type="xs:string">Реквизит1</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="xs:boolean">false</Value>
+		<Value xsi:type="xs:string"/>
 	</row>
 </ValueTree>

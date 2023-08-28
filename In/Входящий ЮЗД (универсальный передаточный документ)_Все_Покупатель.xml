@@ -33,7 +33,7 @@
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">Входящий ON_NSCHFDOPPRPROS</Value>
+		<Value xsi:type="xs:string">Входящий ЮЗД</Value>
 		<Value xsi:type="xs:string">ТипыДокументовДляЗагрузки = Новый Массив;
 ПараметрыСтруктуры  = "Тип, ИспользоватьДерево";  
 ИспользуемыеДеревья = Новый Соответствие;

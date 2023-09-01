@@ -189,15 +189,12 @@
 |	DR_МЧД.МЧД_Актуальна КАК МЧД_Актуальна,
 |	DR_МЧД.СтрокаМЧД КАК СтрокаМЧД
 |ИЗ
-|	РегистрСведений.DR_События КАК Источник_События
-|		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК PRANNUL_События
-|		ПО Источник_События.ИдентификаторЦепочки = PRANNUL_События.ИдентификаторЦепочки
-|			И (PRANNUL_События.ВидДокумента = ""DP_PRANNUL_22_Входящий"")
+|	РегистрСведений.DR_События КАК PRANNUL_События
 |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.DR_Документ.ДополнительныеРеквизиты КАК DR_ИдФайл
-|		ПО (PRANNUL_События.Документ = DR_ИдФайл.Ссылка)
+|		ПО PRANNUL_События.Документ = DR_ИдФайл.Ссылка
 |			И (DR_ИдФайл.Реквизит = ""ИдФайл"")
 |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_ЦепочкиДокументов КАК DR_ЦепочкиДокументов
-|		ПО (PRANNUL_События.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки)
+|		ПО PRANNUL_События.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки
 |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭКОМ_GLN КАК ЭКОМ_GLN_Организация
 |		ПО (DR_ЦепочкиДокументов.Организация = ЭКОМ_GLN_Организация.Объект)
 |		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.DR_Настройки.ДополнительныеРеквизиты КАК Орг_Идентификатор
@@ -226,8 +223,9 @@
 |		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_DR_МЧД КАК DR_МЧД
 |		ПО (DR_ЦепочкиДокументов.Организация = DR_МЧД.Организация)
 |ГДЕ
-|	Источник_События.Документ В(&amp;Документ)
-|	И Источник_События.ВидДокумента = ""СчетФактура_Исходящий"""; 
+|	PRANNUL_События.Документ В(&amp;Документ)
+|	И PRANNUL_События.ВидДокумента = ""DP_PRANNUL_22_Входящий""
+|	И PRANNUL_События.Статус = ""Обработан"""; 
 
 Запрос.УстановитьПараметр("Документ", Источник);
 Запрос.УстановитьПараметр("ТаблицаМЧД", ТаблицаМЧД);
@@ -592,48 +590,52 @@
 		<Value xsi:type="xs:string">Исходящий DP_UVUTOCH_24 (Поставщик)</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">7</lastId>
+			<lastId xsi:type="xs:decimal">8</lastId>
 			<item>
-				<value xsi:type="xs:string">Прайс-лист</value>
+				<value xsi:type="xs:string">Неструкт. докум.</value>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Поставщик</value>
-				<presentation>СписокКвитанцииПоставщик</presentation>
-				<checkState>1</checkState>
+				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Покупатель</value>
+				<value xsi:type="xs:string">Поставщик</value>
+				<presentation>СписокPrannulВходящиеПоставщик</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Покупатель</value>
+				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
 				<presentation>Исходящий DP_UVUTOCH_24 (Поставщик)</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">3</id>
+				<id xsi:type="xs:decimal">4</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
 				<presentation>Текст отклонения</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">4</id>
+				<id xsi:type="xs:decimal">5</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПриемникВидДокумента</value>
 				<presentation>DP_UVUTOCH_24_Исходящий</presentation>
-				<id xsi:type="xs:decimal">5</id>
+				<id xsi:type="xs:decimal">6</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИсточникВидДокумента</value>
-				<presentation>ON_NSCHFDOPPR_01_Исходящий</presentation>
-				<id xsi:type="xs:decimal">6</id>
+				<presentation>DP_PRANNUL_22_Входящий</presentation>
+				<id xsi:type="xs:decimal">7</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">НужнаПодпись</value>
 				<presentation>Да</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">7</id>
+				<id xsi:type="xs:decimal">8</id>
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>

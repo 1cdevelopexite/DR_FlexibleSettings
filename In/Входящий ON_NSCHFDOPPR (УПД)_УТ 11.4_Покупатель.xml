@@ -1308,26 +1308,28 @@
 		<Value xsi:type="xs:string">Входящий УПД (иУПД)</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">3</lastId>
+			<lastId xsi:type="xs:decimal">4</lastId>
 			<item>
-				<value xsi:type="xs:string">Прайс-лист</value>
+				<value xsi:type="xs:string">Неструкт. докум.</value>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Поставщик</value>
+				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Покупатель</value>
-				<presentation>СписокСчетаФактурыВходящие</presentation>
-				<checkState>1</checkState>
+				<value xsi:type="xs:string">Поставщик</value>
 				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Покупатель</value>
+				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
 				<presentation>Входящий УПД (иУПД)</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">3</id>
+				<id xsi:type="xs:decimal">4</id>
 			</item>
 		</Value>
 	</row>

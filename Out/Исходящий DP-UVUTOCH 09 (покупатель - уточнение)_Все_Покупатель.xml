@@ -564,48 +564,52 @@
 		<Value xsi:type="xs:string">Исходящий DP_UVUTOCH_09 (уведомление об уточнении)</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">7</lastId>
+			<lastId xsi:type="xs:decimal">8</lastId>
 			<item>
-				<value xsi:type="xs:string">Прайс-лист</value>
+				<value xsi:type="xs:string">Неструкт. докум.</value>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Поставщик</value>
+				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Покупатель</value>
-				<presentation>СписокКвитанцииПокупатель</presentation>
-				<checkState>1</checkState>
+				<value xsi:type="xs:string">Поставщик</value>
 				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Покупатель</value>
+				<presentation>СписокСчетаФактурыВходящие; СписокСчетаФактурыКорректировкаВходящие; СписокСчетаФактурыИсправлениеВходящие</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
 				<presentation>Исходящий DP_UVUTOCH_09 (уведомление об уточнении)</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">3</id>
+				<id xsi:type="xs:decimal">4</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
 				<presentation>Текст отклонения</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">4</id>
+				<id xsi:type="xs:decimal">5</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПриемникВидДокумента</value>
 				<presentation>DP_UVUTOCH_09_Исходящий</presentation>
-				<id xsi:type="xs:decimal">5</id>
+				<id xsi:type="xs:decimal">6</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИсточникВидДокумента</value>
-				<presentation>ON_NSCHFDOPPR_01_Входящий</presentation>
-				<id xsi:type="xs:decimal">6</id>
+				<presentation>ON_NSCHFDOPPR_01_Входящий; ON_NSCHFDOPPR_01_Испр_Входящий; ON_NSCHFDOPPRMARK_01_Входящий; ON_NSCHFDOPPRMARK_01_Испр_Входящий; ON_NSCHFDOPPRPROS_01_Входящий; ON_NSCHFDOPPRPROS_01_Испр_Входящий; ON_NKORSCHFDOPPR_01_Входящий; ON_NKORSCHFDOPPR_01_Испр_Входящий; ON_NKORSCHFDOPPRMARK_01_Входящий; ON_NKORSCHFDOPPRMARK_01_Испр_Входящий; ON_NKORSCHFDOPPRPROS_01_Входящий; ON_NKORSCHFDOPPRPROS_01_Испр_Входящий</presentation>
+				<id xsi:type="xs:decimal">7</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">НужнаПодпись</value>
 				<presentation>Да</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">7</id>
+				<id xsi:type="xs:decimal">8</id>
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>

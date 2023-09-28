@@ -34,9 +34,7 @@
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий ON_NKORSCHFDOPPRMARK</Value>
-		<Value xsi:type="xs:string">//ВыполнитьГибкиеНастройки(, МассивЛогаСобытий, ИмяСобытия);
-
-  ТипДокумента = "ON_NKORSCHFDOPPRMARK";
+		<Value xsi:type="xs:string">	ТипДокумента = "ON_NKORSCHFDOPPRMARK";
 	ТипДокументооборота      = "ЮЗД";
 	ИдентификаторыУчастников = Новый Массив;
 	ЕстьОшибкаПолученияИдентификаторов = Ложь;

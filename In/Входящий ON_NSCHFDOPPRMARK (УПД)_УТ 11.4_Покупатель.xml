@@ -34,9 +34,7 @@
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий ON_NSCHFDOPPRMARK</Value>
-		<Value xsi:type="xs:string">//ВыполнитьГибкиеНастройкиON_NSCHFDOPPRMARK_01(, МассивЛогаСобытий, ИмяСобытия);
-
-ТипДокумента = "ON_NSCHFDOPPRMARK";
+		<Value xsi:type="xs:string">	ТипДокумента = "ON_NSCHFDOPPRMARK";
 	ТипДокументооборота      = "ЮЗД";
 	ИдентификаторыУчастников = Новый Массив;
 	ЕстьОшибкаПолученияИдентификаторов = Ложь;
@@ -1454,6 +1452,8 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
+				<presentation>СписокСчетаФактурыВходящие</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>

@@ -1,0 +1,103 @@
+﻿<ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTree">
+	<column>
+		<Name xsi:type="xs:string">Использовать</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ТипТранзакции</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Сохранение</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Загрузка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<row>
+		<Value xsi:type="xs:boolean">true</Value>
+		<Value xsi:type="xs:string">Входящий ЮЗД</Value>
+		<Value xsi:type="xs:string">ТипыДокументовДляЗагрузки = Новый Массив;
+ПараметрыСтруктуры  = "Тип, ИспользоватьДерево";  
+
+ИспользуемыеДеревья = Новый Соответствие;
+ИспользуемыеДеревья.Вставить("Входящий ON_NSCHFDOPPR"			, Новый Структура(ПараметрыСтруктуры, "ON_NSCHFDOPPR", Ложь));
+ИспользуемыеДеревья.Вставить("Входящий ON_NSCHFDOPPRMARK"		, Новый Структура(ПараметрыСтруктуры, "ON_NSCHFDOPPRMARK" , Ложь));
+ИспользуемыеДеревья.Вставить("Входящий ON_NSCHFDOPPRPROS"		, Новый Структура(ПараметрыСтруктуры, "ON_NSCHFDOPPRPROS", Ложь));
+ИспользуемыеДеревья.Вставить("Входящий ON_NKORSCHFDOPPR"		, Новый Структура(ПараметрыСтруктуры, "ON_NKORSCHFDOPPR", Ложь));
+ИспользуемыеДеревья.Вставить("Входящий ON_NKORSCHFDOPPRMARK"	, Новый Структура(ПараметрыСтруктуры, "ON_NKORSCHFDOPPRMARK" , Ложь));
+ИспользуемыеДеревья.Вставить("Входящий ON_NKORSCHFDOPPRPROS"	, Новый Структура(ПараметрыСтруктуры, "ON_NKORSCHFDOPPRPROS", Ложь));
+
+ЭКОМ_СтруктураФайлаXMLВходящие = ЭКОМ_ОбщегоНазначения.НастройкиПрочитатьНаСервере("СтруктураФайлаXMLВходящие", Новый ДеревоЗначений);
+
+Если НЕ ЭКОМ_СтруктураФайлаXMLВходящие.Колонки.Найти("ТипТранзакции") = Неопределено Тогда
+	
+	Для каждого Стр Из ИспользуемыеДеревья Цикл
+		Если ЭКОМ_СтруктураФайлаXMLВходящие.Строки.НайтиСтроки(Новый Структура("ТипТранзакции", Стр.Ключ)).Количество() &gt; 0 Тогда
+			Стр.Значение.ИспользоватьДерево = Истина;
+		КонецЕсли;
+	КонецЦикла; 
+	
+КонецЕсли;
+
+Для каждого Стр Из ИспользуемыеДеревья Цикл		
+	Если Стр.Значение.ИспользоватьДерево = Истина Тогда
+		ТипыДокументовДляЗагрузки.Добавить(Стр.Значение.Тип);
+	КонецЕсли;		
+КонецЦикла;
+
+Для Каждого ТипДокумента Из ТипыДокументовДляЗагрузки Цикл			
+	ПолучитьВсеФайлы(Новый Массив, ТипДокумента,, МассивЛогаСобытий, ЭтоРегламентноеЗадание,);			
+	ВыполнитьСценарийПоТипуДокумента(ТипДокумента, МассивЛогаСобытий);
+КонецЦикла;</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">Входящий УПД (иУПД) / УКД (иУКД)</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">4</lastId>
+			<item>
+				<value xsi:type="xs:string">Неструкт. докум.</value>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Прайс-лист</value>
+				<id xsi:type="xs:decimal">1</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Поставщик</value>
+				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Покупатель</value>
+				<presentation>СписокСчетаФактурыВходящие; СписокСчетаФактурыКорректировкаВходящие; СписокСчетаФактурыИсправлениеВходящие</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">3</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>Входящий УПД (иУПД) / УКД (иУКД)</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+		</Value>
+	</row>
+</ValueTree>

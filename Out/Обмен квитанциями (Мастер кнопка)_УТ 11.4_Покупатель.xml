@@ -1,0 +1,237 @@
+﻿<ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTree">
+	<column>
+		<Name xsi:type="xs:string">Использовать</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ТипТранзакции</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Данные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Сохранение</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Загрузка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Источник</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Приемник</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Атрибуты</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ДанныеЗначения</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ДоступныеЗначения</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Связи</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Обязательный</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<row>
+		<Value xsi:type="xs:boolean">true</Value>
+		<Value xsi:type="xs:string">Обмен квитанциями (покупатель)</Value>
+		<Value xsi:type="xs:string">	МассивСтруктурИсходящих    = Новый Массив;
+	ТипыДокументовДляЗагрузки  = Новый Массив;
+	ТипыДокументовДляОбработки = Новый Массив;
+	
+	ДанныеСпискаИмяСписка = "СписокДляПокупателя";
+	
+	ПараметрыСтруктуры = "Тип, ИспользоватьДерево";  
+	ИспользуемыеДеревья = Новый Соответствие;
+	ИспользуемыеДеревья.Вставить("Входящий DP_PRANNUL_22"	, Новый Структура(ПараметрыСтруктуры, "DP_PRANNUL_22", Ложь));
+	ИспользуемыеДеревья.Вставить("Входящий DP_IZVPOL_23"	, Новый Структура(ПараметрыСтруктуры, "DP_IZVPOL_23" , Ложь));
+	ИспользуемыеДеревья.Вставить("Входящий DP_UVUTOCH_24"	, Новый Структура(ПараметрыСтруктуры, "DP_UVUTOCH_24", Ложь));
+		
+	Для каждого Стр Из ИспользуемыеДеревья Цикл
+		
+		СтруктурыФайлов = Новый Структура;                         
+		СтруктурыФайлов.Вставить("ЭКОМ_СтруктураФайлаXMLВходящие", Вычислить("ЭКОМ_ОбщегоНазначения.НастройкиПрочитатьНаСервере(""СтруктураФайлаXMLВходящие"", Новый ДеревоЗначений)"));
+		СтруктурыФайлов.Вставить("ЭКОМ_СтруктураФайлаXMLИсходящие", Новый ДеревоЗначений);
+		СтруктурыФайлов.Вставить("ЭКОМ_СтруктураФайлаXMLДокументы", Новый ДеревоЗначений);
+	
+		СтрокаДерева = ПолучитьСтруктуруФайлаДанных(Стр.Ключ, СтруктурыФайлов);
+		ИспользоватьСтрокуДерева = Ложь;	
+		Если НЕ СтрокаДерева.Строки.Количество() = 0 Тогда	
+			Стр.Значение.ИспользоватьДерево = СтрокаДерева.Строки[0].Использовать;
+		КонецЕсли;
+		
+	КонецЦикла;
+	
+	НужнаПодпись = Истина;
+	ЭтоНовыеДокументы = Истина; 
+	ЭтоПовторнаяОтправка = Ложь;
+	
+	Если ДанныеСпискаИмяСписка = "СписокДляПокупателя" Тогда
+		
+		ТипыДокументовДляОбработки.Добавить("DP_IZVPOL_16");
+		ТипыДокументовДляОбработки.Добавить("DP_PDPOL");	
+		ТипыДокументовДляОбработки.Добавить("DP_PDOTPR");	
+		
+		ТипыДокументовДляЗагрузки.Добавить("DP_IZVPOL");	
+		ТипыДокументовДляЗагрузки.Добавить("DP_UVUTOCH");
+		ТипыДокументовДляЗагрузки.Добавить("DP_PRANNUL");
+
+		ТипыДокументовДляЗагрузки.Добавить("DP_PDPOL");
+		ТипыДокументовДляЗагрузки.Добавить("DP_PDOTPR");
+		
+		// Проверить
+		ПараметрыСтруктуры = "Тип, ИспользоватьДерево";
+		ИспользуемDP_REZRUISP = Новый Соответствие;
+		ИспользуемDP_REZRUISP.Вставить("Исходящий DP_REZRUISP (Акт выполненных работ)" , Новый Структура(ПараметрыСтруктуры, "DP_REZRUISP"   , Ложь));
+
+		Для каждого Стр Из ИспользуемDP_REZRUISP Цикл			
+			СтрокаДерева = ПолучитьСтруктуруФайлаДанных(Стр.Ключ, СтруктурыФайлов);
+			ИспользоватьСтрокуДерева = Ложь;	
+			Если НЕ СтрокаДерева.Строки.Количество() = 0 Тогда	
+				Стр.Значение.ИспользоватьДерево = СтрокаДерева.Строки[0].Использовать;
+			КонецЕсли;
+		КонецЦикла;
+			
+		Если ИспользуемDP_REZRUISP.Получить("Исходящий DP_REZRUISP (Акт выполненных работ)").ИспользоватьДерево = Истина Тогда
+			ТипыДокументовДляЗагрузки.Добавить("DP_REZRUZAK");
+			ТипыДокументовДляОбработки.Добавить("DP_REZRUZAK");
+		КонецЕсли;
+		
+		Для каждого Стр Из ИспользуемыеДеревья Цикл		
+			Если Стр.Значение.ИспользоватьДерево = Истина Тогда
+				ТипыДокументовДляОбработки.Добавить(Стр.Значение.Тип);
+			КонецЕсли;		
+		КонецЦикла;
+				
+		Для Каждого ТипДокумента Из ТипыДокументовДляЗагрузки Цикл			
+			ПолучитьВсеФайлы(Новый Массив, ТипДокумента,, МассивЛогаСобытий, ЭтоРегламентноеЗадание,);			
+		КонецЦикла;
+
+		Для Каждого ТипДокумента Из ТипыДокументовДляОбработки Цикл	
+		    ВыполнитьСценарийПоТипуДокумента(ТипДокумента, МассивЛогаСобытий);
+		КонецЦикла;   
+		
+					
+		СтруктураФайлаXMLИсходящие = ЭКОМ_ОбщегоНазначения.НастройкиПрочитатьНаСервере("СтруктураФайлаXMLИсходящие", Новый ДеревоЗначений);
+		Настройка_DP_IZVPOL_06 = СтруктураФайлаXMLИсходящие.Строки.НайтиСтроки(Новый Структура("ТипТранзакции, Использовать", "Исходящий DP_IZVPOL_06", Истина));
+		Если Не Настройка_DP_IZVPOL_06.Количество() = 0 Тогда
+			МассивСтруктур = СформироватьДокументыXML(Новый Массив, МассивЛогаСобытий, ЭтоРегламентноеЗадание, "ОбменКвитанциями", , "", Настройка_DP_IZVPOL_06[0].Кнопка, "");
+			Для каждого Стр Из МассивСтруктур Цикл
+				МассивСтруктурИсходящих.Добавить(Стр);
+			КонецЦикла;
+		КонецЕсли;
+		
+	КонецЕсли;  
+	
+	Возврат МассивСтруктурИсходящих;</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">Обмен квитанциями (покупатель)</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">7</lastId>
+			<item>
+				<value xsi:type="xs:string">Прайс-лист</value>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Поставщик</value>
+				<id xsi:type="xs:decimal">1</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Покупатель</value>
+				<presentation>СписокКвитанцииПокупатель</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>Обмен квитанциями (покупатель)</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">3</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПриемникВидДокумента</value>
+				<presentation>ОбменКвитанциями_Входящий</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">5</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИсточникВидДокумента</value>
+				<presentation>ОбменКвитанциями_Исходящий</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">6</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">НужнаПодпись</value>
+				<presentation>Да</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">7</id>
+			</item>
+		</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="ValueTable">
+			<column>
+				<Name xsi:type="xs:string">Реквизит1</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="xs:boolean">false</Value>
+		<Value xsi:type="xs:string"/>
+	</row>
+</ValueTree>

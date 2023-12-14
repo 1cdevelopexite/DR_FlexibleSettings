@@ -225,12 +225,12 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
-				<presentation>СписокНакладныеИсходящие</presentation>
+				<presentation>СписокНакладныеИсходящиеПоставщик</presentation>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
-				<presentation>СписокСчетаФактурыИсправлениеВходящие</presentation>
+				<presentation>СписокИсправительныеСчетаФактурыВходящиеПокупатель</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>

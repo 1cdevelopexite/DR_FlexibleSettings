@@ -1659,7 +1659,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
-				<presentation>СписокRetannПоставщик</presentation>
+				<presentation>СписокRetannВходящиеПоставщик</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">1</id>
 			</item>

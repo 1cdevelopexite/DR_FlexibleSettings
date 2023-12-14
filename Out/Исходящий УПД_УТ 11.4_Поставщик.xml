@@ -2287,7 +2287,7 @@ DRВидыДокументов.Добавить("ON_NSCHFDOPPRMARK_01_Испр_�
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
-				<presentation>СписокСчетФактурыИсходящие</presentation>
+				<presentation>СписокСчетаФактурыИсходящиеПоставщик</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">1</id>
 			</item>

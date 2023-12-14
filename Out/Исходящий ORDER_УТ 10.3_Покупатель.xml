@@ -437,7 +437,7 @@ CписокPOSITION.Добавить("СтрокаНоменклатурыДок
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
-				<presentation>СписокЗаказПокупатель</presentation>
+				<presentation>СписокЗаказыИсходящиеПокупатель</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">2</id>
 			</item>

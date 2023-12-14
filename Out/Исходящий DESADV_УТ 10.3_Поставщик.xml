@@ -642,7 +642,7 @@ EDIINTERCHANGEID = 0;
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
-				<presentation>СписокНакладнаяПоставщик</presentation>
+				<presentation>СписокНакладныеИсходящиеПоставщик</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">1</id>
 			</item>

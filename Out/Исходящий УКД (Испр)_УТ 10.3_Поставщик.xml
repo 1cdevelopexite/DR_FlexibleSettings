@@ -2416,6 +2416,7 @@ DRВидыДокументовПредСчФ.Добавить("ON_NKORSCHFDOPPRM
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПриемникВидДокумента</value>
+				<presentation>ON_NKORSCHFDOPPR_01_Испр_Исходящий; ON_NKORSCHFDOPPRMARK_01_Испр_Исходящий; ON_NKORSCHFDOPPRPROS_01_Испр_Исходящий</presentation>
 				<id xsi:type="xs:decimal">6</id>
 			</item>
 			<item>

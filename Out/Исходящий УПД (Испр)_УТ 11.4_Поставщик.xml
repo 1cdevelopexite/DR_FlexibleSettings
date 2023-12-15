@@ -2311,7 +2311,7 @@ DRВидыДокументовИсхСчФ.Добавить("ON_NSCHFDOPPRMARK_0
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПриемникВидДокумента</value>
-				<presentation>ON_NSCHFDOPPR_01_Исходящий</presentation>
+				<presentation>ON_NSCHFDOPPR_01_Испр_Исходящий; ON_NSCHFDOPPRMARK_01_Испр_Исходящий; ON_NSCHFDOPPRPROS_01_Испр_Исходящий</presentation>
 				<id xsi:type="xs:decimal">6</id>
 			</item>
 			<item>

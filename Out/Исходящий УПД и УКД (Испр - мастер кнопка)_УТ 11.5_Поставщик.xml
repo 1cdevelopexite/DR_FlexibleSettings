@@ -1,0 +1,252 @@
+﻿<ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTree">
+	<column>
+		<Name xsi:type="xs:string">Использовать</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ТипТранзакции</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Данные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Сохранение</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Загрузка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Источник</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Приемник</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Атрибуты</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ДанныеЗначения</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ДоступныеЗначения</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Связи</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Обязательный</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<row>
+		<Value xsi:type="xs:boolean">true</Value>
+		<Value xsi:type="xs:string">Исходящий ЮЗД (Универсальный передаточный (корректировочный) Исправительный)</Value>
+		<Value xsi:type="xs:string">МассивСтруктурИсходящих = Новый Массив;
+
+Запрос = Новый Запрос;
+Запрос.Текст = 
+"ВЫБРАТЬ
+|	СчетФактураВыданный.Ссылка КАК Ссылка,
+|	СчетФактураВыданный.Корректировочный КАК Корректировочный,
+|	СчетФактураВыданный.Исправление КАК Исправление
+|ПОМЕСТИТЬ ВремТабл
+|ИЗ
+|	Документ.СчетФактураВыданный КАК СчетФактураВыданный
+|ГДЕ
+|	СчетФактураВыданный.Ссылка В(&amp;Источник)
+|	И СчетФактураВыданный.ПометкаУдаления = ЛОЖЬ
+|;
+|
+|////////////////////////////////////////////////////////////////////////////////
+|ВЫБРАТЬ
+|	СчетФактураВыданный.Ссылка КАК СчФ
+|ИЗ
+|	ВремТабл КАК СчетФактураВыданный
+|ГДЕ
+|	СчетФактураВыданный.Корректировочный = ИСТИНА
+|	И СчетФактураВыданный.Исправление = ИСТИНА
+|;
+|
+|////////////////////////////////////////////////////////////////////////////////
+|ВЫБРАТЬ
+|	СчетФактураВыданный.Ссылка КАК СчФ
+|ИЗ
+|	ВремТабл КАК СчетФактураВыданный
+|ГДЕ
+|	СчетФактураВыданный.Корректировочный = ЛОЖЬ
+|	И СчетФактураВыданный.Исправление = ИСТИНА";
+
+Запрос.УстановитьПараметр("Источник", Источник);
+
+РезультатЗапроса = Запрос.ВыполнитьПакет();
+
+МассивИспрУКД = РезультатЗапроса[1].Выгрузить().ВыгрузитьКолонку("СчФ");
+МассивИспрУПД = РезультатЗапроса[2].Выгрузить().ВыгрузитьКолонку("СчФ");
+
+Если МассивИспрУКД.Количество() &lt;&gt; 0 Тогда
+	
+	ИмяКолонки = "";
+	СтруктураФайлаДанных = Неопределено;
+	
+	//&lt;Поиск сценария&gt;
+	СценарийСозданияXMLУКД = Настройка_Параметр_Прочитать("СтруктураФайлаXMLИсходящие");
+	СтрокиНастроекПоОтбору = СценарийСозданияXMLУКД.Строки.НайтиСтроки(Новый Структура("Использовать, Кнопка", Истина, "Исходящий ИспрУКД"));
+	
+	Если СтрокиНастроекПоОтбору.Количество() Тогда
+		//&lt;Используется первый найденный сценарий с признаком "Использовать"&gt;
+		СтруктураФайлаДанных = СтрокиНастроекПоОтбору[0];
+		
+	КонецЕсли;
+	
+	Если СтруктураФайлаДанных &lt;&gt; Неопределено Тогда					
+		
+		ГибкиеНастройки = СтрЗаменить(СтруктураФайлаДанных.Служебные, "Источник", "МассивИспрУКД"); 
+		
+		//&lt;Переменная для определения контекста выполняемого сценария&gt;
+		ГибкиеНастройки = "ВызовМастерКнопкойИспрЮЗД = Истина;" + Символы.ПС + ГибкиеНастройки;
+		
+		//&lt;выполнение подготовленного сценария&gt;
+		Выполнить(ГибкиеНастройки); 
+		
+	КонецЕсли;
+	
+КонецЕсли;
+
+Если МассивИспрУПД.Количество() &lt;&gt; 0 Тогда
+	
+	ИмяКолонки = "";
+	СтруктураФайлаДанных = Неопределено;
+	
+	//&lt;Поиск сценария&gt;
+	СценарийСозданияXMLУКД = Настройка_Параметр_Прочитать("СтруктураФайлаXMLИсходящие");
+	СтрокиНастроекПоОтбору = СценарийСозданияXMLУКД.Строки.НайтиСтроки(Новый Структура("Использовать, Кнопка", Истина, "Исходящий испрУПД"));
+	
+	Если СтрокиНастроекПоОтбору.Количество() Тогда
+		//&lt;Используется первый найденный сценарий с признаком "Использовать"&gt;
+		СтруктураФайлаДанных = СтрокиНастроекПоОтбору[0];
+		
+	КонецЕсли;
+	
+	Если СтруктураФайлаДанных &lt;&gt; Неопределено Тогда					
+		
+		ГибкиеНастройки = СтрЗаменить(СтруктураФайлаДанных.Служебные, "Источник", "МассивИспрУПД"); 
+		
+		//&lt;Переменная для вызываемого сценария, в котором выполняется проверка вызова из мастер кнопки&gt;
+		ГибкиеНастройки = "ВызовМастерКнопкойИспрЮЗД = Истина;" + Символы.ПС + ГибкиеНастройки;
+		
+		//&lt;выполнение подготовленного сценария&gt;
+		Выполнить(ГибкиеНастройки);		
+		
+	КонецЕсли;
+	
+КонецЕсли;
+
+Возврат МассивСтруктурИсходящих;
+</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">Исходящий УПД/УКД (испр)</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">8</lastId>
+			<item>
+				<value xsi:type="xs:string">Неструкт. докум.</value>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Прайс-лист</value>
+				<id xsi:type="xs:decimal">1</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Поставщик</value>
+				<presentation>СписокИсправительныеСчетаФактурыИсходящиеПоставщик</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Покупатель</value>
+				<id xsi:type="xs:decimal">3</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>Исходящий УПД/УКД (испр)</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
+				<id xsi:type="xs:decimal">5</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПриемникВидДокумента</value>
+				<presentation>ON_NSCHFDOPPR_01_Испр_Исходящий; ON_NSCHFDOPPRMARK_01_Испр_Исходящий; ON_NSCHFDOPPRPROS_01_Испр_Исходящий; ON_NKORSCHFDOPPR_01_Испр_Исходящий; ON_NKORSCHFDOPPRMARK_01_Испр_Исходящий; ON_NKORSCHFDOPPRPROS_01_Испр_Исходящий</presentation>
+				<id xsi:type="xs:decimal">6</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИсточникВидДокумента</value>
+				<presentation>СчетФактура_Исходящий</presentation>
+				<id xsi:type="xs:decimal">7</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">НужнаПодпись</value>
+				<presentation>Да</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">8</id>
+			</item>
+		</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="ValueTable">
+			<column>
+				<Name xsi:type="xs:string">Реквизит1</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="xs:boolean">false</Value>
+		<Value xsi:type="xs:string"/>
+	</row>
+</ValueTree>

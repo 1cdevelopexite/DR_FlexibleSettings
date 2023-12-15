@@ -219,7 +219,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
-				<presentation>СписокНакладныеИсходящие; СписокКорректировочныеНакладныеИсходящие</presentation>
+				<presentation>СписокНакладныеИсходящиеПоставщик; СписокКорректировочныеНакладныеИсходящиеПоставщик</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">2</id>
 			</item>

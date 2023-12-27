@@ -450,7 +450,7 @@
 	
 	#КонецОбласти
 	
-КонецЦикла;</Value>
+КонецЕсли;</Value>
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>

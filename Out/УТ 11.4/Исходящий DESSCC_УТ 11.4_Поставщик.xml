@@ -63,6 +63,10 @@
 		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий DESSCC</Value>
@@ -273,7 +277,10 @@
 		Для Каждого СтрокаНоменклатуры Из POSITION Цикл
 			
 			НоваяСтрокаНоменклатуры = ДанныеТЧНоменклатурORDER.Добавить();
+			
 			ЗаполнитьЗначенияСвойств(НоваяСтрокаНоменклатуры, СтрокаНоменклатуры); 
+			
+			ЗаполнитьЗначенияСвойств(НоваяСтрокаНоменклатуры, Строка);
 			
 			НоваяСтрокаНоменклатуры.Накладная = Строка.Ссылка;
 			
@@ -718,7 +725,6 @@
 	//Свойства элемента HEAD
 	СтруктураHEAD = Новый Структура("SUPPLIER, BUYER, DELIVERYPLACE, SENDER, RECIPIENT, EDIINTERCHANGEID, EDIMESSAGE, PACKINGSEQUENCE");	
 	
-	
 	Для каждого СтрокаШапкиДокумента из Результат Цикл
 		
 		ТекстСообщенияПроверкиЗаполненияОбязательныхПолей = "";  
@@ -788,7 +794,7 @@
 	#КонецОбласти
 	
 	//Возврат Результат;				//раскомментировать для отображения значений таблицы "Результат" на вкладке "Тестирование"  
-	//Возврат РезультатНоменклатур;		//раскомментировать для отображения значений таблицы "РезультатНоменклатур" на вкладке "Тестирование"
+	//Возврат РезультатЗапросаНоменклатур.Выгрузить();		//раскомментировать для отображения значений таблицы "РезультатНоменклатур" на вкладке "Тестирование"
 	
 	Возврат МассивСтруктурИсходящих;</Value>
 		<Value xsi:type="xs:string"/>
@@ -797,7 +803,7 @@
 		<Value xsi:type="xs:string">Исходящий DESSCC</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">8</lastId>
+			<lastId xsi:type="xs:decimal">9</lastId>
 			<item>
 				<value xsi:type="xs:string">Неструкт. докум.</value>
 				<id xsi:type="xs:decimal">0</id>
@@ -808,8 +814,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
-				<presentation>СписокНакладныеИсходящие</presentation>
-				<checkState>1</checkState>
+				<presentation>СписокНакладныеИсходящиеПоставщик</presentation>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
@@ -817,29 +822,35 @@
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">ИмяКнопки</value>
+				<value xsi:type="xs:string">Синоним</value>
 				<presentation>Исходящий DESSCC</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>Исходящий DESSCC</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">5</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
+				<id xsi:type="xs:decimal">6</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПриемникВидДокумента</value>
 				<presentation>DESSCC_Исходящий</presentation>
-				<id xsi:type="xs:decimal">6</id>
+				<id xsi:type="xs:decimal">7</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИсточникВидДокумента</value>
 				<presentation>Накладная_Исходящая</presentation>
-				<id xsi:type="xs:decimal">7</id>
+				<id xsi:type="xs:decimal">8</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">НужнаПодпись</value>
 				<presentation>Нет</presentation>
-				<id xsi:type="xs:decimal">8</id>
+				<id xsi:type="xs:decimal">9</id>
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>
@@ -870,5 +881,9 @@
 		</Value>
 		<Value xsi:type="xs:boolean">false</Value>
 		<Value xsi:type="xs:string"/>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
 	</row>
 </ValueTree>

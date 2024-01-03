@@ -1514,7 +1514,6 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
-				<presentation>СписокСчетаФактурыВходящиеПокупатель</presentation>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>

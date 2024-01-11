@@ -2326,9 +2326,4 @@ DRВидыДокументовПредСчФ.Добавить("ON_NSCHFDOPPRMARK
 		</Value>
 		<Value xsi:type="xs:string"/>
 	</row>
-</ValueTree>xsi:type="xs:decimal">7</id>
-			</item>
-		</Value>
-		<Value xsi:type="xs:string"/>
-	</row>
 </ValueTree>

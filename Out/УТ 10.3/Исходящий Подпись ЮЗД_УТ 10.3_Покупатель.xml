@@ -12,6 +12,10 @@
 		<ValueType/>
 	</column>
 	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<column>
 		<Name xsi:type="xs:string">СлужебныеТекст</Name>
 		<ValueType/>
 	</column>
@@ -35,10 +39,15 @@
 		<Name xsi:type="xs:string">Данные</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий ON_NSCHFDOPPOK</Value>
 		<Value xsi:type="xs:string">Подписать УПД/УКД</Value>
+		<Value xsi:type="xs:string">ИсходящийON_NSCHFDOPPOK</Value>
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
@@ -664,7 +673,7 @@
 	Возврат МассивСтруктурИсходящих;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">7</lastId>
+			<lastId xsi:type="xs:decimal">8</lastId>
 			<item>
 				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">0</id>
@@ -676,36 +685,45 @@
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
 				<presentation>СписокСчетаФактурыВходящиеПокупатель; СписокКорректировочныеСчетаФактурыВходящиеПокупатель; СписокИсправительныеСчетаФактурыВходящиеПокупатель</presentation>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">ИмяКнопки</value>
+				<value xsi:type="xs:string">Синоним</value>
 				<presentation>Подписать УПД/УКД</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>ИсходящийON_NSCHFDOPPOK</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
+				<id xsi:type="xs:decimal">5</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПриемникВидДокумента</value>
 				<presentation>ON_NSCHFDOPPOK_11_Исходящий; ON_NSCHFDOPPOKPROS_11_Исходящий; ON_NSCHFDOPPOKMARK_11_Исходящий; ON_NKORSCHFDOPPOK_11_Исходящий; ON_NKORSCHFDOPPOKPROS_11_Исходящий; ON_NKORSCHFDOPPOKMARK_11_Исходящий</presentation>
-				<id xsi:type="xs:decimal">5</id>
+				<id xsi:type="xs:decimal">6</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИсточникВидДокумента</value>
 				<presentation>ON_NSCHFDOPPR_01_Входящий; ON_NSCHFDOPPR_01_Испр_Входящий; ON_NSCHFDOPPRMARK_01_Входящий; ON_NSCHFDOPPRMARK_01_Испр_Входящий; ON_NSCHFDOPPRPROS_01_Входящий; ON_NSCHFDOPPRPROS_01_Испр_Входящий; ON_NKORSCHFDOPPR_01_Входящий; ON_NKORSCHFDOPPR_01_Испр_Входящий; ON_NKORSCHFDOPPRMARK_01_Входящий; ON_NKORSCHFDOPPRMARK_01_Испр_Входящий; ON_NKORSCHFDOPPRPROS_01_Входящий; ON_NKORSCHFDOPPRPROS_01_Испр_Входящий</presentation>
-				<id xsi:type="xs:decimal">6</id>
+				<id xsi:type="xs:decimal">7</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">НужнаПодпись</value>
 				<presentation>Да</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">7</id>
+				<id xsi:type="xs:decimal">8</id>
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
 	</row>
 </ValueTree>

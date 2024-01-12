@@ -31,6 +31,14 @@
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий ЮЗД</Value>
@@ -73,7 +81,7 @@
 		<Value xsi:type="xs:string">Входящий УПД (иУПД) / УКД (иУКД)</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">4</lastId>
+			<lastId xsi:type="xs:decimal">5</lastId>
 			<item>
 				<value xsi:type="xs:string">Неструкт. докум.</value>
 				<id xsi:type="xs:decimal">0</id>
@@ -89,15 +97,25 @@
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
 				<presentation>СписокСчетаФактурыВходящиеПокупатель; СписокКорректировочныеСчетаФактурыВходящиеПокупатель; СписокИсправительныеСчетаФактурыВходящиеПокупатель</presentation>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">ИмяКнопки</value>
+				<value xsi:type="xs:string">Синоним</value>
 				<presentation>Входящий УПД (иУПД) / УКД (иУКД)</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>ВходящийЮзд</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">5</id>
+			</item>
 		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="xs:string">ВходящийЮзд</Value>
 	</row>
 </ValueTree>

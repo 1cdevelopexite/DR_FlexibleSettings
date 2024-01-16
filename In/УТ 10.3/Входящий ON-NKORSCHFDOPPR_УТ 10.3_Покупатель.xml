@@ -42,8 +42,8 @@
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий ON_NKORSCHFDOPPR</Value>
-		<Value xsi:type="xs:string">Входящий УКД (иУКД)</Value>
-		<Value xsi:type="xs:string">ВходящийOn_nkorschfdoppr</Value>
+		<Value xsi:type="xs:string">Входящий УКД (УКД испр)</Value>
+		<Value xsi:type="xs:string">ВходящийON_NKORSCHFDOPPR</Value>
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
@@ -1383,8 +1383,7 @@
 			
 		#КонецОбласти
 		
-	КонецЕсли;
-</Value>
+	КонецЕсли;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>
@@ -1398,17 +1397,18 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
-				<presentation>Входящий УКД (иУКД)</presentation>
+				<presentation>Входящий УКД (УКД испр)</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>ВходящийOn_nkorschfdoppr</presentation>
+				<presentation>ВходящийON_NKORSCHFDOPPR</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>

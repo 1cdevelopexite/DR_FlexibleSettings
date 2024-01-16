@@ -355,6 +355,15 @@
 		ИмяАнФайла = Неопределено;
 		Если ЗначениеЗаполнено(ВыборкаДок.ДанныеЭЦП) Тогда
 			ЭЦПАнФайл = ВыборкаДок.ДанныеЭЦП.Получить();
+			Если ТипЗнч(ЭЦПАнФайл) = Тип("ХранилищеЗначения") Тогда 
+				ЭЦПАнФайл = ЭЦПАнФайл.Получить();
+			КонецЕсли;
+			Если ТипЗнч(ЭЦПАнФайл) = Тип("ДвоичныеДанные") Тогда
+				СтрокаBase64 = Base64Строка(ЭЦПАнФайл);
+				СтрокаBase64 = СтрЗаменить(СтрокаBase64, Символы.ПС, "");
+				СтрокаBase64 = СтрЗаменить(СтрокаBase64, Символы.ВК, "");
+				ЭЦПАнФайл = СтрокаBase64;
+			КонецЕсли;
 		ИначеЕсли ЗначениеЗаполнено(ВыборкаДок.ДополнительнаяИнформация) Тогда
 			ДополнительнаяИнформация = ВыборкаДок.ДополнительнаяИнформация.Получить();
 			Если ТипЗнч(ДополнительнаяИнформация) = Тип("Структура") Тогда
@@ -687,7 +696,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИсточникВидДокумента</value>
-				<presentation>ON_NSCHFDOPPR_01_Входящий; ON_NSCHFDOPPR_01_Испр_Входящий; ON_NSCHFDOPPRMARK_01_Входящий; ON_NSCHFDOPPRMARK_01_Испр_Входящий; ON_NSCHFDOPPRPROS_01_Входящий; ON_NSCHFDOPPRPROS_01_Испр_Входящий; ON_NKORSCHFDOPPR_01_Входящий; ON_NKORSCHFDOPPR_01_Испр_Входящий; ON_NKORSCHFDOPPRMARK_01_Входящий; ON_NKORSCHFDOPPRMARK_01_Испр_Входящий; ON_NKORSCHFDOPPRPROS_01_Входящий; ON_NKORSCHFDOPPRPROS_01_Испр_Входящий</presentation>
+				<presentation>ON_NSCHFDOPPR_01_Исходящий; ON_NSCHFDOPPR_01_Испр_Исходящий; ON_NSCHFDOPPRMARK_01_Исходящий; ON_NSCHFDOPPRMARK_01_Испр_Исходящий; ON_NSCHFDOPPRPROS_01_Исходящий; ON_NSCHFDOPPRPROS_01_Испр_Исходящий; ON_NKORSCHFDOPPR_01_Исходящий; ON_NKORSCHFDOPPR_01_Испр_Исходящий; ON_NKORSCHFDOPPRMARK_01_Исходящий; ON_NKORSCHFDOPPRMARK_01_Испр_Исходящий; ON_NKORSCHFDOPPRPROS_01_Исходящий; ON_NKORSCHFDOPPRPROS_01_Испр_Исходящий</presentation>
 				<id xsi:type="xs:decimal">7</id>
 			</item>
 			<item>

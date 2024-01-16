@@ -510,7 +510,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Исходящий DP_IZVPOL_23Поставщик</presentation>
+				<presentation>ИсходящийDP_IZVPOL_23Поставщик</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
@@ -525,7 +525,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИсточникВидДокумента</value>
-				<presentation>ОбменКвитанциями_Исходящий</presentation>
+				<presentation>DP_PRANNUL_22_Входящий</presentation>
 				<id xsi:type="xs:decimal">7</id>
 			</item>
 			<item>

@@ -574,6 +574,8 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
+				<presentation>Текст отклонения</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">5</id>
 			</item>
 			<item>

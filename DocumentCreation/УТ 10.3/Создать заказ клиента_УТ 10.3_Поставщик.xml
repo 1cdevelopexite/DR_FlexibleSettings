@@ -8,6 +8,10 @@
 		<ValueType/>
 	</column>
 	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<column>
 		<Name xsi:type="xs:string">СлужебныеТекст</Name>
 		<ValueType/>
 	</column>
@@ -31,12 +35,17 @@
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Создать заказ клиента</Value>
+		<Value xsi:type="xs:string">СоздатьЗаказКлиента</Value>
 		<Value xsi:type="xs:string"/>
-		<Value xsi:nil="true"/>
-		<Value xsi:nil="true"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:string">	ИмяСобытия = "Создание документов по кнопке &lt;&lt;&lt; Создать заказ клиента &gt;&gt;&gt;";
 	
@@ -691,11 +700,10 @@
 		КонецЕсли;    
 		// служебные операции --
 		
-	КонецЦикла;
-	</Value>
+	КонецЦикла;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">3</lastId>
+			<lastId xsi:type="xs:decimal">4</lastId>
 			<item>
 				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">0</id>
@@ -711,11 +719,21 @@
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">ИмяКнопки</value>
+				<value xsi:type="xs:string">Синоним</value>
 				<presentation>Создать заказ клиента</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>СоздатьЗаказКлиента</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
 	</row>
 </ValueTree>

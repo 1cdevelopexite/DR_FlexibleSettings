@@ -8,6 +8,10 @@
 		<ValueType/>
 	</column>
 	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<column>
 		<Name xsi:type="xs:string">СлужебныеТекст</Name>
 		<ValueType/>
 	</column>
@@ -31,12 +35,17 @@
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">Создать поступление</Value>
+		<Value xsi:type="xs:string">Создать поступление товаров</Value>
+		<Value xsi:type="xs:string">СоздатьПоступление</Value>
 		<Value xsi:type="xs:string"/>
-		<Value xsi:nil="true"/>
-		<Value xsi:nil="true"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:string">	ИмяСобытия = "Создание документов по кнопке &lt;&lt;&lt; Создать поступление &gt;&gt;&gt;";
 	
@@ -357,7 +366,7 @@
 	КонецЦикла;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">3</lastId>
+			<lastId xsi:type="xs:decimal">4</lastId>
 			<item>
 				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">0</id>
@@ -373,11 +382,21 @@
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Создать поступление</presentation>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Создать поступление товаров</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>СоздатьПоступление</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
 	</row>
 </ValueTree>

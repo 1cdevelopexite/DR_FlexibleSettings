@@ -1,4 +1,4 @@
-﻿<ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTree">
+﻿ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTree">
 	<column>
 		<Name xsi:type="xs:string">Использовать</Name>
 		<ValueType/>
@@ -8,11 +8,15 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Данные</Name>
+        <Name xsi:type="xs:string">ИмяКнопки</Name>
+        <ValueType/>
+    </column>
+	<column>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -24,7 +28,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -32,35 +36,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Источник</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Приемник</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Атрибуты</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ДанныеЗначения</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ДоступныеЗначения</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Связи</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Обязательный</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<Name xsi:type="xs:string">Данные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -70,9 +46,12 @@
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий DESSCC</Value>
-		<Value xsi:type="xs:string">
-
-#Область ШАПКА_Заполнение
+		<Value xsi:type="xs:string">Исходящий DESSCC</Value>
+		<Value xsi:type="xs:string">ИсходящийDESSCC</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">#Область ШАПКА_Заполнение
 	
 	Запрос = Новый Запрос;
 	Запрос.Текст = "ВЫБРАТЬ
@@ -796,90 +775,56 @@
 	//Возврат Результат;				//раскомментировать для отображения значений таблицы "Результат" на вкладке "Тестирование"  
 	//Возврат РезультатЗапросаНоменклатур.Выгрузить();		//раскомментировать для отображения значений таблицы "РезультатНоменклатур" на вкладке "Тестирование"
 	
-	Возврат МассивСтруктурИсходящих;</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string">Исходящий DESSCC</Value>
+	Возврат МассивСтруктурИсходящих;/Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">9</lastId>
-			<item>
-				<value xsi:type="xs:string">Неструкт. докум.</value>
-				<id xsi:type="xs:decimal">0</id>
-			</item>
+			<lastId xsi:type="xs:decimal">8</lastId>
 			<item>
 				<value xsi:type="xs:string">Прайс-лист</value>
-				<id xsi:type="xs:decimal">1</id>
+				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
 				<presentation>СписокНакладныеИсходящиеПоставщик</presentation>
-				<id xsi:type="xs:decimal">2</id>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
-				<id xsi:type="xs:decimal">3</id>
+				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
 				<presentation>Исходящий DESSCC</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">4</id>
+				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Исходящий DESSCC</presentation>
+				<presentation>ИсходящийDESSCC</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">5</id>
+				<id xsi:type="xs:decimal">4</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
-				<id xsi:type="xs:decimal">6</id>
+				<id xsi:type="xs:decimal">5</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПриемникВидДокумента</value>
 				<presentation>DESSCC_Исходящий</presentation>
-				<id xsi:type="xs:decimal">7</id>
+				<id xsi:type="xs:decimal">6</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИсточникВидДокумента</value>
 				<presentation>Накладная_Исходящая</presentation>
-				<id xsi:type="xs:decimal">8</id>
+				<id xsi:type="xs:decimal">7</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">НужнаПодпись</value>
 				<presentation>Нет</presentation>
-				<id xsi:type="xs:decimal">9</id>
+				<id xsi:type="xs:decimal">8</id>
 			</item>
 		</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="ValueTable">
-			<column>
-				<Name xsi:type="xs:string">Реквизит1</Name>
-				<ValueType>
-					<Type>xs:string</Type>
-					<StringQualifiers>
-						<Length>0</Length>
-						<AllowedLength>Variable</AllowedLength>
-					</StringQualifiers>
-				</ValueType>
-			</column>
-		</Value>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="xs:boolean">false</Value>
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="ValueListType">
 			<valueType/>

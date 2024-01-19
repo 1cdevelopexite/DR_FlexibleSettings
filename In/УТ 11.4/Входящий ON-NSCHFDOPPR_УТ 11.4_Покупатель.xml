@@ -8,7 +8,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -24,7 +28,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -35,13 +39,14 @@
 		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
-	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
-		<ValueType/>
-	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий ON_NSCHFDOPPR</Value>
+		<Value xsi:type="xs:string">Входящий УПД (УПД испр)</Value>
+		<Value xsi:type="xs:string">ВходящийON_NSCHFDOPPR</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">	ТипДокумента = "ON_NSCHFDOPPR";
 	ТипДокументооборота      = "ЮЗД";
 	ИдентификаторыУчастников = Новый Массив;
@@ -1363,48 +1368,39 @@
 		
 		#КонецОбласти
 		
-	КонецЕсли;
-</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string">Входящий УПД (иУПД)</Value>
+	КонецЕсли;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">5</lastId>
+			<lastId xsi:type="xs:decimal">4</lastId>
 			<item>
-				<value xsi:type="xs:string">Неструкт. докум.</value>
+				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Прайс-лист</value>
+				<value xsi:type="xs:string">Поставщик</value>				
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Поставщик</value>
+				<value xsi:type="xs:string">Покупатель</value>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Покупатель</value>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Входящий УПД (УПД испр)</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Синоним</value>
-				<presentation>Входящий УПД (иУПД)</presentation>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>ВходящийON_NSCHFDOPPR</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>ВходящийOn_nschfdoppr</presentation>
-				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">5</id>
 			</item>
 		</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
-		<Value xsi:type="xs:string">ВходящийOn_nschfdoppr</Value>
 	</row>
 </ValueTree>

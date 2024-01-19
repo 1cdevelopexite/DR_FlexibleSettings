@@ -8,7 +8,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -24,18 +28,26 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий DP_IZVPOL_23</Value>
-		<Value xsi:type="xs:string">	
-	ИдентификаторыУчастников = Новый Массив;
+		<Value xsi:type="xs:string">Входящий DP_IZVPOL_23</Value>
+		<Value xsi:type="xs:string">ВходящийDP_IZVPOL_23Покупатель</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">	ИдентификаторыУчастников = Новый Массив;
 	ЕстьОшибкаПолученияИдентификаторов = Ложь;
 	
 	Запрос = Новый Запрос;
@@ -169,7 +181,7 @@
 						ПараметрыМетода.Вставить("limit",		ЛимитСообщений);
 						ПараметрыМетода.Вставить("doc_type",	ДанныеДляREST.doc_type.doc_type);
 						ПараметрыМетода.Вставить("ticket_type",	ДанныеДляREST.doc_type.ticket_type);
-					
+						
 						МассивСообщенийAPI = DR_EDI_ВзаимодействиеREST_API.ПолучитьСписокВходящихДокументовЮЗД(ПараметрыМетода, ДанныеПодключения);
 						
 						Для Каждого Сообщение Из МассивСообщенийAPI Цикл
@@ -197,7 +209,7 @@
 	Иначе 
 		
 		ТекстЛогаСобытий = "Обработка DR_Документов с видом операции ""DP_IZVPOL_23_входящий"" не выполнена! Проверьте настройки профиля обмена. " 
-							+ "Возможно профиль помечен на удаление, либо не заполнен в настройках соответствия по Организации.";
+		+ "Возможно профиль помечен на удаление, либо не заполнен в настройках соответствия по Организации.";
 		
 		ДобавитьЗаписьВМассивЛога(МассивЛогаСобытий, ТекстЛогаСобытий, "Ошибка", ИмяСобытия);	
 		
@@ -228,7 +240,7 @@
 		ChainID_API = ТаблицаДокументовAPI.ВыгрузитьКолонку("chainID");
 		
 		Выборка =Запрос.Выполнить().Выбрать(); 
-				
+		
 		Пока Выборка.Следующий() Цикл
 			
 			//Тип - Структура;
@@ -443,13 +455,9 @@
 		#КонецОбласти
 		
 	КонецЕсли;</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string">Входящий DP_IZVPOL 23</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">3</lastId>
+			<lastId xsi:type="xs:decimal">4</lastId>
 			<item>
 				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">0</id>
@@ -460,14 +468,25 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Входящий DP_IZVPOL 23</presentation>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Входящий DP_IZVPOL_23</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>ВходящийDP_IZVPOL_23Покупатель</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
 	</row>
 </ValueTree>

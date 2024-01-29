@@ -103,7 +103,7 @@
 	
 	//&lt;Поиск сценария&gt;
 	СценарийСозданияXMLУКД = Настройка_Параметр_Прочитать("СтруктураФайлаXMLИсходящие");
-	СтрокиНастроекПоОтбору = СценарийСозданияXMLУКД.Строки.НайтиСтроки(Новый Структура("Использовать, Кнопка", Истина, "КорректировкаРеализации"));
+	СтрокиНастроекПоОтбору = СценарийСозданияXMLУКД.Строки.НайтиСтроки(Новый Структура("Использовать, ИмяКнопки", Истина, "ИсходящийУКДКорректировкаРеализации"));
 	
 	Если СтрокиНастроекПоОтбору.Количество() Тогда
 		//&lt;Используется первый найденный шаблон с признаком "Использовать"&gt;
@@ -132,7 +132,7 @@
 	
 	//&lt;Поиск сценария&gt;
 	СценарийСозданияXMLУКД = Настройка_Параметр_Прочитать("СтруктураФайлаXMLИсходящие");
-	СтрокиНастроекПоОтбору = СценарийСозданияXMLУКД.Строки.НайтиСтроки(Новый Структура("Использовать, Кнопка", Истина, "ВозвратТоваровОтКлиента"));
+	СтрокиНастроекПоОтбору = СценарийСозданияXMLУКД.Строки.НайтиСтроки(Новый Структура("Использовать, ИмяКнопки", Истина, "ИсходящийУКДВозврат"));
 	
 	Если СтрокиНастроекПоОтбору.Количество() Тогда
 		
@@ -155,10 +155,6 @@
 КонецЕсли;
 
 Возврат МассивСтруктурИсходящих;</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string">Исходящий УКД</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">8</lastId>
@@ -173,11 +169,13 @@
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Неструкт. докум.</value>
+				<value xsi:type="xs:string">Покупатель</value>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Покупатель</value>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Исходящий УКД</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
@@ -198,43 +196,18 @@
 			<item>
 				<value xsi:type="xs:string">ИсточникВидДокумента</value>
 				<presentation>СчетФактура_Исходящий</presentation>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">7</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">НужнаПодпись</value>
 				<presentation>Да</presentation>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">8</id>
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:string"/>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
-		<Value xsi:type="ValueTable">
-			<column>
-				<Name xsi:type="xs:string">Реквизит1</Name>
-				<ValueType>
-					<Type>xs:string</Type>
-					<StringQualifiers>
-						<Length>0</Length>
-						<AllowedLength>Variable</AllowedLength>
-					</StringQualifiers>
-				</ValueType>
-			</column>
-		</Value>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="xs:boolean">false</Value>
-		<Value xsi:type="xs:string"/>
 	</row>
 </ValueTree>

@@ -45,9 +45,9 @@
     </column>
     <row>
         <Value xsi:type="xs:boolean">true</Value>
-        <Value xsi:type="xs:string">Исходящий УКД исправительный</Value>
-        <Value xsi:type="xs:string">Исходящий УКД испр</Value>
-        <Value xsi:type="xs:string">ИсходящийУКДИсправительныйВозврат</Value>
+        <Value xsi:type="xs:string">Исходящий УКД</Value>
+        <Value xsi:type="xs:string">Исходящий УКД</Value>
+        <Value xsi:type="xs:string">ИсходящийУКДВозврат</Value>
         <Value xsi:type="xs:string"/>
         <Value xsi:type="xs:decimal">0</Value>
         <Value xsi:type="xs:decimal">0</Value>
@@ -2315,13 +2315,13 @@ DRВидыДокументовПредСчФ.Добавить("ON_NSCHFDOPPRMARK
             </item>
             <item>
                 <value xsi:type="xs:string">Синоним</value>
-                <presentation>Исходящий УКД испр</presentation>
+                <presentation>Исходящий УКД</presentation>
                 <checkState>1</checkState>
                 <id xsi:type="xs:decimal">3</id>
             </item>
             <item>
                 <value xsi:type="xs:string">ИмяКнопки</value>
-                <presentation>ИсходящийУКДИсправительныйВозврат</presentation>
+                <presentation>ИсходящийУКДВозврат</presentation>
                 <checkState>1</checkState>
                 <id xsi:type="xs:decimal">4</id>
             </item>

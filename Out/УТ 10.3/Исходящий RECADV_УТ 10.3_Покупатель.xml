@@ -47,7 +47,7 @@
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий RECADV</Value>
 		<Value xsi:type="xs:string">Исходящий RECADV</Value>
-		<Value xsi:type="xs:string">ИсходящийRecadv</Value>
+		<Value xsi:type="xs:string">ИсходящийRECADV</Value>
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
@@ -532,7 +532,7 @@ EDIINTERCHANGEID = 0;
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>ИсходящийRecadv</presentation>
+				<presentation>ИсходящийRECADV</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>

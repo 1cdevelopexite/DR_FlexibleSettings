@@ -233,8 +233,7 @@
 		КоличествоСозданныхДокументов = КоличествоСозданныхДокументов + 1;
 	КонецЕсли;	 
 	
-КонецЦикла;
-</Value>
+КонецЦикла;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>

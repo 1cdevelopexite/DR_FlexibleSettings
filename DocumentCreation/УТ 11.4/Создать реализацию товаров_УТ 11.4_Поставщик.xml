@@ -8,11 +8,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Формула</Name>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -28,12 +24,29 @@
 		<ValueType/>
 	</column>
 	<column>
+		<Name xsi:type="xs:string">Формула</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Создать реализацию товаров</Value>
+		<Value xsi:type="xs:string">СоздатьРеализацию</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:string">ИмяСобытия = "Создание документов по кнопке &lt;&lt;&lt; Создать реализацию товаров &gt;&gt;&gt;";
 
 РазделятьРеализации = Настройка_Параметр_Прочитать("ЭКОМ_РазделятьРеализации", Ложь);
@@ -420,39 +433,40 @@
 		КоличествоСозданныхДокументов = КоличествоСозданныхДокументов + 1;
 	КонецЕсли;		  
 	// служебные операции --
-КонецЦикла;
-   </Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
+КонецЦикла;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>
 			<item>
-				<value xsi:type="xs:string">Неструкт. докум.</value>
-				<id xsi:type="xs:decimal">0</id>
-			</item>
-			<item>
 				<value xsi:type="xs:string">Прайс-лист</value>
-				<id xsi:type="xs:decimal">1</id>
+				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
 				<presentation>СписокЗаказыВходящиеПоставщик</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">2</id>
+				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
+				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Создать реализацию товаров</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Создать реализацию товаров</presentation>
+				<presentation>СоздатьРеализацию</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
 	</row>
 </ValueTree>

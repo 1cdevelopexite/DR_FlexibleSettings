@@ -41,7 +41,7 @@
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">Создать поступление</Value>
+		<Value xsi:type="xs:string">Создать поступление товаров</Value>
 		<Value xsi:type="xs:string">СоздатьПоступление</Value>
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:decimal">0</Value>
@@ -404,7 +404,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
-				<presentation>Создать поступление</presentation>
+				<presentation>Создать поступление товаров</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>

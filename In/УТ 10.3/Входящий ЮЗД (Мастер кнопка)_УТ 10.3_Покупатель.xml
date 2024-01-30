@@ -41,9 +41,9 @@
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">Входящий ЮЗД</Value>
-		<Value xsi:type="xs:string">Входящий УПД (иУПД) / УКД (иУКД)</Value>
-		<Value xsi:type="xs:string">ВходящийЮзд</Value>
+		<Value xsi:type="xs:string">Входящий ЮЗД (Мастер кнопка)</Value>
+		<Value xsi:type="xs:string">Входящий УПД/УКД (УПД испр/УКД испр)</Value>
+		<Value xsi:type="xs:string">ВходящийЮЗД</Value>
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
@@ -88,7 +88,7 @@
 				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Поставщик</value>
+				<value xsi:type="xs:string">Поставщик</value>				
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
@@ -99,13 +99,13 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
-				<presentation>Входящий УПД (иУПД) / УКД (иУКД)</presentation>
+				<presentation>Входящий УПД/УКД (УПД испр/УКД испр)</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>ВходящийЮзд</presentation>
+				<presentation>ВходящийЮЗД</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>

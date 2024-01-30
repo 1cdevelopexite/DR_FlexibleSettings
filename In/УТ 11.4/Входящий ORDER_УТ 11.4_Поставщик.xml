@@ -8,7 +8,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -24,16 +28,25 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий ORDER</Value>
+		<Value xsi:type="xs:string">Входящий ORDER</Value>
+		<Value xsi:type="xs:string">ВходящийORDER</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">ТипДокумента 			 = "ORDER";	
 ТипДокументооборота      = "EDI";
 ИдентификаторыУчастников = Новый Массив;
@@ -1941,39 +1954,40 @@
 	
 	#КонецОбласти
 	
-КонецЕсли;
-</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string">Входящий ORDER</Value>
+КонецЕсли;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>
 			<item>
-				<value xsi:type="xs:string">Неструкт. докум.</value>
-				<id xsi:type="xs:decimal">0</id>
-			</item>
-			<item>
 				<value xsi:type="xs:string">Прайс-лист</value>
-				<id xsi:type="xs:decimal">1</id>
+				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
 				<presentation>СписокOrderВходящиеПоставщик</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">2</id>
+				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
+				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Входящий ORDER</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Входящий ORDER</presentation>
+				<presentation>ВходящийORDER</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
 	</row>
 </ValueTree>

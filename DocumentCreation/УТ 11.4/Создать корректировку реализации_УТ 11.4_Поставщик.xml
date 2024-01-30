@@ -8,11 +8,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Формула</Name>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -28,12 +24,29 @@
 		<ValueType/>
 	</column>
 	<column>
+		<Name xsi:type="xs:string">Формула</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Создать корректировку реализации товаров</Value>
+		<Value xsi:type="xs:string">СоздатьКорректировкуРеализации</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:string">	ИмяСобытия = "Создание документов по кнопке &lt;&lt;&lt; Создать корректировку реализации товаров &gt;&gt;&gt;";
 	
 	// служебные переменные гибких настроек ++
@@ -323,12 +336,7 @@
 	Иначе
 		ТекстОшибки = НСтр("ru = 'В настройках программы отключена возможность создания корректировок реализации'", ОбщегоНазначенияКлиентСервер.КодОсновногоЯзыка());
 		ЗаписатьЛогСобытий(ЛогСобытий, ТекстОшибки);
-	КонецЕсли;
-</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
+	КонецЕсли;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>
@@ -343,19 +351,25 @@
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Неструкт. докум.</value>
+				<value xsi:type="xs:string">Покупатель</value>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Покупатель</value>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Создать корректировку реализации товаров</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Создать корректировку реализации товаров</presentation>
+				<presentation>СоздатьКорректировкуРеализации</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
 	</row>
 </ValueTree>

@@ -42,8 +42,8 @@
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий ON_NSCHFDOPPR</Value>
-		<Value xsi:type="xs:string">Входящий УПД (иУПД)</Value>
-		<Value xsi:type="xs:string">ВходящийOn_nschfdoppr</Value>
+		<Value xsi:type="xs:string">Входящий УПД (УПД испр)</Value>
+		<Value xsi:type="xs:string">ВходящийON_NSCHFDOPPR</Value>
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
@@ -1372,8 +1372,7 @@
 		
 		#КонецОбласти
 		
-	КонецЕсли;
-</Value>
+	КонецЕсли;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>
@@ -1382,22 +1381,23 @@
 				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Поставщик</value>
+				<value xsi:type="xs:string">Поставщик</value>				
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
-				<presentation>Входящий УПД (иУПД)</presentation>
+				<presentation>Входящий УПД (УПД испр)</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>ВходящийOn_nschfdoppr</presentation>
+				<presentation>ВходящийON_NSCHFDOPPR</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>

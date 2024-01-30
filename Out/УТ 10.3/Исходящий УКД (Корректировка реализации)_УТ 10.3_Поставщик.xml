@@ -45,9 +45,9 @@
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">Исходящий ЮЗД (Универсальный корректировочный документ на основании Корректировочной реализации)</Value>
 		<Value xsi:type="xs:string">Исходящий УКД</Value>
-		<Value xsi:type="xs:string">ИсходящийЮздУниверсальныйКорректировочныйДокументНаОснованииКорректировочнойРеализации</Value>
+		<Value xsi:type="xs:string">Исходящий УКД</Value>
+		<Value xsi:type="xs:string">ИсходящийУКДКорректировкаРеализации</Value>
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
@@ -2354,7 +2354,7 @@ DRВидыДокументовПредСчФ.Добавить("ON_NSCHFDOPPRMARK
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>ИсходящийЮздУниверсальныйКорректировочныйДокументНаОснованииКорректировочнойРеализации</presentation>
+				<presentation>ИсходящийУКДКорректировкаРеализации</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
@@ -2375,6 +2375,7 @@ DRВидыДокументовПредСчФ.Добавить("ON_NSCHFDOPPRMARK
 			<item>
 				<value xsi:type="xs:string">НужнаПодпись</value>
 				<presentation>Да</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">8</id>
 			</item>
 		</Value>

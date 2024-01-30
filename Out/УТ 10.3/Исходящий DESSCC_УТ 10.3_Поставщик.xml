@@ -12,6 +12,10 @@
 		<ValueType/>
 	</column>
 	<column>
+        <Name xsi:type="xs:string">ИмяКнопки</Name>
+        <ValueType/>
+    </column>
+	<column>
 		<Name xsi:type="xs:string">СлужебныеТекст</Name>
 		<ValueType/>
 	</column>
@@ -43,6 +47,7 @@
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий DESSCC</Value>
 		<Value xsi:type="xs:string">Исходящий DESSCC</Value>
+		<Value xsi:type="xs:string">ИсходящийDESSCC</Value>
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
@@ -796,7 +801,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Исходящий DESSCC</presentation>
+				<presentation>ИсходящийDESSCC</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>

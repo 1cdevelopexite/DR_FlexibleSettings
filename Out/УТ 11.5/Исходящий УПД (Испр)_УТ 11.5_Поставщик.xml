@@ -1,72 +1,57 @@
 ﻿<ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTree">
-	<column>
-		<Name xsi:type="xs:string">Использовать</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ТипТранзакции</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Данные</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Сохранение</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Загрузка</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Источник</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Приемник</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Атрибуты</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ДанныеЗначения</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ДоступныеЗначения</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Связи</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Обязательный</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
-		<ValueType/>
-	</column>
-	<row>
-		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">Исходящий ЮЗД (Универсальный передаточный документ Исправительный)</Value>
-		<Value xsi:type="xs:string">ВызовМастерКнопкойИспрЮЗД 	= ?(ВызовМастерКнопкойИспрЮЗД = Неопределено, Ложь, ВызовМастерКнопкойИспрЮЗД);
+    <column>
+        <Name xsi:type="xs:string">Использовать</Name>
+        <ValueType/>
+    </column>
+    <column>
+        <Name xsi:type="xs:string">ТипТранзакции</Name>
+        <ValueType/>
+    </column>
+    <column>
+        <Name xsi:type="xs:string">Кнопка</Name>
+        <ValueType/>
+    </column>
+    <column>
+        <Name xsi:type="xs:string">ИмяКнопки</Name>
+        <ValueType/>
+    </column>
+    <column>
+        <Name xsi:type="xs:string">СлужебныеТекст</Name>
+        <ValueType/>
+    </column>
+    <column>
+        <Name xsi:type="xs:string">Сохранение</Name>
+        <ValueType/>
+    </column>
+    <column>
+        <Name xsi:type="xs:string">Загрузка</Name>
+        <ValueType/>
+    </column>
+    <column>
+        <Name xsi:type="xs:string">Служебные</Name>
+        <ValueType/>
+    </column>
+    <column>
+        <Name xsi:type="xs:string">КоллекцияТЧ</Name>
+        <ValueType/>
+    </column>
+    <column>
+        <Name xsi:type="xs:string">Данные</Name>
+        <ValueType/>
+    </column>
+    <column>
+        <Name xsi:type="xs:string">Регламент</Name>
+        <ValueType/>
+    </column>
+    <row>
+        <Value xsi:type="xs:boolean">true</Value>
+        <Value xsi:type="xs:string">Исходящий УПД исправительный</Value>
+        <Value xsi:type="xs:string">Исходящий УПД испр</Value>
+        <Value xsi:type="xs:string">ИсходящийУПДИсправительный</Value>
+        <Value xsi:type="xs:string"/>
+        <Value xsi:type="xs:decimal">0</Value>
+        <Value xsi:type="xs:decimal">0</Value>
+        <Value xsi:type="xs:string">ВызовМастерКнопкойИспрЮЗД 	= ?(ВызовМастерКнопкойИспрЮЗД = Неопределено, Ложь, ВызовМастерКнопкойИспрЮЗД);
 
 Если НЕ ВызовМастерКнопкойИспрЮЗД Тогда
 	МассивСтруктурИсходящих = Новый Массив;
@@ -2267,85 +2252,60 @@ DRВидыДокументовИсхСчФ.Добавить("ON_NSCHFDOPPRMARK_0
 
 Если НЕ ВызовМастерКнопкойИспрЮЗД Тогда
 	Выполнить("Возврат МассивСтруктурИсходящих");		
-КонецЕсли;
-</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string">Исходящий испрУПД</Value>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">8</lastId>
-			<item>
-				<value xsi:type="xs:string">Прайс-лист</value>
-				<id xsi:type="xs:decimal">0</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Поставщик</value>
-				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">1</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Неструкт. докум.</value>
-				<id xsi:type="xs:decimal">2</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Покупатель</value>
-				<id xsi:type="xs:decimal">3</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Исходящий испрУПД</presentation>
-				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">4</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
-				<id xsi:type="xs:decimal">5</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ПриемникВидДокумента</value>
-				<presentation>ON_NSCHFDOPPR_01_Испр_Исходящий; ON_NSCHFDOPPRMARK_01_Испр_Исходящий; ON_NSCHFDOPPRPROS_01_Испр_Исходящий</presentation>
-				<id xsi:type="xs:decimal">6</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">ИсточникВидДокумента</value>
-				<presentation>СчетФактура_Исходящий</presentation>
-				<id xsi:type="xs:decimal">7</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">НужнаПодпись</value>
-				<presentation>Да</presentation>
-				<id xsi:type="xs:decimal">8</id>
-			</item>
-		</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="ValueTable">
-			<column>
-				<Name xsi:type="xs:string">Реквизит1</Name>
-				<ValueType>
-					<Type>xs:string</Type>
-					<StringQualifiers>
-						<Length>0</Length>
-						<AllowedLength>Variable</AllowedLength>
-					</StringQualifiers>
-				</ValueType>
-			</column>
-		</Value>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="xs:boolean">false</Value>
-		<Value xsi:type="xs:string"/>
-	</row>
+КонецЕсли;</Value>
+        <Value xsi:type="ValueListType">
+            <valueType/>
+            <lastId xsi:type="xs:decimal">8</lastId>
+            <item>
+                <value xsi:type="xs:string">Прайс-лист</value>
+                <id xsi:type="xs:decimal">0</id>
+            </item>
+            <item>
+                <value xsi:type="xs:string">Поставщик</value>
+                <checkState>1</checkState>
+                <id xsi:type="xs:decimal">1</id>
+            </item>
+            <item>
+                <value xsi:type="xs:string">Покупатель</value>
+                <id xsi:type="xs:decimal">2</id>
+            </item>
+            <item>
+                <value xsi:type="xs:string">Синоним</value>
+                <presentation>Исходящий УПД испр</presentation>
+                <checkState>1</checkState>
+                <id xsi:type="xs:decimal">3</id>
+            </item>
+            <item>
+                <value xsi:type="xs:string">ИмяКнопки</value>
+                <presentation>ИсходящийУПДИсправительный</presentation>
+                <checkState>1</checkState>
+                <id xsi:type="xs:decimal">4</id>
+            </item>
+            <item>
+                <value xsi:type="xs:string">ПередаватьТекстПричины</value>
+                <id xsi:type="xs:decimal">5</id>
+            </item>
+            <item>
+                <value xsi:type="xs:string">ПриемникВидДокумента</value>
+                <presentation>ON_NSCHFDOPPR_01_Испр_Исходящий; ON_NSCHFDOPPRMARK_01_Испр_Исходящий; ON_NSCHFDOPPRPROS_01_Испр_Исходящий</presentation>
+                <id xsi:type="xs:decimal">6</id>
+            </item>
+            <item>
+                <value xsi:type="xs:string">ИсточникВидДокумента</value>
+                <presentation>СчетФактура_Исходящий</presentation>
+                <id xsi:type="xs:decimal">7</id>
+            </item>
+            <item>
+                <value xsi:type="xs:string">НужнаПодпись</value>
+                <presentation>Да</presentation>
+                <checkState>1</checkState>
+                <id xsi:type="xs:decimal">8</id>
+            </item>
+        </Value>
+        <Value xsi:type="xs:string"/>
+        <Value xsi:type="ValueListType">
+            <valueType/>
+            <lastId xsi:type="xs:decimal">-1</lastId>
+        </Value>
+    </row>
 </ValueTree>

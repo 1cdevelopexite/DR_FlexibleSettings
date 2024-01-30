@@ -11,6 +11,10 @@
 		<Name xsi:type="xs:string">Кнопка</Name>
 		<ValueType/>
 	</column>
+    <column>
+        <Name xsi:type="xs:string">ИмяКнопки</Name>
+        <ValueType/>
+    </column>
 	<column>
 		<Name xsi:type="xs:string">СлужебныеТекст</Name>
 		<ValueType/>
@@ -35,10 +39,15 @@
 		<Name xsi:type="xs:string">Данные</Name>
 		<ValueType/>
 	</column>
+    <column>
+        <Name xsi:type="xs:string">Регламент</Name>
+        <ValueType/>
+    </column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий DESADV</Value>
-		<Value xsi:type="xs:string">Исходящий DESADV</Value>
+        <Value xsi:type="xs:string">Исходящий DESADV</Value>
+		<Value xsi:type="xs:string">ИсходящийDESADV</Value>
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
@@ -635,7 +644,7 @@ EDIINTERCHANGEID = 0;
 Возврат МассивСтруктурИсходящих;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">7</lastId>
+			<lastId xsi:type="xs:decimal">8</lastId>
 			<item>
 				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">0</id>
@@ -650,32 +659,42 @@ EDIINTERCHANGEID = 0;
 				<value xsi:type="xs:string">Покупатель</value>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
+            <item>
+                <value xsi:type="xs:string">Синоним</value>
+                <presentation>Исходящий DESADV</presentation>
+                <checkState>1</checkState>
+                <id xsi:type="xs:decimal">3</id>
+            </item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Исходящий DESADV</presentation>
+				<presentation>ИсходящийDESADV</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">3</id>
+				<id xsi:type="xs:decimal">4</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
-				<id xsi:type="xs:decimal">4</id>
+				<id xsi:type="xs:decimal">5</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПриемникВидДокумента</value>
 				<presentation>DESADV_Исходящий</presentation>
-				<id xsi:type="xs:decimal">5</id>
+				<id xsi:type="xs:decimal">6</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИсточникВидДокумента</value>
 				<presentation>Накладная_Исходящая</presentation>
-				<id xsi:type="xs:decimal">6</id>
+				<id xsi:type="xs:decimal">7</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">НужнаПодпись</value>
 				<presentation>Нет</presentation>
-				<id xsi:type="xs:decimal">7</id>
+				<id xsi:type="xs:decimal">8</id>
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>
+        <Value xsi:type="ValueListType">
+            <valueType/>
+            <lastId xsi:type="xs:decimal">-1</lastId>
+        </Value>
 	</row>
 </ValueTree>

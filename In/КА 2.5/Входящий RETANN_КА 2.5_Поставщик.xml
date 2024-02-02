@@ -8,7 +8,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -24,7 +28,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -35,13 +39,14 @@
 		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
-	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
-		<ValueType/>
-	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий RETANN</Value>
+		<Value xsi:type="xs:string">Входящий RETANN</Value>
+		<Value xsi:type="xs:string">ВходящийRETANN</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">	ТипДокумента = "RETANN";	
 	ТипДокументооборота      = "EDI";
 	ИдентификаторыУчастников = Новый Массив;
@@ -1657,49 +1662,40 @@
 		
 		#КонецОбласти
 						
-	КонецЕсли;
-</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string">Входящий RETANN</Value>
+	КонецЕсли;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">5</lastId>
-			<item>
-				<value xsi:type="xs:string">Неструкт. докум.</value>
-				<id xsi:type="xs:decimal">0</id>
-			</item>
+			<lastId xsi:type="xs:decimal">4</lastId>
 			<item>
 				<value xsi:type="xs:string">Прайс-лист</value>
-				<id xsi:type="xs:decimal">1</id>
+				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
 				<presentation>СписокRetannВходящиеПоставщик</presentation>
-				<id xsi:type="xs:decimal">2</id>
+				<checkState>1</checkState>				
+				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
-				<id xsi:type="xs:decimal">3</id>
+				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
 				<presentation>Входящий RETANN</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">4</id>
+				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>ВходящийRetann</presentation>
+				<presentation>ВходящийRETANN</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">5</id>
+				<id xsi:type="xs:decimal">4</id>
 			</item>
 		</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
-		<Value xsi:type="xs:string">ВходящийRetann</Value>
 	</row>
 </ValueTree>

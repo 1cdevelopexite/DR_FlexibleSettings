@@ -52,6 +52,7 @@
         <Value xsi:type="xs:decimal">0</Value>
         <Value xsi:type="xs:decimal">0</Value>
         <Value xsi:type="xs:string">#Область ШАПКА_Заполнение
+		
 Запрос = Новый Запрос;
 Запрос.Текст = "ВЫБРАТЬ
                |	ЗаказПоставщику.Ссылка КАК Ссылка,

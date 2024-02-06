@@ -51,9 +51,7 @@
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string">
-
-МассивСтруктурИсходящих = Новый Массив;
+		<Value xsi:type="xs:string">МассивСтруктурИсходящих = Новый Массив;
 DRВидыДокументовТекСчФ 	= Новый Массив;
 DRВидыДокументовТекСчФ.Добавить("ON_NKORSCHFDOPPR_01_Исходящий");
 DRВидыДокументовТекСчФ.Добавить("ON_NKORSCHFDOPPRMARK_01_Исходящий");

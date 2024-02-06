@@ -12,15 +12,11 @@
 		<ValueType/>
 	</column>
 	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<column>
 		<Name xsi:type="xs:string">СлужебныеТекст</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -32,18 +28,25 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Регламент</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий ORDER</Value>
 		<Value xsi:type="xs:string">Входящий ORDER</Value>
+		<Value xsi:type="xs:string">ВходящийORDER</Value>
 		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">ТипДокумента 			 = "ORDER";	
 ТипДокументооборота      = "EDI";
 ИдентификаторыУчастников = Новый Массив;
@@ -1946,8 +1949,7 @@
 	ТекстЛогаСобытий = "Ошибка получения Идентификаторов. Проверьте доступность сети и корректность заполнения профилей обмена.";
 	ЗаписьСтруктурыЛога = ЗаполненнаяЗаписьЛога(ТекстЛогаСобытий, "Ошибка", ИмяСобытия);
 	МассивЛогаСобытий.Добавить(ЗаписьСтруктурыЛога);	
-КонецЕсли;
-</Value>
+КонецЕсли;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>
@@ -1973,17 +1975,14 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Входящий ORDER</presentation>
+				<presentation>ВходящийORDER</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
 		</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
-		<Value xsi:type="xs:string">ВходящийOrder</Value>
 	</row>
 </ValueTree>

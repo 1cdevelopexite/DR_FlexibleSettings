@@ -8,7 +8,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -24,18 +28,26 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий DP_IZVPOL_06</Value>
-		<Value xsi:type="xs:string">	
-	ИдентификаторыУчастников = Новый Массив;
+		<Value xsi:type="xs:string">Входящий DP_IZVPOL_06</Value>
+		<Value xsi:type="xs:string">ВходящийDP_IZVPOL_06</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">	ИдентификаторыУчастников = Новый Массив;
 	ЕстьОшибкаПолученияИдентификаторов = Ложь;
 	
 	Запрос = Новый Запрос;
@@ -406,21 +418,17 @@
 			
 	КонецЦикла; 
 	
-#КонецОбласти   
-</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string">Входящий DP_IZVPOL 06</Value>
+#КонецОбласти</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">3</lastId>
+			<lastId xsi:type="xs:decimal">4</lastId>
 			<item>
 				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
@@ -428,11 +436,21 @@
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Входящий DP_IZVPOL 06</presentation>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Входящий DP_IZVPOL_06</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>ВходящийDP_IZVPOL_06</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
 	</row>
 </ValueTree>

@@ -12,15 +12,11 @@
 		<ValueType/>
 	</column>
 	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<column>
 		<Name xsi:type="xs:string">СлужебныеТекст</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -32,18 +28,25 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Регламент</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий RECADV</Value>
 		<Value xsi:type="xs:string">Входящий RECADV</Value>
+		<Value xsi:type="xs:string">ВходящийRECADV</Value>
 		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">ТипДокумента = "RECADV";	
 ТипДокументооборота      = "EDI";
 ИдентификаторыУчастников = Новый Массив;
@@ -2436,8 +2439,7 @@
 	ЗаписьСтруктурыЛога = ЗаполненнаяЗаписьЛога(ТекстЛогаСобытий, "Ошибка", ИмяСобытия);
 	МассивЛогаСобытий.Добавить(ЗаписьСтруктурыЛога);
 	
-КонецЕсли;
-</Value>
+КонецЕсли;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>
@@ -2448,7 +2450,7 @@
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
 				<presentation>СписокRecadvВходящиеПоставщик</presentation>
-				<checkState>1</checkState>
+				<checkState>1</checkState>				
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
@@ -2463,17 +2465,14 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>Входящий RECADV</presentation>
+				<presentation>ВходящийRECADV</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
 		</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
-		<Value xsi:type="xs:string">ВходящийRecadv</Value>
 	</row>
 </ValueTree>

@@ -491,7 +491,7 @@
 		</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">0</lastId>
+			<lastId xsi:type="xs:decimal">1</lastId>
 			<item>
 				<value xsi:type="xs:string">      ТекстЗапроса = "ВЫБРАТЬ
                      |	DR_Документ.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
@@ -520,8 +520,12 @@
                      |ГДЕ
                      |	ТабличнаяЧасть_DRДокумент.Значение = ЛОЖЬ";</value>
 				<presentation>ТекстЗапроса</presentation>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">0</id>
+			</item>
+			<item>
+				<value xsi:nil="false"/>
+				<presentation>Расписание</presentation>
+				<id xsi:type="xs:decimal">1</id>
 			</item>
 		</Value>
 		<Value xsi:type="xs:string">АвтоСверкаЮзд</Value>

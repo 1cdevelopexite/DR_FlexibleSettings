@@ -477,7 +477,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>АвтоСверкаЮЗД</presentation>
+				<presentation>АвтосверкаЮЗД</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">5</id>
 			</item>
@@ -521,6 +521,6 @@
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 		</Value>
-		<Value xsi:type="xs:string">АвтоСверкаЮЗД</Value>
+		<Value xsi:type="xs:string">АвтосверкаЮЗД</Value>
 	</row>
 </ValueTree>

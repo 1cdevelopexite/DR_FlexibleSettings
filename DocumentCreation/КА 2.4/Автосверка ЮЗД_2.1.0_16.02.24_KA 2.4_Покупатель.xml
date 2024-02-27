@@ -41,7 +41,7 @@
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">АвтоСверка ЮЗД</Value>
+		<Value xsi:type="xs:string">Автосверка ЮЗД</Value>
 		<Value xsi:type="xs:string">ЕСЛИ Настройка_Параметр_Прочитать("EDI_АвтосверкаЮЗД", Ложь) ТОгда
 	
 	//&lt;Служебные переменные&gt;
@@ -478,13 +478,13 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
-				<presentation>АвтоСверка ЮЗД</presentation>
+				<presentation>Автосверка ЮЗД</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>АвтоСверкаЮзд</presentation>
+				<presentation>АвтосверкаЮзд</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">5</id>
 			</item>
@@ -528,6 +528,6 @@
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 		</Value>
-		<Value xsi:type="xs:string">АвтоСверкаЮзд</Value>
+		<Value xsi:type="xs:string">АвтосверкаЮзд</Value>
 	</row>
 </ValueTree>

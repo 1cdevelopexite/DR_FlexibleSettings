@@ -195,7 +195,7 @@ EDIINTERCHANGEID = 0;
 		НоваяСтрока.ORDEREDQUANTITY = XMLСтрока(ТекСтрока.ORDEREDQUANTITY);
 		НоваяСтрока.ORDERPRICE 		= XMLСтрока(ТекСтрока.ORDERPRICE);
 		НоваяСтрока.PRICEWITHVAT 	= XMLСтрока(ТекСтрока.PRICEWITHVAT);
-		НоваяСтрока.VAT 			= XMLСтрока(ТекСтрока.VAT);
+		НоваяСтрока.VAT 			= ?(ТекСтрока.VAT = "0", "без НДС", ТекСтрока.VAT);
 		
 		ЕдИзмКод = СокрЛП(ТекСтрока.ЕдиницаИзмерения.Код);
 		

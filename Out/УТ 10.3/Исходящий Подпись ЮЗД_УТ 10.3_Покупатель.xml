@@ -16,26 +16,6 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Сохранение</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Загрузка</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Источник</Name>
-		<ValueType/>
-	</column>
-	<column>
 		<Name xsi:type="xs:string">Приемник</Name>
 		<ValueType/>
 	</column>
@@ -44,7 +24,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">ДанныеЗначения</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -52,11 +32,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Связи</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Обязательный</Name>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -788,32 +764,6 @@
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="ValueTable">
-			<column>
-				<Name xsi:type="xs:string">Реквизит1</Name>
-				<ValueType>
-					<Type>xs:string</Type>
-					<StringQualifiers>
-						<Length>0</Length>
-						<AllowedLength>Variable</AllowedLength>
-					</StringQualifiers>
-				</ValueType>
-			</column>
-		</Value>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="xs:boolean">false</Value>
 		<Value xsi:type="xs:string">ИсходящийON_NSCHFDOPPOK</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>

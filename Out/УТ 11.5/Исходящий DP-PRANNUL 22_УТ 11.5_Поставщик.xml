@@ -8,15 +8,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<Name xsi:type="xs:string">Данные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -28,7 +24,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -36,7 +32,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Данные</Name>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -46,11 +46,6 @@
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий DP_PRANNUL_22 Поставщик</Value>
-		<Value xsi:type="xs:string">Исходящий DP_PRANNUL_22</Value>
-		<Value xsi:type="xs:string">ИсходящийDP_PRANNUL_22Поставщик</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">МассивСтруктурИсходящих = Новый Массив;
 
 ///ТекстАн 
@@ -645,59 +640,68 @@
 КонецЕсли;
 ~Выход:
 Возврат МассивСтруктурИсходящих;</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">Аннулирование ЮЗД</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">8</lastId>
+			<lastId xsi:type="xs:decimal">9</lastId>
+			<item>
+				<value xsi:type="xs:string">Неструкт. докум.</value>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
 			<item>
 				<value xsi:type="xs:string">Прайс-лист</value>
-				<id xsi:type="xs:decimal">0</id>
+				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
 				<presentation>СписокPrannulИсходящиеПоставщик</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">1</id>
-			</item>
-			<item>
-				<value xsi:type="xs:string">Покупатель</value>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Синоним</value>
-				<presentation>Исходящий DP_PRANNUL_22</presentation>
-				<checkState>1</checkState>
+				<value xsi:type="xs:string">Покупатель</value>
 				<id xsi:type="xs:decimal">3</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Аннулирование ЮЗД</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
 				<presentation>ИсходящийDP_PRANNUL_22Поставщик</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">4</id>
+				<id xsi:type="xs:decimal">5</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
 				<presentation>Текст аннулирования</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">5</id>
+				<id xsi:type="xs:decimal">6</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПриемникВидДокумента</value>
 				<presentation>DP_PRANNUL_22_Исходящий</presentation>
-				<id xsi:type="xs:decimal">6</id>
+				<id xsi:type="xs:decimal">7</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИсточникВидДокумента</value>
 				<presentation>ON_NSCHFDOPPR_01_Исходящий; ON_NSCHFDOPPR_01_Испр_Исходящий; ON_NSCHFDOPPRMARK_01_Исходящий; ON_NSCHFDOPPRMARK_01_Испр_Исходящий; ON_NSCHFDOPPRPROS_01_Исходящий; ON_NSCHFDOPPRPROS_01_Испр_Исходящий; ON_NKORSCHFDOPPR_01_Исходящий; ON_NKORSCHFDOPPR_01_Испр_Исходящий; ON_NKORSCHFDOPPRMARK_01_Исходящий; ON_NKORSCHFDOPPRMARK_01_Испр_Исходящий; ON_NKORSCHFDOPPRPROS_01_Исходящий; ON_NKORSCHFDOPPRPROS_01_Испр_Исходящий</presentation>
-				<id xsi:type="xs:decimal">7</id>
+				<id xsi:type="xs:decimal">8</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">НужнаПодпись</value>
 				<presentation>Да</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">8</id>
+				<id xsi:type="xs:decimal">9</id>
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string">ИсходящийDP_PRANNUL_22Поставщик</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>

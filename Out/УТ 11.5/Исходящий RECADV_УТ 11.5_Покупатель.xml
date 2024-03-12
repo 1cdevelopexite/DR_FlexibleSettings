@@ -32,31 +32,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Источник</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Приемник</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Атрибуты</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ДанныеЗначения</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ДоступныеЗначения</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Связи</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Обязательный</Name>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -1053,36 +1029,56 @@ EDIINTERCHANGEID = 0;
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="ValueTable">
-			<column>
-				<Name xsi:type="xs:string">Реквизит1</Name>
-				<ValueType>
-					<Type>xs:string</Type>
-					<StringQualifiers>
-						<Length>0</Length>
-						<AllowedLength>Variable</AllowedLength>
-					</StringQualifiers>
-				</ValueType>
-			</column>
-		</Value>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="ValueListType">
-			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
-		</Value>
-		<Value xsi:type="xs:boolean">false</Value>
 		<Value xsi:type="xs:string">ИсходящийRECADV</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
+			<lastId xsi:type="xs:decimal">1</lastId>
+			<item>
+				<value xsi:type="xs:string">ТекстЗапроса = "ВЫБРАТЬ
+               |	ПриобретениеТоваровУслуг.Ссылка КАК Ссылка
+               |ПОМЕСТИТЬ втПоступление
+               |ИЗ
+               |	Документ.ПриобретениеТоваровУслуг КАК ПриобретениеТоваровУслуг
+               |ГДЕ
+               |	ПриобретениеТоваровУслуг.Дата МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ)
+               |	И НЕ ПриобретениеТоваровУслуг.Проведен
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ
+               |	втПоступление.Ссылка КАК Документ,
+               |	втПоступление.Ссылка.Проведен КАК Проведен,
+               |	ПРЕДСТАВЛЕНИЕ(втПоступление.Ссылка) КАК ПредставлениеДокумента,
+               |	DR_СобытияНакладнаяВходящая.ИдентификаторЦепочки КАК ИдентификаторЦепочки
+               |ПОМЕСТИТЬ втДанныеИсточник
+               |ИЗ
+               |	втПоступление КАК втПоступление
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК DR_СобытияНакладнаяВходящая
+               |		ПО втПоступление.Ссылка = DR_СобытияНакладнаяВходящая.Документ
+               |			И (DR_СобытияНакладнаяВходящая.ВидДокумента = ""Накладная_Входящая"")
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК СобытияRECADVИсходящий
+               |		ПО (DR_СобытияНакладнаяВходящая.ИдентификаторЦепочки = СобытияRECADVИсходящий.ИдентификаторЦепочки)
+               |			И (СобытияRECADVИсходящий.ВидДокумента = ""RECADV_Исходящий"")
+               |ГДЕ
+               |	СобытияRECADVИсходящий.ИдентификаторЦепочки ЕСТЬ NULL
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ ПЕРВЫЕ 5
+               |	втДанныеИсточник.Документ КАК Документ,
+               |	""RECADV_Исходящий"" КАК ВидДокумента,
+               |	"""" КАК СтатусОбработкиДокумента
+               |ИЗ
+               |	втДанныеИсточник КАК втДанныеИсточник
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_ЦепочкиДокументов КАК DR_ЦепочкиДокументов
+               |		ПО втДанныеИсточник.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки
+               |
+               |УПОРЯДОЧИТЬ ПО
+               |	DR_ЦепочкиДокументов.ДатаЗаказа УБЫВ";
+</value>
+				<presentation>ТекстЗапроса</presentation>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
 		</Value>
 	</row>
 </ValueTree>

@@ -436,7 +436,7 @@
 	Для каждого Строка Из ТаблицаРезультатСверки Цикл
 		
 		DR_ДокументОбъект = Строка.DR_Документ.ПолучитьОбъект();
-		
+
 		DR_ДокументОбъект.Комментарий = Строка.ТекстУточнения;
 		
 		DR_ТабличнаяЧасть = DR_ДокументОбъект.ДополнительныеРеквизиты;
@@ -520,11 +520,6 @@
                      |	ТабличнаяЧасть_DRДокумент.Значение = ЛОЖЬ";</value>
 				<presentation>ТекстЗапроса</presentation>
 				<id xsi:type="xs:decimal">0</id>
-			</item>
-			<item>
-				<value xsi:nil="false"/>
-				<presentation>Расписание</presentation>
-				<id xsi:type="xs:decimal">1</id>
 			</item>
 		</Value>
 		<Value xsi:type="xs:string">АвтосверкаЮЗД</Value>

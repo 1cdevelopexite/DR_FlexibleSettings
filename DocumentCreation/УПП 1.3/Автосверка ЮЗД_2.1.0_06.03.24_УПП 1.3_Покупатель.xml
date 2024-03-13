@@ -486,7 +486,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
-				<presentation>АвтоСверка ЮЗД</presentation>
+				<presentation>Автосверка ЮЗД</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>

@@ -295,7 +295,7 @@ EDIINTERCHANGEID = 0;
 
 //Имена свойств элемента POSITION
 СвойстваPOSITION = "POSITIONNUMBER, PRODUCT, PRODUCTIDBUYER, PRODUCTIDSUPPLIER, ORDEREDQUANTITY,
-				   | ORDERUNIT, ORDERPRICE, PRICEWITHVAT, VAT, DESCRIPTION, QUANTITYOFCUINTU";
+				   | ORDERUNIT, ORDERPRICE, PRICEWITHVAT, VAT, CHARACTERISTIC, QUANTITYOFCUINTU";
 
 //Основной цикл
 Для каждого СтрокаШапкиДокумента из Результат Цикл
@@ -329,12 +329,14 @@ EDIINTERCHANGEID = 0;
 		//Заполнение значений свойств элемента POSITION
 		ЗаполнитьЗначенияСвойств(Структура, СтрокаНоменклатурыДокумента);
 		
+		Структура.CHARACTERISTIC = Новый Структура("DESCRIPTION", СтрокаНоменклатурыДокумента.DESCRIPTION);
+		
 		МассивPOSITION.Добавить(Структура);
+		
 	КонецЦикла;
 		
 	СтруктураHEAD.POSITION = МассивPOSITION;
-	
-	
+		
 	//Создание XML строки
 	XMLДокумент        	= Новый ЗаписьXML;		
 	ПараметрыЗаписиXML 	= Новый ПараметрыЗаписиXML("UTF-8", "1.0", Истина, Ложь, Символы.Таб); 

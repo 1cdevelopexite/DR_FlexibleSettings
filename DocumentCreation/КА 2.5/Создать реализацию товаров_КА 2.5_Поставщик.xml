@@ -47,7 +47,7 @@
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string"/>
-		Value xsi:type="xs:string">//&lt;Служебные переменные&gt;
+		<Value xsi:type="xs:string">//&lt;Служебные переменные&gt;
 ТипПриемника = "РеализацияТоваровУслуг";
 ИмяСобытия   = "Создание документов по кнопке &lt;&lt;&lt; Создать реализацию товаров &gt;&gt;&gt;";
 

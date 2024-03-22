@@ -406,12 +406,10 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
@@ -433,15 +431,20 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПриемникВидДокумента</value>
+				<presentation>CONDRA_Входящий</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">7</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИсточникВидДокумента</value>
+				<presentation>CONDRA_Исходящий</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">8</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">НужнаПодпись</value>
 				<presentation>Да</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">9</id>
 			</item>
 		</Value>

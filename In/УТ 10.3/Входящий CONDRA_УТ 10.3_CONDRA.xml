@@ -8,7 +8,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -24,7 +28,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -35,13 +39,14 @@
 		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
-	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
-		<ValueType/>
-	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий CONDRA</Value>
+		<Value xsi:type="xs:string">Входящий CONDRA</Value>
+		<Value xsi:type="xs:string">ВходящийCondra</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">ТипДокумента = "CONDRA";	
 	ТипДокументооборота      = "CONDRA";
 	ИдентификаторыУчастников = Новый Массив;
@@ -1059,16 +1064,12 @@
 		
 	КонецЕсли;
 </Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string">Входящий CONDRA</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">5</lastId>
 			<item>
 				<value xsi:type="xs:string">Неструкт. докум.</value>
-				<presentation>СписокДляCondra</presentation>
+				<presentation>СписокCondraВходящиеИсходящие</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
@@ -1078,12 +1079,10 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
@@ -1103,6 +1102,5 @@
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
-		<Value xsi:type="xs:string">ВходящийCondra</Value>
 	</row>
 </ValueTree>

@@ -1043,7 +1043,9 @@
                |ИЗ
                |	Документ.DR_Документ КАК DR_Документ
                |ГДЕ
-               |	DR_Документ.Дата МЕЖДУ НАЧАЛОПЕРИОДА(ДОБАВИТЬКДАТЕ(&amp;ТекущаяДата, ДЕНЬ, -14), ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ)";</value>
+               |	DR_Документ.Дата МЕЖДУ НАЧАЛОПЕРИОДА(ДОБАВИТЬКДАТЕ(&amp;ТекущаяДата, ДЕНЬ, -14), ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ)
+               |	И DR_Документ.ВидДокумента В(""ON_NSCHFDOPPR_01_Входящий"",""ON_NSCHFDOPPR_01_Испр_Входящий"",""ON_NSCHFDOPPRMARK_01_Входящий"",""ON_NSCHFDOPPRMARK_01_Испр_Входящий"",""ON_NSCHFDOPPRPROS_01_Входящий"",""ON_NSCHFDOPPRPROS_01_Испр_Входящий"",
+               |									""ON_NKORSCHFDOPPR_01_Входящий"",""ON_NKORSCHFDOPPR_01_Испр_Входящий"",""ON_NKORSCHFDOPPRMARK_01_Входящий"",""ON_NKORSCHFDOPPRMARK_01_Испр_Входящий"",""ON_NKORSCHFDOPPRPROS_01_Входящий"",""ON_NKORSCHFDOPPRPROS_01_Испр_Входящий"")";</value>
 				<presentation>ТекстЗапроса</presentation>
 				<id xsi:type="xs:decimal">0</id>
 			</item>

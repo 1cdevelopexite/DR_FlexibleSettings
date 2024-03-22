@@ -46,7 +46,7 @@
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">Исхоядщий RETORD</Value>
+		<Value xsi:type="xs:string">Исходящий RETORD</Value>
 		<Value xsi:type="xs:string">#Область ШАПКА_Заполнение
                
 Запрос = Новый Запрос;
@@ -343,7 +343,7 @@ EDIINTERCHANGEID = 0;
 		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string">Исхоядщий RETORD</Value>
+		<Value xsi:type="xs:string">Исходящий RETORD</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">9</lastId>
@@ -367,13 +367,13 @@ EDIINTERCHANGEID = 0;
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
-				<presentation>Исхоядщий RETORD</presentation>
+				<presentation>Исходящий RETORD</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
-				<presentation>ИсхоядщийRetord</presentation>
+				<presentation>ИсходящийRetord</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">5</id>
 			</item>
@@ -398,7 +398,7 @@ EDIINTERCHANGEID = 0;
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:string">ИсхоядщийRetord</Value>
+		<Value xsi:type="xs:string">ИсходящийRetord</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>

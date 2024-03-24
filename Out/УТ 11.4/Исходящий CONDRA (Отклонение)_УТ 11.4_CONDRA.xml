@@ -426,6 +426,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
+				<presentation>Причина отклонения</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">6</id>
 			</item>

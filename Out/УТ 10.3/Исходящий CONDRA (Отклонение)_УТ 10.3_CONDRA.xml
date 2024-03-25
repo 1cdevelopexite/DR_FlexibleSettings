@@ -353,7 +353,7 @@
 		ИдентификаторДокумента  = Строка(Новый УникальныйИдентификатор);
 		
 		//переопределить имена файлов
-		Запись.СтруктураДокумента.HEAD.CONTENT.FILENAME = "CONDRA" + "_" + EDIMESSAGE + ".xml";
+		//Запись.СтруктураДокумента.HEAD.CONTENT.FILENAME = "CONDRA" + "_" + EDIMESSAGE + ".xml";
 		Запись.СтруктураДокумента.HEAD.CONTENT.SIGNNAME = "CONDRA" + "_" + EDIMESSAGE + ".bin";
 		Запись.СтруктураДокумента.HEAD.DOCGUID = ИдентификаторДокумента;
 		

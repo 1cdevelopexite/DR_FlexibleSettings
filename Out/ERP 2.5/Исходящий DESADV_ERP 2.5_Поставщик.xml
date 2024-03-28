@@ -666,13 +666,13 @@ EDIINTERCHANGEID = 0;
             </item>
             <item>
                 <value xsi:type="xs:string">Синоним</value>
-                <presentation>Исходящий DESSCC</presentation>
+                <presentation>Исходящий DESADV</presentation>
                 <checkState>1</checkState>
                 <id xsi:type="xs:decimal">3</id>
             </item>
             <item>
                 <value xsi:type="xs:string">ИмяКнопки</value>
-                <presentation>ИсходящийDESSCC</presentation>
+                <presentation>ИсходящийDESADV</presentation>
                 <checkState>1</checkState>
                 <id xsi:type="xs:decimal">4</id>
             </item>
@@ -682,7 +682,7 @@ EDIINTERCHANGEID = 0;
             </item>
             <item>
                 <value xsi:type="xs:string">ПриемникВидДокумента</value>
-                <presentation>DESSCC_Исходящий</presentation>
+                <presentation>DESADV_Исходящий</presentation>
                 <id xsi:type="xs:decimal">6</id>
             </item>
             <item>

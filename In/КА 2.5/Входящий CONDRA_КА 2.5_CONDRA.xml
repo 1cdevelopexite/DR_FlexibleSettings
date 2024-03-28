@@ -996,7 +996,6 @@
 				<value xsi:type="xs:string">Поставщик</value>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
-	
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
 				<id xsi:type="xs:decimal">3</id>

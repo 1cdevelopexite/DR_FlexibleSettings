@@ -16,11 +16,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Приемник</Name>
+		<Name xsi:type="xs:string">Сохранение</Name>
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Атрибуты</Name>
+		<Name xsi:type="xs:string">Загрузка</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -28,7 +28,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">ДоступныеЗначения</Name>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
 	<column>

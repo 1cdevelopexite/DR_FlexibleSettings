@@ -389,8 +389,12 @@ EDIINTERCHANGEID = 0;
                           |	ВТ_НоменклатураORDER.PRICEWITHVAT КАК PRICEWITHVAT,
                           |	ВТ_НоменклатураORDER.ORDRSPUNIT КАК ORDRSPUNIT,
                           |	ВТ_НоменклатураORDER.КоличествоЗаказанное КАК КоличествоЗаказанное,
-                          |	ВТ_НоменклатураORDER.КоличествоВУпаковке КАК КоличествоВУпаковке,
-                          |	ВТ_НоменклатураORDER.DESCRIPTION КАК DESCRIPTION,
+                          |	ВТ_НоменклатураORDER.КоличествоВУпаковке КАК КоличествоВУпаковке,                          
+						  |	ВЫБОР
+                          |		КОГДА ВТ_НоменклатураORDER.DESCRIPTION = """"
+                          |			ТОГДА ЗаказТовары.Номенклатура.Представление
+                          |		ИНАЧЕ ВТ_НоменклатураORDER.DESCRIPTION
+                          |	КОНЕЦ КАК DESCRIPTION,
                           |	ВТ_НоменклатураORDER.PRODUCT КАК PRODUCT,
                           |	ВТ_НоменклатураORDER.PRODUCTIDBUYER КАК PRODUCTIDBUYER,
                           |	ВТ_НоменклатураORDER.PRODUCTIDSUPPLIER КАК PRODUCTIDSUPPLIER,

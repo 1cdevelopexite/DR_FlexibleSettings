@@ -8,7 +8,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Формула</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -24,14 +28,6 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Формула</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
-		<ValueType/>
-	</column>
-	<column>
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
@@ -39,15 +35,13 @@
 		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Создать заказ клиента</Value>
-
-		<Value xsi:type="xs:string">СоздатьЗаказКлиента</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:string">//&lt;Служебные переменные&gt;
 ТипПриемника = "ЗаказКлиента";
 ИмяСобытия   = "Создание документов по кнопке &lt;&lt;&lt; Создать заказ клиента &gt;&gt;&gt;";
@@ -985,7 +979,6 @@
 			
 		КонецЕсли; 
 		
-
 	КонецЕсли; 
 	
 	// служебные операции
@@ -994,6 +987,10 @@
 	КонецЕсли;    
 	
 КонецЦикла;</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>
@@ -1026,7 +1023,54 @@
 		</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
+			<lastId xsi:type="xs:decimal">1</lastId>
+			<item>
+				<value xsi:type="xs:string">ТекстЗапроса = "ВЫБРАТЬ
+|	DR_События.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
+|	DR_События.Документ КАК Документ,
+|	DR_События.Идентификатор КАК Идентификатор
+|ПОМЕСТИТЬ ВТ_ORDER
+|ИЗ
+|	РегистрСведений.DR_События КАК DR_События
+|ГДЕ
+|	DR_События.ВидДокумента = ""ORDER_Входящий""
+|;
+|
+|////////////////////////////////////////////////////////////////////////////////
+|ВЫБРАТЬ
+|	DR_События.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
+|	DR_События.ИдентификаторОснования КАК ИдентификаторОснования,
+|	DR_События.Документ КАК Документ,
+|	МАКСИМУМ(DR_События.ДатаЗаписи) КАК ДатаЗаписи
+|ПОМЕСТИТЬ ВТ_ЗАКАЗ
+|ИЗ
+|	РегистрСведений.DR_События КАК DR_События
+|ГДЕ
+|	DR_События.ВидДокумента = ""Заказ_Входящий""
+|
+|СГРУППИРОВАТЬ ПО
+|	DR_События.ИдентификаторЦепочки,
+|	DR_События.ИдентификаторОснования,
+|	DR_События.Документ
+|;
+|
+|////////////////////////////////////////////////////////////////////////////////
+|ВЫБРАТЬ
+|	ВТ_ORDER.Документ КАК Документ,
+|	ВТ_ORDER.ИдентификаторЦепочки КАК ИдентификаторЦепочки
+|ИЗ
+|	ВТ_ORDER КАК ВТ_ORDER
+|		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЗАКАЗ КАК ВТ_ЗАКАЗ
+|		ПО ВТ_ORDER.ИдентификаторЦепочки = ВТ_ЗАКАЗ.ИдентификаторЦепочки
+|		И ВТ_ORDER.Идентификатор = ВТ_ЗАКАЗ.ИдентификаторОснования
+|		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_ЦепочкиДокументов КАК DR_ЦепочкиДокументов
+|		ПО ВТ_ORDER.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки
+|ГДЕ
+|	ВТ_ЗАКАЗ.ИдентификаторЦепочки ЕСТЬ NULL";</value>
+				<presentation>ТекстЗапроса</presentation>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
 		</Value>
+		<Value xsi:type="xs:string">СоздатьЗаказКлиента</Value>
 	</row>
 </ValueTree>

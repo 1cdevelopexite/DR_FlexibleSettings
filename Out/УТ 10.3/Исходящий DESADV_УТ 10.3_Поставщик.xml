@@ -421,7 +421,11 @@ EDIINTERCHANGEID = 0;
 |	ТаблицаORDER.ORDERUNIT КАК DELIVEREDUNIT,
 |	ТаблицаORDER.КоличествоЗаказанное КАК КоличествоЗаказанное,
 |	ТаблицаORDER.КоличествоВУпаковке КАК КоличествоВУпаковке,
-|	ТаблицаORDER.DESCRIPTION КАК DESCRIPTION,
+|	ВЫБОР
+|		КОГДА ТаблицаORDER.DESCRIPTION = """"
+|			ТОГДА ТаблицаТовары.Номенклатура.Представление
+|		ИНАЧЕ ТаблицаORDER.DESCRIPTION
+|	КОНЕЦ КАК DESCRIPTION,
 |	ТаблицаORDER.PRODUCT КАК PRODUCT,
 |	ТаблицаORDER.PRODUCTIDBUYER КАК PRODUCTIDBUYER,
 |	ЕСТЬNULL(ТаблицаORDER.PRODUCTIDSUPPLIER, ТаблицаТовары.КодНоменклатуры) КАК PRODUCTIDSUPPLIER,

@@ -1,57 +1,57 @@
 ﻿<ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTree">
-    <column>
-        <Name xsi:type="xs:string">Использовать</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">ТипТранзакции</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Кнопка</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">ИмяКнопки</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">СлужебныеТекст</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Сохранение</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Загрузка</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Служебные</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">КоллекцияТЧ</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Данные</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Регламент</Name>
-        <ValueType/>
-    </column>
-    <row>
-        <Value xsi:type="xs:boolean">true</Value>
-        <Value xsi:type="xs:string">Исходящий ORDRSP</Value>
-        <Value xsi:type="xs:string">Исходящий ORDRSP</Value>
-        <Value xsi:type="xs:string">ИсходящийORDRSP</Value>
-        <Value xsi:type="xs:string"/>
-        <Value xsi:type="xs:decimal">0</Value>
-        <Value xsi:type="xs:decimal">0</Value>
-        <Value xsi:type="xs:string">#Область ШАПКА_Заполнение
+	<column>
+		<Name xsi:type="xs:string">Использовать</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ТипТранзакции</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Сохранение</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Загрузка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Данные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
+	<row>
+		<Value xsi:type="xs:boolean">true</Value>
+		<Value xsi:type="xs:string">Исходящий ORDRSP</Value>
+		<Value xsi:type="xs:string">Исходящий ORDRSP</Value>
+		<Value xsi:type="xs:string">ИсходящийORDRSP</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">#Область ШАПКА_Заполнение
 
 Запрос = Новый Запрос;
 Запрос.Текст ="ВЫБРАТЬ
@@ -611,59 +611,110 @@ EDIINTERCHANGEID = 0;
 //Возврат РезультатНоменклатур;		//раскомментировать для отображения значений таблицы "РезультатНоменклатур" на вкладке "Тестирование"
 
 Возврат МассивСтруктурИсходящих;</Value>
-        <Value xsi:type="ValueListType">
-            <valueType/>
-            <lastId xsi:type="xs:decimal">8</lastId>
-            <item>
-                <value xsi:type="xs:string">Прайс-лист</value>
-                <id xsi:type="xs:decimal">0</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">Поставщик</value>
-                <presentation>СписокЗаказыВходящиеПоставщик</presentation>
-                <checkState>1</checkState>
-                <id xsi:type="xs:decimal">1</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">Покупатель</value>
-                <id xsi:type="xs:decimal">2</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">Синоним</value>
-                <presentation>Исходящий ORDRSP</presentation>
-                <checkState>1</checkState>
-                <id xsi:type="xs:decimal">3</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">ИмяКнопки</value>
-                <presentation>ИсходящийORDRSP</presentation>
-                <checkState>1</checkState>
-                <id xsi:type="xs:decimal">4</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">ПередаватьТекстПричины</value>
-                <id xsi:type="xs:decimal">5</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">ПриемникВидДокумента</value>
-                <presentation>ORDRSP_Исходящий</presentation>
-                <id xsi:type="xs:decimal">6</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">ИсточникВидДокумента</value>
-                <presentation>Заказ_Входящий</presentation>
-                <id xsi:type="xs:decimal">7</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">НужнаПодпись</value>
-                <presentation>Нет</presentation>
-                <id xsi:type="xs:decimal">8</id>
-            </item>
-        </Value>
-        <Value xsi:type="xs:string"/>
-        <Value xsi:type="ValueListType">
-            <valueType/>
-            <lastId xsi:type="xs:decimal">-1</lastId>
-        </Value>
-    </row>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">8</lastId>
+			<item>
+				<value xsi:type="xs:string">Прайс-лист</value>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Поставщик</value>
+				<presentation>СписокЗаказыВходящиеПоставщик</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">1</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Покупатель</value>
+				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Исходящий ORDRSP</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">3</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>ИсходящийORDRSP</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
+				<id xsi:type="xs:decimal">5</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПриемникВидДокумента</value>
+				<presentation>ORDRSP_Исходящий</presentation>
+				<id xsi:type="xs:decimal">6</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИсточникВидДокумента</value>
+				<presentation>Заказ_Входящий</presentation>
+				<id xsi:type="xs:decimal">7</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">НужнаПодпись</value>
+				<presentation>Нет</presentation>
+				<id xsi:type="xs:decimal">8</id>
+			</item>
+		</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">1</lastId>
+			<item>
+				<value xsi:type="xs:string"> ТекстЗапроса = "ВЫБРАТЬ
+|	DR_События.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
+|	DR_События.Документ КАК Документ,
+|	DR_События.Идентификатор КАК Идентификатор
+|ПОМЕСТИТЬ ВТ_ЗАКАЗЫ
+|ИЗ
+|	РегистрСведений.DR_События КАК DR_События
+|ГДЕ
+|	DR_События.ВидДокумента = ""Заказ_Входящий""
+|;
+|
+|////////////////////////////////////////////////////////////////////////////////
+|ВЫБРАТЬ
+|	DR_События.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
+|	DR_События.ИдентификаторОснования КАК ИдентификаторОснования,
+|	DR_События.Документ КАК Документ,
+|	МАКСИМУМ(DR_События.ДатаЗаписи) КАК ДатаЗаписи
+|ПОМЕСТИТЬ ВТ_ORDRSP
+|ИЗ
+|	РегистрСведений.DR_События КАК DR_События
+|ГДЕ
+|	DR_События.ВидДокумента = ""ORDRSP_Исходящий""
+|
+|СГРУППИРОВАТЬ ПО
+|	DR_События.ИдентификаторЦепочки,
+|	DR_События.ИдентификаторОснования,
+|	DR_События.Документ
+|;
+|
+|////////////////////////////////////////////////////////////////////////////////
+|ВЫБРАТЬ ПЕРВЫЕ 5
+|	ВТ_ЗАКАЗЫ.Документ КАК Документ,
+|	""ORDRSP_Исходящий"" КАК ВидДокумента,
+|   """" КАК СтатусОбработкиДокумента
+|ИЗ
+|	ВТ_ЗАКАЗЫ КАК ВТ_ЗАКАЗЫ
+|			ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ORDRSP КАК ВТ_ORDRSP
+|		ПО (ВТ_ЗАКАЗЫ.ИдентификаторЦепочки = ВТ_ORDRSP.ИдентификаторЦепочки
+|		И ВТ_ЗАКАЗЫ.Идентификатор = ВТ_ORDRSP.ИдентификаторОснования)
+|		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_ЦепочкиДокументов КАК DR_ЦепочкиДокументов
+|		ПО (ВТ_ЗАКАЗЫ.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки)
+|ГДЕ
+|	ВТ_ЗАКАЗЫ.Документ.Проведен
+|	И ВТ_ORDRSP.ИдентификаторЦепочки ЕСТЬ NULL
+|
+|УПОРЯДОЧИТЬ ПО
+|	DR_ЦепочкиДокументов.ДатаЗаказа УБЫВ";</value>
+				<presentation>ТекстЗапроса</presentation>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+		</Value>
+	</row>
 </ValueTree>

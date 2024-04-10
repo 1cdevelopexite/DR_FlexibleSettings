@@ -8,7 +8,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Формула</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -24,14 +28,6 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Формула</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
-		<ValueType/>
-	</column>
-	<column>
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
@@ -39,14 +35,13 @@
 		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Создать поступление товаров</Value>
-		<Value xsi:type="xs:string">СоздатьПоступление</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:string">//&lt;Служебные переменные&gt;
 ИмяДокументаПриемника = "Поступление 1С";
 ТипПриемника = "ПриобретениеТоваровУслуг";
@@ -423,6 +418,10 @@
 	КонецЕсли;
 	
 КонецЦикла;</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>
@@ -455,7 +454,49 @@
 		</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">-1</lastId>
+			<lastId xsi:type="xs:decimal">1</lastId>
+			<item>
+				<value xsi:type="xs:string">ТекстЗапроса = "ВЫБРАТЬ
+               |	DESADVВходящий.Ссылка КАК Документ,
+               |	DESADVВходящий.ИдентификаторЦепочки КАК ИдентификаторЦепочки
+               |ПОМЕСТИТЬ втDESADVВходящий
+               |ИЗ
+               |	Документ.DR_Документ КАК DESADVВходящий
+               |ГДЕ
+               |	DESADVВходящий.Дата МЕЖДУ НАЧАЛОПЕРИОДА(ДОБАВИТЬКДАТЕ(&amp;ТекущаяДата, ДЕНЬ, -14), ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ)
+               |	И DESADVВходящий.ВидДокумента = ""DESADV_Входящий""
+               |	И DESADVВходящий.Статус = ""Обработан""
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ
+               |	втDESADVВходящий.Документ КАК Документ,
+               |	втDESADVВходящий.ИдентификаторЦепочки КАК ИдентификаторЦепочки
+               |ПОМЕСТИТЬ втДанныеИсточник
+               |ИЗ
+               |	втDESADVВходящий КАК втDESADVВходящий
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК DR_События
+               |		ПО (DR_События.ИдентификаторЦепочки = втDESADVВходящий.ИдентификаторЦепочки)
+               |			И (DR_События.ВидДокумента = ""Накладная_Входящая"")
+               |ГДЕ
+               |	DR_События.ИдентификаторЦепочки ЕСТЬ NULL
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ ПЕРВЫЕ 2
+               |	втДанныеИсточник.Документ КАК Документ,
+               |	втДанныеИсточник.ИдентификаторЦепочки КАК ИдентификаторЦепочки
+               |ИЗ
+               |	втДанныеИсточник КАК втДанныеИсточник
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_ЦепочкиДокументов КАК DR_ЦепочкиДокументов
+               |		ПО втДанныеИсточник.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки
+               |
+               |УПОРЯДОЧИТЬ ПО
+               |	DR_ЦепочкиДокументов.ДатаЗаказа УБЫВ";</value>
+				<presentation>ТекстЗапроса</presentation>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
 		</Value>
+		<Value xsi:type="xs:string">СоздатьПоступление</Value>
 	</row>
 </ValueTree>

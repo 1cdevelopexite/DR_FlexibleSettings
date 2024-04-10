@@ -486,7 +486,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
-				<presentation>Автосверка ЮЗД</presentation>
+				<presentation>Автоcверка ЮЗД</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>
@@ -501,7 +501,7 @@
 			<valueType/>
 			<lastId xsi:type="xs:decimal">1</lastId>
 			<item>
-				<value xsi:type="xs:string">      ТекстЗапроса = "ВЫБРАТЬ
+				<value xsi:type="xs:string">ТекстЗапроса = "ВЫБРАТЬ
                      |	DR_Документ.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
                      |	DR_Документ.Ссылка КАК Документ,
                      |	DR_Документ.Проведен КАК Проведен
@@ -515,7 +515,7 @@
                      |;
                      |
                      |////////////////////////////////////////////////////////////////////////////////
-                     |ВЫБРАТЬ
+                     |ВЫБРАТЬ ПЕРВЫЕ 2
                      |	вт_DRДокумент.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
                      |	вт_DRДокумент.Документ КАК Документ,
                      |	ПРЕДСТАВЛЕНИЕ(вт_DRДокумент.Документ) КАК ПредставлениеДокумента,
@@ -525,20 +525,15 @@
                      |		ЛЕВОЕ СОЕДИНЕНИЕ Документ.DR_Документ.ДополнительныеРеквизиты КАК ТабличнаяЧасть_DRДокумент
                      |		ПО (ТабличнаяЧасть_DRДокумент.Ссылка = вт_DRДокумент.Документ)
                      |			И (ТабличнаяЧасть_DRДокумент.Реквизит = ""Сверено"")
+					 |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_ЦепочкиДокументов КАК DR_ЦепочкиДокументов
+					 |		ПО вт_DRДокумент.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки
                      |ГДЕ
-                     |	ТабличнаяЧасть_DRДокумент.Значение = ЛОЖЬ";</value>
+                     |	ТабличнаяЧасть_DRДокумент.Значение = ЛОЖЬ
+					 |
+  					 |УПОРЯДОЧИТЬ ПО
+					 |	DR_ЦепочкиДокументов.ДатаЗаказа УБЫВ";</value>
 				<presentation>ТекстЗапроса</presentation>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">0</id>
-			</item>
-			<item>
-				<value xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d5p1:JobSchedule" BeginDate="0001-01-01" EndDate="0001-01-01" BeginTime="00:00:00" EndTime="00:00:00" CompletionTime="00:00:00" CompletionInterval="0" RepeatPeriodInDay="0" RepeatPause="0" WeekDayInMonth="0" DayInMonth="0" WeeksPeriod="1" DaysRepeatPeriod="0">
-					<d5p1:WeekDays>1 2 3 4 5 6 7</d5p1:WeekDays>
-					<d5p1:Months/>
-				</value>
-				<presentation>Расписание</presentation>
-				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">1</id>
 			</item>
 		</Value>
 	</row>

@@ -1,57 +1,52 @@
 ﻿<ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTree">
-    <column>
-        <Name xsi:type="xs:string">Использовать</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">ТипТранзакции</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Кнопка</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">ИмяКнопки</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">СлужебныеТекст</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Сохранение</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Загрузка</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Служебные</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">КоллекцияТЧ</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Данные</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Регламент</Name>
-        <ValueType/>
-    </column>
-    <row>
-        <Value xsi:type="xs:boolean">true</Value>
-        <Value xsi:type="xs:string">Исходящий УПД</Value>
-        <Value xsi:type="xs:string">Исходящий УПД</Value>
-        <Value xsi:type="xs:string">ИсходящийУПД</Value>
-        <Value xsi:type="xs:string"/>
-        <Value xsi:type="xs:decimal">0</Value>
-        <Value xsi:type="xs:decimal">0</Value>
-        <Value xsi:type="xs:string">МассивСтруктурИсходящих = Новый Массив;
+	<column>
+		<Name xsi:type="xs:string">Использовать</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ТипТранзакции</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Данные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Сохранение</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Загрузка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
+	<row>
+		<Value xsi:type="xs:boolean">true</Value>
+		<Value xsi:type="xs:string">Исходящий УПД</Value>
+		<Value xsi:type="xs:string">МассивСтруктурИсходящих = Новый Массив;
 DRВидыДокументов = Новый Массив;
 DRВидыДокументов.Добавить("ON_NSCHFDOPPR_01_Исходящий");
 DRВидыДокументов.Добавить("ON_NSCHFDOPPRMARK_01_Исходящий");
@@ -2270,60 +2265,118 @@ DRВидыДокументов.Добавить("ON_NSCHFDOPPRMARK_01_Испр_�
 //Возврат РезультатНоменклатур;		//раскомментировать для отображения значений таблицы "РезультатНоменклатур" на вкладке "Тестирование"
 
 Возврат МассивСтруктурИсходящих;</Value>
-        <Value xsi:type="ValueListType">
-            <valueType/>
-            <lastId xsi:type="xs:decimal">8</lastId>
-            <item>
-                <value xsi:type="xs:string">Прайс-лист</value>
-                <id xsi:type="xs:decimal">0</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">Поставщик</value>
-                <presentation>СписокСчетаФактурыИсходящиеПоставщик</presentation>
-                <checkState>1</checkState>
-                <id xsi:type="xs:decimal">1</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">Покупатель</value>
-                <id xsi:type="xs:decimal">2</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">Синоним</value>
-                <presentation>Исходящий УПД</presentation>
-                <checkState>1</checkState>
-                <id xsi:type="xs:decimal">3</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">ИмяКнопки</value>
-                <presentation>ИсходящийУПД</presentation>
-                <checkState>1</checkState>
-                <id xsi:type="xs:decimal">4</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">ПередаватьТекстПричины</value>
-                <id xsi:type="xs:decimal">5</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">ПриемникВидДокумента</value>
-                <presentation>ON_NSCHFDOPPR_01_Исходящий; ON_NSCHFDOPPRMARK_01_Исходящий; ON_NSCHFDOPPRPROS_01_Исходящий; ON_NSCHFDOPPR_01_Испр_Исходящий; ON_NSCHFDOPPRMARK_01_Испр_Исходящий; ON_NSCHFDOPPRPROS_01_Испр_Исходящий</presentation>
-                <id xsi:type="xs:decimal">6</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">ИсточникВидДокумента</value>
-                <presentation>СчетФактура_Исходящий</presentation>
-                <id xsi:type="xs:decimal">7</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">НужнаПодпись</value>
-                <presentation>Да</presentation>
-                <checkState>1</checkState>
-                <id xsi:type="xs:decimal">8</id>
-            </item>
-        </Value>
-        <Value xsi:type="xs:string"/>
-        <Value xsi:type="ValueListType">
-            <valueType/>
-            <lastId xsi:type="xs:decimal">-1</lastId>
-        </Value>
-    </row>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">Исходящий УПД</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">8</lastId>
+			<item>
+				<value xsi:type="xs:string">Прайс-лист</value>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Поставщик</value>
+				<presentation>СписокСчетаФактурыИсходящиеПоставщик</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">1</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Покупатель</value>
+				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Исходящий УПД</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">3</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>ИсходящийУПД</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
+				<id xsi:type="xs:decimal">5</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПриемникВидДокумента</value>
+				<presentation>ON_NSCHFDOPPR_01_Исходящий; ON_NSCHFDOPPRMARK_01_Исходящий; ON_NSCHFDOPPRPROS_01_Исходящий; ON_NSCHFDOPPR_01_Испр_Исходящий; ON_NSCHFDOPPRMARK_01_Испр_Исходящий; ON_NSCHFDOPPRPROS_01_Испр_Исходящий</presentation>
+				<id xsi:type="xs:decimal">6</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИсточникВидДокумента</value>
+				<presentation>СчетФактура_Исходящий</presentation>
+				<id xsi:type="xs:decimal">7</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">НужнаПодпись</value>
+				<presentation>Да</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">8</id>
+			</item>
+		</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string">ИсходящийУПД</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">1</lastId>
+			<item>
+				<value xsi:type="xs:string">ТекстЗапроса = "ВЫБРАТЬ
+				|	DR_События.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
+				|	DR_События.Документ КАК Документ,
+				|	DR_События.Идентификатор КАК Идентификатор
+				|ПОМЕСТИТЬ ВТ_СЧФ
+				|ИЗ
+				|	РегистрСведений.DR_События КАК DR_События
+				|ГДЕ
+				|	DR_События.ВидДокумента = ""СчетФактура_Исходящий""
+				|;
+				|
+				|////////////////////////////////////////////////////////////////////////////////
+				|ВЫБРАТЬ
+				|	DR_События.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
+				|	DR_События.ИдентификаторОснования КАК ИдентификаторОснования,
+				|	DR_События.Документ КАК Документ,
+				|	МАКСИМУМ(DR_События.ДатаЗаписи) КАК ДатаЗаписи
+				|ПОМЕСТИТЬ ВТ_NSCHFDOPPR
+				|ИЗ
+				|	РегистрСведений.DR_События КАК DR_События
+				|ГДЕ
+				|	(DR_События.ВидДокумента = ""ON_NSCHFDOPPR_01_Исходящий""
+				|			ИЛИ DR_События.ВидДокумента = ""ON_NSCHFDOPPRMARK_01_Исходящий""
+				|			ИЛИ DR_События.ВидДокумента = ""ON_NSCHFDOPPRPROS_01_Исходящий"")
+				|
+				|СГРУППИРОВАТЬ ПО
+				|	DR_События.ИдентификаторЦепочки,
+				|	DR_События.ИдентификаторОснования,
+				|	DR_События.Документ
+				|;
+				|
+				|////////////////////////////////////////////////////////////////////////////////
+				|ВЫБРАТЬ ПЕРВЫЕ 2
+				|	ВТ_СЧФ.Документ КАК Документ,
+				|	""СчетФактура_Исходящий"" КАК ВидДокумента,
+				|   	"""" КАК СтатусОбработкиДокумента
+				|ИЗ
+				|	ВТ_СЧФ КАК ВТ_СЧФ
+				|		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_NSCHFDOPPR КАК ВТ_NSCHFDOPPR
+				|		ПО ВТ_СЧФ.ИдентификаторЦепочки = ВТ_NSCHFDOPPR.ИдентификаторЦепочки
+				|			И ВТ_СЧФ.Идентификатор = ВТ_NSCHFDOPPR.ИдентификаторОснования
+				|		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_ЦепочкиДокументов КАК DR_ЦепочкиДокументов
+				|		ПО ВТ_СЧФ.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки
+				|ГДЕ
+				|	ВТ_СЧФ.Документ.Проведен
+				|	И ВТ_NSCHFDOPPR.ИдентификаторЦепочки ЕСТЬ NULL
+				|
+				|УПОРЯДОЧИТЬ ПО
+				|	DR_ЦепочкиДокументов.ДатаЗаказа УБЫВ";</value>
+				<presentation>ТекстЗапроса</presentation>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+		</Value>
+	</row>
 </ValueTree>

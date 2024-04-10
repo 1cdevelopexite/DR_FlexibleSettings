@@ -1,57 +1,52 @@
 ﻿<ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTree">
-    <column>
-        <Name xsi:type="xs:string">Использовать</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">ТипТранзакции</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Кнопка</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">ИмяКнопки</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">СлужебныеТекст</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Сохранение</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Загрузка</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Служебные</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">КоллекцияТЧ</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Данные</Name>
-        <ValueType/>
-    </column>
-    <column>
-        <Name xsi:type="xs:string">Регламент</Name>
-        <ValueType/>
-    </column>
-    <row>
-        <Value xsi:type="xs:boolean">true</Value>
-        <Value xsi:type="xs:string">Исходящий ORDER</Value>
-        <Value xsi:type="xs:string">Исходящий ORDER</Value>
-        <Value xsi:type="xs:string">ИсходящийORDER</Value>
-        <Value xsi:type="xs:string"/>
-        <Value xsi:type="xs:decimal">0</Value>
-        <Value xsi:type="xs:decimal">0</Value>
-        <Value xsi:type="xs:string">#Область ШАПКА_Заполнение
+	<column>
+		<Name xsi:type="xs:string">Использовать</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ТипТранзакции</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Данные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Сохранение</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Загрузка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
+	<row>
+		<Value xsi:type="xs:boolean">true</Value>
+		<Value xsi:type="xs:string">Исходящий ORDER</Value>
+		<Value xsi:type="xs:string">#Область ШАПКА_Заполнение
 
 Запрос = Новый Запрос;
 Запрос.Текст = "ВЫБРАТЬ
@@ -383,59 +378,109 @@ EDIINTERCHANGEID = 0;
 //Возврат РезультатНоменклатур;		//раскомментировать для отображения значений таблицы "РезультатНоменклатур" на вкладке "Тестирование"
 
 Возврат МассивСтруктурИсходящих;</Value>
-        <Value xsi:type="ValueListType">
-            <valueType/>
-            <lastId xsi:type="xs:decimal">8</lastId>
-            <item>
-                <value xsi:type="xs:string">Прайс-лист</value>
-                <id xsi:type="xs:decimal">0</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">Поставщик</value>
-                <id xsi:type="xs:decimal">1</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">Покупатель</value>
-                <presentation>СписокЗаказыИсходящиеПокупатель</presentation>
-                <checkState>1</checkState>
-                <id xsi:type="xs:decimal">2</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">Синоним</value>
-                <presentation>Исходящий ORDER</presentation>
-                <checkState>1</checkState>
-                <id xsi:type="xs:decimal">3</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">ИмяКнопки</value>
-                <presentation>ИсходящийORDER</presentation>
-                <checkState>1</checkState>
-                <id xsi:type="xs:decimal">4</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">ПередаватьТекстПричины</value>
-                <id xsi:type="xs:decimal">5</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">ПриемникВидДокумента</value>
-                <presentation>ORDER_Исходящий</presentation>
-                <id xsi:type="xs:decimal">6</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">ИсточникВидДокумента</value>
-                <presentation>Заказ_Исходящий</presentation>
-                <id xsi:type="xs:decimal">7</id>
-            </item>
-            <item>
-                <value xsi:type="xs:string">НужнаПодпись</value>
-                <presentation>Нет</presentation>
-                <id xsi:type="xs:decimal">8</id>
-            </item>
-        </Value>
-        <Value xsi:type="xs:string"/>
-        <Value xsi:type="ValueListType">
-            <valueType/>
-            <lastId xsi:type="xs:decimal">-1</lastId>
-        </Value>
-    </row>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">Исходящий ORDER</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">8</lastId>
+			<item>
+				<value xsi:type="xs:string">Прайс-лист</value>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Поставщик</value>
+				<id xsi:type="xs:decimal">1</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Покупатель</value>
+				<presentation>СписокЗаказыИсходящиеПокупатель</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Исходящий ORDER</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">3</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>ИсходящийORDER</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
+				<id xsi:type="xs:decimal">5</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПриемникВидДокумента</value>
+				<presentation>ORDER_Исходящий</presentation>
+				<id xsi:type="xs:decimal">6</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИсточникВидДокумента</value>
+				<presentation>Заказ_Исходящий</presentation>
+				<id xsi:type="xs:decimal">7</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">НужнаПодпись</value>
+				<presentation>Нет</presentation>
+				<id xsi:type="xs:decimal">8</id>
+			</item>
+		</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string">ИсходящийORDER</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">1</lastId>
+			<item>
+				<value xsi:type="xs:string">ТекстЗапроса = "ВЫБРАТЬ
+               |	ЗаказПоставщику.Ссылка КАК Ссылка
+               |ПОМЕСТИТЬ ВТ_Заказ
+               |ИЗ
+               |	Документ.ЗаказПоставщику КАК ЗаказПоставщику
+               |ГДЕ
+               |	ЗаказПоставщику.Дата МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ)
+               |	И ЗаказПоставщику.Проведен
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ
+               |	ВТ_Заказ.Ссылка КАК Документ,
+               |	ВТ_Заказ.Ссылка.Проведен КАК Проведен,
+               |	ПРЕДСТАВЛЕНИЕ(ВТ_Заказ.Ссылка) КАК ПредставлениеДокумента,
+               |	СобытияЗаказИсходящий.ИдентификаторЦепочки КАК ИдентификаторЦепочки
+               |ПОМЕСТИТЬ втДанныеИсточник
+               |ИЗ
+               |	ВТ_Заказ КАК ВТ_Заказ
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК СобытияЗаказИсходящий
+               |		ПО ВТ_Заказ.Ссылка = СобытияЗаказИсходящий.Документ
+               |			И (СобытияЗаказИсходящий.ВидДокумента = ""Заказ_Исходящий"")
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК СобытияORDERИсходящий
+               |		ПО (СобытияЗаказИсходящий.ИдентификаторЦепочки = СобытияORDERИсходящий.ИдентификаторЦепочки)
+               |			И (СобытияORDERИсходящий.ВидДокумента = ""ORDER_Исходящий"")
+               |ГДЕ
+               |	СобытияORDERИсходящий.ИдентификаторЦепочки ЕСТЬ NULL
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ ПЕРВЫЕ 2
+               |	втДанныеИсточник.Документ КАК Документ,
+               |	""ORDER_Исходящий"" КАК ВидДокумента,
+               |	"""" КАК СтатусОбработкиДокумента
+               |ИЗ
+               |	втДанныеИсточник КАК втДанныеИсточник
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_ЦепочкиДокументов КАК DR_ЦепочкиДокументов
+               |		ПО втДанныеИсточник.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки
+               |
+               |УПОРЯДОЧИТЬ ПО
+               |	DR_ЦепочкиДокументов.ДатаЗаказа УБЫВ";</value>
+				<presentation>ТекстЗапроса</presentation>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+		</Value>
+	</row>
 </ValueTree>

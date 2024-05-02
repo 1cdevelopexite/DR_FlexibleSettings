@@ -513,7 +513,12 @@
 	|ВЫБРАТЬ
 	|	ТаблицаТовары.НомерСтроки КАК POSITIONNUMBER,
 	|	ТаблицаORDER.PRODUCT КАК PRODUCT,
-	|	ЕСТЬNULL(ТаблицаORDER.PRODUCTIDSUPPLIER, ТаблицаТовары.НоменклатураАртикул) КАК PRODUCTIDSUPPLIER,
+	|	ВЫБОР
+	|		КОГДА ТаблицаORDER.PRODUCTIDSUPPLIER ЕСТЬ NULL
+	|				ИЛИ ТаблицаORDER.PRODUCTIDSUPPLIER = """"
+	|			ТОГДА ТаблицаТовары.НоменклатураАртикул
+	|		ИНАЧЕ ТаблицаORDER.PRODUCTIDSUPPLIER
+	|	КОНЕЦ КАК PRODUCTIDSUPPLIER,
 	|	ТаблицаORDER.PRODUCTIDBUYER КАК PRODUCTIDBUYER,
 	|	ВЫРАЗИТЬ("""" КАК СТРОКА(20)) КАК INVOICEDQUANTITY,
 	|	ТаблицаORDER.ORDERUNIT КАК INVOICEUNIT,

@@ -378,6 +378,7 @@ EDIINTERCHANGEID = 0;
 ОбязательныеКолонки.Добавить("BUYER"			, "BUYER" 			, Истина);
 ОбязательныеКолонки.Добавить("SENDER "			, "SENDER " 		, Истина);
 ОбязательныеКолонки.Добавить("RECIPIENT"		, "RECIPIENT" 		, Истина);
+ОбязательныеКолонки.Добавить("CATALOGUE"		, "CATALOGUE" 		, Истина);
 
 //POSITION
 ОбязательныеКолонки.Добавить("POSITIONNUMBER"	, "POSITIONNUMBER"	, Истина);

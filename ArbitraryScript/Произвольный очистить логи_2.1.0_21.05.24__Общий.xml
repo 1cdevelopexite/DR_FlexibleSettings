@@ -1,0 +1,141 @@
+﻿<ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTree">
+	<column>
+		<Name xsi:type="xs:string">Использовать</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Формула</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Сохранение</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Загрузка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<row>
+		<Value xsi:type="xs:boolean">true</Value>
+		<Value xsi:type="xs:string">Произвольный очистить логи</Value>
+		<Value xsi:type="xs:string">		
+	    //++удаление логов по значению из доп констант EDI_СрокПериодаОчисткиЛогов 
+	    СрокПериодаОчисткиЛогов = Настройка_Параметр_Прочитать("EDI_СрокПериодаОчисткиЛогов");   
+	    	    	
+		Запрос = Новый Запрос;
+		Запрос.Текст = "ВЫБРАТЬ
+		|	DR_Настройки.Ссылка КАК Ссылка,
+		|	DR_Настройки.Дата КАК Дата,
+		|	DR_Настройки.ВидНастройки КАК ВидНастройки,
+		|	DR_Настройки.Наименование КАК Наименование,
+		|	DR_Настройки.Код КАК Код,
+		|	ВЫБОР
+		|		КОГДА РАЗНОСТЬДАТ(&amp;ТекДата, DR_Настройки.Дата, ДЕНЬ) &lt; 0
+		|			ТОГДА -РАЗНОСТЬДАТ(&amp;ТекДата, DR_Настройки.Дата, ДЕНЬ)
+		|		ИНАЧЕ РАЗНОСТЬДАТ(&amp;ТекДата, DR_Настройки.Дата, ДЕНЬ)
+		|	КОНЕЦ КАК Разница
+		|ИЗ
+		|	Справочник.DR_Настройки КАК DR_Настройки
+		|ГДЕ
+		|	DR_Настройки.ВидНастройки = ""Логирование""
+		|	И ВЫБОР
+		|			КОГДА РАЗНОСТЬДАТ(&amp;ТекДата, DR_Настройки.Дата, ДЕНЬ) &lt; 0
+		|				ТОГДА -РАЗНОСТЬДАТ(&amp;ТекДата, DR_Настройки.Дата, ДЕНЬ)
+		|			ИНАЧЕ РАЗНОСТЬДАТ(&amp;ТекДата, DR_Настройки.Дата, ДЕНЬ)
+		|		КОНЕЦ &gt; &amp;ПериодОчистки
+		|
+		|УПОРЯДОЧИТЬ ПО
+		|	Дата УБЫВ";
+		
+		Запрос.УстановитьПараметр("ТекДата",ТекущаяДата()); 
+		Запрос.УстановитьПараметр("ПериодОчистки",СрокПериодаОчисткиЛогов);
+		
+		ВыборкаЛогов = Запрос.Выполнить().Выбрать();
+		
+		Пока ВыборкаЛогов.Следующий() Цикл    
+			
+			ОбъектЛог = ВыборкаЛогов.Ссылка.ПолучитьОбъект();
+			ОбъектЛог.Удалить();
+			
+		КонецЦикла; 
+		
+		//--
+</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">5</lastId>
+			<item>
+				<value xsi:type="xs:string">Прайс-лист</value>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Поставщик</value>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">1</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Неструкт. докум.</value>
+				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Покупатель</value>
+				<id xsi:type="xs:decimal">3</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Произвольный очистить логи</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>ПроизвольныйОчиститьЛоги</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">5</id>
+			</item>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">1</lastId>
+			<item>
+				<value xsi:type="xs:string"/>
+				<presentation>ТекстЗапроса</presentation>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+			<item>
+				<value xsi:nil="true"/>
+				<presentation>Расписание</presentation>
+				<id xsi:type="xs:decimal">1</id>
+			</item>
+		</Value>
+		<Value xsi:type="xs:string">ПроизвольныйОчиститьЛоги</Value>
+	</row>
+</ValueTree>

@@ -41,7 +41,7 @@
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">Произвольный архивация документов</Value>
+		<Value xsi:type="xs:string">Архивация документов</Value>
 		<Value xsi:type="xs:string">
         //++Архивация документов по значению из доп констант EDI_СрокПериодаАрхивацииДокументов 
 	    СрокПериодаАрхивацииДокументов = Настройка_Параметр_Прочитать("EDI_СрокПериодаАрхивацииДокументов");   
@@ -111,7 +111,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
-				<presentation>Произвольный архивация документов</presentation>
+				<presentation>Архивация документов</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>

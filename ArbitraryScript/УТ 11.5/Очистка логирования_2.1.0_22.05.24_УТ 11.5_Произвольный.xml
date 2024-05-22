@@ -41,7 +41,7 @@
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">Произвольный очистить логи</Value>
+		<Value xsi:type="xs:string">Очистка логирования</Value>
 		<Value xsi:type="xs:string">		
 	    //++удаление логов по значению из доп констант EDI_СрокПериодаОчисткиЛогов 
 	    СрокПериодаОчисткиЛогов = Настройка_Параметр_Прочитать("EDI_СрокПериодаОчисткиЛогов");   
@@ -111,7 +111,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
-				<presentation>Произвольный очистить логи</presentation>
+				<presentation>Очистка логирования</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>

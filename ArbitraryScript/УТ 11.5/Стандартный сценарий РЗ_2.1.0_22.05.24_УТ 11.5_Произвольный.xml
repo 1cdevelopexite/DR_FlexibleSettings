@@ -41,7 +41,7 @@
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">Произвольный стандартный сценарий</Value>
+		<Value xsi:type="xs:string">Стандартный сценарий РЗ</Value>
 		<Value xsi:type="xs:string">//Сценарий выполнения
 МассивСтруктурИсходящих    = Новый Массив;
 ТипыДокументовДляЗагрузки  = Новый Массив;
@@ -288,7 +288,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
-				<presentation>Произвольный стандартный сценарий</presentation>
+				<presentation>Стандартный сценарий РЗ</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>

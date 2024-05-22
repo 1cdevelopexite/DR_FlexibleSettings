@@ -41,7 +41,7 @@
 	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
-		<Value xsi:type="xs:string">Произвольный автосверка ЮЗД</Value>
+		<Value xsi:type="xs:string">Автосверка ЮЗД</Value>
 		<Value xsi:type="xs:string">   ЕСЛИ Настройка_Параметр_Прочитать("EDI_АвтосверкаЮЗД", Ложь) ТОгда
 		
 	Дельта = Настройка_Параметр_Прочитать("EDI_ДопустимаяДельтаПриРасхожении"	 , "0,01");
@@ -444,7 +444,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
-				<presentation>Произвольный автосверка ЮЗД</presentation>
+				<presentation>Автосверка ЮЗД</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">4</id>
 			</item>

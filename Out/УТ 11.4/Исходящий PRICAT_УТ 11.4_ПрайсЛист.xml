@@ -521,7 +521,7 @@ EDIINTERCHANGEID = 0;
 			</item>
 			<item>
 				<value xsi:type="xs:string">Прайс-лист</value>
-				<presentation>СписокPricatВходящийПостащикПокупатель; СписокPricatИсходящийПостащикПокупатель</presentation>
+				<presentation>СписокPricatИсходящийПостащикПокупатель</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">1</id>
 			</item>

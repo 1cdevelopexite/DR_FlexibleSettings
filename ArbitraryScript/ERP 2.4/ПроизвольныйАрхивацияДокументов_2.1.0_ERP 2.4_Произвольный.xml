@@ -8,7 +8,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Формула</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -24,14 +28,6 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Формула</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
-		<ValueType/>
-	</column>
-	<column>
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
@@ -39,14 +35,13 @@
 		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Архивация документов</Value>
-		<Value xsi:type="xs:string">ПроизвольныйАрхивацияДокументов</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:string">
         //++Архивация документов по значению из доп констант EDI_СрокПериодаАрхивацииДокументов 
 	    СрокПериодаАрхивацииДокументов = Настройка_Параметр_Прочитать("EDI_СрокПериодаАрхивацииДокументов");   
@@ -90,6 +85,10 @@
 		
 		//--
 </Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">5</lastId>
@@ -132,12 +131,7 @@
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
-			<item>
-				<value xsi:nil="true"/>
-				<presentation>Расписание</presentation>
-				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">1</id>
-			</item>
 		</Value>
+		<Value xsi:type="xs:string">ПроизвольныйАрхивацияДокументов</Value>
 	</row>
 </ValueTree>

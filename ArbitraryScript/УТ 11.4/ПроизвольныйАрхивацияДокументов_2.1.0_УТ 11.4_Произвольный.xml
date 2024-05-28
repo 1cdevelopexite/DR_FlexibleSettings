@@ -1,0 +1,137 @@
+﻿<ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTree">
+	<column>
+		<Name xsi:type="xs:string">Использовать</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Формула</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Сохранение</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Загрузка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<row>
+		<Value xsi:type="xs:boolean">true</Value>
+		<Value xsi:type="xs:string">Архивация документов</Value>
+		<Value xsi:type="xs:string">
+        //++Архивация документов по значению из доп констант EDI_СрокПериодаАрхивацииДокументов 
+	    СрокПериодаАрхивацииДокументов = Настройка_Параметр_Прочитать("EDI_СрокПериодаАрхивацииДокументов");   
+		
+		Запрос = Новый Запрос;
+		Запрос.Текст = "ВЫБРАТЬ
+		               |	DR_Документ.Ссылка КАК Ссылка,
+		               |	DR_Документ.Дата КАК Дата,
+		               |	ВЫБОР
+		               |		КОГДА РАЗНОСТЬДАТ(&amp;ТекДата, DR_Документ.Дата, ДЕНЬ) &lt; 0
+		               |			ТОГДА -РАЗНОСТЬДАТ(&amp;ТекДата, DR_Документ.Дата, ДЕНЬ)
+		               |		ИНАЧЕ РАЗНОСТЬДАТ(&amp;ТекДата, DR_Документ.Дата, ДЕНЬ)
+		               |	КОНЕЦ КАК Разница
+		               |ИЗ
+		               |	Документ.DR_Документ КАК DR_Документ
+		               |ГДЕ
+		               |	ВЫБОР
+		               |			КОГДА РАЗНОСТЬДАТ(&amp;ТекДата, DR_Документ.Дата, ДЕНЬ) &lt; 0
+		               |				ТОГДА -РАЗНОСТЬДАТ(&amp;ТекДата, DR_Документ.Дата, ДЕНЬ)
+		               |			ИНАЧЕ РАЗНОСТЬДАТ(&amp;ТекДата, DR_Документ.Дата, ДЕНЬ)
+		               |		КОНЕЦ &gt; &amp;ПериодАрхивации
+		               |	И DR_Документ.Статус &lt;&gt; ""Архивный""
+		               |
+		               |УПОРЯДОЧИТЬ ПО
+		               |	Дата УБЫВ";
+		
+		Запрос.УстановитьПараметр("ТекДата",ТекущаяДата()); 
+		Запрос.УстановитьПараметр("ПериодАрхивации",СрокПериодаАрхивацииДокументов);
+		
+		ВыборкаАрхивныхДокументов = Запрос.Выполнить().Выбрать();
+		
+		Пока ВыборкаАрхивныхДокументов.Следующий() Цикл    
+			
+			АрхивныйДокумент = ВыборкаАрхивныхДокументов.Ссылка.ПолучитьОбъект();  
+			АрхивныйДокумент.Статус = "Архивный";  
+			АрхивныйДокумент.ДополнительныеРеквизиты.Очистить();
+	
+			АрхивныйДокумент.Записать();
+			
+		КонецЦикла; 
+		
+		//--
+</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">5</lastId>
+			<item>
+				<value xsi:type="xs:string">Прайс-лист</value>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Поставщик</value>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">1</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Неструкт. докум.</value>
+				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Покупатель</value>
+				<id xsi:type="xs:decimal">3</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Архивация документов</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>ПроизвольныйАрхивацияДокументов</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">5</id>
+			</item>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">1</lastId>
+			<item>
+				<value xsi:type="xs:string"/>
+				<presentation>ТекстЗапроса</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+		</Value>
+		<Value xsi:type="xs:string">ПроизвольныйАрхивацияДокументов</Value>
+	</row>
+</ValueTree>

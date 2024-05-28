@@ -129,12 +129,8 @@
 			<item>
 				<value xsi:type="xs:string"/>
 				<presentation>ТекстЗапроса</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">0</id>
-			</item>
-			<item>
-				<value xsi:nil="true"/>
-				<presentation>Расписание</presentation>
-				<id xsi:type="xs:decimal">1</id>
 			</item>
 		</Value>
 	</row>

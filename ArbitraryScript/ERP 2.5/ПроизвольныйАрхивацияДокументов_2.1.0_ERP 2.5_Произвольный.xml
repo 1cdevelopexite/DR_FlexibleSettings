@@ -131,12 +131,6 @@
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
-			<item>
-				<value xsi:nil="true"/>
-				<presentation>Расписание</presentation>
-				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">1</id>
-			</item>
 		</Value>
 		<Value xsi:type="xs:string">ПроизвольныйАрхивацияДокументов</Value>
 	</row>

@@ -8,11 +8,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">Формула</Name>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -28,6 +24,14 @@
 		<ValueType/>
 	</column>
 	<column>
+		<Name xsi:type="xs:string">Формула</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
 		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
 		<ValueType/>
 	</column>
@@ -35,13 +39,14 @@
 		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
-	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
-		<ValueType/>
-	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Очистка логирования</Value>
+		<Value xsi:type="xs:string">ПроизвольныйОчиститьЛоги</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string"/>
 		<Value xsi:type="xs:string">		
 	    //++удаление логов по значению из доп констант EDI_СрокПериодаОчисткиЛогов 
 	    СрокПериодаОчисткиЛогов = Настройка_Параметр_Прочитать("EDI_СрокПериодаОчисткиЛогов");   
@@ -85,10 +90,6 @@
 		
 		//--
 </Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">5</lastId>
@@ -128,14 +129,9 @@
 			<item>
 				<value xsi:type="xs:string"/>
 				<presentation>ТекстЗапроса</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
-			<item>
-				<value xsi:nil="true"/>
-				<presentation>Расписание</presentation>
-				<id xsi:type="xs:decimal">1</id>
-			</item>
 		</Value>
-		<Value xsi:type="xs:string">ПроизвольныйОчиститьЛоги</Value>
 	</row>
 </ValueTree>

@@ -579,7 +579,7 @@ EDIINTERCHANGEID = 0;
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПриемникВидДокумента</value>
-				<presentation>PRICAT_Входящий</presentation>
+				<presentation>PRICAT_Исходящий</presentation>
 				<id xsi:type="xs:decimal">7</id>
 			</item>
 			<item>

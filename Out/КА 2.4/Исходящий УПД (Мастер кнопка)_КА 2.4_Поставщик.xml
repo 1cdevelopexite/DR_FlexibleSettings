@@ -44,7 +44,7 @@
 		<ValueType/>
 	</column>
 	<row>
-		<Value xsi:type="xs:boolean">false</Value>
+		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий УПД (Мастер кнопка)</Value>
 		<Value xsi:type="xs:string">МассивСтруктурИсходящих = Новый Массив;
 

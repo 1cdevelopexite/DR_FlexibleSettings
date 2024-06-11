@@ -40,7 +40,7 @@
 		<ValueType/>
 	</column>
 	<row>
-		<Value xsi:type="xs:boolean">true</Value>
+		<Value xsi:type="xs:boolean">false</Value>
 		<Value xsi:type="xs:string">Очистка логирования</Value>
 		<Value xsi:type="xs:string">ПроизвольныйОчиститьЛоги</Value>
 		<Value xsi:type="xs:string"/>
@@ -108,6 +108,8 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
+				<presentation>СписокЗаказыИсходящиеПокупатель; СписокOrderИсходящиеПокупатель; СписокOnNschfdopprВходящиеПокупатель</presentation>
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
@@ -129,7 +131,6 @@
 			<item>
 				<value xsi:type="xs:string"/>
 				<presentation>ТекстЗапроса</presentation>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
 		</Value>

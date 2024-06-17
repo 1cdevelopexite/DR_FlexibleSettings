@@ -107,7 +107,6 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
-				<presentation>СписокЗаказыИсходящиеПокупатель; СписокOrderИсходящиеПокупатель; СписокOnNschfdopprВходящиеПокупатель</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>

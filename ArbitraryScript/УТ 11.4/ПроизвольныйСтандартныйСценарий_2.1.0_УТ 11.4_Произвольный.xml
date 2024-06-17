@@ -40,7 +40,7 @@
 		<ValueType/>
 	</column>
 	<row>
-		<Value xsi:type="xs:boolean">true</Value>
+		<Value xsi:type="xs:boolean">false</Value>
 		<Value xsi:type="xs:string">Стандартный сценарий РЗ</Value>
 		<Value xsi:type="xs:string">//Сценарий выполнения
 МассивСтруктурИсходящих    = Новый Массив;

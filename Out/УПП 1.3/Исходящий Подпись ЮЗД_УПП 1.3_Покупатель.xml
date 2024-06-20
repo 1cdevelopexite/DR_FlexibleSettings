@@ -8,11 +8,15 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Данные</Name>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -24,7 +28,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -32,11 +36,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">СлужебныеТекст</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<Name xsi:type="xs:string">Данные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -46,6 +46,11 @@
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий ON_NSCHFDOPPOK</Value>
+		<Value xsi:type="xs:string">Подписать УПД/УКД</Value>
+		<Value xsi:type="xs:string">ИсходящийON_NSCHFDOPPOK</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">DR_ТекстЗапроса_ОтправкаПодписаниеСчетФактурOK = 
 	"ВЫБРАТЬ
 	|	ТаблицаМЧД.Организация КАК Организация,
@@ -321,14 +326,26 @@
 	
 	ИмяСобытия = "Создание подписи ЮЗД";
 	
-	МассивСтруктурИсходящих   = Новый Массив;
+	МассивСтруктурИсходящих   = Новый Массив;  
+	
+	//Доработка ПР 
+	EDI_АвтосверкаЮЗД = Ложь;
+	ДеревоXMLПроизвольные = Настройка_Параметр_Прочитать("EDI_СтруктураФайлаXMLПроизвольные");
+	Отбор = Новый Структура("Использовать, ИмяКнопки", Истина, "ПроизвольныйАвтосверкаЮЗД");
+	СтрокиНастроекПоОтбору = ДеревоXMLПроизвольные.Строки.НайтиСтроки(Отбор);   
+	
+	Если СтрокиНастроекПоОтбору.Количество()  Тогда  
+		 EDI_АвтосверкаЮЗД = Истина;  
+	КонецЕсли;
+
 	
 	// Отбираем только обработанные документы ЭКОМ
 	Запрос = Новый Запрос;
 	Запрос.Текст = DR_ТекстЗапроса_ОтправкаПодписаниеСчетФактурOK;
 	
 	Запрос.УстановитьПараметр("ТаблицаМЧД"							, ТаблицаМЧД);
-	Запрос.УстановитьПараметр("АвтосверкаЮЗД"						, Настройка_Параметр_Прочитать("EDI_АвтосверкаЮЗД", Ложь));
+	//Запрос.УстановитьПараметр("АвтосверкаЮЗД"						, Настройка_Параметр_Прочитать("EDI_АвтосверкаЮЗД", Ложь)); 
+	Запрос.УстановитьПараметр("АвтосверкаЮЗД"						, EDI_АвтосверкаЮЗД);
 	Запрос.УстановитьПараметр("ВидыДокументовЮздВходящие"			, Вычислить("DR_EDI_ОбщегоНазначения.ВидыДокументовВходящихЮЗД()"));
 	Запрос.УстановитьПараметр("ВидыДокументовПодписиЮздИсходящие"	, Вычислить("DR_EDI_ОбщегоНазначения.ВидыДокументовИсходящихПодписейЮЗД()"));
 	Запрос.УстановитьПараметр("МассивДок"							, Источник);	
@@ -977,10 +994,6 @@
 	~Выход:
 	Возврат МассивСтруктурИсходящих;
 </Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:string">Подписать УПД/УКД</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">8</lastId>
@@ -1032,35 +1045,19 @@
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:string">ИсходящийON_NSCHFDOPPOK</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">1</lastId>
 			<item>
 				<value xsi:type="xs:string">ТекстЗапроса = "ВЫБРАТЬ
-               |	DR_Документ.ИдентификаторЦепочки КАК ИдентификаторЦепочки,
-			   |	DR_Документ.Ссылка КАК Документ,
-               |	DR_Документ.Статус КАК СтатусОбработкиДокумента
-			   |ПОМЕСТИТЬ вт_DRДокумент
+               |	DR_Документ.Ссылка КАК Документ,
+               |	"""" КАК СтатусОбработкиДокумента
                |ИЗ
                |	Документ.DR_Документ КАК DR_Документ
                |ГДЕ
                |	DR_Документ.Дата МЕЖДУ НАЧАЛОПЕРИОДА(ДОБАВИТЬКДАТЕ(&amp;ТекущаяДата, ДЕНЬ, -14), ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ)
                |	И DR_Документ.ВидДокумента В(""ON_NSCHFDOPPR_01_Входящий"",""ON_NSCHFDOPPR_01_Испр_Входящий"",""ON_NSCHFDOPPRMARK_01_Входящий"",""ON_NSCHFDOPPRMARK_01_Испр_Входящий"",""ON_NSCHFDOPPRPROS_01_Входящий"",""ON_NSCHFDOPPRPROS_01_Испр_Входящий"",
-               |									""ON_NKORSCHFDOPPR_01_Входящий"",""ON_NKORSCHFDOPPR_01_Испр_Входящий"",""ON_NKORSCHFDOPPRMARK_01_Входящий"",""ON_NKORSCHFDOPPRMARK_01_Испр_Входящий"",""ON_NKORSCHFDOPPRPROS_01_Входящий"",""ON_NKORSCHFDOPPRPROS_01_Испр_Входящий"")
-			   |;
-               |
-               |////////////////////////////////////////////////////////////////////////////////
-			   |ВЫБРАТЬ ПЕРВЫЕ 2
-			   |	вт_DRДокумент.Документ КАК Документ,
-               |	вт_DRДокумент.СтатусОбработкиДокумента КАК СтатусОбработкиДокумента
-			   |ИЗ
-               |	вт_DRДокумент КАК вт_DRДокумент
-               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_ЦепочкиДокументов КАК DR_ЦепочкиДокументов
-               |		ПО вт_DRДокумент.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки
-               |
-               |УПОРЯДОЧИТЬ ПО
-               |	DR_ЦепочкиДокументов.ДатаЗаказа УБЫВ";</value>
+               |									""ON_NKORSCHFDOPPR_01_Входящий"",""ON_NKORSCHFDOPPR_01_Испр_Входящий"",""ON_NKORSCHFDOPPRMARK_01_Входящий"",""ON_NKORSCHFDOPPRMARK_01_Испр_Входящий"",""ON_NKORSCHFDOPPRPROS_01_Входящий"",""ON_NKORSCHFDOPPRPROS_01_Испр_Входящий"")";</value>
 				<presentation>ТекстЗапроса</presentation>
 				<id xsi:type="xs:decimal">0</id>
 			</item>

@@ -380,7 +380,7 @@
 					
 	ЗаписатьЛогСобытий(ЛогСобытий, ТекстОшибки);
 	
-КонецЕсли</Value>
+КонецЕсли;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>

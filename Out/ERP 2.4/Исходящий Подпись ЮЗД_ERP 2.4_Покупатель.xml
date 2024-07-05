@@ -994,7 +994,7 @@
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
-				<presentation>СМУП-0029711</presentation>
+				<presentation>СписокOnNschfdopprВходящиеПокупатель; СписокOnNkorschfdopprВходящиеПокупатель; СписокOnNschfdopprИспрВходящиеПокупатель</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">2</id>
 			</item>

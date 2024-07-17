@@ -828,20 +828,12 @@
 |ГДЕ
 |	DR_НАКЛАДНЫЕ.ВидДокумента = ""Накладная_Исходящая""
 |	И DR_НАКЛАДНЫЕ.Документ.Проведен
-|	И DR_INVOICE.ИдентификаторЦепочки ЕСТЬ NULL";
+|	И DR_INVOICE.ИдентификаторЦепочки ЕСТЬ NULL
+|	И DR_НАКЛАДНЫЕ.Статус &lt;&gt; ""Архивный""";
 </value>
 				<presentation>ТекстЗапроса</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">0</id>
-			</item>
-			<item>
-				<value xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d5p1:JobSchedule" BeginDate="2024-04-12" EndDate="0001-01-01" BeginTime="00:00:00" EndTime="00:00:00" CompletionTime="00:00:00" CompletionInterval="0" RepeatPeriodInDay="1800" RepeatPause="0" WeekDayInMonth="0" DayInMonth="0" WeeksPeriod="1" DaysRepeatPeriod="0">
-					<d5p1:WeekDays>1 2 3 4 5 6 7</d5p1:WeekDays>
-					<d5p1:Months/>
-				</value>
-				<presentation>Расписание</presentation>
-				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">1</id>
 			</item>
 		</Value>
 	</row>

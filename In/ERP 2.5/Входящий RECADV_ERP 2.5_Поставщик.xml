@@ -8,11 +8,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -28,7 +24,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -39,14 +35,13 @@
 		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий RECADV</Value>
-		<Value xsi:type="xs:string">Входящий RECADV</Value>
-		<Value xsi:type="xs:string">ВходящийRECADV</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">ТипДокумента = "RECADV";	
 ТипДокументооборота      = "EDI";
 ИдентификаторыУчастников = Новый Массив;
@@ -231,9 +226,9 @@
 	|ИЗ
 	|	РегистрСведений.DR_События КАК DR_События
 	|ГДЕ
-	|	DR_События.ИдентификаторЦепочки В(&amp;ИдентификаторЦепочки)
+	|	DR_События.ИдентификаторЦепочки В (&amp;ИдентификаторЦепочки)
 	|	И DR_События.ВидДокумента = ""Накладная_Исходящая""
-	|	И DR_Документ.Статус &lt;&gt; ""Архивный""
+	|	И DR_События.Статус &lt;&gt; ""Архивный""
 	|;
 	|
 	|////////////////////////////////////////////////////////////////////////////////
@@ -2449,6 +2444,10 @@
 	#КонецОбласти
 	
 КонецЕсли;</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">Входящий RECADV</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>
@@ -2459,7 +2458,7 @@
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
 				<presentation>СписокRecadvВходящиеПоставщик</presentation>
-				<checkState>1</checkState>				
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
@@ -2483,5 +2482,6 @@
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
+		<Value xsi:type="xs:string">ВходящийRECADV</Value>
 	</row>
 </ValueTree>

@@ -1519,7 +1519,7 @@
 				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Поставщик</value>				
+				<value xsi:type="xs:string">Поставщик</value>
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>

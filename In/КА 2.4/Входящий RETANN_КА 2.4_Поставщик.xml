@@ -8,11 +8,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -28,7 +24,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -39,14 +35,13 @@
 		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий RETANN</Value>
-		<Value xsi:type="xs:string">Входящий RETANN</Value>
-		<Value xsi:type="xs:string">ВходящийRETANN</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">	ТипДокумента = "RETANN";	
 	ТипДокументооборота      = "EDI";
 	ИдентификаторыУчастников = Новый Массив;
@@ -229,8 +224,8 @@
 		|ИЗ
 		|	Документ.DR_Документ КАК DR_Документ
 		|ГДЕ
-		|	DR_Документ.ИдентификаторЦепочки В(&amp;ИдентификаторЦепочки)
-		|	И DR_Документ.ИдентификаторДокумента В(&amp;ИдентификаторДокумента)
+		|	DR_Документ.ИдентификаторЦепочки В (&amp;ИдентификаторЦепочки)
+		|	И DR_Документ.ИдентификаторДокумента В (&amp;ИдентификаторДокумента)
 		|	И НЕ DR_Документ.ПометкаУдаления
 		|	И DR_Документ.Статус &lt;&gt; ""Архивный""
 		|;
@@ -1664,6 +1659,10 @@
 		#КонецОбласти
 						
 	КонецЕсли;</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">Входящий RETANN</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>
@@ -1674,7 +1673,7 @@
 			<item>
 				<value xsi:type="xs:string">Поставщик</value>
 				<presentation>СписокRetannВходящиеПоставщик</presentation>
-				<checkState>1</checkState>				
+				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
@@ -1698,5 +1697,6 @@
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
+		<Value xsi:type="xs:string">ВходящийRETANN</Value>
 	</row>
 </ValueTree>

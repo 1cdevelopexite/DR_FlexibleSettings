@@ -8,11 +8,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -28,7 +24,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -39,14 +35,13 @@
 		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий DESADV</Value>
-		<Value xsi:type="xs:string">Входящий DESADV</Value>
-		<Value xsi:type="xs:string">ВходящийDESADV</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">	ТипДокумента = "DESADV";	
 	ТипДокументооборота      = "EDI";
 	ИдентификаторыУчастников = Новый Массив;
@@ -224,8 +219,8 @@
 		|ИЗ
 		|	Документ.DR_Документ КАК DR_Документ
 		|ГДЕ
-		|	DR_Документ.ИдентификаторЦепочки В(&amp;ИдентификаторЦепочки)
-		|	И DR_Документ.ИдентификаторДокумента В(&amp;ИдентификаторДокумента)
+		|	DR_Документ.ИдентификаторЦепочки В (&amp;ИдентификаторЦепочки)
+		|	И DR_Документ.ИдентификаторДокумента В (&amp;ИдентификаторДокумента)
 		|	И НЕ DR_Документ.ПометкаУдаления
 		|	И DR_Документ.Статус &lt;&gt; ""Архивный""
 		|;
@@ -308,8 +303,8 @@
 		|		ПО DR_НеОбработан.Ссылка = ТЧ_HEAD.Ссылка
 		|			И (ТЧ_HEAD.Реквизит = ""HEAD"")
 		|		ЛЕВОЕ СОЕДИНЕНИЕ Документ.DR_Документ.ДополнительныеРеквизиты КАК ТЧ_POSITION
-    	|		ПО DR_НеОбработан.Ссылка = ТЧ_POSITION.Ссылка
-    	|			И (ТЧ_POSITION.Реквизит = ""POSITION"")
+		|		ПО DR_НеОбработан.Ссылка = ТЧ_POSITION.Ссылка
+		|			И (ТЧ_POSITION.Реквизит = ""POSITION"")
 		|		ЛЕВОЕ СОЕДИНЕНИЕ Документ.DR_Документ.ДополнительныеРеквизиты КАК ТЧ_Организация
 		|		ПО DR_НеОбработан.Ссылка = ТЧ_Организация.Ссылка
 		|			И (ТЧ_Организация.Реквизит = ""Организация"")
@@ -1653,6 +1648,10 @@
 	#КонецОбласти	
 		
 	КонецЕсли;</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">Входящий DESADV</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>
@@ -1687,5 +1686,6 @@
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
+		<Value xsi:type="xs:string">ВходящийDESADV</Value>
 	</row>
 </ValueTree>

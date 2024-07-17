@@ -8,11 +8,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -28,7 +24,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -39,14 +35,13 @@
 		<Name xsi:type="xs:string">Регламент</Name>
 		<ValueType/>
 	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Входящий ORDER</Value>
-		<Value xsi:type="xs:string">Входящий ORDER</Value>
-		<Value xsi:type="xs:string">ВходящийORDER</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">ТипДокумента 			 = "ORDER";	
 ТипДокументооборота      = "EDI";
 ИдентификаторыУчастников = Новый Массив;
@@ -233,8 +228,8 @@
 	|ИЗ
 	|	Документ.DR_Документ КАК DR_Документ
 	|ГДЕ
-	|	DR_Документ.ИдентификаторЦепочки В(&amp;ИдентификаторЦепочки)
-	|	И DR_Документ.ИдентификаторДокумента В(&amp;ИдентификаторДокумента)
+	|	DR_Документ.ИдентификаторЦепочки В (&amp;ИдентификаторЦепочки)
+	|	И DR_Документ.ИдентификаторДокумента В (&amp;ИдентификаторДокумента)
 	|	И НЕ DR_Документ.ПометкаУдаления
 	|	И DR_Документ.Статус &lt;&gt; ""Архивный""
 	|;
@@ -411,7 +406,7 @@
 	|	DR_Данные.ДатаЭлектронногоДокумента КАК ДатаЭлектронногоДокумента,
 	|	ТЧ_NUMBER.Значение КАК NUMBER,
 	|	ТЧ_POSITION.ХранилищеЗначения КАК ХЗ_POSITION,
-	|	ЕСТЬNULL(ТЧ_HEAD.ХранилищеЗначения, Неопределено) КАК ХЗ_HEAD,
+	|	ЕСТЬNULL(ТЧ_HEAD.ХранилищеЗначения, НЕОПРЕДЕЛЕНО) КАК ХЗ_HEAD,
 	|	ТЧ_ДатаПоставки.Значение КАК ДатаПоставки,
 	|	DR_Итог.ШК_Сопоставлен КАК ШК_Сопоставлен,
 	|	DR_Итог.СрокОбработкиДокИстек КАК СрокОбработкиДокИстек
@@ -1584,7 +1579,7 @@
 		СоответствиеПоНоменклатуре 	= Новый Соответствие;
 		
 		МодификацияЦепочки	 	= Ложь;
-		
+				
 		СтатусДокумента	= "НеОбработан";
 		ТекстОшибки 	= "";
 		ЗаписьСообщение	= "";
@@ -2047,6 +2042,10 @@
 	#КонецОбласти
 	
 КонецЕсли;</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">Входящий ORDER</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">4</lastId>
@@ -2081,5 +2080,6 @@
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
+		<Value xsi:type="xs:string">ВходящийORDER</Value>
 	</row>
 </ValueTree>

@@ -832,7 +832,6 @@
 |	И DR_НАКЛАДНЫЕ.Статус &lt;&gt; ""Архивный""";
 </value>
 				<presentation>ТекстЗапроса</presentation>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
 		</Value>

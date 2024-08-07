@@ -40,7 +40,7 @@
 		<ValueType/>
 	</column>
 	<row>
-		<Value xsi:type="xs:boolean">true</Value>
+		<Value xsi:type="xs:boolean">false</Value>
 		<Value xsi:type="xs:string">Архивация документов</Value>
 		<Value xsi:type="xs:string">    //++Архивация документов по значению из доп констант EDI_СрокАрхивацииДокументовПоДатеЗаказа 
 		EDI_СрокАрхивацииДокументовПоДатеЗаказа = Настройка_Параметр_Прочитать("EDI_СрокАрхивацииДокументовПоДатеЗаказа");  
@@ -144,7 +144,7 @@
 			    	
 			КонецЦикла;     	
 			
-			ТекстЛогаСобытий = "Архивировано "+ Сч + " цепочек!";
+			ТекстЛогаСобытий = "Архивировано "+ Сч + " записей в РС DR_События";
 		    ЗаписьСтруктурыЛога = Вычислить("DR_EDI_ОбщегоНазначения.ЗаполненнаяЗаписьЛога(ТекстЛогаСобытий, ""Успешно"", ИмяСобытия)");
 		    МассивЛогаСобытий.Добавить(ЗаписьСтруктурыЛога);  
 						
@@ -160,21 +160,19 @@
 			<valueType/>
 			<lastId xsi:type="xs:decimal">5</lastId>
 			<item>
-				<value xsi:type="xs:string">Неструкт. докум.</value>
+				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Прайс-лист</value>
+				<value xsi:type="xs:string">Поставщик</value>
 				<id xsi:type="xs:decimal">1</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Поставщик</value>
+				<value xsi:type="xs:string">Неструкт. докум.</value>
 				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
-				<presentation>СписокЗаказыИсходящиеПокупатель; СписокOrderИсходящиеПокупатель</presentation>
-				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>

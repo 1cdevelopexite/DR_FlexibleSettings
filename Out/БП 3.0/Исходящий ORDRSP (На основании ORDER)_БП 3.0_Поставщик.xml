@@ -259,7 +259,7 @@ EDIINTERCHANGEID = 0;
 		
 		Если СтрокаНоменклатуры.Свойство("PACKING") Тогда
 		
-		    ArrayPACKING = СтрокаНоменклатуры.PACKING;
+		    ArrayPACKING = СтрокаНоменклатуры.ХЗ_PACKING.Получить();
 			НоваяСтрокаНоменклатуры.PACKING = ?(ArrayPACKING &lt;&gt; Неопределено, ArrayPACKING, Новый Массив);
 	        		
 		КонецЕсли;

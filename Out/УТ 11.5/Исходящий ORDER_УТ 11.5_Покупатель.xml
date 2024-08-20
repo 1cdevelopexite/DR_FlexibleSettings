@@ -32,7 +32,31 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<Name xsi:type="xs:string">Источник</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Приемник</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Атрибуты</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ДанныеЗначения</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ДоступныеЗначения</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Связи</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Обязательный</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -421,56 +445,36 @@ EDIINTERCHANGEID = 0;
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="ValueTable">
+			<column>
+				<Name xsi:type="xs:string">Реквизит1</Name>
+				<ValueType>
+					<Type>xs:string</Type>
+					<StringQualifiers>
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</ValueType>
+			</column>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">-1</lastId>
+		</Value>
+		<Value xsi:type="xs:boolean">false</Value>
 		<Value xsi:type="xs:string">ИсходящийORDER</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">1</lastId>
-			<item>
-				<value xsi:type="xs:string">ТекстЗапроса = "ВЫБРАТЬ
-               |	ЗаказПоставщику.Ссылка КАК Ссылка
-               |ПОМЕСТИТЬ ВТ_Заказ
-               |ИЗ
-               |	Документ.ЗаказПоставщику КАК ЗаказПоставщику
-               |ГДЕ
-               |	ЗаказПоставщику.Дата МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ)
-               |	И ЗаказПоставщику.Проведен
-               |;
-               |
-               |////////////////////////////////////////////////////////////////////////////////
-               |ВЫБРАТЬ
-               |	ВТ_Заказ.Ссылка КАК Документ,
-               |	ВТ_Заказ.Ссылка.Проведен КАК Проведен,
-               |	ПРЕДСТАВЛЕНИЕ(ВТ_Заказ.Ссылка) КАК ПредставлениеДокумента,
-               |	СобытияЗаказИсходящий.ИдентификаторЦепочки КАК ИдентификаторЦепочки
-               |ПОМЕСТИТЬ втДанныеИсточник
-               |ИЗ
-               |	ВТ_Заказ КАК ВТ_Заказ
-               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК СобытияЗаказИсходящий
-               |		ПО (ВТ_Заказ.Ссылка = СобытияЗаказИсходящий.Документ)
-               |			И (СобытияЗаказИсходящий.ВидДокумента = ""Заказ_Исходящий"")
-               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК СобытияORDERИсходящий
-               |		ПО (СобытияЗаказИсходящий.ИдентификаторЦепочки = СобытияORDERИсходящий.ИдентификаторЦепочки)
-               |			И (СобытияORDERИсходящий.ВидДокумента = ""ORDER_Исходящий"")
-               |ГДЕ
-               |	СобытияORDERИсходящий.ИдентификаторЦепочки ЕСТЬ NULL
-               |	И СобытияЗаказИсходящий.Статус &lt;&gt; ""Архивный""
-               |;
-               |
-               |////////////////////////////////////////////////////////////////////////////////
-               |ВЫБРАТЬ ПЕРВЫЕ 2
-               |	втДанныеИсточник.Документ КАК Документ,
-               |	""ORDER_Исходящий"" КАК ВидДокумента,
-               |	"""" КАК СтатусОбработкиДокумента
-               |ИЗ
-               |	втДанныеИсточник КАК втДанныеИсточник
-               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_ЦепочкиДокументов КАК DR_ЦепочкиДокументов
-               |		ПО (втДанныеИсточник.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки)
-               |
-               |УПОРЯДОЧИТЬ ПО
-               |	DR_ЦепочкиДокументов.ДатаЗаказа УБЫВ";</value>
-				<presentation>ТекстЗапроса</presentation>
-				<id xsi:type="xs:decimal">0</id>
-			</item>
+			<lastId xsi:type="xs:decimal">-1</lastId>
 		</Value>
 	</row>
 </ValueTree>

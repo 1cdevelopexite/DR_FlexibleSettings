@@ -8,15 +8,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Кнопка</Name>
+		<Name xsi:type="xs:string">Служебные</Name>
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">ИмяКнопки</Name>
-		<ValueType/>
-	</column>
-	<column>
-		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<Name xsi:type="xs:string">Данные</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -28,7 +24,7 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Служебные</Name>
+		<Name xsi:type="xs:string">Кнопка</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -36,7 +32,11 @@
 		<ValueType/>
 	</column>
 	<column>
-		<Name xsi:type="xs:string">Данные</Name>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
 		<ValueType/>
 	</column>
 	<column>
@@ -46,11 +46,6 @@
 	<row>
 		<Value xsi:type="xs:boolean">true</Value>
 		<Value xsi:type="xs:string">Исходящий DP_UVUTOCH_09</Value>
-		<Value xsi:type="xs:string">Уведомление об уточнении</Value>
-		<Value xsi:type="xs:string">ИсходящийDP_UVUTOCH_09</Value>
-		<Value xsi:type="xs:string"/>
-		<Value xsi:type="xs:decimal">0</Value>
-		<Value xsi:type="xs:decimal">0</Value>
 		<Value xsi:type="xs:string">МассивСтруктурИсходящих = Новый Массив;
 
 //&lt;МЧД&gt;
@@ -311,27 +306,11 @@
 |			ИЛИ ВТ.ВидДокумента = ""ON_NSCHFDOPPRMARK_01""
 |			ИЛИ ВТ.ВидДокумента = ""ON_NSCHFDOPPRMARK_01_Испр""
 |			ИЛИ ВТ.ВидДокумента = ""ON_NKORSCHFDOPPRMARK_01""
-|			ИЛИ ВТ.ВидДокумента = ""ON_NKORSCHFDOPPRMARK_01_Испр"")";	
-
-
-//Доработка ПР 
-EDI_АвтосверкаЮЗД = Ложь;
-ДеревоXMLПроизвольные = Настройка_Параметр_Прочитать("EDI_СтруктураФайлаXMLПроизвольные", Неопределено);
-
-Если ДеревоXMLПроизвольные &lt;&gt; Неопределено Тогда 
-   Отбор = Новый Структура("Использовать, ИмяКнопки", Истина, "ПроизвольныйАвтосверкаЮЗД");
-   СтрокиНастроекПоОтбору = ДеревоXMLПроизвольные.Строки.НайтиСтроки(Отбор);   
-
-   Если СтрокиНастроекПоОтбору.Количество() Тогда  
-	   EDI_АвтосверкаЮЗД = Истина;  
-   КонецЕсли;    
-КонецЕсли;
-
+|			ИЛИ ВТ.ВидДокумента = ""ON_NKORSCHFDOPPRMARK_01_Испр"")";		
 
 Запрос.УстановитьПараметр("МассивДок"						, Источник);
 Запрос.УстановитьПараметр("ТаблицаМЧД"						, ТаблицаМЧД);
-//Запрос.УстановитьПараметр("АвтосверкаЮЗД"					, Настройка_Параметр_Прочитать("EDI_АвтосверкаЮЗД", Ложь)); 
-Запрос.УстановитьПараметр("АвтосверкаЮЗД"					, EDI_АвтосверкаЮЗД);
+Запрос.УстановитьПараметр("АвтосверкаЮЗД"					, Настройка_Параметр_Прочитать("EDI_АвтосверкаЮЗД", Ложь));
 Запрос.УстановитьПараметр("ВидыДокументовЮЗД"				, ВидыДокументовЮЗД);
 Запрос.УстановитьПараметр("МассивПодписейВидовДокументовЮЗД", МассивПодписейВидовДокументовЮЗД);
 
@@ -611,6 +590,10 @@ EDI_АвтосверкаЮЗД = Ложь;
 
 ~Выход:
 Возврат МассивСтруктурИсходящих;</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">Уведомление об уточнении</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">9</lastId>
@@ -628,7 +611,7 @@ EDI_АвтосверкаЮЗД = Ложь;
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
-				<presentation>СписокOnNschfdopprВходящиеПокупатель; СписокOnNkorschfdopprВходящиеПокупатель; СписокOnNschfdopprИспрВходящиеПокупатель</presentation>
+				<presentation>СписокСчетаФактурыВходящиеПокупатель; СписокКорректировочныеСчетаФактурыВходящиеПокупатель; СписокИсправительныеСчетаФактурыВходящиеПокупатель</presentation>
 				<checkState>1</checkState>
 				<id xsi:type="xs:decimal">3</id>
 			</item>
@@ -666,6 +649,7 @@ EDI_АвтосверкаЮЗД = Ложь;
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string">ИсходящийDP_UVUTOCH_09</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
 			<lastId xsi:type="xs:decimal">-1</lastId>

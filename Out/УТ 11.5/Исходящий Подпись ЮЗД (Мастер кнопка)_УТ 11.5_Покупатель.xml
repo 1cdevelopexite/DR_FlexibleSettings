@@ -1,0 +1,262 @@
+﻿<ValueTree xmlns="http://v8.1c.ru/8.1/data/core" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ValueTree">
+	<column>
+		<Name xsi:type="xs:string">Использовать</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ТипТранзакции</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Служебные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Данные</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Сохранение</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Загрузка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Кнопка</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">КоллекцияТЧ</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">СлужебныеТекст</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">ИмяКнопки</Name>
+		<ValueType/>
+	</column>
+	<column>
+		<Name xsi:type="xs:string">Регламент</Name>
+		<ValueType/>
+	</column>
+	<row>
+		<Value xsi:type="xs:boolean">true</Value>
+		<Value xsi:type="xs:string">Исходящий ON_NSCHFDOPPOK</Value>
+		<Value xsi:type="xs:string">МассивСтруктурИсходящих = Новый Массив;
+
+Запрос = Новый Запрос;
+Запрос.Текст = 
+"ВЫБРАТЬ
+|	DR_Документ.Ссылка КАК Ссылка,
+|	DR_Документ_ВерсФорм.Значение = ""5.02"" КАК ЭтоФормат_5_02
+|ПОМЕСТИТЬ ВремТабл
+|ИЗ
+|	Документ.DR_Документ КАК DR_Документ
+|		ЛЕВОЕ СОЕДИНЕНИЕ Документ.DR_Документ.ДополнительныеРеквизиты КАК DR_Документ_ВерсФорм
+|		ПО (DR_Документ.Ссылка = DR_Документ_ВерсФорм.Ссылка)
+|			И (DR_Документ_ВерсФорм.Реквизит = ""ВерсФорм"")
+|ГДЕ
+|	DR_Документ.Ссылка В(&amp;Источник)
+|;
+|
+|////////////////////////////////////////////////////////////////////////////////
+|ВЫБРАТЬ
+|	DR_Документ.Ссылка КАК УПД
+|ИЗ
+|	ВремТабл КАК DR_Документ
+|ГДЕ
+|	DR_Документ.ЭтоФормат_5_02 = ИСТИНА
+|;
+|
+|////////////////////////////////////////////////////////////////////////////////
+|ВЫБРАТЬ
+|	DR_Документ.Ссылка КАК УПД
+|ИЗ
+|	ВремТабл КАК DR_Документ
+|ГДЕ
+|	DR_Документ.ЭтоФормат_5_02 = ЛОЖЬ";
+
+Запрос.УстановитьПараметр("Источник", Источник);
+
+РезультатЗапроса = Запрос.ВыполнитьПакет();
+
+МассивУПД_5_02 = РезультатЗапроса[1].Выгрузить().ВыгрузитьКолонку("УПД");
+МассивУПД_5_01 = РезультатЗапроса[2].Выгрузить().ВыгрузитьКолонку("УПД");
+
+Если МассивУПД_5_02.Количество() &lt;&gt; 0 Тогда
+	
+	ИмяКолонки = "";
+	СтруктураФайлаДанных = Неопределено;
+	
+	//&lt;Поиск сценария&gt;
+	СценарийСозданияXML 	= Настройка_Параметр_Прочитать("EDI_СтруктураФайлаXMLИсходящие");
+	СтрокиНастроекПоОтбору 	= СценарийСозданияXML.Строки.НайтиСтроки(Новый Структура("Использовать, ИмяКнопки", Истина, "ИсходящийON_NSCHFDOPPOK_5_02"));
+	
+	Если СтрокиНастроекПоОтбору.Количество() Тогда
+		//&lt;Используется первый найденный сценарий с признаком "Использовать"&gt;
+		СтруктураФайлаДанных = СтрокиНастроекПоОтбору[0];
+		
+	КонецЕсли;
+	
+	Если СтруктураФайлаДанных &lt;&gt; Неопределено Тогда					
+		
+		ГибкиеНастройки = СтрЗаменить(СтруктураФайлаДанных.Служебные, "Источник", "МассивУПД_5_02"); 
+		
+		//&lt;Переменная для определения контекста выполняемого сценария&gt;
+		ГибкиеНастройки = "ВызовМастерКнопкойЮЗД = Истина;" + Символы.ПС + ГибкиеНастройки;
+		
+		//&lt;выполнение подготовленного сценария&gt;
+		Выполнить(ГибкиеНастройки); 
+		
+	КонецЕсли;
+	
+КонецЕсли;
+
+Если МассивУПД_5_01.Количество() &lt;&gt; 0 Тогда
+	
+	ИмяКолонки = "";
+	СтруктураФайлаДанных = Неопределено;
+	
+	//&lt;Поиск сценария&gt;
+	СценарийСозданияXML		= Настройка_Параметр_Прочитать("EDI_СтруктураФайлаXMLИсходящие");
+	СтрокиНастроекПоОтбору 	= СценарийСозданияXML.Строки.НайтиСтроки(Новый Структура("Использовать, ИмяКнопки", Истина, "ИсходящийON_NSCHFDOPPOK_5_01"));
+	
+	Если СтрокиНастроекПоОтбору.Количество() Тогда
+		//&lt;Используется первый найденный сценарий с признаком "Использовать"&gt;
+		СтруктураФайлаДанных = СтрокиНастроекПоОтбору[0];
+		
+	КонецЕсли;
+	
+	Если СтруктураФайлаДанных &lt;&gt; Неопределено Тогда					
+		
+		ГибкиеНастройки = СтрЗаменить(СтруктураФайлаДанных.Служебные, "Источник", "МассивУПД_5_01"); 
+		
+		//&lt;Переменная для вызываемого сценария, в котором выполняется проверка вызова из мастер кнопки&gt;
+		ГибкиеНастройки = "ВызовМастерКнопкойЮЗД = Истина;" + Символы.ПС + ГибкиеНастройки;
+		
+		//&lt;выполнение подготовленного сценария&gt;
+		Выполнить(ГибкиеНастройки);		
+		
+	КонецЕсли;
+	
+КонецЕсли;
+
+Возврат МассивСтруктурИсходящих;</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:decimal">0</Value>
+		<Value xsi:type="xs:string">Подписать УПД/УКД</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">9</lastId>
+			<item>
+				<value xsi:type="xs:string">Неструкт. докум.</value>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Прайс-лист</value>
+				<id xsi:type="xs:decimal">1</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Поставщик</value>
+				<id xsi:type="xs:decimal">2</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Покупатель</value>
+				<presentation>СписокOnNschfdopprВходящиеПокупатель; СписокOnNkorschfdopprВходящиеПокупатель; СписокOnNschfdopprИспрВходящиеПокупатель</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">3</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Синоним</value>
+				<presentation>Подписать УПД/УКД</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">4</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИмяКнопки</value>
+				<presentation>ИсходящийON_NSCHFDOPPOK</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">5</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
+				<id xsi:type="xs:decimal">6</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ПриемникВидДокумента</value>
+				<presentation>ON_NSCHFDOPPOK_11_Исходящий; ON_NSCHFDOPPOK_11_Входящий; ON_NSCHFDOPPOKPROS_11_Исходящий; ON_NSCHFDOPPOKPROS_11_Входящий; ON_NSCHFDOPPOKMARK_11_Исходящий; ON_NSCHFDOPPOKMARK_11_Входящий; ON_NKORSCHFDOPPOK_11_Исходящий; ON_NKORSCHFDOPPOK_11_Входящий; ON_NKORSCHFDOPPOKPROS_11_Исходящий; ON_NKORSCHFDOPPOKPROS_11_Входящий; ON_NKORSCHFDOPPOKMARK_11_Исходящий; ON_NKORSCHFDOPPOKMARK_11_Входящий</presentation>
+				<id xsi:type="xs:decimal">7</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">ИсточникВидДокумента</value>
+				<presentation>ON_NSCHFDOPPR_01_Исходящий; ON_NSCHFDOPPR_01_Входящий; ON_NSCHFDOPPR_01_Испр_Исходящий; ON_NSCHFDOPPR_01_Испр_Входящий; ON_NSCHFDOPPRMARK_01_Исходящий; ON_NSCHFDOPPRMARK_01_Входящий; ON_NSCHFDOPPRMARK_01_Испр_Исходящий; ON_NSCHFDOPPRMARK_01_Испр_Входящий; ON_NSCHFDOPPRPROS_01_Исходящий; ON_NSCHFDOPPRPROS_01_Входящий; ON_NSCHFDOPPRPROS_01_Испр_Исходящий; ON_NSCHFDOPPRPROS_01_Испр_Входящий; ON_NKORSCHFDOPPR_01_Исходящий; ON_NKORSCHFDOPPR_01_Входящий; ON_NKORSCHFDOPPR_01_Испр_Исходящий; ON_NKORSCHFDOPPR_01_Испр_Входящий; ON_NKORSCHFDOPPRMARK_01_Исходящий; ON_NKORSCHFDOPPRMARK_01_Входящий; ON_NKORSCHFDOPPRMARK_01_Испр_Исходящий; ON_NKORSCHFDOPPRMARK_01_Испр_Входящий; ON_NKORSCHFDOPPRPROS_01_Исходящий; ON_NKORSCHFDOPPRPROS_01_Входящий; ON_NKORSCHFDOPPRPROS_01_Испр_Исходящий; ON_NKORSCHFDOPPRPROS_01_Испр_Входящий</presentation>
+				<id xsi:type="xs:decimal">8</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">НужнаПодпись</value>
+				<presentation>Да</presentation>
+				<checkState>1</checkState>
+				<id xsi:type="xs:decimal">9</id>
+			</item>
+		</Value>
+		<Value xsi:type="xs:string"/>
+		<Value xsi:type="xs:string">ИсходящийON_NSCHFDOPPOK</Value>
+		<Value xsi:type="ValueListType">
+			<valueType/>
+			<lastId xsi:type="xs:decimal">1</lastId>
+			<item>
+				<value xsi:type="xs:string">ТекстЗапроса = "ВЫБРАТЬ
+               |	DR_Документ.Ссылка КАК Ссылка
+               |ПОМЕСТИТЬ вт_DR_Документ
+               |ИЗ
+               |	Документ.DR_Документ КАК DR_Документ
+               |ГДЕ
+               |	DR_Документ.Дата МЕЖДУ НАЧАЛОПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ) И КОНЕЦПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ)
+               |	И DR_Документ.ВидДокумента В (""ON_NSCHFDOPPR_01_Входящий"", ""ON_NSCHFDOPPR_01_Испр_Входящий"", ""ON_NSCHFDOPPRMARK_01_Входящий"", ""ON_NSCHFDOPPRMARK_01_Испр_Входящий"", ""ON_NSCHFDOPPRPROS_01_Входящий"", ""ON_NSCHFDOPPRPROS_01_Испр_Входящий"", ""ON_NKORSCHFDOPPR_01_Входящий"", ""ON_NKORSCHFDOPPR_01_Испр_Входящий"", ""ON_NKORSCHFDOPPRMARK_01_Входящий"", ""ON_NKORSCHFDOPPRMARK_01_Испр_Входящий"", ""ON_NKORSCHFDOPPRPROS_01_Входящий"", ""ON_NKORSCHFDOPPRPROS_01_Испр_Входящий"")
+               |	И DR_Документ.Статус = ""Обработан""
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ
+               |	вт_DR_Документ.Ссылка КАК Документ,
+               |	ПРЕДСТАВЛЕНИЕ(вт_DR_Документ.Ссылка) КАК ПредставлениеДокумента,
+               |	DR_УПД_Входящий.ИдентификаторЦепочки КАК ИдентификаторЦепочки
+               |ПОМЕСТИТЬ втДанныеИсточник
+               |ИЗ
+               |	вт_DR_Документ КАК вт_DR_Документ
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК DR_УПД_Входящий
+               |		ПО вт_DR_Документ.Ссылка = DR_УПД_Входящий.Документ
+               |			И (DR_УПД_Входящий.ВидДокумента В (""ON_NSCHFDOPPR_01_Входящий"", ""ON_NSCHFDOPPR_01_Испр_Входящий"", ""ON_NSCHFDOPPRMARK_01_Входящий"", ""ON_NSCHFDOPPRMARK_01_Испр_Входящий"", ""ON_NSCHFDOPPRPROS_01_Входящий"", ""ON_NSCHFDOPPRPROS_01_Испр_Входящий"", ""ON_NKORSCHFDOPPR_01_Входящий"", ""ON_NKORSCHFDOPPR_01_Испр_Входящий"", ""ON_NKORSCHFDOPPRMARK_01_Входящий"", ""ON_NKORSCHFDOPPRMARK_01_Испр_Входящий"", ""ON_NKORSCHFDOPPRPROS_01_Входящий"", ""ON_NKORSCHFDOPPRPROS_01_Испр_Входящий""))
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_События КАК СобытияПодписьИсходящий
+               |		ПО (DR_УПД_Входящий.ИдентификаторЦепочки = СобытияПодписьИсходящий.ИдентификаторЦепочки)
+               |			И (СобытияПодписьИсходящий.ИдентификаторОснования = DR_УПД_Входящий.Идентификатор)
+               |			И (СобытияПодписьИсходящий.ВидДокумента В (""ON_NSCHFDOPPOK_11_Исходящий"", ""ON_NSCHFDOPPOKMARK_11_Исходящий"", ""ON_NSCHFDOPPOKPROS_11_Исходящий"", ""ON_NKORSCHFDOPPOK_11_Исходящий"", ""ON_NKORSCHFDOPPOKMARK_11_Исходящий"", ""ON_NKORSCHFDOPPOKPROS_11_Исходящий""))
+               |ГДЕ
+               |	СобытияПодписьИсходящий.ИдентификаторЦепочки ЕСТЬ NULL
+               |	И DR_УПД_Входящий.Статус &lt;&gt; ""Архивный""
+               |;
+               |
+               |////////////////////////////////////////////////////////////////////////////////
+               |ВЫБРАТЬ ПЕРВЫЕ 2
+               |	втДанныеИсточник.Документ КАК Документ,
+               |	""ON_NSCHFDOPPOK_11_Исходящий"" КАК ВидДокумента,
+               |	втДанныеИсточник.ПредставлениеДокумента КАК ПредставлениеДокумента,
+               |	втДанныеИсточник.Документ.Статус КАК СтатусОбработкиДокумента
+               |ИЗ
+               |	втДанныеИсточник КАК втДанныеИсточник
+               |		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.DR_ЦепочкиДокументов КАК DR_ЦепочкиДокументов
+               |		ПО втДанныеИсточник.ИдентификаторЦепочки = DR_ЦепочкиДокументов.ИдентификаторЦепочки
+               |
+               |УПОРЯДОЧИТЬ ПО
+               |	DR_ЦепочкиДокументов.ДатаЗаказа УБЫВ";</value>
+				<presentation>ТекстЗапроса</presentation>
+				<id xsi:type="xs:decimal">0</id>
+			</item>
+		</Value>
+	</row>
+</ValueTree>

@@ -256,6 +256,8 @@ EDIINTERCHANGEID = 0;
 РезультатНоменклатур.Колонки.Добавить("VAT"            , Новый ОписаниеТипов("Строка"));
 РезультатНоменклатур.Колонки.Добавить("Отказ"          , Новый ОписаниеТипов("Булево"));
 
+СтавкаНДСЧислом = 0;
+
 Для Каждого СтрокаНоменклатур Из РезультатНоменклатур Цикл
 	
 	СтрокаНоменклатур.Отказ = Ложь;
@@ -283,8 +285,10 @@ EDIINTERCHANGEID = 0;
     СтрокаНоменклатур.PRODUCT 			= СокрЛП(СтрокаНоменклатур.Штрихкод);
     СтрокаНоменклатур.PRODUCTIDBUYER 	= СокрЛП(СтрокаНоменклатур.Артикул);
     СтрокаНоменклатур.ORDEREDQUANTITY 	= Формат(СтрокаНоменклатур.Количество, "ЧДЦ=3; ЧРД=.; ЧН=; ЧГ=0");
-    СтрокаНоменклатур.VAT 				= Формат(СтрокаНоменклатур.СтавкаНДС, "ЧДЦ=; ЧГ=0");
-
+	СтрокаНоменклатур.VAT 				= Формат(СтрокаНоменклатур.СтавкаНДС, "ЧДЦ=; ЧГ=0"); 
+	
+	СтавкаНДСЧислом = СтавкаНДСЧислом + СтрокаНоменклатур.СтавкаНДС;
+	
 КонецЦикла;    
 
 #КонецОбласти
@@ -314,8 +318,10 @@ EDIINTERCHANGEID = 0;
 ОбязательныеКолонки.Добавить("ORDEREDQUANTITY"	, "ORDEREDQUANTITY"	, Истина);
 ОбязательныеКолонки.Добавить("ORDERUNIT"		, "ORDERUNIT"		, Истина);
 ОбязательныеКолонки.Добавить("ORDERPRICE"		, "ORDERPRICE"		, Ложь);   							
-ОбязательныеКолонки.Добавить("PRICEWITHVAT"		, "PRICEWITHVAT"	, Ложь);
-ОбязательныеКолонки.Добавить("VAT"				, "VAT"				, Ложь);
+ОбязательныеКолонки.Добавить("PRICEWITHVAT"		, "PRICEWITHVAT"	, Ложь); 
+Если СтавкаНДСЧислом &lt;&gt; 0 Тогда
+	ОбязательныеКолонки.Добавить("VAT"			, "VAT"				, Ложь);
+КонецЕсли;	
 ОбязательныеКолонки.Добавить("DESCRIPTION"		, "DESCRIPTION"		, Ложь);
 
 МассивСтруктурИсходящих = Новый Массив;
@@ -419,51 +425,55 @@ EDIINTERCHANGEID = 0;
 Возврат МассивСтруктурИсходящих;</Value>
 		<Value xsi:type="ValueListType">
 			<valueType/>
-			<lastId xsi:type="xs:decimal">8</lastId>
+			<lastId xsi:type="xs:decimal">9</lastId>
 			<item>
-				<value xsi:type="xs:string">Прайс-лист</value>
+				<value xsi:type="xs:string">Неструкт. докум.</value>
 				<id xsi:type="xs:decimal">0</id>
 			</item>
 			<item>
-				<value xsi:type="xs:string">Поставщик</value>
+				<value xsi:type="xs:string">Прайс-лист</value>
 				<id xsi:type="xs:decimal">1</id>
+			</item>
+			<item>
+				<value xsi:type="xs:string">Поставщик</value>
+				<id xsi:type="xs:decimal">2</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Покупатель</value>
 				<presentation>СписокЗаказыИсходящиеПокупатель</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">2</id>
+				<id xsi:type="xs:decimal">3</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">Синоним</value>
 				<presentation>Исходящий ORDER</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">3</id>
+				<id xsi:type="xs:decimal">4</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИмяКнопки</value>
 				<presentation>ИсходящийORDER</presentation>
 				<checkState>1</checkState>
-				<id xsi:type="xs:decimal">4</id>
+				<id xsi:type="xs:decimal">5</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПередаватьТекстПричины</value>
-				<id xsi:type="xs:decimal">5</id>
+				<id xsi:type="xs:decimal">6</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ПриемникВидДокумента</value>
 				<presentation>ORDER_Исходящий</presentation>
-				<id xsi:type="xs:decimal">6</id>
+				<id xsi:type="xs:decimal">7</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">ИсточникВидДокумента</value>
 				<presentation>Заказ_Исходящий</presentation>
-				<id xsi:type="xs:decimal">7</id>
+				<id xsi:type="xs:decimal">8</id>
 			</item>
 			<item>
 				<value xsi:type="xs:string">НужнаПодпись</value>
 				<presentation>Нет</presentation>
-				<id xsi:type="xs:decimal">8</id>
+				<id xsi:type="xs:decimal">9</id>
 			</item>
 		</Value>
 		<Value xsi:type="xs:string"/>
